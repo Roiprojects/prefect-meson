@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, MapPin, Layers, Building2, CheckCircle2, ArrowRight } from 'lucide-react';
 import { ProjectItem } from '../../data/projectsData';
+import { StatusBadge } from '../common/StatusBadge';
 
 interface ProjectDetailModalProps {
   project: ProjectItem | null;
@@ -78,9 +79,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
                   <span className="px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-mono font-bold tracking-wider uppercase">
                     {project.category}
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-black/50 backdrop-blur-md text-[11px] font-mono text-orange-400 font-semibold">
-                    {project.status}
-                  </span>
+                  <StatusBadge status={project.status} variant="glass" />
                 </div>
                 <h2 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-white">
                   {project.title}

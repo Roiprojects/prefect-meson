@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Building2, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { useData } from '../../context/DataContext';
+import { StatusBadge } from '../common/StatusBadge';
 
 interface InteriorCardItem {
   id: string;
@@ -16,6 +18,7 @@ interface InteriorCardItem {
   sector: 'Corporate' | 'Hospitality' | 'Luxury Residential' | 'Modular Millwork';
   timelineCategory: '< 12 Mo' | '12–24 Mo' | '24+ Mo';
   image: string;
+  status?: string;
 }
 
 const interiorShowcaseList: InteriorCardItem[] = [
@@ -139,10 +142,32 @@ const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
 export const InteriorProjectsFilter: React.FC = () => {
   const navigate = useNavigate();
+  const { interiorItems } = useData();
   const [activeLocation, setActiveLocation] = useState('All');
   const [activeSector, setActiveSector] = useState<string | null>(null);
   const [activeTimeline, setActiveTimeline] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+
+  const dynamicInteriorCards: InteriorCardItem[] = interiorItems.map((item) => ({
+    id: item.id || item.slug,
+    client: item.client || item.title,
+    statHeadline: item.builtArea || 'INTERIOR ARCHITECTURE',
+    badge: (item.spaceType === 'Commercial' ? 'Corporate Fit-Out' : 'Luxury Residence') as any,
+    height: 'G+2',
+    timeline: item.timeline || '6 Mo',
+    rating: item.architect || 'Perfect Mason Interior Studio',
+    location: item.builtArea ? `${item.builtArea} • Bangalore` : 'Bangalore, India',
+    city: 'Bangalore',
+    sector: (item.spaceType === 'Commercial' ? 'Corporate' : 'Luxury Residential') as any,
+    timelineCategory: '< 12 Mo',
+    image: item.heroImage || '/assets/interior_hero.jpg',
+    status: item.status || 'Active',
+  }));
+
+  const allInteriorCards = [
+    ...dynamicInteriorCards,
+    ...interiorShowcaseList.filter(s => !dynamicInteriorCards.some(d => d.id === s.id || d.client.toLowerCase() === s.client.toLowerCase())),
+  ];
 
   const clearFilters = () => {
     setActiveLocation('All');
@@ -151,7 +176,7 @@ export const InteriorProjectsFilter: React.FC = () => {
     setSearchQuery('');
   };
 
-  const filteredItems = interiorShowcaseList.filter((item) => {
+  const filteredItems = allInteriorCards.filter((item) => {
     if (activeLocation !== 'All' && item.city !== activeLocation && !item.location.toLowerCase().includes(activeLocation.toLowerCase())) {
       return false;
     }
@@ -321,6 +346,11 @@ export const InteriorProjectsFilter: React.FC = () => {
 
                       {/* Smooth Dark Bottom Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none" />
+
+                      {/* Top Left Status Badge (Active Model / Completed Handover / Upcoming Release) */}
+                      <div className="absolute top-4 left-4 z-10">
+                        <StatusBadge status={project.status || 'Active'} variant="glass" />
+                      </div>
 
                       {/* Top Right Badge */}
                       <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-slate-900 px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-md z-10">

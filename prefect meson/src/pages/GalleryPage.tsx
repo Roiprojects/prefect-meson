@@ -10,13 +10,13 @@ import {
   ChevronRight,
   Search,
   RotateCcw,
-  CheckCircle2,
   Building2,
   SlidersHorizontal,
 } from 'lucide-react';
 import { GalleryProject, galleryProjects as defaultGalleryProjects } from '../data/galleryData';
 import { useData } from '../context/DataContext';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import { StatusBadge } from '../components/common/StatusBadge';
 
 interface GalleryPageProps {
   onOpenQuoteModal?: () => void;
@@ -514,10 +514,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = () => {
                           </div>
 
                           {project.status && (
-                            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-mono text-[9px] uppercase font-bold tracking-wider">
-                              <CheckCircle2 className="w-2.5 h-2.5" />
-                              {project.status}
-                            </span>
+                            <StatusBadge status={project.status} variant="glass" />
                           )}
                         </div>
                       </div>

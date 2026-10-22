@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Building2, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { useData } from '../../context/DataContext';
+import { StatusBadge } from '../common/StatusBadge';
 
 interface CommercialCardItem {
   id: string;
@@ -17,6 +18,7 @@ interface CommercialCardItem {
   sector: 'Office' | 'Retail' | 'Hospitality' | 'Industrial' | 'Institutional';
   timelineCategory: '< 12 Mo' | '12–24 Mo' | '24+ Mo';
   image: string;
+  status?: string;
 }
 
 const commercialShowcaseList: CommercialCardItem[] = [
@@ -159,6 +161,7 @@ export const CommercialProjectsFilter: React.FC = () => {
     sector: (item.category.includes('Office') ? 'Office' : item.category.includes('Retail') ? 'Retail' : item.category.includes('Industrial') ? 'Industrial' : 'Office') as any,
     timelineCategory: '12–24 Mo',
     image: item.heroImage || '/assets/comm_complex_hero.jpg',
+    status: item.status || 'Active',
   }));
 
   const galleryCommercialCards: CommercialCardItem[] = projects
@@ -176,6 +179,7 @@ export const CommercialProjectsFilter: React.FC = () => {
       sector: 'Retail',
       timelineCategory: '12–24 Mo',
       image: p.image || '/assets/comm_complex_hero.jpg',
+      status: p.status || 'Active',
     }));
 
   const combinedCards = [
@@ -365,6 +369,11 @@ export const CommercialProjectsFilter: React.FC = () => {
 
                       {/* Smooth Dark Bottom Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none" />
+
+                      {/* Top Left Status Badge (Active Model / Completed Handover / Upcoming Release) */}
+                      <div className="absolute top-4 left-4 z-10">
+                        <StatusBadge status={project.status || 'Active'} variant="glass" />
+                      </div>
 
                       {/* Top Right Badge */}
                       <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-slate-900 px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-md z-10">

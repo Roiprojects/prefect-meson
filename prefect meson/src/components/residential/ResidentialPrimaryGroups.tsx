@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { useData } from '../../context/DataContext';
+import { StatusBadge } from '../common/StatusBadge';
 
 interface ResidentialPrimaryGroupsProps {
   onOpenQuoteModal: () => void;
@@ -73,6 +74,9 @@ export const ResidentialPrimaryGroups: React.FC<ResidentialPrimaryGroupsProps> =
                           {item.pricePerSqFt}
                         </span>
                       )}
+
+                      {/* Dynamic Admin Status Badge (Active Model / Completed Handover / Upcoming Release) */}
+                      <StatusBadge status={item.status} variant={isDark ? 'dark' : 'light'} />
                     </div>
 
                     <h3 className="font-display text-3xl sm:text-4xl font-bold uppercase mb-2">

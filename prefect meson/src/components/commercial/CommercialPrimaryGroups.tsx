@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Building2, Layers, Wrench, Factory, CheckCircle2, ArrowRight } from 'lucide-react';
 import { useData } from '../../context/DataContext';
+import { StatusBadge } from '../common/StatusBadge';
 
 interface CommercialPrimaryGroupsProps {
   onOpenQuoteModal: () => void;
@@ -23,6 +24,7 @@ export const CommercialPrimaryGroups: React.FC<CommercialPrimaryGroupsProps> = (
     image: item.heroImage || '/assets/comm_complex_hero.jpg',
     icon: iconList[idx % iconList.length],
     route: `/commercial-construction/category/${item.slug || item.id}`,
+    status: item.status || 'Active',
     features: item.capabilities && item.capabilities.length > 0
       ? item.capabilities
       : item.scope || ['Itemized BOQ Contract', 'Senior Civil Supervision'],
@@ -76,9 +78,12 @@ export const CommercialPrimaryGroups: React.FC<CommercialPrimaryGroupsProps> = (
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-transparent to-black/40" />
 
-                    {/* Top Left Pill Badge */}
-                    <div className="absolute top-4 left-4 px-3.5 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-white/15 text-[#C8A96B] font-mono text-[11px] font-bold tracking-widest uppercase">
-                      {model.badge}
+                    {/* Top Left Pill Badges: Category & Dynamic Admin Status */}
+                    <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2 z-10">
+                      <div className="px-3.5 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-white/15 text-[#C8A96B] font-mono text-[11px] font-bold tracking-widest uppercase">
+                        {model.badge}
+                      </div>
+                      <StatusBadge status={model.status} variant="glass" />
                     </div>
 
                     {/* Top Right Number Badge */}

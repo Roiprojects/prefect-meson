@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Building2, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { useData } from '../../context/DataContext';
+import { StatusBadge } from '../common/StatusBadge';
 
 interface TurnkeyCardItem {
   id: string;
@@ -17,6 +18,7 @@ interface TurnkeyCardItem {
   sector: 'Commercial EPC' | 'Residential Turnkey' | 'Corporate EPC' | 'Hospitality EPC';
   timelineCategory: '< 12 Mo' | '12–24 Mo' | '24+ Mo';
   image: string;
+  status?: string;
 }
 
 const turnkeyShowcaseList: TurnkeyCardItem[] = [
@@ -159,6 +161,7 @@ export const TurnkeyProjectsFilter: React.FC = () => {
     sector: (item.category.includes('Commercial') ? 'Commercial EPC' : item.category.includes('Residential') ? 'Residential Turnkey' : 'Corporate EPC') as any,
     timelineCategory: '12–24 Mo',
     image: item.heroImage || '/assets/turnkey_hero.jpg',
+    status: item.status || 'Active',
   }));
 
   const galleryTurnkeyCards: TurnkeyCardItem[] = projects
@@ -176,6 +179,7 @@ export const TurnkeyProjectsFilter: React.FC = () => {
       sector: 'Commercial EPC' as any,
       timelineCategory: '12–24 Mo',
       image: p.image || '/assets/turnkey_hero.jpg',
+      status: p.status || 'Active',
     }));
 
   const combinedCards = [
@@ -365,6 +369,11 @@ export const TurnkeyProjectsFilter: React.FC = () => {
 
                       {/* Smooth Dark Bottom Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none" />
+
+                      {/* Top Left Status Badge (Active Model / Completed Handover / Upcoming Release) */}
+                      <div className="absolute top-4 left-4 z-10">
+                        <StatusBadge status={project.status || 'Active'} variant="glass" />
+                      </div>
 
                       {/* Top Right Badge */}
                       <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-slate-900 px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-md z-10">

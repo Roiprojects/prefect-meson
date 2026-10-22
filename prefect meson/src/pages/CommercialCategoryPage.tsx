@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, MapPin, Maximize2, ChevronRight } from 'lucide-r
 import { commercialCategories, getCommercialCategoryBySlug, getProjectsByCommercialCategory } from '../data/ndlCommercialCategories';
 import { NDLProject } from '../data/ndlProjectsData';
 import { useData } from '../context/DataContext';
+import { StatusBadge } from '../components/common/StatusBadge';
 
 interface CommercialCategoryPageProps {
   onOpenQuoteModal: () => void;
@@ -155,13 +156,14 @@ export const CommercialCategoryPage: React.FC<CommercialCategoryPageProps> = ({ 
         {/* 2. CATEGORY HERO BANNER                                      */}
         {/* ============================================================ */}
         <div className="mb-14 pb-8 border-b border-slate-200">
-          <div className="flex items-center gap-2 mb-3">
+          <div className="flex flex-wrap items-center gap-2 mb-3">
             <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-900 font-mono text-xs font-bold uppercase tracking-wider">
               TYPE {category.number}
             </span>
             <span className="font-mono text-xs text-slate-500 font-bold uppercase tracking-widest">
               {category.tagline}
             </span>
+            <StatusBadge status={dynamicItem?.status || 'Active'} variant="light" />
           </div>
 
           <div className="flex flex-col lg:flex-row justify-between lg:items-end gap-6">
@@ -227,9 +229,12 @@ export const CommercialCategoryPage: React.FC<CommercialCategoryPageProps> = ({ 
 
                   {/* Top Badges */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
-                    <span className="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white font-mono text-[11px] font-bold tracking-widest border border-white/10 uppercase">
-                      {project.type}
-                    </span>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white font-mono text-[11px] font-bold tracking-widest border border-white/10 uppercase">
+                        {project.type}
+                      </span>
+                      <StatusBadge status={dynamicItem?.status || 'Active'} variant="glass" />
+                    </div>
                     <span className="px-3 py-1 rounded-full bg-white text-slate-950 font-mono text-[11px] font-bold shadow-sm flex items-center gap-1">
                       <Maximize2 className="w-3 h-3" />
                       {project.gallery.length} Photos

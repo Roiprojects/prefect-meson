@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Leaf, Sparkles, HardHat, Crown, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { useData } from '../../context/DataContext';
+import { StatusBadge } from '../common/StatusBadge';
 
 interface HomePageResidentialHighlightsProps {
   onOpenQuoteModal: () => void;
@@ -33,6 +34,7 @@ export const HomePageResidentialHighlights: React.FC<HomePageResidentialHighligh
       title: luxuryItem?.title || 'Luxury Villas on Item Rate Basis',
       tagline: 'Custom architectural estates executed with 100% itemized BOQ rate transparency.',
       image: luxuryItem?.heroImage || '/ndl_projects/slide_012_img_1.jpg',
+      status: luxuryItem?.status || 'Active',
       badgeColor: 'text-amber-900 bg-amber-100/90 border-amber-300/80',
       icon: Crown,
       iconBg: 'bg-amber-500 text-slate-950',
@@ -48,6 +50,7 @@ export const HomePageResidentialHighlights: React.FC<HomePageResidentialHighligh
       title: affordableItem?.title || 'Affordable Homes with Packages as per Specs',
       tagline: 'Standardized structural and finishing specification packages tailored to your budget.',
       image: affordableItem?.heroImage || '/assets/residential_hero.jpg',
+      status: affordableItem?.status || 'Active',
       badgeColor: 'text-blue-900 bg-blue-100/90 border-blue-300/80',
       icon: HardHat,
       iconBg: 'bg-blue-600 text-white',
@@ -67,6 +70,7 @@ export const HomePageResidentialHighlights: React.FC<HomePageResidentialHighligh
       title: ecoItem?.title || 'Eco-Friendly Homes (Consultation, Design & Execution)',
       tagline: 'Climate-responsive green homes with exposed brick, SMB mud blocks and passive solar design.',
       image: ecoItem?.heroImage || '/assets/portfolio_01_residence.jpg',
+      status: ecoItem?.status || 'Active',
       badgeColor: 'text-emerald-900 bg-emerald-100/90 border-emerald-300/80',
       icon: Leaf,
       iconBg: 'bg-emerald-600 text-white',
@@ -126,11 +130,12 @@ export const HomePageResidentialHighlights: React.FC<HomePageResidentialHighligh
                     {/* Subtle Cinematic Vignette */}
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/15 to-black/20" />
 
-                    {/* Top Floating Glass Badges */}
-                    <div className="absolute top-3.5 left-3.5 flex items-center gap-2">
+                    {/* Top Floating Glass Badges: Tag & Dynamic Admin Status */}
+                    <div className="absolute top-3.5 left-3.5 flex flex-wrap items-center gap-2 z-10">
                       <span className="font-mono text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-white/95 text-slate-950 backdrop-blur-md shadow-xs border border-white/80">
                         {group.tag}
                       </span>
+                      <StatusBadge status={group.status} variant="glass" />
                     </div>
 
                     <div className="absolute top-3.5 right-3.5">

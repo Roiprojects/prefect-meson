@@ -18,6 +18,7 @@ import {
 import { ndlProjects, NDLProject } from '../data/ndlProjectsData';
 import { useData } from '../context/DataContext';
 import { GalleryProject } from '../data/galleryData';
+import { StatusBadge } from '../components/common/StatusBadge';
 
 interface ProjectDetailPageProps {
   onOpenQuoteModal: () => void;
@@ -139,6 +140,10 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
     ? activeDynamicItem.description
     : (foundGalleryProj ? foundGalleryProj.description : (ndlProj ? ndlProj.description : fallbackLegacy?.description));
 
+  const projectStatus: string = activeDynamicItem
+    ? (activeDynamicItem.status || 'Active')
+    : (foundGalleryProj ? (foundGalleryProj.status || 'Active') : (ndlProj ? 'Completed' : (fallbackLegacy?.status || 'Active')));
+
   // Resolved Project Images List
   const projectImages: string[] = (() => {
     if (activeDynamicItem) {
@@ -213,7 +218,11 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
     {
       icon: Calendar,
       label: 'Project Status & Certification',
-      value: 'Completed with Structural Quality Assurance',
+      value: projectStatus === 'Completed'
+        ? 'Completed Handover with Structural Quality Assurance'
+        : projectStatus === 'Upcoming'
+        ? 'Upcoming Architectural Release & Approvals'
+        : 'Active Model in Progress / Live Execution',
     },
   ];
 
@@ -267,10 +276,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
               <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-900 font-mono text-[11px] font-bold uppercase tracking-wider border border-slate-200">
                 {projectCategory}
               </span>
-              <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 font-mono text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 border border-emerald-200/60">
-                <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                COMPLETED
-              </span>
+              <StatusBadge status={projectStatus} size="sm" />
             </div>
 
             {/* Main Display Title */}
