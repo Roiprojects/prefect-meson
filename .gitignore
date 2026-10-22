@@ -1,0 +1,10 @@
+node_modules/
+prefect meson/node_modules/
+.vercel
+dist/
+prefect meson/dist/
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store

@@ -1,0 +1,15 @@
+{
+  "framework": "vite",
+  "buildCommand": "cd \"prefect meson\" && npm run build",
+  "outputDirectory": "prefect meson/dist",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/prefect meson/api/index.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/prefect meson/dist/index.html"
+    }
+  ]
+}
