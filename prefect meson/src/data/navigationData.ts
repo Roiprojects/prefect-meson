@@ -102,7 +102,7 @@ export const navigationConfig: HeaderConfig = {
         title: 'RESIDENTIAL CONSTRUCTION AT PERFECT MASON',
         subtitle: 'From Item-Rate Luxury Villas to Custom Eco-Friendly Homes & Specification Packages.',
         tag: 'RESIDENTIAL EXECUTION',
-        imageUrl: '/ndl_projects/slide_012_img_1.jpg',
+        imageUrl: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
         href: '/residential-construction',
         metrics: [
           { label: 'EXPERIENCE', value: '14+ YRS' },

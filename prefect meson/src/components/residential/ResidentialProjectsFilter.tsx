@@ -24,17 +24,17 @@ interface ResidentialCardItem {
 const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'dr-anil-kush',
-    client: 'Dr. Anil Kush Private Estate',
-    statHeadline: '12,000 SQ.FT',
+    client: 'Dr. Anil Kush',
+    statHeadline: '12,500 SQ.FT',
     badge: 'Luxury Villa',
     height: 'G+2',
-    timeline: '16 Mo',
-    rating: 'Architecture Paradigm',
-    location: 'Sadashivanagar, Bangalore',
+    timeline: '14 Mo',
+    rating: 'Architecture Paradigm, 6th block, Koramangala',
+    location: '# C2, Estate Club, Bangalore',
     city: 'Bangalore',
     sector: 'Luxury Villa',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_012_img_1.jpg'
+    image: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg'
   },
   {
     id: 'mr-sarabjith-ghose',

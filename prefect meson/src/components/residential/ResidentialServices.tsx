@@ -20,7 +20,7 @@ const residentialCategories: ResidentialCategory[] = [
     shortTitle: 'LUXURY VILLAS (ITEM RATE BASIS)',
     title: 'LUXURY VILLAS ON ITEM RATE BASIS',
     desc: 'Stately luxury villa construction executed on a transparent item-rate contractual basis with itemized BOQ estimations, exposed RCC cantilevered slabs, natural stone masonry, water bodies, and bespoke estate finishes.',
-    image: '/ndl_projects/slide_012_img_1.jpg',
+    image: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
     tag: 'ITEM RATE CONTRACT BASIS • BOQ ESTIMATION',
   },
   {

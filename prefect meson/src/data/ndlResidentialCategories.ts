@@ -19,9 +19,9 @@ export const residentialCategories: ResidentialCategory[] = [
     title: 'Luxury Villas on Item Rate Basis',
     tagline: 'Item-Rate Contract Agreements & Custom Estate Execution',
     description: 'Stately luxury villa construction executed on a transparent item-rate contractual basis with itemized BOQ estimations, exposed RCC cantilevered slabs, natural stone masonry, water bodies, and bespoke estate finishes.',
-    representativeImage: '/assets/cinematic_grand_estate.jpg',
-    representativeClient: 'Dr. Anil Kush Private Estate',
-    representativeArchitect: 'Architecture Paradigm, Koramangala',
+    representativeImage: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
+    representativeClient: 'Dr. Anil Kush',
+    representativeArchitect: 'Architecture Paradigm, 6th block, Koramangala',
     projectIds: ['dr-anil-kush', 'mr-vittal-das-shetty', 'mr-rakesh-n-rao'],
   },
   {
@@ -75,8 +75,8 @@ export const residentialCategories: ResidentialCategory[] = [
     tagline: 'Exposed RCC, Floating Cantilevers & Bespoke Finishes',
     description: 'Signature architectural residences built with exposed RCC finishes, floating cantilever slabs, natural water bodies, and bespoke interior woodwork.',
     representativeImage: '/ndl_projects/slide_012_img_1.jpg',
-    representativeClient: 'Dr. Anil Kush Private Estate',
-    representativeArchitect: 'Architecture Paradigm, Koramangala',
+    representativeClient: 'Dr. Anil Kush',
+    representativeArchitect: 'Architecture Paradigm, 6th block, Koramangala',
     projectIds: ['dr-anil-kush', 'mr-rakesh-n-rao'],
   },
   {

@@ -33,7 +33,7 @@ export const HomePageResidentialHighlights: React.FC<HomePageResidentialHighligh
       eyebrow: 'GROUP 01 • LUXURY ESTATES',
       title: luxuryItem?.title || 'Luxury Villas on Item Rate Basis',
       tagline: 'Custom architectural estates executed with 100% itemized BOQ rate transparency.',
-      image: luxuryItem?.heroImage || '/ndl_projects/slide_012_img_1.jpg',
+      image: luxuryItem?.heroImage || '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
       status: luxuryItem?.status || 'Active',
       badgeColor: 'text-amber-900 bg-amber-100/90 border-amber-300/80',
       icon: Crown,

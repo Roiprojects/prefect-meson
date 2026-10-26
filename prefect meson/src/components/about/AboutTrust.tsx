@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 // Authentic Real Project Assets from NDL PPT
 const imgCenterCommercial = '/ndl_projects/slide_033_img_1.jpg'; // Mr. Sarabjith Ghose (GRC Architects)
-const imgTopVilla = '/ndl_projects/slide_012_img_1.jpg'; // Dr. Anil Kush (Architecture Paradigm - Building Elevation)
+const imgTopVilla = '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg'; // Dr. Anil Kush (Architecture Paradigm - Building Elevation)
 const imgBottomEstate = '/ndl_projects/slide_055_img_1.jpg'; // 24x7 Solutions Office Space
 
 interface MetricItem {

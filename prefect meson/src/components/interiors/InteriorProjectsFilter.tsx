@@ -66,17 +66,17 @@ const interiorShowcaseList: InteriorCardItem[] = [
   },
   {
     id: 'dr-anil-kush',
-    client: 'Dr. Anil Kush Luxury Villa',
-    statHeadline: '12,000 SQ.FT',
+    client: 'Dr. Anil Kush',
+    statHeadline: '12,500 SQ.FT',
     badge: 'Luxury Residence',
     height: 'G+2',
-    timeline: '16 Mo',
-    rating: 'Bespoke Teak Millwork',
-    location: 'Sadashivanagar, Bangalore',
+    timeline: '14 Mo',
+    rating: 'Architecture Paradigm, 6th block, Koramangala',
+    location: '# C2, Estate Club, Bangalore',
     city: 'Bangalore',
     sector: 'Luxury Residential',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_014_img_1.jpg'
+    image: '/projects/dr_anil_kush/dr_anil_kush_12_master_bedroom.png'
   },
   {
     id: 'mr-sarabjith-ghose',
