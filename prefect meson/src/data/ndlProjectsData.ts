@@ -367,22 +367,26 @@ export const ndlProjects: NDLProject[] = [
     cost: '1.8 Cr',
     type: 'Commercial Cum Residential Complex',
     category: 'Commercial',
-    description: 'Prominent G+4 commercial cum residential complex on 27th Main HSR Layout executed at a project cost of Rs 1.8 Crore, featuring retail ground floors, corporate office spaces, and luxury residential penthouse units.',
-    featuredImage: '/ndl_projects/slide_097_img_1.jpg',
+    description: 'Prominent G+4 commercial cum residential complex on 27th Main HSR Layout executed at a verified project cost of Rs 1.8 Crore, featuring ground floor retail showroom frontage (AJFAN Dates & Nuts), basement parking ramp, upper corporate office floors, and luxury residential penthouse units designed by Incept Architects.',
+    featuredImage: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png',
     gallery: [
-      '/ndl_projects/slide_097_img_1.jpg',
-      '/ndl_projects/slide_097_img_2.jpg',
-      '/ndl_projects/slide_099_img_1.jpg',
-      '/ndl_projects/slide_100_img_1.jpg',
-      '/ndl_projects/slide_101_img_1.jpg',
-      '/ndl_projects/slide_100_img_1.jpg',
+      '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png',
+      '/projects/mr_nataraj/nataraj_02_retail_showroom_elevation.png',
+      '/projects/mr_nataraj/nataraj_03_residential_penthouse_balcony_elevation.png',
+      '/projects/mr_nataraj/nataraj_04_hsr_layout_27th_main_avenue_perspective.png',
     ],
-    highlights: ['Total Project Cost: Rs 1.8 Crore', 'Commercial retail + Residential floors', 'Incept Architects design', 'HSR Layout 27th Main frontage'],
+    highlights: [
+      'Prime HSR Layout 27th Main commercial frontage',
+      'Verified Project Cost: Rs 1.8 Crore',
+      'G+4 Commercial retail showroom + office + residential penthouse',
+      'Incept Architects architectural design',
+      'Turnkey civil, electrical, and plumbing infrastructure',
+    ],
     stats: [
       { label: 'Cost', value: 'Rs 1.8 Crore' },
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
       { label: 'Architect', value: 'Incept Architects' },
-      { label: 'Location', value: 'HSR Layout 27th Main' }
+      { label: 'Location', value: 'HSR Layout, 27th Main, Bangalore' }
     ]
   },
   {

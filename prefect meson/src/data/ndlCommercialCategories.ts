@@ -125,7 +125,7 @@ export const commercialCategories: CommercialCategory[] = [
     title: 'Commercial-cum-Residential',
     tagline: 'Mixed-Use Commercial Complexes & Penthouses',
     description: 'Multi-level commercial-cum-residential structures with commercial retail / office floors below and private residential units above, executed with high-specification civil framing.',
-    representativeImage: '/ndl_projects/slide_097_img_1.jpg',
+    representativeImage: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png',
     representativeClient: 'Mr. Nataraj Complex',
     representativeArchitect: 'Incept Architects',
     projectIds: ['mr-nataraj'],

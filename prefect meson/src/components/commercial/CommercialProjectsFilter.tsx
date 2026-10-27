@@ -76,7 +76,7 @@ const commercialShowcaseList: CommercialCardItem[] = [
     city: 'Bangalore',
     sector: 'Retail',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_097_img_2.jpg'
+    image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
   },
   {
     id: 'take-5-bar',
