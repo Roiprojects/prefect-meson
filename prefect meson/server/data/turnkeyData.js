@@ -87,6 +87,8 @@ export const defaultTurnkeyItems = [
       '/projects/24x7_solutions/24x7_solutions_02_glass_cabin_framing.png',
       '/projects/24x7_solutions/24x7_solutions_03_modular_workstations.png',
       '/projects/24x7_solutions/24x7_solutions_04_executive_cabin_entrance.png',
+      '/projects/24x7_solutions/24x7_solutions_05_workstation_bays_glass_view.png',
+      '/projects/24x7_solutions/24x7_solutions_06_cabin_entrance_reception_staff.png',
     ],
     stages: [
       '01. Soil Borehole & Structural PE Framing Design',
