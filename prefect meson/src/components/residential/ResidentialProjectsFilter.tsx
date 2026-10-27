@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Building2, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
@@ -119,6 +119,20 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     sector: 'Multi-Storey',
     timelineCategory: '< 12 Mo',
     image: '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg'
+  },
+  {
+    id: 'mr-kumar',
+    client: 'Mr. Kumar',
+    statHeadline: '5,800 SQ.FT',
+    badge: 'Contemporary',
+    height: 'G+3',
+    timeline: '10 Mo',
+    rating: 'Civil + MEP Spec',
+    location: 'Jayanagar 5th Block, Bangalore',
+    city: 'Bangalore',
+    sector: 'Contemporary',
+    timelineCategory: '< 12 Mo',
+    image: '/projects/mr_kumar/kumar_01_contemporary_residence_facade.png'
   },
   {
     id: 'mr-kishore',
