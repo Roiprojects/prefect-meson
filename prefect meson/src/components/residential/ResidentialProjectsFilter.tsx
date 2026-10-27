@@ -113,12 +113,12 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     badge: 'Multi-Storey',
     height: 'G+3',
     timeline: '10 Mo',
-    rating: 'Design Grid',
-    location: 'Koramangala, Bangalore',
+    rating: 'Kerala Gabled Spec',
+    location: 'HSR Layout, 7th Sector, Bangalore',
     city: 'Bangalore',
     sector: 'Multi-Storey',
     timelineCategory: '< 12 Mo',
-    image: '/ndl_projects/slide_070_img_1.jpg'
+    image: '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg'
   },
   {
     id: 'mr-kishore',

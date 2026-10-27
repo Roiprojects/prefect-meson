@@ -225,21 +225,18 @@ export const ndlProjects: NDLProject[] = [
     architect: 'Kumar and Associates, Trivandrum',
     architectPractice: 'Kumar and Associates, Trivandrum',
     scope: 'Civil, Plumbing',
-    type: 'Residential Building',
+    type: 'Luxury Villa Residence',
     category: 'Residential',
-    description: 'Multi-level residential building in HSR Layout 7th Sector with robust RCC framing, fine plastering, structural brickwork, and comprehensive plumbing infrastructure.',
-    featuredImage: '/ndl_projects/slide_069_img_1.jpg',
+    description: 'Stately two-tier residential villa in HSR Layout 7th Sector featuring pitched Mangalore terracotta tiled roofs, grand cantilevered wrap-around balcony with viewing balustrade, stepped geometric iron entrance gate, and robust civil and sanitary plumbing execution.',
+    featuredImage: '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg',
     gallery: [
-      '/ndl_projects/slide_069_img_1.jpg',
-      '/ndl_projects/slide_070_img_1.jpg',
-      '/ndl_projects/slide_069_img_2.jpg',
-      '/ndl_projects/slide_072_img_1.jpg',
+      '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg',
     ],
-    highlights: ['Multi-level RCC frame', 'Precision masonry', 'Integrated plumbing', 'Kumar & Associates design'],
+    highlights: ['HSR Layout 7th Sector prime location', 'Pitched terracotta gabled roof villa', 'Wrap-around cantilevered balcony', 'Kumar and Associates Trivandrum design', 'Precision civil and plumbing execution'],
     stats: [
       { label: 'Scope', value: 'Civil + Plumbing' },
       { label: 'Architect', value: 'Kumar and Associates, Trivandrum' },
-      { label: 'Location', value: 'HSR Layout 7th Sector' }
+      { label: 'Location', value: 'HSR Layout, 7th Sector, Bangalore' }
     ]
   },
   {

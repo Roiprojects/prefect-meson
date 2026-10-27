@@ -1056,12 +1056,9 @@ const defaultResidentialItems: ResidentialItem[] = [
     category: 'Multi-Storey Urban Residences',
     tagline: 'Multi-Level Residence in HSR Layout 7th Sector',
     description: 'Multi-level residential building in HSR Layout 7th Sector with robust RCC framing, fine plastering, structural brickwork, and comprehensive plumbing infrastructure designed by Kumar & Associates Trivandrum.',
-    heroImage: '/ndl_projects/slide_069_img_1.jpg',
+    heroImage: '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg',
     galleryImages: [
-      '/ndl_projects/slide_069_img_1.jpg',
-      '/ndl_projects/slide_070_img_1.jpg',
-      '/ndl_projects/slide_069_img_2.jpg',
-      '/ndl_projects/slide_072_img_1.jpg',
+      '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg',
     ],
     features: [
       'Multi-level RCC frame with heavy load columns',
