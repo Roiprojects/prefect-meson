@@ -1,4 +1,4 @@
-﻿import { ndlProjects, NDLProject } from './ndlProjectsData';
+import { ndlProjects, NDLProject } from './ndlProjectsData';
 
 export interface ResidentialCategory {
   slug: string;
@@ -118,7 +118,7 @@ export const residentialCategories: ResidentialCategory[] = [
     title: 'Renovation & Extension',
     tagline: 'Structural Retrofitting & Facade Modernization',
     description: 'Professional structural retrofitting, vertical floor additions, facade modernization, and civil remodeling of existing residential properties.',
-    representativeImage: '/ndl_projects/slide_115_img_1.jpg',
+    representativeImage: '/projects/mrs_hema_saravanan/hema_saravanan_01_contemporary_urban_elevation.jpg',
     representativeClient: 'Mrs. Hema Saravanan Residence',
     representativeArchitect: 'Parallax Architects, JP Nagar',
     projectIds: ['mrs-hema-saravanan'],

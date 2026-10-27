@@ -135,6 +135,20 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     image: '/projects/mr_kumar/kumar_01_contemporary_residence_facade.png'
   },
   {
+    id: 'mrs-hema-saravanan',
+    client: 'Mrs. Hema Saravanan',
+    statHeadline: '4,900 SQ.FT',
+    badge: 'Contemporary',
+    height: 'G+3',
+    timeline: '9 Mo',
+    rating: 'Parallax Architects',
+    location: 'Delmia Circle, JP Nagar, Bangalore',
+    city: 'Bangalore',
+    sector: 'Contemporary',
+    timelineCategory: '< 12 Mo',
+    image: '/projects/mrs_hema_saravanan/hema_saravanan_01_contemporary_urban_elevation.jpg'
+  },
+  {
     id: 'mr-kishore',
     client: 'Mr. Kishore Residence',
     statHeadline: '6,800 SQ.FT',
