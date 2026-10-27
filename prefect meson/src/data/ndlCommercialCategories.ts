@@ -92,7 +92,7 @@ export const commercialCategories: CommercialCategory[] = [
     title: 'Corporate / Office Spaces',
     tagline: 'High-Performance Workspaces & Tech Parks',
     description: 'Modern commercial workspaces featuring open-plan workstations, glass architectural partitions, acoustic meeting rooms, and synchronized MEP infrastructure.',
-    representativeImage: '/ndl_projects/slide_042_img_1.jpg',
+    representativeImage: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png',
     representativeClient: '24x7 Solutions',
     representativeArchitect: 'Keystone Architects, Indiranagar',
     projectIds: ['24x7-solutions'],

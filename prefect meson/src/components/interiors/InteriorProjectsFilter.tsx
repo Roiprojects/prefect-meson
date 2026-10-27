@@ -52,17 +52,17 @@ const interiorShowcaseList: InteriorCardItem[] = [
   },
   {
     id: '24x7-solutions',
-    client: '24x7 Solutions Corporate Space',
+    client: '24x7 Solutions',
     statHeadline: '140,000 SQ.FT',
     badge: 'Corporate Fit-Out',
     height: 'G+5',
     timeline: '10 Mo',
-    rating: 'Grade-A Fit-Out',
-    location: 'Ulsoor, Bangalore',
+    rating: 'Keystone Architects, Indiranagar',
+    location: 'Near Ulsoor Lake, Bangalore',
     city: 'Bangalore',
     sector: 'Corporate',
     timelineCategory: '< 12 Mo',
-    image: '/ndl_projects/slide_043_img_1.jpg'
+    image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
   },
   {
     id: 'dr-anil-kush',

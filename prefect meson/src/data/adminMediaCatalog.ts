@@ -66,7 +66,7 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
   { id: 'proj-9', url: '/ndl_projects/slide_028_img_1.jpg', title: 'Master Bed Panorama View', category: 'Projects', tags: ['bedroom', 'view'] },
   { id: 'proj-10', url: '/ndl_projects/slide_034_img_1.jpg', title: 'Acoustic Home Cinema Lounge', category: 'Projects', tags: ['cinema', 'entertainment'] },
   { id: 'proj-11', url: '/ndl_projects/slide_038_img_1.jpg', title: 'Commercial Plaza Night Elevation', category: 'Projects', tags: ['night', 'lighting', 'plaza'] },
-  { id: 'proj-12', url: '/ndl_projects/slide_042_img_1.jpg', title: 'Corporate Double Height Lobby', category: 'Projects', tags: ['lobby', 'reception'] },
+  { id: 'proj-12', url: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png', title: '24x7 Solutions Reception Desk', category: 'Projects', tags: ['reception', 'commercial', 'fitout'] },
   { id: 'proj-13', url: '/ndl_projects/slide_046_img_1.jpg', title: 'Smart Automated Conference Suite', category: 'Projects', tags: ['conference', 'meeting'] },
   { id: 'proj-14', url: '/ndl_projects/slide_050_img_1.jpg', title: 'Industrial Grade Heavy Steel Truss', category: 'Projects', tags: ['industrial', 'steel', 'truss'] },
   { id: 'proj-15', url: '/ndl_projects/slide_056_img_1.jpg', title: 'Pre-Engineered Building Framework', category: 'Projects', tags: ['peb', 'framework'] },

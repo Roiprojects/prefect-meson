@@ -66,17 +66,17 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
   },
   {
     id: '24x7-solutions',
-    client: '24x7 Solutions Corporate Campus',
+    client: '24x7 Solutions',
     statHeadline: '140,000 SQ.FT',
     badge: 'Fit-Out EPC',
     height: 'G+5',
     timeline: '10 Mo',
-    rating: 'Grade-A Turnkey',
+    rating: 'Keystone Architects, Indiranagar',
     location: 'Near Ulsoor Lake, Bangalore',
     city: 'Bangalore',
     sector: 'Corporate EPC',
     timelineCategory: '< 12 Mo',
-    image: '/ndl_projects/slide_043_img_1.jpg'
+    image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
   },
   {
     id: 'mr-nataraj',

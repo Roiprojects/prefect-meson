@@ -57,12 +57,12 @@ const commercialShowcaseList: CommercialCardItem[] = [
     badge: 'Turnkey',
     height: 'G+5',
     timeline: '10 Mo',
-    rating: 'Grade-A Fit-Out',
+    rating: 'Keystone Architects, Indiranagar',
     location: 'Near Ulsoor Lake, Bangalore',
     city: 'Bangalore',
     sector: 'Office',
     timelineCategory: '< 12 Mo',
-    image: '/ndl_projects/slide_043_img_1.jpg'
+    image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
   },
   {
     id: 'mr-nataraj',

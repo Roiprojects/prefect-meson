@@ -81,11 +81,12 @@ export const defaultTurnkeyItems = [
     category: 'Commercial Turnkey',
     tagline: 'Fast-Track Commercial Turnkey Delivery with Tier-3 Infrastructure',
     description: 'Fast-track turnkey delivery of commercial corporate office spaces, tech parks, and business campuses near Ulsoor Lake. Covers basements, post-tensioned floors, unitized structural glazing facade, central HVAC, high-speed elevators, and acoustic workspaces.',
-    heroImage: '/ndl_projects/slide_042_img_1.jpg',
+    heroImage: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png',
     galleryImages: [
-      '/ndl_projects/slide_042_img_1.jpg',
-      '/ndl_projects/slide_044_img_1.jpg',
-      '/ndl_projects/slide_046_img_1.jpg',
+      '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png',
+      '/projects/24x7_solutions/24x7_solutions_02_glass_cabin_framing.png',
+      '/projects/24x7_solutions/24x7_solutions_03_modular_workstations.png',
+      '/projects/24x7_solutions/24x7_solutions_04_executive_cabin_entrance.png',
     ],
     stages: [
       '01. Soil Borehole & Structural PE Framing Design',
