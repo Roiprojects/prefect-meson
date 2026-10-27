@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { AdminLayout } from './AdminLayout';
 import { ADMIN_MEDIA_CATALOG } from '../../data/adminMediaCatalog';
 import { apiService, StorageFileItem } from '../../services/api';
+import { useData } from '../../context/DataContext';
 import {
   FolderOpen,
   Upload,
@@ -29,6 +30,8 @@ interface MediaItem {
 }
 
 export const AdminMediaLibrary: React.FC = () => {
+  const { projects, residentialItems, commercialItems, turnkeyItems, interiorItems } = useData();
+
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedItem, setSelectedItem] = useState<MediaItem | null>(null);
@@ -62,9 +65,9 @@ export const AdminMediaLibrary: React.FC = () => {
           id: f.id,
           title: f.originalName || f.filename,
           url: f.url,
-          category: f.bucketId.charAt(0).toUpperCase() + f.bucketId.slice(1),
-          size: `${Math.round(f.sizeBytes / 1024)} KB`,
-          uploadedAt: new Date(f.createdAt).toLocaleDateString(),
+          category: f.bucketId ? (f.bucketId.charAt(0).toUpperCase() + f.bucketId.slice(1)) : 'General',
+          size: f.sizeBytes ? `${Math.round(f.sizeBytes / 1024)} KB` : '350 KB',
+          uploadedAt: f.createdAt ? new Date(f.createdAt).toLocaleDateString() : 'Active Storage',
           isCustom: true,
         }));
         setCustomMedia(mapped);
@@ -76,36 +79,115 @@ export const AdminMediaLibrary: React.FC = () => {
     return () => { isMounted = false; };
   }, []);
 
-  // Merge built-in media catalog with custom database uploads
-  const allMedia: MediaItem[] = [
-    ...customMedia,
-    ...ADMIN_MEDIA_CATALOG.map((item) => ({
-      id: item.id,
-      title: item.title,
-      url: item.url,
-      category: item.category,
-      size: item.size || '350 KB',
-      dimensions: item.dimensions || '1920x1080',
-      uploadedAt: 'System Catalog',
-      tags: item.tags,
-      isCustom: false,
-    })),
-  ];
+  // Dynamically extract all project images from live DataContext
+  const dynamicProjectMedia: MediaItem[] = useMemo(() => {
+    const list: MediaItem[] = [];
+    const seen = new Set<string>();
+
+    const addImg = (url: string | undefined, title: string, category: string, client?: string) => {
+      if (!url || typeof url !== 'string' || !url.startsWith('/') || seen.has(url)) return;
+      seen.add(url);
+      list.push({
+        id: 'dyn-' + url.replace(/[^a-zA-Z0-9]/g, '-'),
+        title,
+        url,
+        category: category || 'Projects',
+        size: '380 KB',
+        dimensions: '1920x1080',
+        uploadedAt: 'Active Projects',
+        tags: [client || '', category || '', 'live-project'].filter(Boolean),
+        isCustom: false,
+      });
+    };
+
+    projects.forEach(p => {
+      addImg(p.image, `${p.title} - Main Image`, p.category || 'Projects', p.client);
+      (p.galleryImages || []).forEach((img, idx) => {
+        addImg(img, `${p.title} - Photo #${idx + 1}`, p.category || 'Projects', p.client);
+      });
+    });
+
+    residentialItems.forEach(r => {
+      addImg(r.heroImage, `${r.title} - Hero`, 'Residential', r.client);
+      (r.galleryImages || []).forEach((img, idx) => {
+        addImg(img, `${r.title} - Photo #${idx + 1}`, 'Residential', r.client);
+      });
+    });
+
+    commercialItems.forEach(c => {
+      addImg(c.heroImage, `${c.title} - Hero`, 'Commercial', c.client);
+      (c.galleryImages || []).forEach((img, idx) => {
+        addImg(img, `${c.title} - Photo #${idx + 1}`, 'Commercial', c.client);
+      });
+    });
+
+    turnkeyItems.forEach(t => {
+      addImg(t.heroImage, `${t.title} - Hero`, 'Turnkey');
+      (t.galleryImages || []).forEach((img, idx) => {
+        addImg(img, `${t.title} - Photo #${idx + 1}`, 'Turnkey');
+      });
+    });
+
+    interiorItems.forEach(i => {
+      addImg(i.heroImage, `${i.title} - Hero`, 'Interiors');
+      (i.galleryImages || []).forEach((img, idx) => {
+        addImg(img, `${i.title} - Photo #${idx + 1}`, 'Interiors');
+      });
+    });
+
+    return list;
+  }, [projects, residentialItems, commercialItems, turnkeyItems, interiorItems]);
+
+  // Merge built-in media catalog, live projects, and database storage with URL de-duplication
+  const allMedia: MediaItem[] = useMemo(() => {
+    const map = new Map<string, MediaItem>();
+
+    // 1. Built-in media catalog (with all 106 authentic project images)
+    ADMIN_MEDIA_CATALOG.forEach((item) => {
+      map.set(item.url, {
+        id: item.id,
+        title: item.title,
+        url: item.url,
+        category: item.category,
+        size: item.size || '350 KB',
+        dimensions: item.dimensions || '1920x1080',
+        uploadedAt: 'System Catalog',
+        tags: item.tags,
+        isCustom: false,
+      });
+    });
+
+    // 2. Dynamic live project media from DataContext
+    dynamicProjectMedia.forEach((item) => {
+      if (!map.has(item.url)) {
+        map.set(item.url, item);
+      }
+    });
+
+    // 3. PostgreSQL database uploads (customMedia)
+    customMedia.forEach((item) => {
+      map.set(item.url, item);
+    });
+
+    return Array.from(map.values());
+  }, [customMedia, dynamicProjectMedia]);
 
   // Filter items
-  const filteredItems = allMedia.filter((item) => {
-    const matchesCat =
-      activeCategory === 'All' ||
-      item.category.toLowerCase() === activeCategory.toLowerCase();
+  const filteredItems = useMemo(() => {
+    return allMedia.filter((item) => {
+      const matchesCat =
+        activeCategory === 'All' ||
+        item.category.toLowerCase() === activeCategory.toLowerCase();
 
-    const matchesSearch =
-      !searchQuery.trim() ||
-      item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.url.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (item.tags && item.tags.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase())));
+      const matchesSearch =
+        !searchQuery.trim() ||
+        item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        item.url.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (item.tags && item.tags.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase())));
 
-    return matchesCat && matchesSearch;
-  });
+      return matchesCat && matchesSearch;
+    });
+  }, [allMedia, activeCategory, searchQuery]);
 
   // Handle Drag & Drop Upload
   const handleFileUpload = async (files: FileList | null) => {
