@@ -1145,6 +1145,39 @@ const defaultResidentialItems: ResidentialItem[] = [
     status: 'Completed',
     featured: true,
   },
+  {
+    id: 'res-13',
+    slug: 'res-niranjan',
+    number: '13',
+    title: 'Dr. Niranjan Residence',
+    category: 'Contemporary Residences',
+    tagline: 'Modernist Private Villa in 5th Block Jayanagar',
+    description: 'High-specification contemporary private villa residence in 5th Block Jayanagar featuring clean white modernist architectural elevations, rich timber-framed louvered windows, expansive open roof viewing terrace, and a beautifully landscaped front lawn with circular floral bedding and permeable grass-cell pavers, executed with complete civil, electrical, and plumbing infrastructure designed by Mr. Ragavan.',
+    heroImage: '/projects/dr_niranjan/dr_niranjan_01_contemporary_white_villa_facade.jpg',
+    galleryImages: [
+      '/projects/dr_niranjan/dr_niranjan_01_contemporary_white_villa_facade.jpg',
+      '/projects/dr_niranjan/dr_niranjan_02_landscaped_garden_grass_pavers.jpg',
+    ],
+    features: [
+      'Clean white modernist villa facade',
+      'Timber louvered fenestrations & roof viewing terrace',
+      'Manicured front lawn garden & permeable grass pavers',
+      '5th Block Jayanagar prime location',
+      'Mr. Ragavan architectural design & civil MEP execution',
+    ],
+    specs: [
+      'Heavy civil RCC framed structure with waterproof foundation.',
+      'Hardwood door frames with premium louvered timber sash windows.',
+      'Concealed conduit electrical routing and high-durability plumbing lines.',
+    ],
+    client: 'Dr. Niranjan',
+    architect: 'Mr. Ragavan',
+    builtArea: '4,800 Sq.Ft',
+    pricePerSqFt: '₹2,750 / Sq.Ft',
+    timeline: '10 Months',
+    status: 'Completed',
+    featured: true,
+  },
 ];
 
 const defaultTurnkeyItems: TurnkeyItem[] = [

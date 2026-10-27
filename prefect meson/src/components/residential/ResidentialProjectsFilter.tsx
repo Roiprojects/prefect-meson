@@ -149,6 +149,20 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     image: '/projects/mrs_hema_saravanan/hema_saravanan_01_contemporary_urban_elevation.jpg'
   },
   {
+    id: 'dr-niranjan',
+    client: 'Dr. Niranjan',
+    statHeadline: '4,800 SQ.FT',
+    badge: 'Contemporary',
+    height: 'G+2',
+    timeline: '10 Mo',
+    rating: 'Modernist Villa',
+    location: '5th Block, Jayanagar, Bangalore',
+    city: 'Bangalore',
+    sector: 'Contemporary',
+    timelineCategory: '< 12 Mo',
+    image: '/projects/dr_niranjan/dr_niranjan_01_contemporary_white_villa_facade.jpg'
+  },
+  {
     id: 'mr-kishore',
     client: 'Mr. Kishore Residence',
     statHeadline: '6,800 SQ.FT',

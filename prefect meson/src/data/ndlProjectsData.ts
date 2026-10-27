@@ -485,17 +485,23 @@ export const ndlProjects: NDLProject[] = [
     scope: 'Residence: Civil, Electric & Plumbing',
     type: 'Premium Jayanagar Residence',
     category: 'Residential',
-    description: 'High-specification private villa residence in 5th Block Jayanagar featuring traditional courtyards, precision brick masonry, concealed conduits, and premium sanitary installations.',
-    featuredImage: '/ndl_projects/slide_121_img_1.jpg',
+    description: 'High-specification contemporary private villa residence in 5th Block Jayanagar featuring clean white modernist architectural elevations, rich timber-framed louvered windows, expansive open roof viewing terrace, and a beautifully landscaped front lawn with circular floral bedding and permeable grass-cell pavers, executed with complete civil, electrical, and plumbing infrastructure designed by Mr. Ragavan.',
+    featuredImage: '/projects/dr_niranjan/dr_niranjan_01_contemporary_white_villa_facade.jpg',
     gallery: [
-      '/ndl_projects/slide_121_img_1.jpg',
-      '/ndl_projects/slide_122_img_1.jpg',
+      '/projects/dr_niranjan/dr_niranjan_01_contemporary_white_villa_facade.jpg',
+      '/projects/dr_niranjan/dr_niranjan_02_landscaped_garden_grass_pavers.jpg',
     ],
-    highlights: ['5th Block Jayanagar location', 'Mr. Ragavan architectural design', 'Civil + MEP infrastructure'],
+    highlights: [
+      '5th Block Jayanagar prime location',
+      'Clean white modernist villa facade',
+      'Timber louvered fenestrations & roof viewing terrace',
+      'Manicured front lawn garden & permeable grass pavers',
+      'Mr. Ragavan architectural design & civil MEP execution',
+    ],
     stats: [
       { label: 'Scope', value: 'Civil + Electric & Plumbing' },
       { label: 'Architect', value: 'Mr. Ragavan' },
-      { label: 'Location', value: '5th Block, Jayanagar' }
+      { label: 'Location', value: '5th Block, Jayanagar, Bangalore' }
     ]
   },
   {
