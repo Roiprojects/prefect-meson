@@ -558,24 +558,23 @@ export const ndlProjects: NDLProject[] = [
     id: 'mr-rakesh-n-rao',
     client: 'Mr. Rakesh N. Rao',
     title: 'Mr. Rakesh N. Rao Residence',
-    location: 'Bangalore',
+    location: '# 210, HSR Layout, Bangalore',
     city: 'Bangalore',
-    architect: 'Architecture Paradigm',
+    architect: 'Architecture Paradigm, 6th block, Koramangala',
     architectPractice: 'Architecture Paradigm',
-    scope: 'Civil and Structural Framing',
-    type: 'Residential Architecture',
+    scope: 'Civil, Structural Framing and Landscaping Works',
+    type: 'Luxury Villa Residence',
     category: 'Residential',
-    description: 'High-end architectural residence featuring exposed concrete shuttering, expansive fenestrations, and refined masonry executed under Architecture Paradigm.',
-    featuredImage: '/ndl_projects/slide_016_img_1.jpg',
+    description: 'Contemporary luxury villa # 210 in HSR Layout, Bangalore featuring white gabled architecture, decorative entrance pergola with columnar framing, dressed stone masonry boundary wall with integrated letterbox, and landscaped frontage.',
+    featuredImage: '/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg',
     gallery: [
-      '/ndl_projects/slide_016_img_1.jpg',
-      '/ndl_projects/slide_017_img_1.jpg',
+      '/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg',
     ],
-    highlights: ['Architecture Paradigm design', 'Exposed concrete shuttering', 'Precision civil framing'],
+    highlights: ['# 210, HSR Layout prime location', 'Gabled roof villa architecture', 'Entrance pergola with colonnade', 'Dressed stone boundary masonry', 'Architecture Paradigm design'],
     stats: [
-      { label: 'Scope', value: 'Civil and Structural Framing' },
+      { label: 'Scope', value: 'Civil + Structural + Finishing' },
       { label: 'Architect', value: 'Architecture Paradigm, 6th block, Koramangala' },
-      { label: 'Location', value: 'Bangalore' }
+      { label: 'Location', value: '# 210, HSR Layout, Bangalore' }
     ]
   },
   {

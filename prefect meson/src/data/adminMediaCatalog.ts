@@ -74,7 +74,7 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
   { id: 'proj-17', url: '/ndl_projects/slide_068_img_1.jpg', title: 'Finished Architectural Exterior', category: 'Projects', tags: ['exterior', 'completed'] },
   { id: 'proj-18', url: '/ndl_projects/slide_074_img_1.jpg', title: 'Bespoke Lighting Design Ceiling', category: 'Projects', tags: ['lighting', 'ceiling'] },
   { id: 'proj-19', url: '/ndl_projects/slide_080_img_1.jpg', title: 'Architectural Stone Cladding Details', category: 'Projects', tags: ['stone', 'cladding'] },
-  { id: 'proj-20', url: '/ndl_projects/slide_094_img_1.jpg', title: 'Turnkey Handover Masterpiece', category: 'Projects', tags: ['handover', 'turnkey'] },
+  { id: 'proj-20', url: '/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg', title: 'Mr. Rakesh N. Rao Villa #210 HSR Layout', category: 'Projects', tags: ['residential', 'villa', 'hsr-layout'] },
 
   // General & Branding
   { id: 'gen-1', url: '/images/hero-desktop.jpg', title: 'Perfect Mason Main Architectural Hero', category: 'General', tags: ['hero', 'main', 'brand'] },
