@@ -52,7 +52,7 @@ export const residentialCategories: ResidentialCategory[] = [
     title: 'Villas',
     tagline: 'Stately Gated Townships & Private Plot Residences',
     description: 'Stately villa construction across gated townships and private plots, featuring cantilevered balconies, stone masonry, pergola framing, and expansive perimeter landscaping.',
-    representativeImage: '/ndl_projects/slide_057_img_1.jpg',
+    representativeImage: '/projects/mr_vittal_das_shetty/vittal_das_shetty_01_stone_pylon_elevation.jpg',
     representativeClient: 'Mr. Vittal Das Shetty Residence',
     representativeArchitect: 'Keystone Architects, Indiranagar',
     projectIds: ['mr-vittal-das-shetty'],

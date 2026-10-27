@@ -69,7 +69,7 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
   { id: 'proj-12', url: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png', title: '24x7 Solutions Reception Desk', category: 'Projects', tags: ['reception', 'commercial', 'fitout'] },
   { id: 'proj-13', url: '/ndl_projects/slide_046_img_1.jpg', title: 'Smart Automated Conference Suite', category: 'Projects', tags: ['conference', 'meeting'] },
   { id: 'proj-14', url: '/projects/mr_praveen_kumar/praveen_kumar_01_tiered_roof_elevation.png', title: 'Mr. Praveen Kumar Tiered Roof Villa', category: 'Projects', tags: ['residential', 'villa', 'brick'] },
-  { id: 'proj-15', url: '/ndl_projects/slide_056_img_1.jpg', title: 'Pre-Engineered Building Framework', category: 'Projects', tags: ['peb', 'framework'] },
+  { id: 'proj-15', url: '/projects/mr_vittal_das_shetty/vittal_das_shetty_01_stone_pylon_elevation.jpg', title: 'Mr. Vittal Das Shetty Stone Tower Villa', category: 'Projects', tags: ['residential', 'villa', 'stone'] },
   { id: 'proj-16', url: '/ndl_projects/slide_062_img_1.jpg', title: 'Structural Concrete Pouring Phase', category: 'Projects', tags: ['concrete', 'construction'] },
   { id: 'proj-17', url: '/ndl_projects/slide_068_img_1.jpg', title: 'Finished Architectural Exterior', category: 'Projects', tags: ['exterior', 'completed'] },
   { id: 'proj-18', url: '/ndl_projects/slide_074_img_1.jpg', title: 'Bespoke Lighting Design Ceiling', category: 'Projects', tags: ['lighting', 'ceiling'] },

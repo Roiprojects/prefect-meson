@@ -52,17 +52,17 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   },
   {
     id: 'mr-vittal-das-shetty',
-    client: 'Mr. Vittal Das Shetty Residence',
+    client: 'Mr. Vittal Das Shetty',
     statHeadline: '9,500 SQ.FT',
     badge: 'Luxury Villa',
-    height: 'G+3',
+    height: 'G+2',
     timeline: '18 Mo',
-    rating: 'Studio Form',
-    location: 'Indiranagar, Bangalore',
+    rating: 'Keystone Architects, Indiranagar',
+    location: 'Asha Township, Doddagubbi, Hosakote',
     city: 'Bangalore',
     sector: 'Luxury Villa',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_056_img_1.jpg'
+    image: '/projects/mr_vittal_das_shetty/vittal_das_shetty_01_stone_pylon_elevation.jpg'
   },
   {
     id: 'mr-praveen-kumar',
