@@ -1178,6 +1178,38 @@ const defaultResidentialItems: ResidentialItem[] = [
     status: 'Completed',
     featured: true,
   },
+  {
+    id: 'res-14',
+    slug: 'res-kishore',
+    number: '14',
+    title: 'Mr. Kishore Residence',
+    category: 'Contemporary Residences',
+    tagline: 'Custom Brick Facade & Timber Pergola Villa in Yediyur Jayanagar',
+    description: 'Custom private residence in Yediyur, Jayanagar featuring warm wire-cut exposed brick cladding, pitched terracotta roof eaves, timber pergola balcony framing, and vertical stone slab compound masonry, executed with comprehensive civil, electrical, and plumbing engineering designed by Meenal J. Cavale.',
+    heroImage: '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg',
+    galleryImages: [
+      '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg',
+    ],
+    features: [
+      'Wire-cut exposed brick facade cladding',
+      'Timber pergola balcony framing & tiled roof eaves',
+      'Vertical stone slab compound masonry',
+      'Yediyur Jayanagar prime location',
+      'Meenal J. Cavale architectural design',
+    ],
+    specs: [
+      'RCC framed structure with exterior exposed brick veneer.',
+      'Custom timber pergola posts and terracotta eaves protection.',
+      'Full civil, electrical conduit layout, and sanitary plumbing lines.',
+    ],
+    client: 'Mr. Kishore',
+    architect: 'Meenal J. Cavale',
+    builtArea: '4,500 Sq.Ft',
+    pricePerSqFt: '₹2,750 / Sq.Ft',
+    timeline: '10 Months',
+    status: 'Completed',
+    featured: true,
+  },
 ];
 
 const defaultTurnkeyItems: TurnkeyItem[] = [

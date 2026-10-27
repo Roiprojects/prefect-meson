@@ -641,13 +641,13 @@ export const galleryProjects = [] = [
     architect: 'Meenal J. Cavale',
     architectPractice: 'Meenal J. Cavale',
     scope: 'Residence: Civil, Electric, Plumbing',
-    description: 'Distinctive residence in Yediyur, Jayanagar featuring architectural brick facades, elegant cantilevered overhangs, and detailed MEP execution designed by Meenal J. Cavale.',
+    description: 'Custom private residence in Yediyur, Jayanagar featuring warm wire-cut exposed brick cladding, pitched terracotta roof eaves, timber pergola balcony framing, and vertical stone slab compound masonry designed by Meenal J. Cavale.',
     featured: false,
-    image: '/ndl_projects/slide_122_img_1.jpg',
+    image: '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg',
     galleryImages: [
-      '/ndl_projects/slide_122_img_1.jpg',
+      '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg',
     ],
-    highlights: ['Yediyur Jayanagar location', 'Meenal J. Cavale design', 'Refined brick & RCC framing'],
+    highlights: ['Yediyur Jayanagar location', 'Meenal J. Cavale design', 'Wire-cut brick cladding & timber pergolas'],
     specs: [
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
       { label: 'Architect', value: 'Meenal J. Cavale' },

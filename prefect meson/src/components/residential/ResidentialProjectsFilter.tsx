@@ -165,20 +165,20 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-kishore',
     client: 'Mr. Kishore Residence',
-    statHeadline: '6,800 SQ.FT',
+    statHeadline: '4,500 SQ.FT',
     badge: 'Contemporary',
     height: 'G+2',
-    timeline: '12 Mo',
-    rating: 'Space Matrix',
-    location: 'Whitefield, Bangalore',
+    timeline: '10 Mo',
+    rating: 'Meenal J. Cavale',
+    location: 'Yediyur, Jayanagar, Bangalore',
     city: 'Bangalore',
     sector: 'Contemporary',
-    timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_117_img_2.jpg'
+    timelineCategory: '< 12 Mo',
+    image: '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg'
   }
 ];
 
-const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Whitefield'];
+const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Whitefield'];
 const sectors = ['Luxury Villa', 'Contemporary', 'Multi-Storey', 'Residential Complex'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
