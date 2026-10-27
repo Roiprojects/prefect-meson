@@ -109,16 +109,16 @@ const interiorShowcaseList: InteriorCardItem[] = [
   {
     id: 'mr-uma-shankar-agarwal',
     client: 'Mr. Uma Shankar Agarwal Residence',
-    statHeadline: '11,000 SQ.FT',
-    badge: 'Modular Joinery',
+    statHeadline: '6,200 SQ.FT',
+    badge: 'Luxury Residence',
     height: 'G+2',
-    timeline: '15 Mo',
-    rating: 'Seasoned Teak & Jaali',
-    location: 'RMV Extension, Bangalore',
+    timeline: '10 Mo',
+    rating: 'Still Water Architects',
+    location: 'JP Nagar Phase 2, Near Mini Forest, Bangalore',
     city: 'Bangalore',
-    sector: 'Modular Millwork',
+    sector: 'Luxury Residential',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_076_img_1.jpg'
+    image: '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_01_double_height_living_mezzanine.png'
   },
   {
     id: 'mr-mahanthesh-bellad',

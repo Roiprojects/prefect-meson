@@ -72,7 +72,7 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
   { id: 'proj-15', url: '/projects/mr_vittal_das_shetty/vittal_das_shetty_01_stone_pylon_elevation.jpg', title: 'Mr. Vittal Das Shetty Stone Tower Villa', category: 'Projects', tags: ['residential', 'villa', 'stone'] },
   { id: 'proj-16', url: '/ndl_projects/slide_062_img_1.jpg', title: 'Structural Concrete Pouring Phase', category: 'Projects', tags: ['concrete', 'construction'] },
   { id: 'proj-17', url: '/ndl_projects/slide_068_img_1.jpg', title: 'Finished Architectural Exterior', category: 'Projects', tags: ['exterior', 'completed'] },
-  { id: 'proj-18', url: '/ndl_projects/slide_074_img_1.jpg', title: 'Bespoke Lighting Design Ceiling', category: 'Projects', tags: ['lighting', 'ceiling'] },
+  { id: 'proj-18', url: '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_01_double_height_living_mezzanine.png', title: 'Mr. Uma Shankar Agarwal Mezzanine Living', category: 'Projects', tags: ['living', 'mezzanine', 'jp-nagar'] },
   { id: 'proj-19', url: '/ndl_projects/slide_080_img_1.jpg', title: 'Architectural Stone Cladding Details', category: 'Projects', tags: ['stone', 'cladding'] },
   { id: 'proj-20', url: '/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg', title: 'Mr. Rakesh N. Rao Villa #210 HSR Layout', category: 'Projects', tags: ['residential', 'villa', 'hsr-layout'] },
 

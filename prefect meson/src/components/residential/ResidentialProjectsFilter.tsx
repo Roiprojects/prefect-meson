@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Building2, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
@@ -81,16 +81,16 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-uma-shankar-agarwal',
     client: 'Mr. Uma Shankar Agarwal Residence',
-    statHeadline: '11,000 SQ.FT',
+    statHeadline: '6,200 SQ.FT',
     badge: 'Luxury Villa',
     height: 'G+2',
-    timeline: '15 Mo',
-    rating: 'Kiran & Associates',
-    location: 'RMV Extension, Bangalore',
+    timeline: '10 Mo',
+    rating: 'Still Water Architects',
+    location: 'JP Nagar Phase 2, Near Mini Forest, Bangalore',
     city: 'Bangalore',
     sector: 'Luxury Villa',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_076_img_1.jpg'
+    image: '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_01_double_height_living_mezzanine.png'
   },
   {
     id: 'mr-mahanthesh-bellad',
