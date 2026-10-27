@@ -103,7 +103,7 @@ export const commercialCategories: CommercialCategory[] = [
     title: 'Restaurant & Hospitality',
     tagline: 'Bespoke Dining, Bars & Resto-Lounges',
     description: 'Comprehensive hospitality civil engineering, specialized acoustics, custom bar joinery, ambient lighting networks, and high-specification commercial MEP installations.',
-    representativeImage: '/ndl_projects/slide_064_img_1.jpg',
+    representativeImage: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
     representativeClient: 'TAKE 5 Bar and Restaurant',
     representativeArchitect: 'Kiran and Associates, Bombay',
     projectIds: ['take-5-bar'],

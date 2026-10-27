@@ -118,7 +118,7 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
     city: 'Bangalore',
     sector: 'Hospitality EPC',
     timelineCategory: '< 12 Mo',
-    image: '/ndl_projects/slide_064_img_1.jpg'
+    image: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png'
   },
   {
     id: 'zenith-tech-tower',

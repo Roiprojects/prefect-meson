@@ -217,12 +217,10 @@ export const defaultCommercialItems = [
     category: 'Restaurant & Hospitality',
     tagline: 'Iconic Hospitality Interior & Civil Execution in Indiranagar',
     description: 'Iconic hospitality interior and civil execution in Defence Colony, Indiranagar featuring custom wood joinery, acoustic bar counters, ambient lighting networks, and specialized commercial MEP layout designed by Kiran & Associates Bombay.',
-    heroImage: '/ndl_projects/slide_064_img_1.jpg',
+    heroImage: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
     galleryImages: [
-      '/ndl_projects/slide_064_img_1.jpg',
-      '/ndl_projects/slide_065_img_1.jpg',
-      '/ndl_projects/slide_066_img_1.jpg',
-      '/ndl_projects/slide_067_img_1.jpg',
+      '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
+      '/projects/take_5_bar/take_5_bar_02_service_counter_dining_partition.jpg',
     ],
     capabilities: [
       'Commercial Bar Joinery & Millwork',

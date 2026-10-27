@@ -81,12 +81,10 @@ export const defaultInteriorItems = [
     spaceType: 'Commercial',
     tagline: 'Atmospheric Mood Lighting, Custom Teak Bar & Acoustic Baffles',
     description: 'Immersive hospitality dining venue featuring custom solid teak and brass joinery, translucent backlit onyx island bar counters, ceiling acoustic wood baffles, and commercial stainless-steel kitchen MEP coordination in Defence Colony, Indiranagar.',
-    heroImage: '/ndl_projects/slide_064_img_1.jpg',
+    heroImage: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
     galleryImages: [
-      '/ndl_projects/slide_064_img_1.jpg',
-      '/ndl_projects/slide_065_img_1.jpg',
-      '/ndl_projects/slide_066_img_1.jpg',
-      '/ndl_projects/slide_067_img_1.jpg',
+      '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
+      '/projects/take_5_bar/take_5_bar_02_service_counter_dining_partition.jpg',
     ],
     materials: [
       'Translucent Honey Onyx Backlit Bar Counter',

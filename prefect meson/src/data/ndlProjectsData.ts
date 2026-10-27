@@ -204,14 +204,12 @@ export const ndlProjects: NDLProject[] = [
     type: 'Restaurant & Bar Hospitality Fit-Out',
     category: 'Commercial',
     description: 'Iconic hospitality interior and civil execution in Defence Colony, Indiranagar featuring custom wood joinery, acoustic bar counters, ambient lighting networks, and specialized commercial MEP layout.',
-    featuredImage: '/ndl_projects/slide_064_img_1.jpg',
+    featuredImage: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
     gallery: [
-      '/ndl_projects/slide_064_img_1.jpg',
-      '/ndl_projects/slide_065_img_1.jpg',
-      '/ndl_projects/slide_066_img_1.jpg',
-      '/ndl_projects/slide_067_img_1.jpg',
+      '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
+      '/projects/take_5_bar/take_5_bar_02_service_counter_dining_partition.jpg',
     ],
-    highlights: ['Commercial bar joinery', 'Acoustic hospitality fit-out', 'Specialized MEP & lighting', 'Kiran & Associates Bombay design'],
+    highlights: ['Polished black granite bar counter', 'Custom overhead glass & wine rack', 'Service counter & frosted glass partition', 'Kiran and Associates Bombay design'],
     stats: [
       { label: 'Scope', value: 'Civil + Electrical + Plumbing + Interiors' },
       { label: 'Architect', value: 'Kiran and Associates, Bombay' },
