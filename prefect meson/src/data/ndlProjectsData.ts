@@ -65,37 +65,27 @@ export const ndlProjects: NDLProject[] = [
     id: 'mr-sarabjith-ghose',
     client: 'Mr. Sarabjith Ghose',
     title: 'Mr. Sarabjith Ghose Residence',
-    location: 'Mantri Lakeview, Talagattapura / Kanakapura Main Road',
+    location: '# 17, Mantri Lakeview, Talagattapura, Kanakapura Main Road',
     city: 'Bangalore',
-    architect: 'Gaurav Roy Chaudary / GRC Architects',
-    architectPractice: 'GRC Architects',
+    architect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
+    architectPractice: 'GRC Architects / Gaurav Roy Chaudary',
     scope: 'Civil, Plumbing and Electrical Works',
     type: 'Contemporary Residence',
     category: 'Residential',
-    description: 'Distinctive contemporary private residence featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, and custom fenestrations designed by Gaurav Roy Chaudary.',
-    featuredImage: '/ndl_projects/slide_026_img_1.jpg',
+    description: 'Distinctive contemporary private residence at # 17, Mantri Lakeview, Talagattapura, Kanakapura Main Road featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, cantilevered stone floating staircase, and complete civil, plumbing, and electrical works designed by Gaurav Roy Chaudary, 7th Sector, HSR Layout.',
+    featuredImage: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.jpg',
     gallery: [
-      '/ndl_projects/slide_026_img_1.jpg',
-      '/ndl_projects/slide_027_img_1.jpg',
-      '/ndl_projects/slide_028_img_1.jpg',
-      '/ndl_projects/slide_029_img_1.jpg',
-      '/ndl_projects/slide_030_img_1.jpg',
-      '/ndl_projects/slide_031_img_1.jpg',
-      '/ndl_projects/slide_031_img_1.jpg',
-      '/ndl_projects/slide_033_img_1.jpg',
-      '/ndl_projects/slide_034_img_1.jpg',
-      '/ndl_projects/slide_035_img_1.jpg',
-      '/ndl_projects/slide_036_img_1.jpg',
-      '/ndl_projects/slide_037_img_1.jpg',
-      '/ndl_projects/slide_038_img_1.jpg',
-      '/ndl_projects/slide_039_img_1.jpg',
-      '/ndl_projects/slide_040_img_1.jpg',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.jpg',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_02_front_facade.jpg',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_03_cantilever_terrace.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_04_brick_floating_staircase.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_05_entrance_compound.png',
     ],
     highlights: ['Wire-cut brick masonry', 'Cantilevered architectural volumes', 'Split level zoning', 'Gaurav Roy Chaudary design'],
     stats: [
-      { label: 'Scope', value: 'Civil + Plumbing + Electrical' },
-      { label: 'Architect', value: 'GRC Architects' },
-      { label: 'Location', value: 'Mantri Lakeview, Talagattapura' }
+      { label: 'Scope', value: 'Civil, Plumbing and Electrical Works' },
+      { label: 'Architect', value: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout' },
+      { label: 'Location', value: '# 17, Mantri Lakeview, Talagattapura, Kanakapura Main Road' }
     ]
   },
   {
@@ -150,7 +140,7 @@ export const ndlProjects: NDLProject[] = [
     ],
     highlights: ['Double height living spaces', 'Custom skylight integration', 'Precision civil framing', 'Keystone Architects design'],
     stats: [
-      { label: 'Scope', value: 'Civil + Plumbing + Electrical' },
+      { label: 'Scope', value: 'Civil, Plumbing and Electrical Works' },
       { label: 'Architect', value: 'Keystone Architects' },
       { label: 'Location', value: 'KR Puram, Bangalore' }
     ]
@@ -422,7 +412,7 @@ export const ndlProjects: NDLProject[] = [
     highlights: ['Exposed brick & concrete expression', 'Gaurav Roy Choudury architectural design', 'Happy Valley Layout location'],
     stats: [
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
-      { label: 'Architect', value: 'GRC Architects' },
+      { label: 'Architect', value: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout' },
       { label: 'Location', value: 'Happy Valley Layout, Uttarahalli' }
     ]
   },

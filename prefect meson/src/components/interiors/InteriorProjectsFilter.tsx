@@ -80,17 +80,17 @@ const interiorShowcaseList: InteriorCardItem[] = [
   },
   {
     id: 'mr-sarabjith-ghose',
-    client: 'Mr. Sarabjith Ghose Residence',
-    statHeadline: '8,500 SQ.FT',
+    client: 'Mr. Sarabjith Ghose',
+    statHeadline: '5,800 SQ.FT',
     badge: 'Modular Joinery',
     height: 'G+2',
-    timeline: '14 Mo',
-    rating: 'Italian Marble & Veneer',
-    location: 'Mantri Lakeview, Bangalore',
+    timeline: '11 Mo',
+    rating: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
+    location: '# 17, Mantri Lakeview, Talagattapura, Kanakapura Main Road',
     city: 'Bangalore',
     sector: 'Modular Millwork',
-    timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_011_img_2.jpg'
+    timelineCategory: '< 12 Mo',
+    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_04_brick_floating_staircase.png'
   },
   {
     id: 'mr-vittal-das-shetty',

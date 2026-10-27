@@ -41,9 +41,9 @@ export const residentialCategories: ResidentialCategory[] = [
     title: 'Eco-Friendly Homes (Design & Execution)',
     tagline: 'Wire-Cut Brick Masonry, SMBs & Sustainable Architecture',
     description: 'Environmentally conscious sustainable residences featuring wire-cut brick masonry, stabilized mud blocks (SMB), passive thermal planning, natural courtyards, rainwater harvesting, end-to-end engineering consultation, architectural design, and turnkey civil execution.',
-    representativeImage: '/assets/service_residential_generated.jpg',
-    representativeClient: 'Mr. Sarabjith Ghose Residence',
-    representativeArchitect: 'Gaurav Roy Chaudary / GRC Architects',
+    representativeImage: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.jpg',
+    representativeClient: 'Mr. Sarabjith Ghose',
+    representativeArchitect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
     projectIds: ['mr-sarabjith-ghose', 'mr-mahanthesh-bellad', 'mrs-hema-saravanan'],
   },
   {
@@ -86,8 +86,8 @@ export const residentialCategories: ResidentialCategory[] = [
     tagline: 'Sculptural Split-Level Living & Exposed Brick Masonry',
     description: 'Sculptural multi-tier split-level duplex residences featuring exposed wire-cut brick masonry, geometric cantilevers, double-height living areas, and internal staircases.',
     representativeImage: '/ndl_projects/slide_026_img_1.jpg',
-    representativeClient: 'Mr. Sarabjith Ghose Residence',
-    representativeArchitect: 'Gaurav Roy Chaudary / GRC Architects',
+    representativeClient: 'Mr. Sarabjith Ghose',
+    representativeArchitect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
     projectIds: ['mr-sarabjith-ghose', 'mr-mahanthesh-bellad'],
   },
   {

@@ -38,17 +38,17 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   },
   {
     id: 'mr-sarabjith-ghose',
-    client: 'Mr. Sarabjith Ghose Residence',
-    statHeadline: '8,500 SQ.FT',
+    client: 'Mr. Sarabjith Ghose',
+    statHeadline: '5,800 SQ.FT',
     badge: 'Contemporary',
     height: 'G+2',
-    timeline: '14 Mo',
-    rating: 'GRC Architects',
-    location: 'Mantri Lakeview, Bangalore',
+    timeline: '11 Mo',
+    rating: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
+    location: '# 17, Mantri Lakeview, Talagattapura, Kanakapura Main Road',
     city: 'Bangalore',
     sector: 'Contemporary',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_033_img_1.jpg'
+    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.jpg'
   },
   {
     id: 'mr-vittal-das-shetty',
