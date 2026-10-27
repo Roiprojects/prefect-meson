@@ -102,6 +102,11 @@ export const defaultResidentialItems = [
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_wall_staircase.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_09_open_riser_stairwell.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_10_double_height_atrium.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_11_bottle_wall_foyer.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_12_internal_courtyard_glazing.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_13_designer_bathroom.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_14_cantilever_wooden_stair.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_15_hardwood_living_room.png',
     ],
     features: [
       'Exposed Wire-Cut Brick Masonry with Weather Pointing',
