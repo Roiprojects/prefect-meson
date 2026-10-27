@@ -143,11 +143,17 @@ export const defaultResidentialItems = [
       '/projects/mr_praveen_kumar/praveen_kumar_03_timber_rafter_truss_atrium.png',
       '/projects/mr_praveen_kumar/praveen_kumar_04_pebble_puja_court.png',
       '/projects/mr_praveen_kumar/praveen_kumar_05_front_gabled_facade.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_06_modern_kitchen_breakfast_bar.jpg',
+      '/projects/mr_praveen_kumar/praveen_kumar_07_hardwood_living_room_aerial.jpg',
+      '/projects/mr_praveen_kumar/praveen_kumar_08_verandah_pergola_entrance.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_09_timber_compound_gate.png',
     ],
     features: [
       'Tiered gabled terracotta roof architecture',
       'Handcrafted ornate teakwood entrance doorway',
       'Exposed timber rafter truss ceiling atrium',
+      'Designer open breakfast counter & modular kitchen',
+      'Rich natural hardwood living floor with cane furniture',
       'Internal pebble-bed puja courtyard with carved Krishna idol',
     ],
     specs: [
