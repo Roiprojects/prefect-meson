@@ -749,14 +749,10 @@ const defaultResidentialItems: ResidentialItem[] = [
     category: 'Affordable Homes with Different Packages as per Specs',
     tagline: 'Customized Specification Packages & Family Residences',
     description: 'High-quality affordable family home construction with structured per-sq-ft specification packages: 1. Basic Package at ₹2,300/sft, 2. Premium Package at ₹2,800/sft, and 3. Luxury Package at ₹3,000/sft — offering robust civil foundations, spatial efficiency, and transparent itemized billing.',
-    heroImage: '/ndl_projects/slide_081_img_1.jpg',
+    heroImage: '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
     galleryImages: [
-      '/ndl_projects/slide_081_img_1.jpg',
-      '/ndl_projects/slide_082_img_1.jpg',
-      '/ndl_projects/slide_083_img_1.jpg',
-      '/ndl_projects/slide_084_img_1.jpg',
-      '/ndl_projects/slide_050_img_1.jpg',
-      '/ndl_projects/slide_051_img_1.jpg',
+      '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
+      '/projects/mr_amith/amith_02_geometric_elevation_street_view.jpg',
     ],
     features: [
       'Structured Fixed Per-Sq-Ft Transparent Pricing Tiers',

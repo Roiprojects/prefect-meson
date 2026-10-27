@@ -1,4 +1,4 @@
-import { ndlProjects, NDLProject } from './ndlProjectsData';
+﻿import { ndlProjects, NDLProject } from './ndlProjectsData';
 
 export interface ResidentialCategory {
   slug: string;
@@ -30,7 +30,7 @@ export const residentialCategories: ResidentialCategory[] = [
     title: 'Affordable Homes (Packages as per Specs)',
     tagline: 'Customized Specification Packages & Family Residences',
     description: 'High-quality affordable family home construction with structured per-sq-ft specification packages: 1. Basic Package at ₹2,300/sft, 2. Premium Package at ₹2,800/sft, and 3. Luxury Package at ₹3,000/sft — offering robust civil foundations, spatial efficiency, and transparent itemized billing.',
-    representativeImage: '/assets/residential_hero.jpg',
+    representativeImage: '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
     representativeClient: 'Mr. Amith Residence',
     representativeArchitect: 'NDL In-House Engineering Coordination',
     projectIds: ['mr-amith', 'mr-praveen-kumar', 'mr-uma-shankar-agarwal', 'dr-niranjan'],

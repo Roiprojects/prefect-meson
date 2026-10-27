@@ -277,18 +277,17 @@ export const ndlProjects: NDLProject[] = [
     scope: 'Residence - Civil and Structural Works',
     type: 'Contemporary Residence',
     category: 'Residential',
-    description: 'Contemporary multi-tier family home in Vijaya Bank Layout, Bilekahalli featuring clean geometric elevations, open-plan interior layout, and robust structural framework.',
-    featuredImage: '/ndl_projects/slide_081_img_1.jpg',
+    description: 'Contemporary multi-tier family residence in Vijaya Bank Layout, Bilekahalli off Bannerghatta Road featuring clean cubist geometric elevations in slate grey and white, deep cantilevered balconies, corner ribbon windows, and modern perimeter compound masonry.',
+    featuredImage: '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
     gallery: [
-      '/ndl_projects/slide_081_img_1.jpg',
-      '/ndl_projects/slide_082_img_1.jpg',
-      '/ndl_projects/slide_083_img_1.jpg',
-      '/ndl_projects/slide_084_img_1.jpg',
+      '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
+      '/projects/mr_amith/amith_02_geometric_elevation_street_view.jpg',
     ],
-    highlights: ['Contemporary geometric elevation', 'Reinforced structural core', 'Spacious floor layouts'],
+    highlights: ['Vijaya Bank Layout Bilekahalli prime location', 'Cubist slate grey & white geometric facade', 'Deep cantilevered balconies with spot lighting', 'Corner ribbon fenestrations & modern grilles', 'NDL in-house engineering and turnkey execution'],
     stats: [
       { label: 'Scope', value: 'Civil + Structural Works' },
-      { label: 'Location', value: 'Vijaya Bank Layout, Bilekahalli' }
+      { label: 'Architect', value: 'NDL In-House Engineering Coordination' },
+      { label: 'Location', value: 'Vijaya Bank Layout, Bilekahalli, BG Road' }
     ]
   },
   {
