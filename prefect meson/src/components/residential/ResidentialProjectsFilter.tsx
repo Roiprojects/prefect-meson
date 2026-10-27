@@ -175,10 +175,24 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     sector: 'Contemporary',
     timelineCategory: '< 12 Mo',
     image: '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg'
+  },
+  {
+    id: 'mr-sreeram',
+    client: 'Mr. Sreeram Residential Building',
+    statHeadline: '6,200 SQ.FT',
+    badge: 'Multi-Storey',
+    height: 'G+2',
+    timeline: '12 Mo',
+    rating: 'Meenal Cavale',
+    location: 'Anjanapura, Bangalore',
+    city: 'Bangalore',
+    sector: 'Contemporary',
+    timelineCategory: '12–24 Mo',
+    image: '/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg'
   }
 ];
 
-const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Whitefield'];
+const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Anjanapura', 'Whitefield'];
 const sectors = ['Luxury Villa', 'Contemporary', 'Multi-Storey', 'Residential Complex'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
