@@ -68,7 +68,7 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
   { id: 'proj-11', url: '/ndl_projects/slide_038_img_1.jpg', title: 'Commercial Plaza Night Elevation', category: 'Projects', tags: ['night', 'lighting', 'plaza'] },
   { id: 'proj-12', url: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png', title: '24x7 Solutions Reception Desk', category: 'Projects', tags: ['reception', 'commercial', 'fitout'] },
   { id: 'proj-13', url: '/ndl_projects/slide_046_img_1.jpg', title: 'Smart Automated Conference Suite', category: 'Projects', tags: ['conference', 'meeting'] },
-  { id: 'proj-14', url: '/ndl_projects/slide_050_img_1.jpg', title: 'Industrial Grade Heavy Steel Truss', category: 'Projects', tags: ['industrial', 'steel', 'truss'] },
+  { id: 'proj-14', url: '/projects/mr_praveen_kumar/praveen_kumar_01_tiered_roof_elevation.png', title: 'Mr. Praveen Kumar Tiered Roof Villa', category: 'Projects', tags: ['residential', 'villa', 'brick'] },
   { id: 'proj-15', url: '/ndl_projects/slide_056_img_1.jpg', title: 'Pre-Engineered Building Framework', category: 'Projects', tags: ['peb', 'framework'] },
   { id: 'proj-16', url: '/ndl_projects/slide_062_img_1.jpg', title: 'Structural Concrete Pouring Phase', category: 'Projects', tags: ['concrete', 'construction'] },
   { id: 'proj-17', url: '/ndl_projects/slide_068_img_1.jpg', title: 'Finished Architectural Exterior', category: 'Projects', tags: ['exterior', 'completed'] },

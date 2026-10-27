@@ -96,7 +96,7 @@ export const residentialCategories: ResidentialCategory[] = [
     title: 'Multi-Storey Homes',
     tagline: 'High-Specification Urban G+3 Family Residences',
     description: 'High-specification multi-storey urban family residences in prime neighborhoods with heavy structural framing, concealed conduits, and integrated lift shafts.',
-    representativeImage: '/ndl_projects/slide_050_img_1.jpg',
+    representativeImage: '/projects/mr_praveen_kumar/praveen_kumar_01_tiered_roof_elevation.png',
     representativeClient: 'Mr. Praveen Kumar Residence',
     representativeArchitect: 'Keystone Architects, Indiranagar',
     projectIds: ['mr-praveen-kumar', 'mr-uma-shankar-agarwal', 'dr-niranjan', 'mr-kishore'],

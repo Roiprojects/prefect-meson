@@ -66,17 +66,17 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   },
   {
     id: 'mr-praveen-kumar',
-    client: 'Mr. Praveen Kumar Residence',
+    client: 'Mr. Praveen Kumar',
     statHeadline: '₹1.50 CRORE',
-    badge: 'Multi-Storey',
-    height: 'G+3',
+    badge: 'Luxury Villa',
+    height: 'G+2',
     timeline: '12 Mo',
-    rating: 'Khosla Associates',
-    location: 'HSR Layout, Bangalore',
+    rating: 'Keystone Architects, Indiranagar',
+    location: 'Tambuchetti Palya, KR Puram, Bangalore',
     city: 'Bangalore',
-    sector: 'Multi-Storey',
+    sector: 'Luxury Villa',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_049_img_1.jpg'
+    image: '/projects/mr_praveen_kumar/praveen_kumar_01_tiered_roof_elevation.png'
   },
   {
     id: 'mr-uma-shankar-agarwal',
