@@ -104,7 +104,7 @@ const commercialShowcaseList: CommercialCardItem[] = [
     city: 'Bangalore',
     sector: 'Office',
     timelineCategory: '< 12 Mo',
-    image: '/ndl_projects/slide_086_img_1.png'
+    image: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png'
   },
   {
     id: 'mr-venkatarama-raju',

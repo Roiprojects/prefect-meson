@@ -114,7 +114,7 @@ export const commercialCategories: CommercialCategory[] = [
     title: 'Office Interiors / Fit-Out',
     tagline: 'Turnkey Commercial Millwork & Interior Architecture',
     description: 'High-end commercial and corporate interior fit-outs featuring executive boardrooms, acoustic wall paneling, modular workstations, and complete interior infrastructure.',
-    representativeImage: '/ndl_projects/slide_086_img_1.png',
+    representativeImage: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',
     representativeClient: 'Farm India Office',
     representativeArchitect: 'Commercial Interior Practice',
     projectIds: ['farm-india-office'],
