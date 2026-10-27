@@ -112,6 +112,11 @@ export const galleryProjects = [] = [
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_03_cantilever_terrace.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_04_brick_floating_staircase.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_05_entrance_compound.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_06_elevation_trees.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_07_study_nook_blue_accent.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_wall_staircase.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_09_open_riser_stairwell.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_10_double_height_atrium.png',
     ],
     highlights: ['Wire-cut brick masonry', 'Cantilevered architectural volumes', 'Split level zoning', 'GRC Architects design'],
     specs: [

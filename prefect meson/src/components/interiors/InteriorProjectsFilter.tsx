@@ -90,7 +90,7 @@ const interiorShowcaseList: InteriorCardItem[] = [
     city: 'Bangalore',
     sector: 'Modular Millwork',
     timelineCategory: '< 12 Mo',
-    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_04_brick_floating_staircase.png'
+    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_wall_staircase.png'
   },
   {
     id: 'mr-vittal-das-shetty',
