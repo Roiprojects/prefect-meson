@@ -113,12 +113,12 @@ const commercialShowcaseList: CommercialCardItem[] = [
     badge: 'Civil & Core',
     height: 'G+4',
     timeline: '14 Mo',
-    rating: 'MJC Architects',
+    rating: 'Meenal Cavale (MJC)',
     location: 'JP Nagar 9th Phase, Bangalore',
     city: 'Bangalore',
     sector: 'Retail',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_124_img_1.jpg'
+    image: '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg'
   },
   {
     id: 'zenith-tech-tower',
@@ -136,7 +136,7 @@ const commercialShowcaseList: CommercialCardItem[] = [
   }
 ];
 
-const locations = ['All', 'Bangalore', 'Indiranagar', 'Koramangala', 'HSR Layout', 'Electronic City'];
+const locations = ['All', 'Bangalore', 'Indiranagar', 'Koramangala', 'HSR Layout', 'JP Nagar', 'Electronic City'];
 const sectors = ['Office', 'Retail', 'Hospitality', 'Industrial', 'Institutional'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 

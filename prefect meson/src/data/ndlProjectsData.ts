@@ -533,21 +533,24 @@ export const ndlProjects: NDLProject[] = [
     title: 'Mr. Venkatarama Raju Commercial Building',
     location: 'JP Nagar 9th Phase, Bangalore',
     city: 'Bangalore',
-    architect: 'Meenal Cavale / MJC Architects',
+    architect: 'Meenal Cavale (MJC Architects)',
     architectPractice: 'MJC Architects',
     scope: 'Commercial Building Construction',
     type: 'Commercial Building',
     category: 'Commercial',
-    description: 'Modern commercial building in JP Nagar 9th Phase designed by Meenal Cavale / MJC Architects, featuring column-free floor plates, commercial grade staircases, and durable facade finishing.',
-    featuredImage: '/ndl_projects/slide_124_img_1.jpg',
+    description: 'Premier G+4 commercial complex in JP Nagar 9th Phase designed by Meenal Cavale (MJC Architects), featuring ground-level flagship retail showroom (Manappuram Jewellers), exposed wire-cut brick facade with solar louvers, curtain wall glazing, and column-free flexible floor plates.',
+    featuredImage: '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg',
     gallery: [
-      '/ndl_projects/slide_124_img_1.jpg',
+      '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg',
+      '/projects/mr_venkatarama_raju/raju_02_corner_street_elevation.jpg',
+      '/projects/mr_venkatarama_raju/raju_03_column_free_office_floor_plate.jpg',
+      '/projects/mr_venkatarama_raju/raju_04_staircase_atrium_brick_masonry.jpg',
     ],
-    highlights: ['JP Nagar 9th Phase commercial hub', 'Column-free floor plates', 'Meenal Cavale / MJC Architects design'],
+    highlights: ['JP Nagar 9th Phase commercial hub', 'Flagship Manappuram Jewellers showroom', 'Wire-cut brick facade & curtain wall glazing', 'Meenal Cavale (MJC Architects) design'],
     stats: [
       { label: 'Scope', value: 'Commercial Building Construction' },
-      { label: 'Architect', value: 'Meenal Cavale / MJC Architects' },
-      { label: 'Location', value: 'JP Nagar 9th Phase' }
+      { label: 'Architect', value: 'Meenal Cavale (MJC Architects)' },
+      { label: 'Location', value: 'JP Nagar 9th Phase, Bangalore' }
     ]
   },
   {
