@@ -227,8 +227,12 @@ export const galleryProjects = [] = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_03_front_entry_steps_gate.jpg',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_04_bamboo_soffit_pergola_walkway.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_05_entrance_verandah_brick_foyer.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_06_civil_construction_phase.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_07_side_front_cantilever_view.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_08_side_elevation_steel_staircase.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_09_bedroom_sliding_wardrobe.png',
     ],
-    highlights: ['Dressed stone tower elevation', 'Tiered terracotta gabled roof', 'Bamboo soffit steel pergola walkway', 'Granite verandah & exposed brick foyer', 'Keystone Architects design'],
+    highlights: ['Dressed stone tower elevation', 'Tiered terracotta gabled roof', 'Bamboo soffit steel pergola walkway', 'Granite verandah & exposed brick foyer', 'Custom sliding wardrobe & steel staircase', 'Keystone Architects design'],
     specs: [
       { label: 'Scope', value: 'Civil + Structural + Finishing' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },

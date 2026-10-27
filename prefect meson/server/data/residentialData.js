@@ -184,12 +184,18 @@ export const defaultResidentialItems = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_03_front_entry_steps_gate.jpg',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_04_bamboo_soffit_pergola_walkway.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_05_entrance_verandah_brick_foyer.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_06_civil_construction_phase.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_07_side_front_cantilever_view.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_08_side_elevation_steel_staircase.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_09_bedroom_sliding_wardrobe.png',
     ],
     features: [
       'Monumental dressed grey stone-clad pylon tower',
       'Tiered terracotta gabled roof with black steel brackets',
       'Bamboo-soffit steel pergola walkway along garden border',
       'Granite-bordered entrance verandah & exposed brick foyer',
+      'Custom sliding wardrobe with undulating panel woodwork',
+      'External structural steel dog-leg terrace staircase',
       'Keystone Architects Indiranagar design',
     ],
     specs: [
