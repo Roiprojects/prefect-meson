@@ -188,6 +188,10 @@ export const defaultResidentialItems = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_07_side_front_cantilever_view.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_08_side_elevation_steel_staircase.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_09_bedroom_sliding_wardrobe.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_10_puja_room_brass_bell_doors.jpg',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_11_sunken_bath_emerald_tiles.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_12_garden_patio_pergola_paving.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png',
     ],
     features: [
       'Monumental dressed grey stone-clad pylon tower',

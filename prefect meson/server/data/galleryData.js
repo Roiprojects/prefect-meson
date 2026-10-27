@@ -231,8 +231,12 @@ export const galleryProjects = [] = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_07_side_front_cantilever_view.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_08_side_elevation_steel_staircase.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_09_bedroom_sliding_wardrobe.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_10_puja_room_brass_bell_doors.jpg',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_11_sunken_bath_emerald_tiles.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_12_garden_patio_pergola_paving.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png',
     ],
-    highlights: ['Dressed stone tower elevation', 'Tiered terracotta gabled roof', 'Bamboo soffit steel pergola walkway', 'Granite verandah & exposed brick foyer', 'Custom sliding wardrobe & steel staircase', 'Keystone Architects design'],
+    highlights: ['Dressed stone tower elevation', 'Tiered terracotta gabled roof', 'Bamboo soffit steel pergola walkway', 'Granite verandah & exposed brick foyer', 'Custom sliding wardrobe & steel staircase', 'Teakwood puja room with brass bells', 'Sunken bath & garden patio pergola', 'Keystone Architects design'],
     specs: [
       { label: 'Scope', value: 'Civil + Structural + Finishing' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
