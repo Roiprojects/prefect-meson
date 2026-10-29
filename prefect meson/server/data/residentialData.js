@@ -92,7 +92,7 @@ export const defaultResidentialItems = [
     title: 'Eco-Friendly Homes (Design & Execution)',
     category: 'Eco Friendly Homes with Consultation Design and Execution',
     tagline: 'Wire-Cut Brick Masonry, SMBs & Sustainable Architecture',
-    description: 'Distinctive contemporary private residence at # 17, Mantri Lakeview Talagatpura, Kanakpura Main Road featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, cantilevered stone floating staircase, signature bottle-glass light walls, and complete civil, plumbing, and electrical works designed by Gaurav Roy Chaudary, 7th Sector, HSR Layout.',
+    description: 'Distinctive contemporary private residence at # 17, Mantri Lakeview Talagatpura, Kanakpura Main Road featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, cantilevered stone floating staircase, signature bottle-glass light walls, hardwood living areas with bi-fold deck doors, and complete civil, plumbing, and electrical works designed by Gaurav Roy Chaudary, 7th Sector, HSR Layout.',
     heroImage: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg',
     galleryImages: [
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg',
@@ -109,7 +109,12 @@ export const defaultResidentialItems = [
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_12_open_riser_stair_flight.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_13_double_height_skylit_atrium.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_14_foyer_bottle_glass_screen.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_15_courtyard_glazing_bridge.png'
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_15_courtyard_glazing_bridge.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_16_designer_crimson_bathroom.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_17_cantilever_wooden_stair_detail.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_18_hardwood_living_deck.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_19_split_level_foyer_terracotta.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_20_mezzanine_gallery_hallway.png'
     ],
     features: [
       'Exposed Wire-Cut Brick Masonry with Weather Pointing',

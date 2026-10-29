@@ -759,6 +759,51 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-16-designer-crimson-bathroom-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_16_designer_crimson_bathroom.png",
+    title: "Mr. Sarabjith Ghose - Designer Bathroom with Crimson Tile & Granite Counter",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "428 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-17-cantilever-wooden-stair-detail-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_17_cantilever_wooden_stair_detail.png",
+    title: "Mr. Sarabjith Ghose - Cantilevered Teak Stair Treads & Circular Lens Beam",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "439 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-18-hardwood-living-deck-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_18_hardwood_living_deck.png",
+    title: "Mr. Sarabjith Ghose - Hardwood Living Room & Bi-Fold Garden French Doors",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "981 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-19-split-level-foyer-terracotta-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_19_split_level_foyer_terracotta.png",
+    title: "Mr. Sarabjith Ghose - Split-Level Foyer & Terracotta Floor Inset",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "272 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-20-mezzanine-gallery-hallway-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_20_mezzanine_gallery_hallway.png",
+    title: "Mr. Sarabjith Ghose - Upper Mezzanine Gallery & Clerestory Window Wall",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "374 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_sreeram-sreeram-01-exposed-brick-masonry-elevation-jpg",
     url: "/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg",
     title: "Mr. Sreeram - Exposed Brick Masonry Elevation",
