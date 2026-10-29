@@ -552,354 +552,48 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_praveen_kumar-praveen-kumar-01-tiered-roof-elevation-png",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_01_tiered_roof_elevation.png",
-    title: "Mr. Praveen Kumar - Tiered Roof Elevation",
+    id: "proj-mr_praveen_kumar-praveen-kumar-01-front-gabled-elevation-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_01_front_gabled_elevation.png",
+    title: "Mr. Praveen Kumar - Front Gabled Facade & Terracotta Roof",
     category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
-    size: "896 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_praveen_kumar-praveen-kumar-02-carved-teak-door-png",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_02_carved_teak_door.png",
-    title: "Mr. Praveen Kumar - Carved Teak Door",
-    category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
-    size: "335 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_praveen_kumar-praveen-kumar-03-timber-rafter-truss-atrium-png",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_03_timber_rafter_truss_atrium.png",
-    title: "Mr. Praveen Kumar - Timber Rafter Truss Atrium",
-    category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
-    size: "312 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_praveen_kumar-praveen-kumar-04-pebble-puja-court-png",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_04_pebble_puja_court.png",
-    title: "Mr. Praveen Kumar - Pebble Puja Court",
-    category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
-    size: "659 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_praveen_kumar-praveen-kumar-05-front-gabled-facade-png",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_05_front_gabled_facade.png",
-    title: "Mr. Praveen Kumar - Front Gabled Facade",
-    category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
+    tags: ["mr. praveen kumar", "residential", "kr puram", "elevation", "authentic", "client-photo"],
     size: "912 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_praveen_kumar-praveen-kumar-06-modern-kitchen-breakfast-bar-jpg",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_06_modern_kitchen_breakfast_bar.jpg",
-    title: "Mr. Praveen Kumar - Modern Kitchen Breakfast Bar",
+    id: "proj-mr_praveen_kumar-praveen-kumar-02-timber-rafter-truss-atrium-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_02_timber_rafter_truss_atrium.png",
+    title: "Mr. Praveen Kumar - Multi-Tier Timber Rafter Truss Atrium",
     category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
-    size: "264 KB",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "atrium", "authentic", "client-photo"],
+    size: "689 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_praveen_kumar-praveen-kumar-07-hardwood-living-room-aerial-jpg",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_07_hardwood_living_room_aerial.jpg",
-    title: "Mr. Praveen Kumar - Hardwood Living Room Aerial",
+    id: "proj-mr_praveen_kumar-praveen-kumar-03-tiered-roof-side-elevation-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_03_tiered_roof_side_elevation.png",
+    title: "Mr. Praveen Kumar - Tiered Mangalore Tile Gable Side Elevation",
     category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
-    size: "306 KB",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "side-elevation", "authentic", "client-photo"],
+    size: "654 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_praveen_kumar-praveen-kumar-08-verandah-pergola-entrance-png",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_08_verandah_pergola_entrance.png",
-    title: "Mr. Praveen Kumar - Verandah Pergola Entrance",
+    id: "proj-mr_praveen_kumar-praveen-kumar-04-driveway-wide-facade-view-jpg",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_04_driveway_wide_facade_view.jpg",
+    title: "Mr. Praveen Kumar - Gated Compound Driveway & Architectural Perspective",
     category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
-    size: "730 KB",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "driveway", "authentic", "client-photo"],
+    size: "288 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_praveen_kumar-praveen-kumar-09-timber-compound-gate-png",
-    url: "/projects/mr_praveen_kumar/praveen_kumar_09_timber_compound_gate.png",
-    title: "Mr. Praveen Kumar - Timber Compound Gate",
+    id: "proj-mr_praveen_kumar-praveen-kumar-05-carved-teak-double-door-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_05_carved_teak_double_door.png",
+    title: "Mr. Praveen Kumar - Handcrafted Carved Teakwood Double Entry Door",
     category: "Residential",
-    tags: ["mr. praveen kumar","residential","kr puram","authentic","client-photo"],
-    size: "793 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_rakesh_n_rao-rakesh-n-rao-01-villa-facade-gate-jpg",
-    url: "/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg",
-    title: "Mr. Rakesh N. Rao - Villa Facade Gate",
-    category: "Residential",
-    tags: ["mr. rakesh n. rao","residential","hsr layout","authentic","client-photo"],
-    size: "270 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-01-corner-elevation-wide-jpg",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg",
-    title: "Mr. Sarabjith Ghose - Corner Elevation & Stone Revetment",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "468 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-02-front-facade-elevation-jpg",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_02_front_facade_elevation.jpg",
-    title: "Mr. Sarabjith Ghose - Architectural Front Facade & Central Spine",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "351 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-03-cantilever-corner-pavilion-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_03_cantilever_corner_pavilion.png",
-    title: "Mr. Sarabjith Ghose - Modern Cantilevered Upper Box & Garage Gate",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "843 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-04-side-garden-elevation-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_04_side_garden_elevation.png",
-    title: "Mr. Sarabjith Ghose - Exposed Wire-Cut Brick Garden Elevation",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "676 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-05-entrance-compound-facade-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_05_entrance_compound_facade.png",
-    title: "Mr. Sarabjith Ghose - Compound Boundary Wall & Entrance Facade",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "593 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-06-retaining-wall-lawn-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_06_retaining_wall_lawn.png",
-    title: "Mr. Sarabjith Ghose - Sloping Lawn, Retaining Wall & Coconut Palms",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "838 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-07-floating-brick-staircase-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_07_floating_brick_staircase.png",
-    title: "Mr. Sarabjith Ghose - Cantilevered Stone Staircase & Exposed Brick Wall",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "660 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-08-bottle-glass-stairwell-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_glass_stairwell.png",
-    title: "Mr. Sarabjith Ghose - Floating Timber Staircase & Bottle-Glass Skylit Beam",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "526 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-09-split-level-atrium-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_09_split_level_atrium.png",
-    title: "Mr. Sarabjith Ghose - Split-Level Mezzanine Atrium & Library Ledge",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "561 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-10-study-nook-blue-accent-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_10_study_nook_blue_accent.png",
-    title: "Mr. Sarabjith Ghose - Mezzanine Study Nook with Cobalt Blue Feature Wall",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "557 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-11-signature-bottle-glass-wall-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_11_signature_bottle_glass_wall.png",
-    title: "Mr. Sarabjith Ghose - Signature Circular Bottle-Glass Matrix Feature Wall",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "592 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-12-open-riser-stair-flight-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_12_open_riser_stair_flight.png",
-    title: "Mr. Sarabjith Ghose - White Open-Riser Metal Staircase & Bottle Light Wall",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "555 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-13-double-height-skylit-atrium-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_13_double_height_skylit_atrium.png",
-    title: "Mr. Sarabjith Ghose - Double-Height Skylit Atrium & Timber Treads",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "760 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-14-foyer-bottle-glass-screen-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_14_foyer_bottle_glass_screen.png",
-    title: "Mr. Sarabjith Ghose - Entrance Foyer Bottle-Glass Screen & Reception Credenza",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "276 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-15-courtyard-glazing-bridge-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_15_courtyard_glazing_bridge.png",
-    title: "Mr. Sarabjith Ghose - Double-Height Courtyard Glazing & Internal Light Bridge",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "730 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-16-designer-crimson-bathroom-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_16_designer_crimson_bathroom.png",
-    title: "Mr. Sarabjith Ghose - Designer Bathroom with Crimson Tile & Granite Counter",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "428 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-17-cantilever-wooden-stair-detail-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_17_cantilever_wooden_stair_detail.png",
-    title: "Mr. Sarabjith Ghose - Cantilevered Teak Stair Treads & Circular Lens Beam",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "439 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-18-hardwood-living-deck-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_18_hardwood_living_deck.png",
-    title: "Mr. Sarabjith Ghose - Hardwood Living Room & Bi-Fold Garden French Doors",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "981 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-19-split-level-foyer-terracotta-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_19_split_level_foyer_terracotta.png",
-    title: "Mr. Sarabjith Ghose - Split-Level Foyer & Terracotta Floor Inset",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "272 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-20-mezzanine-gallery-hallway-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_20_mezzanine_gallery_hallway.png",
-    title: "Mr. Sarabjith Ghose - Upper Mezzanine Gallery & Clerestory Window Wall",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "374 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-21-living-frosted-partition-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_21_living_frosted_partition.png",
-    title: "Mr. Sarabjith Ghose - Living Lounge with Frosted Screen & Brick Column",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "346 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-22-sunken-courtyard-water-trough-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_22_sunken_courtyard_water_trough.png",
-    title: "Mr. Sarabjith Ghose - Sunken Courtyard, Brick Niche & Stone Water Trough",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "597 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-23-ground-floor-garden-window-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_23_ground_floor_garden_window.png",
-    title: "Mr. Sarabjith Ghose - Ground Floor Room with Granite Sill Garden Bench",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "451 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-24-foyer-kitchen-threshold-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_24_foyer_kitchen_threshold.png",
-    title: "Mr. Sarabjith Ghose - Courtyard Threshold to Modular Kitchen",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "332 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-25-modular-oak-kitchen-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_25_modular_oak_kitchen.png",
-    title: "Mr. Sarabjith Ghose - Contemporary Oak Modular Kitchen & Breakfast Counter",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "514 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-26-cantilever-stair-floating-cabinets-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_26_cantilever_stair_floating_cabinets.png",
-    title: "Mr. Sarabjith Ghose - Cantilever Wooden Open-Riser Stairs & Floating Storage",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "514 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-27-bottle-glass-landing-study-cubes-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_27_bottle_glass_landing_study_cubes.png",
-    title: "Mr. Sarabjith Ghose - Upper Landing Bottle-Glass Matrix & Blue Accent Study Cubes",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "501 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-28-courtyard-frosted-sliding-door-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_28_courtyard_frosted_sliding_door.png",
-    title: "Mr. Sarabjith Ghose - Lightwell Courtyard with Frosted Panel Sliding Door & Vanity Basin",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "504 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-29-sunlit-living-hall-yellow-accent-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_29_sunlit_living_hall_yellow_accent.png",
-    title: "Mr. Sarabjith Ghose - Sunlit Living Hall with Hardwood Floors, Yellow Feature Pillar & Brick Nook",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "466 KB",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "teak-door", "authentic", "client-photo"],
+    size: "771 KB",
     dimensions: "1920x1080"
   },
   {

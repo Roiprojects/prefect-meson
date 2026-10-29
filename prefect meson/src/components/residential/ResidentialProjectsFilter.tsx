@@ -76,7 +76,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     city: 'Bangalore',
     sector: 'Luxury Villa',
     timelineCategory: '12–24 Mo',
-    image: '/projects/mr_praveen_kumar/praveen_kumar_01_tiered_roof_elevation.png'
+    image: '/projects/mr_praveen_kumar/praveen_kumar_01_front_gabled_elevation.png'
   },
   {
     id: 'mr-uma-shankar-agarwal',

@@ -160,20 +160,16 @@ export const ndlProjects: NDLProject[] = [
     scope: 'Civil, Plumbing and Electrical Works',
     type: 'Bespoke Private Residence',
     category: 'Residential',
-    description: 'Exposed brick architectural residence in Tambuchetti Palya, KR Puram featuring tiered gabled terracotta roofs, carved teakwood double doorway, exposed timber rafter ceiling trusses, and internal pebble puja court.',
-    featuredImage: '/projects/mr_praveen_kumar/praveen_kumar_01_tiered_roof_elevation.png',
+    description: 'Exposed brick architectural residence in Tambuchetti Palya, KR Puram featuring tiered gabled terracotta roofs, handcrafted carved teakwood double entrance door, multi-tier exposed timber rafter truss ceiling atrium, and landscaped driveway executed under Keystone Architects, Indiranagar.',
+    featuredImage: '/projects/mr_praveen_kumar/praveen_kumar_01_front_gabled_elevation.png',
     gallery: [
-      '/projects/mr_praveen_kumar/praveen_kumar_01_tiered_roof_elevation.png',
-      '/projects/mr_praveen_kumar/praveen_kumar_02_carved_teak_door.png',
-      '/projects/mr_praveen_kumar/praveen_kumar_03_timber_rafter_truss_atrium.png',
-      '/projects/mr_praveen_kumar/praveen_kumar_04_pebble_puja_court.png',
-      '/projects/mr_praveen_kumar/praveen_kumar_05_front_gabled_facade.png',
-      '/projects/mr_praveen_kumar/praveen_kumar_06_modern_kitchen_breakfast_bar.jpg',
-      '/projects/mr_praveen_kumar/praveen_kumar_07_hardwood_living_room_aerial.jpg',
-      '/projects/mr_praveen_kumar/praveen_kumar_08_verandah_pergola_entrance.png',
-      '/projects/mr_praveen_kumar/praveen_kumar_09_timber_compound_gate.png'
+      '/projects/mr_praveen_kumar/praveen_kumar_01_front_gabled_elevation.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_02_timber_rafter_truss_atrium.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_03_tiered_roof_side_elevation.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_04_driveway_wide_facade_view.jpg',
+      '/projects/mr_praveen_kumar/praveen_kumar_05_carved_teak_double_door.png'
     ],
-    highlights: ['Tiered terracotta gabled roof', 'Carved teakwood entrance door', 'Exposed timber truss atrium', 'Hardwood living & breakfast bar', 'Internal pebble puja court'],
+    highlights: ['Tiered terracotta gabled roof', 'Carved teakwood double entrance door', 'Exposed timber truss atrium', 'Keystone Architects design'],
     stats: [
       { label: 'Scope', value: 'Civil, Plumbing and Electrical Works' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
