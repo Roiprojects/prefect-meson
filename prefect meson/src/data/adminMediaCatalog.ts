@@ -192,8 +192,35 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-07-master-bedroom-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_07_master_bedroom.png",
+    id: "proj-dr_anil_kush-07-staircase-detail-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_07_staircase_detail.jpg",
+    title: "Dr. Anil Kush - Floating Staircase Detail & Tension Rods",
+    category: "Residential",
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
+    size: "229 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-dr_anil_kush-08-louver-veranda-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_08_louver_veranda.jpg",
+    title: "Dr. Anil Kush - Louvered Veranda Seating Lounge",
+    category: "Residential",
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
+    size: "252 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-dr_anil_kush-09-mezzanine-panelling-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_09_mezzanine_panelling.jpg",
+    title: "Dr. Anil Kush - Mezzanine Wood Panelling Passage",
+    category: "Residential",
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
+    size: "189 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-dr_anil_kush-10-master-bedroom-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_10_master_bedroom.png",
     title: "Dr. Anil Kush - Master Bedroom & Platform Bed",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -201,17 +228,26 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-08-modular-kitchen-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_08_modular_kitchen.png",
-    title: "Dr. Anil Kush - Modular Kitchen Joinery",
+    id: "proj-dr_anil_kush-11-kitchen-installation-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_11_kitchen_installation.png",
+    title: "Dr. Anil Kush - Modular Kitchen Joinery Installation",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
     size: "356 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-09-bathroom-vanity-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_09_bathroom_vanity.png",
+    id: "proj-dr_anil_kush-12-modular-kitchen-finished-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_12_modular_kitchen_finished.png",
+    title: "Dr. Anil Kush - Finished Modular Kitchen & Breakfast Bar",
+    category: "Residential",
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
+    size: "836 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-dr_anil_kush-13-bathroom-vanity-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_13_bathroom_vanity.png",
     title: "Dr. Anil Kush - Granite Counter Bathroom Vanity",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],

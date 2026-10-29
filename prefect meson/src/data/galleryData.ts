@@ -55,9 +55,13 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/dr_anil_kush/dr_anil_kush_04_board_marked_rcc_hall.png',
       '/projects/dr_anil_kush/dr_anil_kush_05_living_lounge_red_wall.jpg',
       '/projects/dr_anil_kush/dr_anil_kush_06_floating_staircase_atrium.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_07_master_bedroom.png',
-      '/projects/dr_anil_kush/dr_anil_kush_08_modular_kitchen.png',
-      '/projects/dr_anil_kush/dr_anil_kush_09_bathroom_vanity.png'
+      '/projects/dr_anil_kush/dr_anil_kush_07_staircase_detail.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_08_louver_veranda.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_09_mezzanine_panelling.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_10_master_bedroom.png',
+      '/projects/dr_anil_kush/dr_anil_kush_11_kitchen_installation.png',
+      '/projects/dr_anil_kush/dr_anil_kush_12_modular_kitchen_finished.png',
+      '/projects/dr_anil_kush/dr_anil_kush_13_bathroom_vanity.png'
     ],
     highlights: ['Exposed RCC walls', 'Water bodies & landscaping', 'Turnkey interiors', 'Architecture Paradigm design'],
     specs: [
