@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Authentic Real Project Assets from NDL PPT
-const imgCenterCommercial = '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.jpg'; // Mr. Sarabjith Ghose (GRC Architects)
+const imgCenterCommercial = '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.png'; // Mr. Sarabjith Ghose (GRC Architects)
 const imgTopVilla = '/projects/dr_anil_kush/dr_anil_kush_01_facade_elevation.jpg'; // Dr. Anil Kush (Architecture Paradigm - Building Elevation)
 const imgBottomEstate = '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'; // 24x7 Solutions Office Space (Keystone Architects)
 

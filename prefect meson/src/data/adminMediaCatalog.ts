@@ -624,138 +624,48 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-01-corner-elevation-jpg",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.jpg",
-    title: "Mr. Sarabjith Ghose - Corner Elevation",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-01-corner-elevation-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.png",
+    title: "Mr. Sarabjith Ghose - Modern Residence Corner Elevation & Cantilever",
     category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "468 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-02-front-facade-jpg",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_02_front_facade.jpg",
-    title: "Mr. Sarabjith Ghose - Front Facade",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "351 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-03-cantilever-terrace-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_03_cantilever_terrace.png",
-    title: "Mr. Sarabjith Ghose - Cantilever Terrace",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
     size: "843 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-04-brick-floating-staircase-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_04_brick_floating_staircase.png",
-    title: "Mr. Sarabjith Ghose - Brick Floating Staircase",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-02-floating-brick-staircase-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_02_floating_brick_staircase.png",
+    title: "Mr. Sarabjith Ghose - Cantilevered Stone Staircase & Exposed Brick Wall",
     category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
     size: "660 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-05-entrance-compound-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_05_entrance_compound.png",
-    title: "Mr. Sarabjith Ghose - Entrance Compound",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-03-bottle-glass-stairwell-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_03_bottle_glass_stairwell.png",
+    title: "Mr. Sarabjith Ghose - Floating Timber Staircase & Bottle-Glass Skylit Beam",
     category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "593 KB",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "526 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-06-elevation-trees-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_06_elevation_trees.png",
-    title: "Mr. Sarabjith Ghose - Elevation Trees",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-04-split-level-atrium-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_04_split_level_atrium.png",
+    title: "Mr. Sarabjith Ghose - Split-Level Mezzanine Atrium & Library Ledge",
     category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "838 KB",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "561 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-07-study-nook-blue-accent-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_07_study_nook_blue_accent.png",
-    title: "Mr. Sarabjith Ghose - Study Nook Blue Accent",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-05-side-brick-facade-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_05_side_brick_facade.png",
+    title: "Mr. Sarabjith Ghose - Exposed Wire-Cut Brick Garden Elevation",
     category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "557 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-08-bottle-wall-staircase-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_wall_staircase.png",
-    title: "Mr. Sarabjith Ghose - Bottle Wall Staircase",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "592 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-09-open-riser-stairwell-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_09_open_riser_stairwell.png",
-    title: "Mr. Sarabjith Ghose - Open Riser Stairwell",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "555 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-10-double-height-atrium-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_10_double_height_atrium.png",
-    title: "Mr. Sarabjith Ghose - Double Height Atrium",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "760 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-11-bottle-wall-foyer-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_11_bottle_wall_foyer.png",
-    title: "Mr. Sarabjith Ghose - Bottle Wall Foyer",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "276 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-12-internal-courtyard-glazing-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_12_internal_courtyard_glazing.png",
-    title: "Mr. Sarabjith Ghose - Internal Courtyard Glazing",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "730 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-13-designer-bathroom-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_13_designer_bathroom.png",
-    title: "Mr. Sarabjith Ghose - Designer Bathroom",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "428 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-14-cantilever-wooden-stair-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_14_cantilever_wooden_stair.png",
-    title: "Mr. Sarabjith Ghose - Cantilever Wooden Stair",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "439 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-15-hardwood-living-room-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_15_hardwood_living_room.png",
-    title: "Mr. Sarabjith Ghose - Hardwood Living Room",
-    category: "Residential",
-    tags: ["mr. sarabjith ghose","residential","mantri lakeview","authentic","client-photo"],
-    size: "451 KB",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "676 KB",
     dimensions: "1920x1080"
   },
   {

@@ -44,11 +44,11 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     height: 'G+2',
     timeline: '11 Mo',
     rating: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
-    location: '# 17, Mantri Lakeview, Talagattapura, Kanakapura Main Road',
+    location: '# 17, Mantri Lakeview Talagatpura, Kanakpura Main Road',
     city: 'Bangalore',
     sector: 'Contemporary',
     timelineCategory: '12–24 Mo',
-    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.jpg'
+    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.png'
   },
   {
     id: 'mr-vittal-das-shetty',

@@ -14,7 +14,6 @@ const turnkeyProjectsList: NDLProject[] = ndlProjects.filter((p) => {
     '24x7-solutions',
     'mr-vittal-das-shetty',
     'take-5-bar',
-    'mr-sarabjith-ghose',
     'zenith-tech-tower',
     'mr-uma-shankar-agarwal',
   ].includes(p.id) || p.scope.toLowerCase().includes('turnkey') || p.category === 'Commercial';
@@ -41,7 +40,7 @@ export const TurnkeyProjectShowcase: React.FC = () => {
     } else if (activeType === 'EPC Contracting') {
       if (!['nexus-corporate-park', 'aura-commercial-hub', 'zenith-tech-tower', 'mr-nataraj', '24x7-solutions'].includes(p.id)) return false;
     } else if (activeType === 'Design & Build') {
-      if (!['dr-anil-kush', 'mr-vittal-das-shetty', 'take-5-bar', 'mr-sarabjith-ghose', 'mr-uma-shankar-agarwal'].includes(p.id)) return false;
+      if (!['dr-anil-kush', 'mr-vittal-das-shetty', 'take-5-bar', 'mr-uma-shankar-agarwal'].includes(p.id)) return false;
     }
 
     if (searchQuery.trim()) {

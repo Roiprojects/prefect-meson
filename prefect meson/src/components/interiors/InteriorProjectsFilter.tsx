@@ -65,20 +65,6 @@ const interiorShowcaseList: InteriorCardItem[] = [
     image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
   },
   {
-    id: 'mr-sarabjith-ghose',
-    client: 'Mr. Sarabjith Ghose',
-    statHeadline: '5,800 SQ.FT',
-    badge: 'Modular Joinery',
-    height: 'G+2',
-    timeline: '11 Mo',
-    rating: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
-    location: '# 17, Mantri Lakeview, Talagattapura, Kanakapura Main Road',
-    city: 'Bangalore',
-    sector: 'Modular Millwork',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_wall_staircase.png'
-  },
-  {
     id: 'mr-vittal-das-shetty',
     client: 'Mr. Vittal Das Shetty',
     statHeadline: '9,500 SQ.FT',
