@@ -616,6 +616,7 @@ export const galleryProjects = [
     client: 'Dr. Niranjan',
     title: 'Dr. Niranjan Residence',
     category: 'Residential',
+    secondaryCategories: [],
     projectType: 'Premium Jayanagar Residence',
     status: 'Completed',
     location: '5th Block, Jayanagar, Bangalore',
