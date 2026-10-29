@@ -33,8 +33,9 @@ export const ndlCompanyProfile = {
   registeredName: 'NDL Engineers and Contractors',
   businessStructure: 'Proprietorship Civil Engineering Firm',
   proprietor: {
-    name: 'Engineering Leadership with Sound Technical Knowledge',
-    qualification: 'Civil Engineering Practice',
+    name: 'Built on Engineering Excellence',
+    title: 'With Precision, Quality & Trust',
+    qualification: 'Civil Engineering Expertise',
     experience: 'Over 14 years of experience in construction and interior projects',
     role: 'Active On-Site Structural Supervision & Quality Control'
   },

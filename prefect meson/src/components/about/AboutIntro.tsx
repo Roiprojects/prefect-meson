@@ -107,13 +107,13 @@ export const AboutIntro: React.FC = () => {
                   BE
                 </div>
                 <div>
-                  <h4 className="font-barlow text-lg font-bold uppercase text-slate-950">
-                    ENGINEERING LEADERSHIP{' '}
-                    <mark className="bg-yellow-300 text-slate-950 px-1.5 py-0.5 rounded font-bold inline-block">
-                      WITH SOUND TECHNICAL KNOWLEDGE
+                  <h4 className="font-barlow text-base sm:text-lg font-bold uppercase text-slate-950 leading-tight">
+                    <span className="block">BUILT ON ENGINEERING EXCELLENCE</span>
+                    <mark className="bg-yellow-300 text-slate-950 px-1.5 py-0.5 rounded font-bold inline-block my-0.5">
+                      WITH PRECISION, QUALITY & TRUST
                     </mark>
                   </h4>
-                  <span className="font-mono text-xs font-semibold text-[#071D38] block">
+                  <span className="font-mono text-xs font-semibold text-[#071D38] block mt-0.5">
                     {ndlCompanyProfile.proprietor.qualification}
                   </span>
                 </div>

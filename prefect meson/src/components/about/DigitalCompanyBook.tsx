@@ -761,10 +761,10 @@ function renderEditorialPage(page: BookPageType, onOpenQuoteModal?: () => void) 
             <div className="flex items-center justify-between border-b border-slate-100 pb-2">
               <div>
                 <span className="font-mono text-[10px] text-slate-400 uppercase">ENGINEERING PRACTICE DIRECTION</span>
-                <h4 className="font-barlow text-lg font-bold uppercase text-[#071D38]">
-                  ENGINEERING LEADERSHIP{' '}
-                  <mark className="bg-yellow-300 text-slate-950 px-1.5 py-0.5 rounded font-bold inline-block">
-                    WITH SOUND TECHNICAL KNOWLEDGE
+                <h4 className="font-barlow text-base sm:text-lg font-bold uppercase text-[#071D38] leading-tight">
+                  <span className="block">BUILT ON ENGINEERING EXCELLENCE</span>
+                  <mark className="bg-yellow-300 text-slate-950 px-1.5 py-0.5 rounded font-bold inline-block my-0.5">
+                    WITH PRECISION, QUALITY & TRUST
                   </mark>
                 </h4>
               </div>
