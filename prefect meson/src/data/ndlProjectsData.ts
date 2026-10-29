@@ -439,24 +439,31 @@ export const ndlProjects: NDLProject[] = [
     city: 'Bangalore',
     architect: 'Mr. Raghu Bhat',
     architectPractice: 'Mr. Raghu Bhat',
-    scope: 'Residence - Civil, Interiors, Electric and Plumbing',
-    type: 'Turnkey Residence & Interiors',
+    scope: 'Residence - Civil, Interiors, Electric & Plumbing',
+    type: 'Luxury Villa Residence',
     category: 'Residential',
-    description: 'Complete turnkey residence in Nisarga Layout, Jigani covering structural civil framing, comprehensive electrical/plumbing layout, and bespoke interior joinery designed by Mr. Raghu Bhat.',
-    featuredImage: '/ndl_projects/slide_104_img_1.jpg',
+    description: 'Bespoke private luxury villa in Nisarga Layout, Jigani featuring traditional pitched terracotta gables, a wide covered verandah with timber-paneled ceiling and granite pillars, polished Italian marble living areas with dual-tone granite inlays, custom teak interior doors, and a double-height staircase atrium executed with complete civil, interiors, electrical, and plumbing works designed by Mr. Raghu Bhat.',
+    featuredImage: '/projects/mr_shekar/shekar_01_terracotta_villa_elevation.png',
     gallery: [
-      '/ndl_projects/slide_104_img_1.jpg',
-      '/ndl_projects/slide_104_img_2.jpg',
-      '/ndl_projects/slide_106_img_1.jpg',
-      '/ndl_projects/slide_106_img_1.jpg',
-      '/ndl_projects/slide_108_img_1.jpg',
-      '/ndl_projects/slide_109_img_1.jpg'
+      '/projects/mr_shekar/shekar_01_terracotta_villa_elevation.png',
+      '/projects/mr_shekar/shekar_02_verandah_terracotta_timber_ceiling.png',
+      '/projects/mr_shekar/shekar_03_marble_living_granite_inlay.png',
+      '/projects/mr_shekar/shekar_04_grand_staircase_glass_timber_railing.png',
+      '/projects/mr_shekar/shekar_05_teak_woodwork_louvered_doors.png'
     ],
-    highlights: ['Turnkey Civil + Interiors scope', 'Mr. Raghu Bhat design', 'Custom interior cabinetry & lighting'],
+    highlights: [
+      'Prime Nisarga Layout, Jigani villa location',
+      'Pitched terracotta gabled roof villa elevation',
+      'Wide verandah with exposed timber ceiling & granite columns',
+      'Polished Italian marble flooring with dual-tone granite inlays',
+      'Grand staircase atrium with glass balustrade & timber handrail',
+      'Custom teak interior woodwork & louvered doors',
+      'Mr. Raghu Bhat architectural design'
+    ],
     stats: [
       { label: 'Scope', value: 'Civil + Interiors + Electric + Plumbing' },
       { label: 'Architect', value: 'Mr. Raghu Bhat' },
-      { label: 'Location', value: 'Nisarga Layout, Jigani' }
+      { label: 'Location', value: 'Nisarga Layout, Jigani, Bangalore' }
     ]
   },
   {

@@ -23,7 +23,7 @@ export const ResidentialProjectShowcase: React.FC = () => {
 
   const filteredProjects = residentialProjectsList.filter((p) => {
     if (activeType === 'Luxury Estate Villas') {
-      if (!['dr-anil-kush', 'mr-vittal-das-shetty', 'mr-uma-shankar-agarwal', 'mr-rakesh-n-rao'].includes(p.id)) return false;
+      if (!['dr-anil-kush', 'mr-vittal-das-shetty', 'mr-uma-shankar-agarwal', 'mr-rakesh-n-rao', 'mr-shekar'].includes(p.id)) return false;
     } else if (activeType === 'Contemporary Residences') {
       if (!['mr-sarabjith-ghose', 'mr-mahanthesh-bellad', 'mr-kishore'].includes(p.id)) return false;
     } else if (activeType === 'Urban Multi-Storey Residences') {

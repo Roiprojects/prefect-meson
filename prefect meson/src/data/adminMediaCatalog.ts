@@ -544,6 +544,51 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_shekar-shekar-01-terracotta-villa-elevation-png",
+    url: "/projects/mr_shekar/shekar_01_terracotta_villa_elevation.png",
+    title: "Mr. Shekar - Terracotta Villa Elevation",
+    category: "Residential",
+    tags: ["mr. shekar","residential","nisarga layout jigani","authentic","client-photo"],
+    size: "822 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_shekar-shekar-02-verandah-terracotta-timber-ceiling-png",
+    url: "/projects/mr_shekar/shekar_02_verandah_terracotta_timber_ceiling.png",
+    title: "Mr. Shekar - Verandah Terracotta Tile & Timber Ceiling",
+    category: "Residential",
+    tags: ["mr. shekar","residential","nisarga layout jigani","authentic","client-photo"],
+    size: "652 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_shekar-shekar-03-marble-living-granite-inlay-png",
+    url: "/projects/mr_shekar/shekar_03_marble_living_granite_inlay.png",
+    title: "Mr. Shekar - Marble Living Lounge with Granite Inlay",
+    category: "Residential",
+    tags: ["mr. shekar","residential","nisarga layout jigani","authentic","client-photo"],
+    size: "551 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_shekar-shekar-04-grand-staircase-glass-timber-railing-png",
+    url: "/projects/mr_shekar/shekar_04_grand_staircase_glass_timber_railing.png",
+    title: "Mr. Shekar - Grand Staircase with Glass & Timber Railing",
+    category: "Residential",
+    tags: ["mr. shekar","residential","nisarga layout jigani","authentic","client-photo"],
+    size: "397 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_shekar-shekar-05-teak-woodwork-louvered-doors-png",
+    url: "/projects/mr_shekar/shekar_05_teak_woodwork_louvered_doors.png",
+    title: "Mr. Shekar - Custom Teak Woodwork & Louvered Doors",
+    category: "Residential",
+    tags: ["mr. shekar","residential","nisarga layout jigani","authentic","client-photo"],
+    size: "550 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_nataraj-nataraj-01-commercial-complex-street-view-png",
     url: "/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png",
     title: "Mr. Nataraj - Commercial Complex Street View",

@@ -23,6 +23,20 @@ interface ResidentialCardItem {
 
 const residentialShowcaseList: ResidentialCardItem[] = [
   {
+    id: 'mr-shekar',
+    client: 'Mr. Shekar',
+    statHeadline: 'LUXURY VILLA',
+    badge: 'Luxury Villa',
+    height: 'G+2',
+    timeline: '12 Mo',
+    rating: 'Mr. Raghu Bhat, Architect',
+    location: 'Nisarga Layout, Jigani, Bangalore',
+    city: 'Bangalore',
+    sector: 'Luxury Villa',
+    timelineCategory: '12–24 Mo',
+    image: '/projects/mr_shekar/shekar_01_terracotta_villa_elevation.png'
+  },
+  {
     id: 'dr-anil-kush',
     client: 'Dr. Anil Kush',
     statHeadline: '12,500 SQ.FT',
@@ -220,7 +234,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   }
 ];
 
-const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Bilekahalli', 'Anjanapura', 'Whitefield'];
+const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Bilekahalli', 'Anjanapura', 'Whitefield', 'Jigani'];
 const sectors = ['Luxury Villa', 'Contemporary', 'Multi-Storey', 'Residential Complex'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
