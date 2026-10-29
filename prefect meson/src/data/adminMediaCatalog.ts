@@ -714,6 +714,51 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-11-signature-bottle-glass-wall-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_11_signature_bottle_glass_wall.png",
+    title: "Mr. Sarabjith Ghose - Signature Circular Bottle-Glass Matrix Feature Wall",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "592 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-12-open-riser-stair-flight-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_12_open_riser_stair_flight.png",
+    title: "Mr. Sarabjith Ghose - White Open-Riser Metal Staircase & Bottle Light Wall",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "555 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-13-double-height-skylit-atrium-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_13_double_height_skylit_atrium.png",
+    title: "Mr. Sarabjith Ghose - Double-Height Skylit Atrium & Timber Treads",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "760 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-14-foyer-bottle-glass-screen-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_14_foyer_bottle_glass_screen.png",
+    title: "Mr. Sarabjith Ghose - Entrance Foyer Bottle-Glass Screen & Reception Credenza",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "276 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-15-courtyard-glazing-bridge-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_15_courtyard_glazing_bridge.png",
+    title: "Mr. Sarabjith Ghose - Double-Height Courtyard Glazing & Internal Light Bridge",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "730 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_sreeram-sreeram-01-exposed-brick-masonry-elevation-jpg",
     url: "/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg",
     title: "Mr. Sreeram - Exposed Brick Masonry Elevation",

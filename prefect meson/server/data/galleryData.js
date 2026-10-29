@@ -67,7 +67,7 @@ export const galleryProjects = [] = [
     architect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
     architectPractice: 'GRC Architects / Gaurav Roy Chaudary',
     scope: 'Civil, Plumbing and Electrical Works',
-    description: 'Distinctive contemporary private residence at # 17, Mantri Lakeview Talagatpura, Kanakpura Main Road featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, cantilevered stone floating staircase, and complete civil, plumbing, and electrical works designed by Gaurav Roy Chaudary, 7th Sector, HSR Layout.',
+    description: 'Distinctive contemporary private residence at # 17, Mantri Lakeview Talagatpura, Kanakpura Main Road featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, cantilevered stone floating staircase, signature bottle-glass light walls, and complete civil, plumbing, and electrical works designed by Gaurav Roy Chaudary, 7th Sector, HSR Layout.',
     featured: true,
     image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg',
     galleryImages: [
@@ -80,7 +80,12 @@ export const galleryProjects = [] = [
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_07_floating_brick_staircase.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_glass_stairwell.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_09_split_level_atrium.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_10_study_nook_blue_accent.png'
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_10_study_nook_blue_accent.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_11_signature_bottle_glass_wall.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_12_open_riser_stair_flight.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_13_double_height_skylit_atrium.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_14_foyer_bottle_glass_screen.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_15_courtyard_glazing_bridge.png'
     ],
     highlights: ['Wire-cut brick masonry', 'Cantilevered architectural volumes', 'Split level zoning', 'GRC Architects design'],
     specs: [
