@@ -343,6 +343,7 @@ export const galleryProjects = [
     client: 'Mr. Amith',
     title: 'Mr. Amith Residence',
     category: 'Residential',
+    secondaryCategories: [],
     projectType: 'Contemporary Residence',
     status: 'Completed',
     location: 'Vijaya Bank Layout, Bilekahalli, BG Road, Bangalore',

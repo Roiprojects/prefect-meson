@@ -135,6 +135,20 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     image: '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg'
   },
   {
+    id: 'mr-amith',
+    client: 'Mr. Amith',
+    statHeadline: '3,800 SQ.FT',
+    badge: 'Multi-Storey',
+    height: 'G+2',
+    timeline: '10 Mo',
+    rating: 'NDL Engineering Coordination',
+    location: 'Vijaya Bank Layout, Bilekahalli, BG Road, Bangalore',
+    city: 'Bangalore',
+    sector: 'Multi-Storey',
+    timelineCategory: '< 12 Mo',
+    image: '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg'
+  },
+  {
     id: 'mr-kumar',
     client: 'Mr. Kumar',
     statHeadline: '5,800 SQ.FT',
@@ -206,7 +220,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   }
 ];
 
-const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Anjanapura', 'Whitefield'];
+const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Bilekahalli', 'Anjanapura', 'Whitefield'];
 const sectors = ['Luxury Villa', 'Contemporary', 'Multi-Storey', 'Residential Complex'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
