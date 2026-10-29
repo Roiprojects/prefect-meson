@@ -642,6 +642,42 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_praveen_kumar-praveen-kumar-11-overhead-living-wooden-flooring-jpg",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_11_overhead_living_wooden_flooring.jpg",
+    title: "Mr. Praveen Kumar - Double-Height Living Lounge with Hardwood Flooring",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "living", "flooring", "authentic", "client-photo"],
+    size: "306 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_praveen_kumar-praveen-kumar-12-wooden-slat-gate-compound-wall-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_12_wooden_slat_gate_compound_wall.png",
+    title: "Mr. Praveen Kumar - Horizontal Timber Slat Gate & Circular Aperture Wall",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "gate", "elevation", "authentic", "client-photo"],
+    size: "793 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_praveen_kumar-praveen-kumar-13-verandah-pergola-brick-entrance-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_13_verandah_pergola_brick_entrance.png",
+    title: "Mr. Praveen Kumar - Glass Pergola Verandah & Carved Main Entrance Door",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "entrance", "verandah", "authentic", "client-photo"],
+    size: "730 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_praveen_kumar-praveen-kumar-14-tiered-gables-facade-gate-perspective-jpg",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_14_tiered_gables_facade_gate_perspective.jpg",
+    title: "Mr. Praveen Kumar - Multi-Tier Gabled Facade & Boundary Wall Perspective",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "facade", "elevation", "authentic", "client-photo"],
+    size: "255 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_sreeram-sreeram-01-exposed-brick-masonry-elevation-jpg",
     url: "/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg",
     title: "Mr. Sreeram - Exposed Brick Masonry Elevation",

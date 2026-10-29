@@ -204,9 +204,13 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_praveen_kumar/praveen_kumar_07_cable_staircase_dining_atrium.png',
       '/projects/mr_praveen_kumar/praveen_kumar_08_understair_pebble_court_warli_mural.png',
       '/projects/mr_praveen_kumar/praveen_kumar_09_modular_kitchen_breakfast_bar.jpg',
-      '/projects/mr_praveen_kumar/praveen_kumar_10_master_bedroom_stone_wall_wardrobe.png'
+      '/projects/mr_praveen_kumar/praveen_kumar_10_master_bedroom_stone_wall_wardrobe.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_11_overhead_living_wooden_flooring.jpg',
+      '/projects/mr_praveen_kumar/praveen_kumar_12_wooden_slat_gate_compound_wall.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_13_verandah_pergola_brick_entrance.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_14_tiered_gables_facade_gate_perspective.jpg'
     ],
-    highlights: ['Tiered terracotta gabled roof', 'Carved teakwood double entrance door', 'Exposed timber truss atrium', 'Keystone Architects design'],
+    highlights: ["Tiered terracotta gabled roof","Carved teakwood double entrance door","Exposed timber truss atrium","Cable balustrade staircase atrium","Overhead mezzanine living lounge","Pergola glass verandah entrance","Pebble-lined puja sanctuary","Keystone Architects design"],
     specs: [
       { label: 'Scope', value: 'Civil + Plumbing + Electrical' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },

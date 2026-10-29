@@ -164,14 +164,24 @@ export const defaultResidentialItems = [
       '/projects/mr_praveen_kumar/praveen_kumar_07_cable_staircase_dining_atrium.png',
       '/projects/mr_praveen_kumar/praveen_kumar_08_understair_pebble_court_warli_mural.png',
       '/projects/mr_praveen_kumar/praveen_kumar_09_modular_kitchen_breakfast_bar.jpg',
-      '/projects/mr_praveen_kumar/praveen_kumar_10_master_bedroom_stone_wall_wardrobe.png'
+      '/projects/mr_praveen_kumar/praveen_kumar_10_master_bedroom_stone_wall_wardrobe.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_11_overhead_living_wooden_flooring.jpg',
+      '/projects/mr_praveen_kumar/praveen_kumar_12_wooden_slat_gate_compound_wall.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_13_verandah_pergola_brick_entrance.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_14_tiered_gables_facade_gate_perspective.jpg',
     ],
     features: [
       'Tiered gabled terracotta roof architecture',
       'Handcrafted ornate teakwood entrance doorway',
       'Exposed timber rafter truss ceiling atrium',
+      'Double-height dining atrium with steel cable balustrade staircase',
+      'Mezzanine overlook lounge with polished timber flooring',
+      'Glass pergola entrance portico over wire-cut brickwork',
+      'Internal pebble-lined puja sanctuary and landscape court',
       'Exposed wire-cut brick masonry with weather pointing',
-      'Private gated compound with perimeter landscaping'
+      'Contemporary modular kitchen and breakfast counter',
+      'Master bedroom with natural stone wall cladding',
+      'Architectural compound wall with circular aperture and wooden slat gate',
     ],
     specs: [
       'Heavy RCC framed superstructure with wire-cut brick masonry.',
