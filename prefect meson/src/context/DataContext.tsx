@@ -697,12 +697,17 @@ const defaultResidentialItems: ResidentialItem[] = [
     category: 'Luxury Villas on Item Rate Basis',
     tagline: 'Item-Rate Contract Agreements & Custom Estate Execution',
     description: 'Stately luxury villa construction executed on a transparent item-rate contractual basis for Dr. Anil Kush at # C2, Estate Club, Bangalore with exposed RCC cantilevered slabs, floating teak staircase, stepped water features, modular kitchen, and bespoke estate finishes under Architecture Paradigm, 6th block, Koramangala.',
-    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
+    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_facade_elevation.jpg',
     galleryImages: [
-      '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
-      '/projects/dr_anil_kush/dr_anil_kush_02_master_bedroom.png',
-      '/projects/dr_anil_kush/dr_anil_kush_03_modular_kitchen.png',
-      '/projects/dr_anil_kush/dr_anil_kush_04_bathroom_vanity.png',
+      '/projects/dr_anil_kush/dr_anil_kush_01_facade_elevation.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_02_cantilever_portico.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_03_courtyard_louvers.png',
+      '/projects/dr_anil_kush/dr_anil_kush_04_board_marked_rcc_hall.png',
+      '/projects/dr_anil_kush/dr_anil_kush_05_living_lounge_red_wall.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_06_floating_staircase_atrium.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_07_master_bedroom.png',
+      '/projects/dr_anil_kush/dr_anil_kush_08_modular_kitchen.png',
+      '/projects/dr_anil_kush/dr_anil_kush_09_bathroom_vanity.png'
     ],
     features: [
       '100% Itemized BOQ Contract Billing Transparency',
@@ -1240,7 +1245,7 @@ const defaultTurnkeyItems: TurnkeyItem[] = [
     category: 'Residential Turnkey',
     tagline: 'From Concept Blueprints to Finished Furnished Villa',
     description: 'Bespoke residential design-and-build turnkey solution for high-net-worth private residences. Encompassing geotechnical analysis, custom cantilever architecture, premium civil construction, imported marble flooring, custom woodwork, and landscape automation executed under Architecture Paradigm.',
-    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
+    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_facade_elevation.jpg',
     galleryImages: [
       '/ndl_projects/slide_012_img_1.jpg',
       '/ndl_projects/slide_015_img_1.jpg',

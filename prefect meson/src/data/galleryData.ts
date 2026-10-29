@@ -45,14 +45,19 @@ export const galleryProjects: GalleryProject[] = [
     architect: 'Architecture Paradigm, 6th block, Koramangala',
     architectPractice: 'Architecture Paradigm',
     scope: 'Civil, Electrical, Plumbing, Interiors and Landscaping works',
-    description: 'Comprehensive private estate residence comprising heavy structural civil construction, board-marked exposed RCC walls, stepped water bodies, full MEP infrastructure, custom floating teak staircase, modular kitchen, bespoke interior joinery, and perimeter garden landscaping executed under Architecture Paradigm.',
+    description: 'Comprehensive private estate residence comprising heavy structural civil construction, board-marked exposed RCC walls, cantilevered portico, stepped water bodies, full MEP infrastructure, custom floating teak staircase, modular kitchen, bespoke interior joinery, and perimeter garden landscaping executed under Architecture Paradigm.',
     featured: true,
-    image: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
+    image: '/projects/dr_anil_kush/dr_anil_kush_01_facade_elevation.jpg',
     galleryImages: [
-      '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
-      '/projects/dr_anil_kush/dr_anil_kush_02_master_bedroom.png',
-      '/projects/dr_anil_kush/dr_anil_kush_03_modular_kitchen.png',
-      '/projects/dr_anil_kush/dr_anil_kush_04_bathroom_vanity.png'
+      '/projects/dr_anil_kush/dr_anil_kush_01_facade_elevation.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_02_cantilever_portico.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_03_courtyard_louvers.png',
+      '/projects/dr_anil_kush/dr_anil_kush_04_board_marked_rcc_hall.png',
+      '/projects/dr_anil_kush/dr_anil_kush_05_living_lounge_red_wall.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_06_floating_staircase_atrium.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_07_master_bedroom.png',
+      '/projects/dr_anil_kush/dr_anil_kush_08_modular_kitchen.png',
+      '/projects/dr_anil_kush/dr_anil_kush_09_bathroom_vanity.png'
     ],
     highlights: ['Exposed RCC walls', 'Water bodies & landscaping', 'Turnkey interiors', 'Architecture Paradigm design'],
     specs: [

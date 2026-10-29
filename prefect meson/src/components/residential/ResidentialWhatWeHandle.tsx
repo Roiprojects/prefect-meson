@@ -19,7 +19,7 @@ const disciplines: Discipline[] = [
     scope: 'Blueprint Synchronization & Sanction Filings',
     technicalDetails: 'Direct interface with architectural firms (Architecture Paradigm, Keystone, GRC, Still Water) translating 2D drawings and 3D BIM models into site execution lines without tolerance drift.',
     materials: 'Municipal Sanction Drawings • Structural Calculation Sheets • Cadastral Survey',
-    image: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
+    image: '/projects/dr_anil_kush/dr_anil_kush_01_facade_elevation.jpg',
     badge: 'STAGE 01 // ARCHITECTURAL DRAWINGS & SANCTIONS',
   },
   {
