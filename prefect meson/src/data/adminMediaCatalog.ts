@@ -597,6 +597,51 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_praveen_kumar-praveen-kumar-06-pebble-puja-court-krishna-idol-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_06_pebble_puja_court_krishna_idol.png",
+    title: "Mr. Praveen Kumar - Internal Pebble Puja Court & Krishna Shrine",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "puja", "authentic", "client-photo"],
+    size: "659 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_praveen_kumar-praveen-kumar-07-cable-staircase-dining-atrium-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_07_cable_staircase_dining_atrium.png",
+    title: "Mr. Praveen Kumar - Cable Balustrade Staircase & Double-Height Dining Atrium",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "staircase", "atrium", "authentic", "client-photo"],
+    size: "922 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_praveen_kumar-praveen-kumar-08-understair-pebble-court-warli-mural-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_08_understair_pebble_court_warli_mural.png",
+    title: "Mr. Praveen Kumar - Under-Stair Pebble Garden & Warli Mural Wall",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "landscape", "mural", "authentic", "client-photo"],
+    size: "565 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_praveen_kumar-praveen-kumar-09-modular-kitchen-breakfast-bar-jpg",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_09_modular_kitchen_breakfast_bar.jpg",
+    title: "Mr. Praveen Kumar - Contemporary Modular Kitchen & Breakfast Counter",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "kitchen", "authentic", "client-photo"],
+    size: "264 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_praveen_kumar-praveen-kumar-10-master-bedroom-stone-wall-wardrobe-png",
+    url: "/projects/mr_praveen_kumar/praveen_kumar_10_master_bedroom_stone_wall_wardrobe.png",
+    title: "Mr. Praveen Kumar - Master Bedroom with Stone Wall Cladding & Wood Veneer Wardrobes",
+    category: "Residential",
+    tags: ["mr. praveen kumar", "residential", "kr puram", "bedroom", "authentic", "client-photo"],
+    size: "919 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_sreeram-sreeram-01-exposed-brick-masonry-elevation-jpg",
     url: "/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg",
     title: "Mr. Sreeram - Exposed Brick Masonry Elevation",

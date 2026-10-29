@@ -167,9 +167,14 @@ export const ndlProjects: NDLProject[] = [
       '/projects/mr_praveen_kumar/praveen_kumar_02_timber_rafter_truss_atrium.png',
       '/projects/mr_praveen_kumar/praveen_kumar_03_tiered_roof_side_elevation.png',
       '/projects/mr_praveen_kumar/praveen_kumar_04_driveway_wide_facade_view.jpg',
-      '/projects/mr_praveen_kumar/praveen_kumar_05_carved_teak_double_door.png'
+      '/projects/mr_praveen_kumar/praveen_kumar_05_carved_teak_double_door.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_06_pebble_puja_court_krishna_idol.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_07_cable_staircase_dining_atrium.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_08_understair_pebble_court_warli_mural.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_09_modular_kitchen_breakfast_bar.jpg',
+      '/projects/mr_praveen_kumar/praveen_kumar_10_master_bedroom_stone_wall_wardrobe.png'
     ],
-    highlights: ['Tiered terracotta gabled roof', 'Carved teakwood double entrance door', 'Exposed timber truss atrium', 'Keystone Architects design'],
+    highlights: ["Tiered terracotta gabled roof","Carved teakwood double entrance door","Exposed timber truss atrium","Cable balustrade staircase atrium","Pebble-lined puja sanctuary","Keystone Architects design"],
     stats: [
       { label: 'Scope', value: 'Civil, Plumbing and Electrical Works' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
