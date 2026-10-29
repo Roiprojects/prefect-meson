@@ -497,6 +497,12 @@ export const InteriorsPage: React.FC<InteriorsPageProps> = ({ onOpenQuoteModal }
                     <img
                       src={activeService.image}
                       alt={activeService.name}
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (!target.src.includes('interior_01_living')) {
+                          target.src = '/assets/interior_01_living.jpg';
+                        }
+                      }}
                       className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700 ease-out brightness-95"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/30 to-transparent pointer-events-none" />

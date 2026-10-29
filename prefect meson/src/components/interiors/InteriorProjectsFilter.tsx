@@ -256,6 +256,12 @@ export const InteriorProjectsFilter: React.FC = () => {
                       <img
                         src={project.image}
                         alt={project.client}
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (!target.src.includes('interior_01_living')) {
+                            target.src = '/assets/interior_01_living.jpg';
+                          }
+                        }}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                         loading="lazy"
                       />
