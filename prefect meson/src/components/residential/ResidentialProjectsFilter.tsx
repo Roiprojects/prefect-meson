@@ -94,7 +94,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   },
   {
     id: 'mr-uma-shankar-agarwal',
-    client: 'Mr. Uma Shankar Agarwal Residence',
+    client: 'Mr. Uma Shankar Agarwal',
     statHeadline: '6,200 SQ.FT',
     badge: 'Luxury Villa',
     height: 'G+2',

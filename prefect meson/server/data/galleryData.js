@@ -304,6 +304,7 @@ export const galleryProjects = [
     client: 'Mr. Uma Shankar Agarwal',
     title: 'Mr. Uma Shankar Agarwal Residence',
     category: 'Residential',
+    secondaryCategories: [],
     projectType: 'Private Luxury Residence',
     status: 'Completed',
     location: 'JP Nagar Phase 2, near Mini Forest, Bangalore',

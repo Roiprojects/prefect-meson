@@ -51,20 +51,6 @@ const interiorShowcaseList: InteriorCardItem[] = [
     image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
   },
   {
-    id: 'mr-uma-shankar-agarwal',
-    client: 'Mr. Uma Shankar Agarwal Residence',
-    statHeadline: '6,200 SQ.FT',
-    badge: 'Luxury Residence',
-    height: 'G+2',
-    timeline: '10 Mo',
-    rating: 'Still Water Architects',
-    location: 'JP Nagar Phase 2, Near Mini Forest, Bangalore',
-    city: 'Bangalore',
-    sector: 'Luxury Residential',
-    timelineCategory: '12–24 Mo',
-    image: '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_01_double_height_living_mezzanine.png'
-  },
-  {
     id: 'mr-mahanthesh-bellad',
     client: 'Mr. Mahanthesh Bellad Residence',
     statHeadline: '7,200 SQ.FT',
