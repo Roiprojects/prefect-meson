@@ -296,7 +296,7 @@ export const CommercialCategoryPage: React.FC<CommercialCategoryPageProps> = ({ 
               CUSTOM COMMERCIAL SPECIFICATIONS
             </span>
             <h3 className="font-display text-2xl font-bold uppercase text-slate-950">
-              Have a similar {category.title} project?
+              Planning a Similar Commercial Project?
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 font-sans mt-1">
               Consult directly with our engineering team for site assessment, zoning bylaws, and itemized estimation.

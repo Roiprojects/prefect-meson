@@ -395,7 +395,7 @@ export const ResidentialCategoryPage: React.FC<ResidentialCategoryPageProps> = (
               PROPRIETOR CIVIL CONSULTATION
             </span>
             <h3 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-white">
-              Planning a {category.title} Project?
+              Planning a Similar Residential Project?
             </h3>
             <p className="text-sm text-slate-300 mt-1 max-w-xl font-sans">
               Discuss structural feasibility, material specifications, and turnkey execution with senior civil engineering directors.
