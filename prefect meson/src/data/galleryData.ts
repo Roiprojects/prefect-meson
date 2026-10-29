@@ -96,7 +96,7 @@ export const galleryProjects: GalleryProject[] = [
     architect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
     architectPractice: 'GRC Architects / Gaurav Roy Chaudary',
     scope: 'Civil, Plumbing and Electrical Works',
-    description: 'Distinctive contemporary private residence at # 17, Mantri Lakeview Talagatpura, Kanakpura Main Road featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, cantilevered stone floating staircase, signature bottle-glass light walls, hardwood living areas with bi-fold deck doors, and complete civil, plumbing, and electrical works designed by Gaurav Roy Chaudary, 7th Sector, HSR Layout.',
+    description: 'Distinctive contemporary private residence at # 17, Mantri Lakeview Talagatpura, Kanakpura Main Road featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, cantilevered stone floating staircase, signature bottle-glass light walls, hardwood living areas with bi-fold deck doors, modular kitchen, and complete civil, plumbing, and electrical works designed by Gaurav Roy Chaudary, 7th Sector, HSR Layout.',
     featured: true,
     image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg',
     galleryImages: [
@@ -119,7 +119,12 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_17_cantilever_wooden_stair_detail.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_18_hardwood_living_deck.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_19_split_level_foyer_terracotta.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_20_mezzanine_gallery_hallway.png'
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_20_mezzanine_gallery_hallway.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_21_living_frosted_partition.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_22_sunken_courtyard_water_trough.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_23_ground_floor_garden_window.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_24_foyer_kitchen_threshold.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_25_modular_oak_kitchen.png'
     ],
     highlights: ['Wire-cut brick masonry', 'Cantilevered architectural volumes', 'Split level zoning', 'GRC Architects design'],
     specs: [

@@ -804,6 +804,51 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-21-living-frosted-partition-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_21_living_frosted_partition.png",
+    title: "Mr. Sarabjith Ghose - Living Lounge with Frosted Screen & Brick Column",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "346 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-22-sunken-courtyard-water-trough-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_22_sunken_courtyard_water_trough.png",
+    title: "Mr. Sarabjith Ghose - Sunken Courtyard, Brick Niche & Stone Water Trough",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "597 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-23-ground-floor-garden-window-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_23_ground_floor_garden_window.png",
+    title: "Mr. Sarabjith Ghose - Ground Floor Room with Granite Sill Garden Bench",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "451 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-24-foyer-kitchen-threshold-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_24_foyer_kitchen_threshold.png",
+    title: "Mr. Sarabjith Ghose - Courtyard Threshold to Modular Kitchen",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "332 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-25-modular-oak-kitchen-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_25_modular_oak_kitchen.png",
+    title: "Mr. Sarabjith Ghose - Contemporary Oak Modular Kitchen & Breakfast Counter",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "514 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_sreeram-sreeram-01-exposed-brick-masonry-elevation-jpg",
     url: "/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg",
     title: "Mr. Sreeram - Exposed Brick Masonry Elevation",
