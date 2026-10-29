@@ -578,6 +578,7 @@ export const galleryProjects = [
     client: 'Mrs. Hema Saravanan',
     title: 'Mrs. Hema Saravanan Residence',
     category: 'Residential',
+    secondaryCategories: [],
     projectType: 'Contemporary Urban Residence',
     status: 'Completed',
     location: 'Delmia Circle, JP Nagar, Bangalore',

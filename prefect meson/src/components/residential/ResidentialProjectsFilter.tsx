@@ -234,7 +234,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   }
 ];
 
-const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Bilekahalli', 'Anjanapura', 'Whitefield', 'Jigani', 'Uttarahalli'];
+const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Bilekahalli', 'Anjanapura', 'Whitefield', 'Jigani', 'Uttarahalli', 'JP Nagar'];
 const sectors = ['Luxury Villa', 'Contemporary', 'Multi-Storey', 'Residential Complex'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
