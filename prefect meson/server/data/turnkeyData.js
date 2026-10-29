@@ -152,8 +152,8 @@ export const defaultTurnkeyItems = [
     number: '05',
     title: 'Mr. Nataraj Commercial Cum Residential Complex',
     category: 'Commercial Turnkey',
-    tagline: 'Turnkey Commercial Retail + Executive Residence (1.8 Cr)',
-    description: 'Prominent G+4 commercial cum residential complex on 27th Main HSR Layout executed on a turnkey basis at a project cost of Rs 1.8 Crore, featuring retail ground floors, corporate office spaces, and luxury residential penthouse units.',
+    tagline: 'Turnkey Commercial Retail + Executive Residence',
+    description: 'Prominent G+4 commercial cum residential complex on 27th Main HSR Layout executed on a turnkey basis featuring retail ground floors, corporate office spaces, and luxury residential penthouse units.',
     heroImage: '/ndl_projects/slide_097_img_1.jpg',
     galleryImages: [
       '/ndl_projects/slide_097_img_1.jpg',
@@ -168,7 +168,7 @@ export const defaultTurnkeyItems = [
       '05. Full MEP, Fire Hydrants & Statutory Handover',
     ],
     deliverables: [
-      'Comprehensive Turnkey Execution at Rs 1.8 Cr',
+      'Comprehensive Turnkey Execution & Handover',
       'Multi-Use Commercial & Residential Certifications',
       'High-Durability Exterior Weather Envelope',
       'As-Built Drawings & Complete Municipal Approvals',

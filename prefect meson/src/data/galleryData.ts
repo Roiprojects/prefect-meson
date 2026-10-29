@@ -63,14 +63,14 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/dr_anil_kush/dr_anil_kush_12_master_bedroom.png',
       '/projects/dr_anil_kush/dr_anil_kush_13_modular_kitchen.png',
       '/projects/dr_anil_kush/dr_anil_kush_14_kitchen_installation.png',
-      '/projects/dr_anil_kush/dr_anil_kush_15_bathroom_vanity.png',
+      '/projects/dr_anil_kush/dr_anil_kush_15_bathroom_vanity.png'
     ],
     highlights: ['Exposed RCC walls', 'Water bodies & landscaping', 'Turnkey interiors', 'Architecture Paradigm design'],
     specs: [
       { label: 'Scope', value: 'Civil, Electrical, Plumbing, Interiors and Landscaping works' },
       { label: 'Architect', value: 'Architecture Paradigm, 6th block, Koramangala' },
       { label: 'Location', value: '# C2, Estate Club, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -106,14 +106,14 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_12_internal_courtyard_glazing.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_13_designer_bathroom.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_14_cantilever_wooden_stair.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_15_hardwood_living_room.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_15_hardwood_living_room.png'
     ],
     highlights: ['Wire-cut brick masonry', 'Cantilevered architectural volumes', 'Split level zoning', 'GRC Architects design'],
     specs: [
       { label: 'Scope', value: 'Civil + Plumbing + Electrical' },
       { label: 'Architect', value: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout' },
       { label: 'Location', value: 'Mantri Lakeview, Kanakapura Road' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -141,14 +141,14 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/24x7_solutions/24x7_solutions_03_modular_workstations.png',
       '/projects/24x7_solutions/24x7_solutions_04_executive_cabin_entrance.png',
       '/projects/24x7_solutions/24x7_solutions_05_workstation_bays_glass_view.png',
-      '/projects/24x7_solutions/24x7_solutions_06_cabin_entrance_reception_staff.png',
+      '/projects/24x7_solutions/24x7_solutions_06_cabin_entrance_reception_staff.png'
     ],
     highlights: ['Executive cabins & workstations', 'Glass architectural partitions', 'Acoustic ceilings', 'Keystone Architects design'],
     specs: [
       { label: 'Scope', value: 'Office Interiors & Fit-Out' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
       { label: 'Location', value: 'Near Ulsoor Lake, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -178,14 +178,14 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_praveen_kumar/praveen_kumar_06_modern_kitchen_breakfast_bar.jpg',
       '/projects/mr_praveen_kumar/praveen_kumar_07_hardwood_living_room_aerial.jpg',
       '/projects/mr_praveen_kumar/praveen_kumar_08_verandah_pergola_entrance.png',
-      '/projects/mr_praveen_kumar/praveen_kumar_09_timber_compound_gate.png',
+      '/projects/mr_praveen_kumar/praveen_kumar_09_timber_compound_gate.png'
     ],
     highlights: ['Tiered terracotta gabled roof', 'Carved teakwood entrance door', 'Exposed timber truss atrium', 'Hardwood living & breakfast bar', 'Internal pebble puja court'],
     specs: [
       { label: 'Scope', value: 'Civil + Plumbing + Electrical' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
       { label: 'Location', value: 'Tambuchetti Palya, KR Puram, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -219,14 +219,14 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_10_puja_room_brass_bell_doors.jpg',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_11_sunken_bath_emerald_tiles.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_12_garden_patio_pergola_paving.png',
-      '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png'
     ],
     highlights: ['Dressed stone tower elevation', 'Tiered terracotta gabled roof', 'Bamboo soffit steel pergola walkway', 'Granite verandah & exposed brick foyer', 'Custom sliding wardrobe & steel staircase', 'Teakwood puja room with brass bells', 'Sunken bath & garden patio pergola', 'Keystone Architects design'],
     specs: [
       { label: 'Scope', value: 'Civil + Structural + Finishing' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
       { label: 'Location', value: 'Asha Township, Doddagubbi, Hosakote' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -242,22 +242,22 @@ export const galleryProjects: GalleryProject[] = [
     location: '3rd Main, Defence Colony, Indiranagar, Bangalore',
     area: 'Indiranagar',
     city: 'Bangalore',
-    architect: 'Kiran and Associates, Bombay',
+    architect: 'Kiran and Associate, Bombay',
     architectPractice: 'Kiran and Associates, Bombay',
-    scope: 'Civil, Electrical, Plumbing and Interior Work',
+    scope: 'Civil, Electrical, Plumbing, Interior Work',
     description: 'Iconic hospitality interior and civil execution in Defence Colony, Indiranagar featuring custom wood joinery, acoustic bar counters, ambient lighting networks, and specialized commercial MEP layout.',
     featured: true,
     image: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
     galleryImages: [
       '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
-      '/projects/take_5_bar/take_5_bar_02_service_counter_dining_partition.jpg',
+      '/projects/take_5_bar/take_5_bar_02_service_counter_dining_partition.jpg'
     ],
     highlights: ['Polished black granite bar counter', 'Custom overhead glass & wine rack', 'Service counter & frosted glass partition', 'Kiran and Associates Bombay design'],
     specs: [
       { label: 'Scope', value: 'Civil + Electrical + Plumbing + Interiors' },
       { label: 'Architect', value: 'Kiran and Associates, Bombay' },
       { label: 'Location', value: 'Defence Colony, Indiranagar' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -279,14 +279,14 @@ export const galleryProjects: GalleryProject[] = [
     featured: false,
     image: '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg',
     galleryImages: [
-      '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg',
+      '/projects/mr_tilak/tilak_01_terracotta_villa_facade.jpg'
     ],
     highlights: ['HSR Layout 7th Sector prime location', 'Pitched terracotta gabled roof villa', 'Wrap-around cantilevered balcony', 'Kumar and Associates Trivandrum design', 'Precision civil and plumbing execution'],
     specs: [
       { label: 'Scope', value: 'Civil + Plumbing' },
       { label: 'Architect', value: 'Kumar and Associates, Trivandrum' },
       { label: 'Location', value: 'HSR Layout, 7th Sector, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -312,14 +312,14 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_02_living_tv_unit_wood_panelling.png',
       '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_03_terrace_pergola_roof_garden.png',
       '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_04_floating_zigzag_staircase_atrium.png',
-      '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_05_bookmatched_italian_marble_wall.png',
+      '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_05_bookmatched_italian_marble_wall.png'
     ],
     highlights: ['JP Nagar Phase 2 near Mini Forest prime location', 'Double-height living atrium with upper mezzanine', 'Sculptural floating zigzag internal staircase', 'Terrace garden deck with structural steel pergola', 'Book-matched Italian marble feature wall', 'Still Water Architects design'],
     specs: [
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
       { label: 'Architect', value: 'Still Water Architects' },
       { label: 'Location', value: 'JP Nagar Phase 2' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -342,14 +342,14 @@ export const galleryProjects: GalleryProject[] = [
     image: '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
     galleryImages: [
       '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
-      '/projects/mr_amith/amith_02_geometric_elevation_street_view.jpg',
+      '/projects/mr_amith/amith_02_geometric_elevation_street_view.jpg'
     ],
     highlights: ['Vijaya Bank Layout Bilekahalli prime location', 'Cubist slate grey & white geometric facade', 'Deep cantilevered balconies with spot lighting', 'Corner ribbon fenestrations & modern grilles', 'NDL in-house engineering and turnkey execution'],
     specs: [
       { label: 'Scope', value: 'Civil + Structural Works' },
       { label: 'Architect', value: 'NDL In-House Engineering Coordination' },
       { label: 'Location', value: 'Vijaya Bank Layout, Bilekahalli, BG Road' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -368,8 +368,7 @@ export const galleryProjects: GalleryProject[] = [
     architect: 'Commercial Interior Practice',
     architectPractice: 'Commercial Interiors',
     scope: 'Interiors',
-    cost: '52 lacs',
-    description: 'Complete corporate office interior fit-out in Koramangala executed at a verified project cost of Rs 52 Lacs, featuring executive boardrooms, custom acoustic paneling, glass cubicles, and designer modular workstations.',
+    description: 'Complete corporate office interior fit-out in Koramangala featuring executive boardrooms, custom acoustic paneling, glass cubicles, and designer modular workstations.',
     featured: true,
     image: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',
     galleryImages: [
@@ -380,14 +379,14 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/farm_india_office/farm_india_05_workspace_fitout_hardwood_flooring.png',
       '/projects/farm_india_office/farm_india_06_corporate_pantry_kitchenette.png',
       '/projects/farm_india_office/farm_india_07_corporate_restroom_dual_vanity.png',
-      '/projects/farm_india_office/farm_india_08_restroom_sanitary_fixtures.png',
+      '/projects/farm_india_office/farm_india_08_restroom_sanitary_fixtures.png'
     ],
-    highlights: ['Verified Project Cost: Rs 52 Lacs', 'Executive boardrooms & cabins', 'Acoustic paneling & glass joinery'],
+    highlights: [ 'Executive boardrooms & cabins', 'Acoustic paneling & glass joinery'],
     specs: [
-      { label: 'Cost', value: 'Rs 52 Lacs' },
+      
       { label: 'Scope', value: 'Office Interiors' },
       { label: 'Location', value: 'Koramangala, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -413,7 +412,7 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_kumar/kumar_02_italian_marble_living_lounge.png',
       '/projects/mr_kumar/kumar_03_backlit_onyx_puja_mandir.png',
       '/projects/mr_kumar/kumar_04_modular_kitchen_granite_counter.png',
-      '/projects/mr_kumar/kumar_05_living_room_balcony_garden.png',
+      '/projects/mr_kumar/kumar_05_living_room_balcony_garden.png'
     ],
     highlights: [
       'Prime Jayanagar 5th Block location',
@@ -421,13 +420,13 @@ export const galleryProjects: GalleryProject[] = [
       'Italian marble living lounge & balcony garden',
       'Backlit golden onyx puja mandir',
       'Designer modular kitchen & granite finishes',
-      'Mr. Ragavan architectural design & civil MEP scope',
+      'Mr. Ragavan architectural design & civil MEP scope'
     ],
     specs: [
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
       { label: 'Architect', value: 'Mr. Ragavan' },
       { label: 'Location', value: 'Jayanagar 5th Block, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -445,30 +444,28 @@ export const galleryProjects: GalleryProject[] = [
     city: 'Bangalore',
     architect: 'Incept Architects',
     architectPractice: 'Incept Architects',
-    scope: 'Commercial cum Residence - Civil, Electric, Plumbing',
-    cost: '1.8 Cr',
-    description: 'Prominent G+4 commercial cum residential complex on 27th Main HSR Layout executed at a verified project cost of Rs 1.8 Crore, featuring ground floor retail showroom frontage (AJFAN Dates & Nuts), basement parking ramp, upper corporate office floors, and luxury residential penthouse units designed by Incept Architects.',
+    scope: 'Civil, Electrical, Plumbing',
+    description: 'Prominent G+4 commercial cum residential complex on 27th Main HSR Layout featuring ground floor retail showroom frontage (AJFAN Dates & Nuts), basement parking ramp, upper corporate office floors, and luxury residential penthouse units designed by Incept Architects.',
     featured: true,
     image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png',
     galleryImages: [
       '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png',
       '/projects/mr_nataraj/nataraj_02_retail_showroom_elevation.png',
       '/projects/mr_nataraj/nataraj_03_residential_penthouse_balcony_elevation.png',
-      '/projects/mr_nataraj/nataraj_04_hsr_layout_27th_main_avenue_perspective.png',
+      '/projects/mr_nataraj/nataraj_04_hsr_layout_27th_main_avenue_perspective.png'
     ],
     highlights: [
       'Prime HSR Layout 27th Main commercial frontage',
-      'Verified Project Cost: Rs 1.8 Crore',
       'G+4 Commercial retail showroom + office + residential penthouse',
       'Incept Architects architectural design',
-      'Turnkey civil, electrical, and plumbing infrastructure',
+      'Turnkey civil, electrical, and plumbing infrastructure'
     ],
     specs: [
-      { label: 'Cost', value: 'Rs 1.8 Crore' },
+      
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
       { label: 'Architect', value: 'Incept Architects' },
       { label: 'Location', value: 'HSR Layout, 27th Main, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -496,14 +493,14 @@ export const galleryProjects: GalleryProject[] = [
       '/ndl_projects/slide_106_img_1.jpg',
       '/ndl_projects/slide_106_img_1.jpg',
       '/ndl_projects/slide_108_img_1.jpg',
-      '/ndl_projects/slide_109_img_1.jpg',
+      '/ndl_projects/slide_109_img_1.jpg'
     ],
     highlights: ['Turnkey Civil + Interiors scope', 'Mr. Raghu Bhat design', 'Custom interior cabinetry & lighting'],
     specs: [
       { label: 'Scope', value: 'Civil + Interiors + Electric + Plumbing' },
       { label: 'Architect', value: 'Mr. Raghu Bhat' },
       { label: 'Location', value: 'Nisarga Layout, Jigani' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -528,14 +525,14 @@ export const galleryProjects: GalleryProject[] = [
       '/ndl_projects/slide_111_img_1.jpg',
       '/ndl_projects/slide_111_img_2.jpg',
       '/ndl_projects/slide_113_img_1.jpg',
-      '/ndl_projects/slide_114_img_1.jpg',
+      '/ndl_projects/slide_114_img_1.jpg'
     ],
     highlights: ['Exposed brick & concrete expression', 'Gaurav Roy Choudury architectural design', 'Happy Valley Layout location'],
     specs: [
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
       { label: 'Architect', value: 'GRC Architects' },
       { label: 'Location', value: 'Happy Valley Layout, Uttarahalli' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -559,20 +556,20 @@ export const galleryProjects: GalleryProject[] = [
     galleryImages: [
       '/projects/mrs_hema_saravanan/hema_saravanan_01_contemporary_urban_elevation.jpg',
       '/projects/mrs_hema_saravanan/hema_saravanan_02_terrace_garden_vertical_green_wall.jpg',
-      '/projects/mrs_hema_saravanan/hema_saravanan_03_double_height_courtyard_plumeria_tree.jpg',
+      '/projects/mrs_hema_saravanan/hema_saravanan_03_double_height_courtyard_plumeria_tree.jpg'
     ],
     highlights: [
       'Delmia Circle JP Nagar prime location',
       'Striking slate stone facade & vertical screening louvers',
       'Internal double-height light courtyard with live plumeria tree',
       'Terrace garden with natural lawn & vertical green wall',
-      'Parallax Architects design & turnkey civil MEP execution',
+      'Parallax Architects design & turnkey civil MEP execution'
     ],
     specs: [
       { label: 'Scope', value: 'Civil + Plumbing + Electric' },
       { label: 'Architect', value: 'Parallax Architects' },
       { label: 'Location', value: 'Delmia Circle, JP Nagar, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -595,20 +592,20 @@ export const galleryProjects: GalleryProject[] = [
     image: '/projects/dr_niranjan/dr_niranjan_01_contemporary_white_villa_facade.jpg',
     galleryImages: [
       '/projects/dr_niranjan/dr_niranjan_01_contemporary_white_villa_facade.jpg',
-      '/projects/dr_niranjan/dr_niranjan_02_landscaped_garden_grass_pavers.jpg',
+      '/projects/dr_niranjan/dr_niranjan_02_landscaped_garden_grass_pavers.jpg'
     ],
     highlights: [
       '5th Block Jayanagar prime location',
       'Clean white modernist villa facade',
       'Timber louvered fenestrations & roof viewing terrace',
       'Manicured front lawn garden & permeable grass pavers',
-      'Mr. Ragavan architectural design & civil MEP execution',
+      'Mr. Ragavan architectural design & civil MEP execution'
     ],
     specs: [
       { label: 'Scope', value: 'Civil + Electric & Plumbing' },
       { label: 'Architect', value: 'Mr. Ragavan' },
       { label: 'Location', value: '5th Block, Jayanagar, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -630,21 +627,21 @@ export const galleryProjects: GalleryProject[] = [
     featured: false,
     image: '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg',
     galleryImages: [
-      '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg',
+      '/projects/mr_kishore/kishore_01_exposed_brick_pergola_facade.jpg'
     ],
     highlights: ['Yediyur Jayanagar location', 'Meenal J. Cavale design', 'Wire-cut brick cladding & timber pergolas'],
     specs: [
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
       { label: 'Architect', value: 'Meenal J. Cavale' },
       { label: 'Location', value: 'Yediyur, Jayanagar' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
     id: 'mr-venkatarama-raju',
     slug: 'mr-venkatarama-raju',
     number: '.18',
-    client: 'Mr. Venkatarama Raju',
+    client: 'Mr. Venkatram Raju',
     title: 'Mr. Venkatarama Raju Commercial Building',
     category: 'Commercial',
     projectType: 'Commercial Building',
@@ -662,14 +659,14 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg',
       '/projects/mr_venkatarama_raju/raju_02_corner_street_elevation.jpg',
       '/projects/mr_venkatarama_raju/raju_03_column_free_office_floor_plate.jpg',
-      '/projects/mr_venkatarama_raju/raju_04_staircase_atrium_brick_masonry.jpg',
+      '/projects/mr_venkatarama_raju/raju_04_staircase_atrium_brick_masonry.jpg'
     ],
     highlights: ['JP Nagar 9th Phase commercial hub', 'Flagship Manappuram Jewellers showroom', 'Wire-cut brick facade & curtain wall glazing', 'Meenal Cavale (MJC Architects) design'],
     specs: [
       { label: 'Scope', value: 'Commercial Building Construction' },
       { label: 'Architect', value: 'Meenal Cavale (MJC Architects)' },
       { label: 'Location', value: 'JP Nagar 9th Phase, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -692,14 +689,14 @@ export const galleryProjects: GalleryProject[] = [
     image: '/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg',
     galleryImages: [
       '/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg',
-      '/projects/mr_sreeram/sreeram_02_double_height_brick_atrium_interior.jpg',
+      '/projects/mr_sreeram/sreeram_02_double_height_brick_atrium_interior.jpg'
     ],
     highlights: ['Anjanapura residential location', 'Exposed wire-cut brick facade & atrium', 'Meenal Cavale design', 'Robust RCC framework'],
     specs: [
       { label: 'Scope', value: 'Residential Building Construction' },
       { label: 'Architect', value: 'Meenal Cavale' },
       { label: 'Location', value: 'Anjanapura, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
   },
   {
@@ -721,14 +718,14 @@ export const galleryProjects: GalleryProject[] = [
     featured: false,
     image: '/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg',
     galleryImages: [
-      '/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg',
+      '/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg'
     ],
     highlights: ['# 210, HSR Layout prime location', 'Gabled roof villa architecture', 'Entrance pergola with colonnade', 'Dressed stone boundary masonry', 'Architecture Paradigm design'],
     specs: [
       { label: 'Scope', value: 'Civil + Structural + Finishing' },
       { label: 'Architect', value: 'Architecture Paradigm' },
       { label: 'Location', value: '# 210, HSR Layout, Bangalore' },
-      { label: 'Status', value: 'Completed' },
+      { label: 'Status', value: 'Completed' }
     ],
-  },
+  }
 ];

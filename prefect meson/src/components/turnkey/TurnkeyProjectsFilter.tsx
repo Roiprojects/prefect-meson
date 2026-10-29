@@ -81,7 +81,7 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
   {
     id: 'mr-nataraj',
     client: 'Mr. Nataraj Commercial Complex',
-    statHeadline: '₹1.80 CRORE',
+    statHeadline: 'COMMERCIAL CUM RESIDENCE',
     badge: 'Commercial EPC',
     height: 'G+4',
     timeline: '18 Mo',
@@ -90,7 +90,7 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
     city: 'Bangalore',
     sector: 'Commercial EPC',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_097_img_2.jpg'
+    image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
   },
   {
     id: 'mr-vittal-das-shetty',

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Building2, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Search, Clock } from 'lucide-react';
 import { useData } from '../../context/DataContext';
 import { StatusBadge } from '../common/StatusBadge';
 
@@ -21,15 +21,16 @@ interface CommercialCardItem {
   status?: string;
 }
 
+// 5 Approved Commercial & Business Projects with strict image isolation and NO prices
 const commercialShowcaseList: CommercialCardItem[] = [
   {
     id: 'mr-venkatarama-raju',
-    client: 'Mr. Venkatarama Raju Commercial Building',
+    client: 'Mr. Venkatram Raju',
     statHeadline: 'G+4 COMMERCIAL',
     badge: 'Civil & Core',
     height: 'G+4',
     timeline: '12 Mo',
-    rating: 'Meenal Cavale (MJC)',
+    rating: 'Meenal Cavale (MJC Architects)',
     location: 'JP Nagar 9th Phase, Bangalore',
     city: 'Bangalore',
     sector: 'Retail',
@@ -38,8 +39,8 @@ const commercialShowcaseList: CommercialCardItem[] = [
   },
   {
     id: 'mr-nataraj',
-    client: 'Mr. Nataraj Commercial Cum Residence',
-    statHeadline: '₹1.80 CRORE',
+    client: 'Mr. Nataraj',
+    statHeadline: 'COMMERCIAL CUM RESIDENCE',
     badge: 'Civil & Core',
     height: 'G+4',
     timeline: '10 Mo',
@@ -49,11 +50,53 @@ const commercialShowcaseList: CommercialCardItem[] = [
     sector: 'Retail',
     timelineCategory: '< 12 Mo',
     image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
+  },
+  {
+    id: '24x7-solutions',
+    client: '24x7 Solutions',
+    statHeadline: 'OFFICE INTERIORS',
+    badge: 'Interiors',
+    height: 'G+5',
+    timeline: '10 Mo',
+    rating: 'Keystone Architects, Indiranagar',
+    location: 'Near Ulsoor Lake, Bangalore',
+    city: 'Bangalore',
+    sector: 'Office',
+    timelineCategory: '< 12 Mo',
+    image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
+  },
+  {
+    id: 'take-5-bar',
+    client: 'TAKE 5 Bar and Restaurant',
+    statHeadline: 'HOSPITALITY FIT-OUT',
+    badge: 'Interiors',
+    height: 'G+2',
+    timeline: '4 Mo',
+    rating: 'Kiran and Associate, Bombay',
+    location: '3rd Main, Defence Colony, Indiranagar, Bangalore',
+    city: 'Bangalore',
+    sector: 'Hospitality',
+    timelineCategory: '< 12 Mo',
+    image: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png'
+  },
+  {
+    id: 'farm-india-office',
+    client: 'Farm India Office',
+    statHeadline: 'CORPORATE INTERIORS',
+    badge: 'Interiors',
+    height: 'G+3',
+    timeline: '6 Mo',
+    rating: 'Corporate Spec',
+    location: 'Koramangala, Bangalore',
+    city: 'Bangalore',
+    sector: 'Office',
+    timelineCategory: '< 12 Mo',
+    image: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png'
   }
 ];
 
-const locations = ['All', 'Bangalore', 'JP Nagar', 'HSR Layout'];
-const sectors = ['Retail', 'Office'];
+const locations = ['All', 'Bangalore', 'JP Nagar', 'HSR Layout', 'Indiranagar', 'Koramangala', 'Ulsoor Lake'];
+const sectors = ['Office', 'Retail', 'Hospitality'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo'];
 
 export const CommercialProjectsFilter: React.FC = () => {
@@ -64,41 +107,49 @@ export const CommercialProjectsFilter: React.FC = () => {
   const [activeTimeline, setActiveTimeline] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Restrict commercial cards strictly to authentic commercial projects (Mr. Venkatarama Raju & Mr. Nataraj)
-  const allowedCommercialIds = ['mr-venkatarama-raju', 'mr-nataraj', 'comm-manappuram'];
+  // Restrict strictly to the 5 approved commercial / business projects
+  const allowedCommercialIds = [
+    'mr-venkatarama-raju',
+    'mr-nataraj',
+    '24x7-solutions',
+    'take-5-bar',
+    'farm-india-office'
+  ];
 
-  const dynamicCommercialCards: CommercialCardItem[] = commercialItems.filter(item => allowedCommercialIds.includes(item.id || item.slug)).map((item) => ({
-    id: item.id || item.slug,
-    client: item.client || item.title,
-    statHeadline: item.builtArea || 'COMMERCIAL SCALE',
-    badge: (item.category.includes('Turnkey') ? 'Turnkey' : item.category.includes('Shell') ? 'Civil & Core' : 'Commercial Fit-Out') as any,
-    height: 'G+4',
-    timeline: item.timeline || '12 Mo',
-    rating: item.architect || 'Commercial Studio',
-    location: item.builtArea ? `${item.builtArea} • Bangalore` : 'Bangalore, India',
-    city: 'Bangalore',
-    sector: (item.category.includes('Office') ? 'Office' : item.category.includes('Retail') ? 'Retail' : item.category.includes('Industrial') ? 'Industrial' : 'Office') as any,
-    timelineCategory: '12–24 Mo',
-    image: item.heroImage || '/assets/comm_complex_hero.jpg',
-    status: item.status || 'Active',
-  }));
+  const dynamicCommercialCards: CommercialCardItem[] = commercialItems
+    .filter(item => allowedCommercialIds.includes(item.id || item.slug))
+    .map((item) => ({
+      id: item.id || item.slug,
+      client: item.client || item.title,
+      statHeadline: item.builtArea ? `${item.builtArea} SCALE` : 'COMMERCIAL SCALE',
+      badge: (item.category.includes('Turnkey') ? 'Turnkey' : item.category.includes('Shell') ? 'Civil & Core' : 'Interiors') as any,
+      height: 'G+4',
+      timeline: item.timeline || '12 Mo',
+      rating: item.architect || 'Commercial Studio',
+      location: item.builtArea ? `${item.builtArea} • Bangalore` : 'Bangalore, India',
+      city: 'Bangalore',
+      sector: (item.category.includes('Office') ? 'Office' : item.category.includes('Retail') ? 'Retail' : item.category.includes('Hospitality') ? 'Hospitality' : 'Office') as any,
+      timelineCategory: '12–24 Mo',
+      image: item.heroImage || '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg',
+      status: item.status || 'Completed',
+    }));
 
   const galleryCommercialCards: CommercialCardItem[] = projects
-    .filter((p) => (p.category === 'Commercial' || p.secondaryCategories?.includes('Commercial')) && allowedCommercialIds.includes(p.id))
+    .filter((p) => allowedCommercialIds.includes(p.id))
     .map((p) => ({
       id: p.id || p.slug,
       client: p.client || p.title,
-      statHeadline: p.areaSqFt || 'COMMERCIAL SCALE',
-      badge: (p.secondaryCategories?.includes('Turnkey') ? 'Turnkey' : 'Civil & Core') as any,
+      statHeadline: p.areaSqFt ? `${p.areaSqFt} SCALE` : 'COMMERCIAL SCALE',
+      badge: (p.category === 'Interiors' || p.secondaryCategories?.includes('Interiors') ? 'Interiors' : 'Civil & Core') as any,
       height: 'G+4',
-      timeline: '14 Mo',
+      timeline: '12 Mo',
       rating: p.architect || 'Perfect Mason Commercial Studio',
       location: p.location || 'Bengaluru, Karnataka',
-      city: p.city || 'Bangalore',
-      sector: 'Retail',
+      city: 'Bangalore',
+      sector: (p.id === 'take-5-bar' ? 'Hospitality' : p.id === '24x7-solutions' || p.id === 'farm-india-office' ? 'Office' : 'Retail') as any,
       timelineCategory: '12–24 Mo',
-      image: p.image || '/assets/comm_complex_hero.jpg',
-      status: p.status || 'Active',
+      image: p.image || '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg',
+      status: p.status || 'Completed',
     }));
 
   const combinedCards = [
@@ -106,9 +157,10 @@ export const CommercialProjectsFilter: React.FC = () => {
     ...galleryCommercialCards.filter(g => !dynamicCommercialCards.some(d => d.id === g.id || d.client === g.client)),
   ];
 
+  // Prioritize commercialShowcaseList with exact approved data
   const allCommercialCards = [
-    ...combinedCards,
-    ...commercialShowcaseList.filter(s => !combinedCards.some(d => d.id === s.id || d.client.toLowerCase() === s.client.toLowerCase()))
+    ...commercialShowcaseList,
+    ...combinedCards.filter(c => !commercialShowcaseList.some(s => s.id === c.id))
   ];
 
   const clearFilters = () => {
@@ -147,27 +199,34 @@ export const CommercialProjectsFilter: React.FC = () => {
           {/* LEFT SIDEBAR: FILTERS */}
           <aside className="w-full lg:w-[280px] xl:w-[300px] shrink-0 bg-[#F8FAFC] rounded-2xl sm:rounded-3xl p-6 border border-slate-200/80 shadow-xs lg:sticky lg:top-[100px]">
             {/* Header row: Filters + Clear all */}
-            <div className="flex items-center justify-between mb-5">
-              <h3 className="text-xl font-bold text-slate-900 font-sans tracking-tight">Filters</h3>
-              <button
-                type="button"
-                onClick={clearFilters}
-                className="text-xs text-slate-500 hover:text-slate-900 font-medium transition-colors cursor-pointer"
-              >
-                Clear all
-              </button>
+            <div className="flex items-center justify-between pb-4 mb-5 border-b border-slate-200">
+              <span className="font-mono text-xs font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-slate-950" />
+                Filter Projects
+              </span>
+              {(activeLocation !== 'All' || activeSector !== null || activeTimeline !== 'All' || searchQuery !== '') && (
+                <button
+                  type="button"
+                  onClick={clearFilters}
+                  className="text-[11px] font-mono font-medium text-slate-500 hover:text-slate-950 transition-colors cursor-pointer"
+                >
+                  Clear all
+                </button>
+              )}
             </div>
 
-            {/* Search Box */}
-            <div className="relative mb-5">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-              <input
-                type="text"
-                placeholder="Search commercial..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-white border border-slate-200 rounded-xl py-2.5 pl-10 pr-3.5 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-400 shadow-2xs"
-              />
+            {/* SEARCH INPUT */}
+            <div className="mb-5">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <input
+                  type="text"
+                  placeholder="Search projects..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-9 pr-3 py-2 bg-white rounded-xl border border-slate-200 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-slate-950 transition-colors"
+                />
+              </div>
             </div>
 
             {/* LOCATION FILTER */}
@@ -278,52 +337,63 @@ export const CommercialProjectsFilter: React.FC = () => {
                       onClick={() => navigate(`/projects/${project.id}`)}
                       className="group relative h-[380px] sm:h-[420px] rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 bg-slate-950"
                     >
-                      {/* Full-bleed Project Image */}
+                      {/* FULL BACKGROUND IMAGE */}
                       <img
                         src={project.image}
                         alt={project.client}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                         loading="lazy"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src = '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg';
+                        }}
                       />
 
-                      {/* Smooth Dark Bottom Gradient Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none" />
+                      {/* MULTI-STAGE GRADIENT OVERLAYS */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-300" />
+                      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent opacity-60" />
 
-                      {/* Top Left Status Badge (Active Model / Completed Handover / Upcoming Release) */}
-                      <div className="absolute top-4 left-4 z-10">
-                        <StatusBadge status={project.status || 'Active'} variant="glass" />
+                      {/* TOP BADGES ROW */}
+                      <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+                        <div className="flex items-center gap-2">
+                          <span className="px-3 py-1 rounded-full bg-white/95 text-slate-900 font-mono text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                            {project.badge}
+                          </span>
+                          <span className="px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-white font-mono text-[10px] font-medium border border-white/10">
+                            {project.height}
+                          </span>
+                        </div>
+                        <StatusBadge status={project.status || 'Completed'} size="sm" variant="glass" />
                       </div>
 
-                      {/* Top Right Badge */}
-                      <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-slate-900 px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-md z-10">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-slate-900" />
-                        <span>{project.badge}</span>
-                      </div>
+                      {/* BOTTOM CONTENT CONTAINER */}
+                      <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 z-10 flex flex-col justify-end">
+                        {/* STAT HEADLINE (BUILT SCALE - NO PRICES) */}
+                        <div className="font-mono text-sm sm:text-base font-bold text-white uppercase tracking-wider mb-1 flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-[#C8A96B]" />
+                          <span>{project.statHeadline}</span>
+                        </div>
 
-                      {/* Bottom Content Area */}
-                      <div className="absolute bottom-0 inset-x-0 p-5 sm:p-6 text-white z-10">
-                        <div className="text-sm font-normal text-white/90 drop-shadow-sm font-sans">
+                        {/* CLIENT / PROJECT TITLE */}
+                        <h3 className="font-serif text-xl sm:text-2xl font-bold text-white tracking-wide leading-tight mb-2 group-hover:text-[#DFCA98] transition-colors">
                           {project.client}
+                        </h3>
+
+                        {/* ARCHITECT & SCOPE METADATA */}
+                        <div className="flex items-center gap-2 text-xs font-sans text-slate-300 mb-3">
+                          <span className="text-[#C8A96B] font-medium">{project.rating}</span>
+                          <span className="text-slate-500">•</span>
+                          <span className="truncate">{project.location}</span>
                         </div>
 
-                        <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-white uppercase tracking-tight leading-tight my-1.5 drop-shadow-md font-sans">
-                          {project.statHeadline}
-                        </div>
-
-                        {/* Metadata Strip */}
-                        <div className="flex items-center gap-4 text-xs sm:text-sm text-white/85 font-normal pt-1.5 font-sans">
-                          <div className="flex items-center gap-1.5">
-                            <Building2 className="w-3.5 h-3.5 opacity-80" />
-                            <span>{project.height}</span>
-                          </div>
-                          <div className="flex items-center gap-1.5">
-                            <Clock className="w-3.5 h-3.5 opacity-80" />
-                            <span>{project.timeline}</span>
-                          </div>
-                          <div className="flex items-center gap-1.5">
-                            <ShieldCheck className="w-3.5 h-3.5 opacity-80" />
-                            <span>{project.rating}</span>
-                          </div>
+                        {/* TIMELINE & COMPLETION BADGE */}
+                        <div className="flex items-center justify-between pt-3 border-t border-white/15 text-[11px] font-mono text-slate-300">
+                          <span className="flex items-center gap-1.5">
+                            <Clock className="w-3.5 h-3.5 text-slate-400" />
+                            {project.timeline} Duration
+                          </span>
+                          <span className="text-white font-bold group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                            View Case Study →
+                          </span>
                         </div>
                       </div>
                     </motion.div>

@@ -43,8 +43,8 @@ export const defaultInteriorItems = [
     title: 'Farm India Corporate Office Interiors',
     category: 'Office Interiors',
     spaceType: 'Commercial',
-    tagline: 'Turnkey Executive Corporate Interiors in Koramangala (Rs 52 Lacs)',
-    description: 'Complete corporate office interior fit-out in Koramangala executed at a project cost of Rs 52 Lacs, featuring executive boardrooms, custom acoustic paneling, glass cubicles, and designer modular workstations.',
+    tagline: 'Turnkey Executive Corporate Interiors in Koramangala',
+    description: 'Complete corporate office interior fit-out in Koramangala featuring executive boardrooms, custom acoustic paneling, glass cubicles, and designer modular workstations.',
     heroImage: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',
     galleryImages: [
       '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',

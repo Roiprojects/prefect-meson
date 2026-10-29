@@ -67,7 +67,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-praveen-kumar',
     client: 'Mr. Praveen Kumar',
-    statHeadline: '₹1.50 CRORE',
+    statHeadline: '7,800 SQ.FT',
     badge: 'Luxury Villa',
     height: 'G+2',
     timeline: '12 Mo',
@@ -109,7 +109,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-tilak',
     client: 'Mr. Tilak Residence',
-    statHeadline: '₹95 LAKHS',
+    statHeadline: '4,200 SQ.FT',
     badge: 'Multi-Storey',
     height: 'G+3',
     timeline: '10 Mo',
@@ -207,7 +207,7 @@ export const ResidentialProjectsFilter: React.FC = () => {
   const dynamicResidentialCards: ResidentialCardItem[] = residentialItems.map((item) => ({
     id: item.id || item.slug,
     client: item.client || item.title,
-    statHeadline: item.builtArea || item.pricePerSqFt || 'RESIDENTIAL ESTATE',
+    statHeadline: item.builtArea || 'RESIDENTIAL ESTATE',
     badge: (item.category.includes('Villa') ? 'Luxury Villa' : item.category.includes('Eco') ? 'Contemporary' : 'Luxury Villa') as any,
     height: 'G+2',
     timeline: item.timeline || '14 Mo',

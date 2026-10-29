@@ -132,9 +132,21 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
     ? ('tagline' in activeDynamicItem && activeDynamicItem.tagline ? activeDynamicItem.tagline : activeDynamicItem.description)
     : (foundGalleryProj ? (foundGalleryProj.scope || foundGalleryProj.description) : (ndlProj ? ndlProj.scope : fallbackLegacy?.description || 'Itemized Civil & Architectural Execution'));
 
-  const projectCost = activeDynamicItem
-    ? ('pricePerSqFt' in activeDynamicItem ? activeDynamicItem.pricePerSqFt : ('builtArea' in activeDynamicItem ? activeDynamicItem.builtArea : undefined))
-    : (ndlProj ? ndlProj.cost : (foundGalleryProj?.cost || foundGalleryProj?.areaSqFt));
+  // Verified Architectural Scale Metric (Strictly non-price: no prices or promotional cost figures)
+  const projectScale: string = (() => {
+    let scaleVal = (activeDynamicItem && 'builtArea' in activeDynamicItem && activeDynamicItem.builtArea)
+      ? activeDynamicItem.builtArea
+      : (foundGalleryProj?.areaSqFt || ndlProj?.cost || fallbackLegacy?.areaSqFt || '');
+    
+    if (typeof scaleVal === 'string') {
+      scaleVal = scaleVal
+        .replace(/\(Cost:[^)]+\)/gi, '')
+        .replace(/₹[\d.,\s\w]+/gi, '')
+        .replace(/(?:Rs\.?|INR)\s*[\d.,\s\w]+/gi, '')
+        .trim();
+    }
+    return scaleVal || (projectCategory === 'Commercial' ? 'COMMERCIAL SCALE' : 'RESIDENTIAL ESTATE');
+  })();
 
   const projectDescription = activeDynamicItem
     ? activeDynamicItem.description
@@ -300,10 +312,10 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
           {/* Large Area / Cost Metric (Top Right) */}
           <div className="text-right shrink-0">
             <span className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight block">
-              {projectCost ? projectCost : (ndlProj?.category === 'Commercial' ? 'COMMERCIAL' : 'RESIDENCE')}
+              {projectScale}
             </span>
             <span className="font-mono text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-0.5 block">
-              {projectCost ? 'VERIFIED PROJECT COST' : 'VERIFIED NDL EXECUTION'}
+              'VERIFIED PROJECT SCALE'
             </span>
           </div>
         </div>
