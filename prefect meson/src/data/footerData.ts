@@ -36,7 +36,7 @@ export interface FooterData {
 export const footerConfig: FooterData = {
   brand: {
     name: 'NDL ENGINEERS & CONTRACTORS',
-    tagline: 'Civil engineering, turnkey construction, commercial complexes, luxury residences & interior fit-outs led by certified civil engineering directors.',
+    tagline: 'Civil engineering, turnkey construction, commercial complexes, luxury residences & interior fit-outs led by certified civil engineering leadership.',
   },
   socialLinks: [
     { platform: 'Instagram', href: 'https://instagram.com' },

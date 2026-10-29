@@ -68,7 +68,7 @@ const turnkeyProcessNodes: TurnkeyProcessNode[] = [
     step: '01',
     name: 'CONSULT',
     stageName: 'Consultation & Scoping',
-    summary: 'Discovery meeting with senior civil engineering directors to understand project vision, timelines, and site context.',
+    summary: 'Discovery meeting with senior civil engineers to understand project vision, timelines, and site context.',
     image: processConsultImg,
     deliverables: ['Requirement Brief Documentation', 'Execution Strategy Alignment', 'Site Visit Protocol'],
   },
@@ -406,7 +406,7 @@ export const TurnkeyPage: React.FC<TurnkeyPageProps> = ({ onOpenQuoteModal }) =>
                 </h3>
 
                 <p className="text-base text-slate-300 font-sans leading-relaxed mb-6">
-                  Perfect Mason handles the entire continuum: architectural alignment, structural calculations, procurement, civil construction, electrical, plumbing, finishes, and on-site supervision under certified civil engineering directors.
+                  Perfect Mason handles the entire continuum: architectural alignment, structural calculations, procurement, civil construction, electrical, plumbing, finishes, and on-site supervision under certified civil engineering leadership.
                 </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 font-mono text-[11px] text-slate-300">
@@ -869,7 +869,7 @@ export const TurnkeyPage: React.FC<TurnkeyPageProps> = ({ onOpenQuoteModal }) =>
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed mb-10 max-w-2xl">
-              Connect directly with senior civil engineering directors to review your architectural requirements, structural estimates, and turnkey timeline.
+              Connect directly with our engineering team to review your architectural requirements, structural estimates, and turnkey timeline.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">

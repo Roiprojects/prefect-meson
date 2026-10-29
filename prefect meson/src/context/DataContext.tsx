@@ -263,7 +263,7 @@ const defaultWebsiteSettings: WebsiteSettings = {
   fontBody: 'Inter',
   defaultBannerImage: '/assets/cinematic_grand_estate.jpg',
   footerCopyright: '© 2026 Perfect Mason. All rights reserved.',
-  footerDescription: 'Civil engineering, turnkey construction, commercial complexes, luxury residences & interior fit-outs led by certified civil engineering directors.',
+  footerDescription: 'Civil engineering, turnkey construction, commercial complexes, luxury residences & interior fit-outs led by certified civil engineering leadership.',
   footerBadge: 'ISO 9001:2015 CERTIFIED • HIGH-PRECISION ENGINEERING',
   footerLegalNote: 'Built with engineering precision & integrity.',
   heroHeadline: 'Turnkey Architectural & Civil Construction Excellence',
@@ -300,7 +300,7 @@ export const defaultPageContents: Record<string, any> = {
     },
     cta: {
       heading: "Let's Build Something Special and Unique for You",
-      subtext: 'Schedule an on-site consultation with our senior civil engineering directors and receive an itemized BOQ estimate.',
+      subtext: 'Schedule an on-site consultation with our senior civil engineering team and receive an itemized BOQ estimate.',
       buttonText: 'Request Consultation',
       phone: '+91 98863 29424',
     },
@@ -333,7 +333,7 @@ export const defaultPageContents: Record<string, any> = {
     },
     cta: {
       heading: "Let's Build Something Special and Unique for You",
-      supportingText: 'Schedule an on-site consultation with our senior civil engineering directors and receive an itemized BOQ estimate.',
+      supportingText: 'Schedule an on-site consultation with our senior civil engineering team and receive an itemized BOQ estimate.',
       buttonText: 'Schedule Consultation',
     },
     seo: {
@@ -345,7 +345,7 @@ export const defaultPageContents: Record<string, any> = {
     hero: {
       sectionLabel: 'CONTACT & CONSULTATION',
       heading: 'Start Your Construction Journey',
-      intro: 'Schedule an on-site consultation with our senior civil engineering directors for itemized BOQ estimations and feasibility audits.',
+      intro: 'Schedule an on-site consultation with our senior civil engineering team for itemized BOQ estimations and feasibility audits.',
     },
     channels: {
       phone: '+91 98863 29424',
@@ -368,7 +368,7 @@ export const defaultPageContents: Record<string, any> = {
     },
     footer: {
       brandName: 'PERFECT MASON',
-      tagline: 'Civil engineering, turnkey construction, commercial complexes, luxury residences & interior fit-outs led by certified civil engineering directors.',
+      tagline: 'Civil engineering, turnkey construction, commercial complexes, luxury residences & interior fit-outs led by certified civil engineering leadership.',
       copyright: '© 2026 Perfect Mason (NDL Engineers & Contractors). All Rights Reserved.',
       address: 'AECS Layout, Hosur Main Road, Bengaluru, Karnataka 560068',
       phone: '+91 98863 29424',

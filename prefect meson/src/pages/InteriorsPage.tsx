@@ -691,7 +691,7 @@ export const InteriorsPage: React.FC<InteriorsPageProps> = ({ onOpenQuoteModal }
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed mb-10 max-w-2xl">
-              Connect directly with our interior engineering directors to coordinate your space planning, custom millwork, and turnkey finishes.
+              Connect directly with our interior engineering team to coordinate your space planning, custom millwork, and turnkey finishes.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">

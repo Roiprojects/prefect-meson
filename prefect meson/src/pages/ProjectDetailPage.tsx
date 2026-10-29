@@ -540,7 +540,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
                   Execute a Similar Project?
                 </h3>
                 <p className="text-xs sm:text-[13px] text-slate-300 font-sans leading-relaxed max-w-xs mx-auto">
-                  Connect directly with our engineering directors for custom architectural design, BOQ estimation, and turnkey handover.
+                  Connect directly with our engineering team for custom architectural design, BOQ estimation, and turnkey handover.
                 </p>
               </div>
 

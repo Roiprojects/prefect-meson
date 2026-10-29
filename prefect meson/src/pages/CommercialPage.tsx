@@ -42,7 +42,7 @@ export const CommercialPage: React.FC<CommercialPageProps> = ({ onOpenQuoteModal
               Have a Commercial Construction Requirement?
             </h2>
             <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
-              Connect directly with senior civil engineering directors for feasibility studies, BOQ estimates, and turnkey commercial project execution.
+              Connect directly with our engineering team for feasibility studies, BOQ estimates, and turnkey commercial project execution.
             </p>
           </div>
 

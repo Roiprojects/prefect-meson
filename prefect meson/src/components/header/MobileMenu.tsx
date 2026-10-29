@@ -306,7 +306,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                     Start a Conversation
                   </h3>
                   <p className="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-4">
-                    Looking to execute a landmark architectural project? Get in touch with our engineering directors.
+                    Looking to execute a landmark architectural project? Get in touch with our engineering team.
                   </p>
 
                   <button

@@ -18,13 +18,13 @@ export const ResidentialCTA: React.FC<ResidentialCTAProps> = ({ onOpenQuoteModal
 
           <div className="max-w-2xl relative z-10">
             <span className="font-mono text-xs text-[#C8A96B] font-bold uppercase tracking-widest block mb-3">
-              5.6 // DIRECT CIVIL PROPRIETOR CONSULTATION
+              5.6 // DIRECT ENGINEERING CONSULTATION
             </span>
             <h2 className="font-barlow text-3xl sm:text-5xl font-bold uppercase tracking-tight text-white mb-4 leading-[1.05]">
               Planning to Build Your Dream Home?
             </h2>
             <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
-              Consult directly with senior civil engineering directors for structural feasibility, locked Bill of Quantities (BOQ) estimations, and turnkey execution.
+              Consult directly with our engineering team for structural feasibility, locked Bill of Quantities (BOQ) estimations, and turnkey execution.
             </p>
           </div>
 
