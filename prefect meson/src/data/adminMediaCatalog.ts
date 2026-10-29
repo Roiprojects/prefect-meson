@@ -948,6 +948,15 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_vittal_das_shetty-vittal-das-shetty-19-bathroom-vanity-emerald-tiles-png",
+    url: "/projects/mr_vittal_das_shetty/vittal_das_shetty_19_bathroom_vanity_emerald_tiles.png",
+    title: "Mr. Vittal Das Shetty - Designer Bathroom Vanity Counter & Emerald Tiles",
+    category: "Residential",
+    tags: ["mr. vittal das shetty","residential","doddagubbi","bathroom","vanity","authentic","client-photo"],
+    size: "1.02 MB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mrs_hema_saravanan-hema-saravanan-01-contemporary-urban-elevation-jpg",
     url: "/projects/mrs_hema_saravanan/hema_saravanan_01_contemporary_urban_elevation.jpg",
     title: "Mrs. Hema Saravanan - Contemporary Urban Elevation",

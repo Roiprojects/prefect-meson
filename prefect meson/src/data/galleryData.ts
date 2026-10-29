@@ -255,9 +255,10 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_15_staircase_installation_credenza.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_16_entrance_gate_makeshwari_plaque.jpg',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_17_patio_sliding_glass_doors.png',
-      '/projects/mr_vittal_das_shetty/vittal_das_shetty_18_modular_kitchen_granite_counters.jpg'
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_18_modular_kitchen_granite_counters.jpg',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_19_bathroom_vanity_emerald_tiles.png'
     ],
-    highlights: ["Dressed stone tower elevation","Tiered terracotta gabled roof","Bamboo soffit steel pergola walkway","Granite verandah & exposed brick foyer","Floating steel & timber staircase atrium","Contemporary modular kitchen with granite counters","Sliding patio doors & exposed brickwork","Teakwood puja room with brass bells","Sunken bath & garden patio pergola","Keystone Architects design"],
+    highlights: ["Dressed stone tower elevation","Tiered terracotta gabled roof","Bamboo soffit steel pergola walkway","Granite verandah & exposed brick foyer","Floating steel & timber staircase atrium","Contemporary modular kitchen with granite counters","Designer bathroom with emerald tiles & vanity","Sliding patio doors & exposed brickwork","Teakwood puja room with brass bells","Sunken bath & garden patio pergola","Keystone Architects design"],
     specs: [
       { label: 'Scope', value: 'Civil + Structural + Finishing' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
