@@ -156,8 +156,17 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-03-courtyard-louvers-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_03_courtyard_louvers.png",
+    id: "proj-dr_anil_kush-03-concrete-entrance-portal-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_03_concrete_entrance_portal.jpg",
+    title: "Dr. Anil Kush - Exposed RCC Entrance Portal & Pavers",
+    category: "Residential",
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
+    size: "293 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-dr_anil_kush-04-courtyard-louvers-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_04_courtyard_louvers.png",
     title: "Dr. Anil Kush - Courtyard & Louvered Pergola",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -165,8 +174,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-04-reflecting-pool-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_04_reflecting_pool.jpg",
+    id: "proj-dr_anil_kush-05-reflecting-pool-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_05_reflecting_pool.jpg",
     title: "Dr. Anil Kush - Stepped Reflecting Pool & Garden",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -174,8 +183,26 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-05-board-marked-rcc-hall-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_05_board_marked_rcc_hall.png",
+    id: "proj-dr_anil_kush-06-reflecting-pool-planter-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_06_reflecting_pool_planter.jpg",
+    title: "Dr. Anil Kush - Stepped Pool & Aquatic Planter",
+    category: "Residential",
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
+    size: "197 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-dr_anil_kush-07-rear-courtyard-facade-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_07_rear_courtyard_facade.jpg",
+    title: "Dr. Anil Kush - Rear Garden Facade & Cylindrical Pillars",
+    category: "Residential",
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
+    size: "245 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-dr_anil_kush-08-board-marked-rcc-hall-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_08_board_marked_rcc_hall.png",
     title: "Dr. Anil Kush - Double Height Exposed RCC Hall",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -183,8 +210,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-06-living-lounge-red-wall-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_06_living_lounge_red_wall.jpg",
+    id: "proj-dr_anil_kush-09-living-lounge-red-wall-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_09_living_lounge_red_wall.jpg",
     title: "Dr. Anil Kush - Crimson Living Lounge",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -192,8 +219,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-07-floating-staircase-atrium-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_07_floating_staircase_atrium.jpg",
+    id: "proj-dr_anil_kush-10-floating-staircase-atrium-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_10_floating_staircase_atrium.jpg",
     title: "Dr. Anil Kush - Floating Teak Staircase & Atrium",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -201,8 +228,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-08-staircase-detail-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_08_staircase_detail.jpg",
+    id: "proj-dr_anil_kush-11-staircase-detail-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_11_staircase_detail.jpg",
     title: "Dr. Anil Kush - Floating Staircase Detail & Tension Rods",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -210,8 +237,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-09-louver-veranda-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_09_louver_veranda.jpg",
+    id: "proj-dr_anil_kush-12-louver-veranda-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_12_louver_veranda.jpg",
     title: "Dr. Anil Kush - Louvered Veranda Seating Lounge",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -219,8 +246,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-10-mezzanine-panelling-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_10_mezzanine_panelling.jpg",
+    id: "proj-dr_anil_kush-13-mezzanine-panelling-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_13_mezzanine_panelling.jpg",
     title: "Dr. Anil Kush - Mezzanine Wood Panelling Passage",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -228,8 +255,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-11-mezzanine-balustrade-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_11_mezzanine_balustrade.png",
+    id: "proj-dr_anil_kush-14-mezzanine-balustrade-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_14_mezzanine_balustrade.png",
     title: "Dr. Anil Kush - Upper Balustrade Overlooking Atrium",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -237,8 +264,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-12-marble-corridor-swing-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_12_marble_corridor_swing.png",
+    id: "proj-dr_anil_kush-15-marble-corridor-swing-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_15_marble_corridor_swing.png",
     title: "Dr. Anil Kush - Marble Corridor & Wooden Swing",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -246,8 +273,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-13-bedroom-wooden-swing-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_13_bedroom_wooden_swing.jpg",
+    id: "proj-dr_anil_kush-16-bedroom-wooden-swing-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_16_bedroom_wooden_swing.jpg",
     title: "Dr. Anil Kush - Bedroom Platform & Balcony Swing",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -255,17 +282,26 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-14-master-bedroom-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_14_master_bedroom.png",
-    title: "Dr. Anil Kush - Master Bedroom & Platform Bed",
+    id: "proj-dr_anil_kush-17-master-bedroom-wide-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_17_master_bedroom_wide.jpg",
+    title: "Dr. Anil Kush - Master Bedroom Wide View & French Doors",
+    category: "Residential",
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
+    size: "193 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-dr_anil_kush-18-master-bedroom-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_18_master_bedroom.png",
+    title: "Dr. Anil Kush - Master Bedroom & Platform Bed Detail",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
     size: "393 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-15-kitchen-installation-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_15_kitchen_installation.png",
+    id: "proj-dr_anil_kush-19-kitchen-installation-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_19_kitchen_installation.png",
     title: "Dr. Anil Kush - Modular Kitchen Joinery Installation",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -273,8 +309,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-16-modular-kitchen-finished-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_16_modular_kitchen_finished.png",
+    id: "proj-dr_anil_kush-20-modular-kitchen-finished-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_20_modular_kitchen_finished.png",
     title: "Dr. Anil Kush - Finished Modular Kitchen & Breakfast Bar",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -282,8 +318,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-17-bathroom-vanity-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_17_bathroom_vanity.png",
+    id: "proj-dr_anil_kush-21-bathroom-vanity-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_21_bathroom_vanity.png",
     title: "Dr. Anil Kush - Granite Counter Bathroom Vanity",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
@@ -291,8 +327,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-18-panoramic-bathroom-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_18_panoramic_bathroom.jpg",
+    id: "proj-dr_anil_kush-22-panoramic-bathroom-jpg",
+    url: "/projects/dr_anil_kush/dr_anil_kush_22_panoramic_bathroom.jpg",
     title: "Dr. Anil Kush - Panoramic Bathroom Overlooking Landscape",
     category: "Residential",
     tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
