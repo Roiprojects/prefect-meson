@@ -225,6 +225,7 @@ export const galleryProjects: GalleryProject[] = [
     client: 'Mr. Vittal Das Shetty',
     title: 'Mr. Vittal Das Shetty Residence',
     category: 'Residential',
+    secondaryCategories: [],
     projectType: 'Luxury Villa Residence',
     status: 'Completed',
     location: 'Asha Township, Doddagubbi, Near Bileshevale, Hosakote',
@@ -249,9 +250,11 @@ export const galleryProjects: GalleryProject[] = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_10_puja_room_brass_bell_doors.jpg',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_11_sunken_bath_emerald_tiles.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_12_garden_patio_pergola_paving.png',
-      '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png'
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_14_floating_steel_timber_staircase.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_15_staircase_installation_credenza.png'
     ],
-    highlights: ['Dressed stone tower elevation', 'Tiered terracotta gabled roof', 'Bamboo soffit steel pergola walkway', 'Granite verandah & exposed brick foyer', 'Custom sliding wardrobe & steel staircase', 'Teakwood puja room with brass bells', 'Sunken bath & garden patio pergola', 'Keystone Architects design'],
+    highlights: ["Dressed stone tower elevation","Tiered terracotta gabled roof","Bamboo soffit steel pergola walkway","Granite verandah & exposed brick foyer","Floating steel & timber staircase atrium","Custom sliding wardrobe & steel staircase","Teakwood puja room with brass bells","Sunken bath & garden patio pergola","Keystone Architects design"],
     specs: [
       { label: 'Scope', value: 'Civil + Structural + Finishing' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },

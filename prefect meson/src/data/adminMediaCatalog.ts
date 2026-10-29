@@ -903,6 +903,24 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_vittal_das_shetty-vittal-das-shetty-14-floating-steel-timber-staircase-png",
+    url: "/projects/mr_vittal_das_shetty/vittal_das_shetty_14_floating_steel_timber_staircase.png",
+    title: "Mr. Vittal Das Shetty - Floating Steel & Timber Staircase with Credenza",
+    category: "Residential",
+    tags: ["mr. vittal das shetty","residential","doddagubbi","staircase","authentic","client-photo"],
+    size: "551 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_vittal_das_shetty-vittal-das-shetty-15-staircase-installation-credenza-png",
+    url: "/projects/mr_vittal_das_shetty/vittal_das_shetty_15_staircase_installation_credenza.png",
+    title: "Mr. Vittal Das Shetty - Open Staircase Installation & Double-Height Atrium",
+    category: "Residential",
+    tags: ["mr. vittal das shetty","residential","doddagubbi","staircase","atrium","authentic","client-photo"],
+    size: "512 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mrs_hema_saravanan-hema-saravanan-01-contemporary-urban-elevation-jpg",
     url: "/projects/mrs_hema_saravanan/hema_saravanan_01_contemporary_urban_elevation.jpg",
     title: "Mrs. Hema Saravanan - Contemporary Urban Elevation",

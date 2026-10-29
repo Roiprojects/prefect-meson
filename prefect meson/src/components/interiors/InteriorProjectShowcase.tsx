@@ -11,9 +11,8 @@ const interiorProjectsList: NDLProject[] = ndlProjects.filter((p) => {
     'take-5-bar',
     '24x7-solutions',
     'dr-anil-kush',
-    'mr-vittal-das-shetty',
     'mr-uma-shankar-agarwal',
-    'mr-mahanthesh-bellad',
+    'mr-mahanthesh-bellad',
     'nexus-corporate-park',
   ].includes(p.id) || p.scope.toLowerCase().includes('interior') || p.scope.toLowerCase().includes('fit-out');
 });
@@ -35,11 +34,11 @@ export const InteriorProjectShowcase: React.FC = () => {
     if (activeType === 'Corporate Fit-Outs') {
       if (!['farm-india-office', '24x7-solutions', 'nexus-corporate-park'].includes(p.id)) return false;
     } else if (activeType === 'Luxury Residential') {
-      if (!['dr-anil-kush', 'mr-vittal-das-shetty', 'mr-uma-shankar-agarwal', 'mr-mahanthesh-bellad'].includes(p.id)) return false;
+      if (!['dr-anil-kush', 'mr-uma-shankar-agarwal', 'mr-mahanthesh-bellad'].includes(p.id)) return false;
     } else if (activeType === 'Hospitality & Lounge') {
       if (!['take-5-bar'].includes(p.id)) return false;
     } else if (activeType === 'Bespoke Millwork') {
-      if (!['dr-anil-kush', 'mr-vittal-das-shetty'].includes(p.id)) return false;
+      if (!['dr-anil-kush'].includes(p.id)) return false;
     }
 
     if (searchQuery.trim()) {

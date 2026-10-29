@@ -218,14 +218,18 @@ export const defaultResidentialItems = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_11_sunken_bath_emerald_tiles.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_12_garden_patio_pergola_paving.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_14_floating_steel_timber_staircase.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_15_staircase_installation_credenza.png',
     ],
     features: [
       'Monumental dressed grey stone-clad pylon tower',
       'Tiered terracotta gabled roof with black steel brackets',
       'Bamboo-soffit steel pergola walkway along garden border',
       'Granite-bordered entrance verandah & exposed brick foyer',
+      'Open floating steel and timber stair system with stainless steel balustrade',
       'Custom sliding wardrobe with undulating panel woodwork',
       'External structural steel dog-leg terrace staircase',
+      'Sunken bath with emerald mosaic tiling',
       'Keystone Architects Indiranagar design',
     ],
     specs: [

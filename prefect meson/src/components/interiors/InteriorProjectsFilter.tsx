@@ -65,20 +65,6 @@ const interiorShowcaseList: InteriorCardItem[] = [
     image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
   },
   {
-    id: 'mr-vittal-das-shetty',
-    client: 'Mr. Vittal Das Shetty',
-    statHeadline: '9,500 SQ.FT',
-    badge: 'Luxury Residence',
-    height: 'G+2',
-    timeline: '18 Mo',
-    rating: 'Keystone Architects, Indiranagar',
-    location: 'Asha Township, Doddagubbi, Hosakote',
-    city: 'Bangalore',
-    sector: 'Luxury Residential',
-    timelineCategory: '12–24 Mo',
-    image: '/projects/mr_vittal_das_shetty/vittal_das_shetty_05_entrance_verandah_brick_foyer.png'
-  },
-  {
     id: 'mr-uma-shankar-agarwal',
     client: 'Mr. Uma Shankar Agarwal Residence',
     statHeadline: '6,200 SQ.FT',

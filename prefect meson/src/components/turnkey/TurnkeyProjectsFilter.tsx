@@ -65,20 +65,6 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
     image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
   },
   {
-    id: 'mr-vittal-das-shetty',
-    client: 'Mr. Vittal Das Shetty',
-    statHeadline: '9,500 SQ.FT',
-    badge: 'Residential Turnkey',
-    height: 'G+2',
-    timeline: '18 Mo',
-    rating: 'Keystone Architects, Indiranagar',
-    location: 'Asha Township, Doddagubbi, Hosakote',
-    city: 'Bangalore',
-    sector: 'Residential Turnkey',
-    timelineCategory: '12–24 Mo',
-    image: '/projects/mr_vittal_das_shetty/vittal_das_shetty_01_stone_pylon_elevation.jpg'
-  },
-  {
     id: 'take-5-bar',
     client: 'TAKE 5 Bar & Restaurant',
     statHeadline: 'HOSPITALITY EPC',
