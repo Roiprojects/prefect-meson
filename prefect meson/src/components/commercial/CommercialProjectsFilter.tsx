@@ -65,20 +65,6 @@ const commercialShowcaseList: CommercialCardItem[] = [
     timelineCategory: '< 12 Mo',
     image: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png'
   },
-  {
-    id: 'farm-india-office',
-    client: 'Farm India Office',
-    statHeadline: 'CORPORATE INTERIORS',
-    badge: 'Interiors',
-    height: 'G+3',
-    timeline: '6 Mo',
-    rating: 'Corporate Spec',
-    location: 'Koramangala, Bangalore',
-    city: 'Bangalore',
-    sector: 'Office',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png'
-  }
 ];
 
 const locations = ['All', 'Bangalore', 'JP Nagar', 'HSR Layout', 'Indiranagar', 'Koramangala', 'Ulsoor Lake'];
@@ -99,7 +85,6 @@ export const CommercialProjectsFilter: React.FC = () => {
     'mr-nataraj',
     '24x7-solutions',
     'take-5-bar',
-    'farm-india-office'
   ];
 
   const dynamicCommercialCards: CommercialCardItem[] = commercialItems
@@ -132,7 +117,7 @@ export const CommercialProjectsFilter: React.FC = () => {
       rating: p.architect || 'Perfect Mason Commercial Studio',
       location: p.location || 'Bengaluru, Karnataka',
       city: 'Bangalore',
-      sector: (p.id === 'take-5-bar' ? 'Hospitality' : p.id === '24x7-solutions' || p.id === 'farm-india-office' ? 'Office' : 'Retail') as any,
+      sector: (p.id === 'take-5-bar' ? 'Hospitality' : p.id === '24x7-solutions' ? 'Office' : 'Retail') as any,
       timelineCategory: '12–24 Mo',
       image: p.image || '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg',
       status: p.status || 'Completed',

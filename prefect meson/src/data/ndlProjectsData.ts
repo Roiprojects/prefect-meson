@@ -332,31 +332,27 @@ export const ndlProjects: NDLProject[] = [
   {
     id: 'farm-india-office',
     client: 'Farm India Office',
-    title: 'Farm India Office Interior Fit-Out',
+    title: 'Farm India Office Interiors',
     location: 'Koramangala, Bangalore',
     city: 'Bangalore',
     architect: 'Commercial Interior Practice',
     architectPractice: 'Commercial Interiors',
-    scope: 'Interiors',
-    cost: '14,000 SQ.FT',
+    scope: 'Office Interiors & Fit-Out',
+    cost: '4,500 SQ.FT',
     type: 'Corporate Office Interiors',
     category: 'Interiors',
-    description: 'Complete corporate office interior fit-out in Koramangala featuring executive boardrooms, custom acoustic paneling, glass cubicles, and designer modular workstations.',
-    featuredImage: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',
+    description: 'Complete corporate office interior fit-out in Koramangala featuring executive cabins with teak and glass partitions, modular workstations, custom kitchenette pantry, and modern restroom facilities.',
+    featuredImage: '/projects/farm_india_office/farm_india_02_executive_cabin_workstation.png',
     gallery: [
-      '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',
       '/projects/farm_india_office/farm_india_02_executive_cabin_workstation.png',
-      '/projects/farm_india_office/farm_india_03_l_shaped_modular_desk.png',
       '/projects/farm_india_office/farm_india_04_glass_cabin_timber_partitions.png',
-      '/projects/farm_india_office/farm_india_05_workspace_fitout_hardwood_flooring.png',
       '/projects/farm_india_office/farm_india_06_corporate_pantry_kitchenette.png',
       '/projects/farm_india_office/farm_india_07_corporate_restroom_dual_vanity.png',
       '/projects/farm_india_office/farm_india_08_restroom_sanitary_fixtures.png'
     ],
-    highlights: [ 'Executive boardrooms & cabins', 'Acoustic paneling & glass joinery'],
+    highlights: ['Koramangala prime corporate location', 'Executive cabins with teakwood and glass partitions', 'Modular workstations & conference suites', 'Corporate pantry & kitchenette fit-out', 'Executive washroom with subway tile cladding & automated sensors'],
     stats: [
-      
-      { label: 'Scope', value: 'Office Interiors' },
+      { label: 'Scope', value: 'Office Interiors & Fit-Out' },
       { label: 'Location', value: 'Koramangala, Bangalore' }
     ]
   },

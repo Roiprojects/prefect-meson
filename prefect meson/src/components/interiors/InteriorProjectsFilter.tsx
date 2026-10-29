@@ -24,7 +24,7 @@ interface InteriorCardItem {
 const interiorShowcaseList: InteriorCardItem[] = [
   {
     id: 'farm-india-office',
-    client: 'Farm India Corporate Office',
+    client: 'Farm India Office',
     statHeadline: '4,500 SQ.FT',
     badge: 'Corporate Fit-Out',
     height: 'G+3',
@@ -34,7 +34,7 @@ const interiorShowcaseList: InteriorCardItem[] = [
     city: 'Bangalore',
     sector: 'Corporate',
     timelineCategory: '< 12 Mo',
-    image: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png'
+    image: '/projects/farm_india_office/farm_india_02_executive_cabin_workstation.png'
   },
   {
     id: '24x7-solutions',

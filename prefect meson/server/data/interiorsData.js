@@ -47,16 +47,13 @@ export const defaultInteriorItems = [
     spaceType: 'Commercial',
     tagline: 'Turnkey Executive Corporate Interiors in Koramangala',
     description: 'Complete corporate office interior fit-out in Koramangala featuring executive boardrooms, custom acoustic paneling, glass cubicles, and designer modular workstations.',
-    heroImage: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',
+    heroImage: '/projects/farm_india_office/farm_india_02_executive_cabin_workstation.png',
     galleryImages: [
-      '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',
       '/projects/farm_india_office/farm_india_02_executive_cabin_workstation.png',
-      '/projects/farm_india_office/farm_india_03_l_shaped_modular_desk.png',
       '/projects/farm_india_office/farm_india_04_glass_cabin_timber_partitions.png',
-      '/projects/farm_india_office/farm_india_05_workspace_fitout_hardwood_flooring.png',
       '/projects/farm_india_office/farm_india_06_corporate_pantry_kitchenette.png',
       '/projects/farm_india_office/farm_india_07_corporate_restroom_dual_vanity.png',
-      '/projects/farm_india_office/farm_india_08_restroom_sanitary_fixtures.png',
+      '/projects/farm_india_office/farm_india_08_restroom_sanitary_fixtures.png'
     ],
     materials: [
       'Natural Smoked Oak Veneer Wall Panelling',
@@ -70,7 +67,7 @@ export const defaultInteriorItems = [
       'Zoned Acoustic Ceiling Baffles',
       'Energy-Efficient Dimmable LED Troffer Fixtures',
     ],
-    client: 'Farm India Office Koramangala',
+    client: 'Farm India Office',
     architect: 'Commercial Interior Practice',
     builtArea: '14,000 Sq.Ft',
     timeline: '45 Days',
