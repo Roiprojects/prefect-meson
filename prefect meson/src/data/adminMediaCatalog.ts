@@ -589,6 +589,24 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_shekar-shekar-06-staircase-etched-glass-balustrade-png",
+    url: "/projects/mr_shekar/shekar_06_staircase_etched_glass_balustrade.png",
+    title: "Mr. Shekar - Dog-Legged Staircase with Etched Glass Balustrade",
+    category: "Residential",
+    tags: ["mr. shekar","residential","nisarga layout jigani","authentic","client-photo"],
+    size: "677 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_shekar-shekar-07-terrace-spiral-staircase-timber-pergola-png",
+    url: "/projects/mr_shekar/shekar_07_terrace_spiral_staircase_timber_pergola.png",
+    title: "Mr. Shekar - Terrace Courtyard with Spiral Staircase & Timber Under-Roof",
+    category: "Residential",
+    tags: ["mr. shekar","residential","nisarga layout jigani","authentic","client-photo"],
+    size: "475 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_mahanthesh_bellad-bellad-01-cantilevered-brick-jaali-facade-png",
     url: "/projects/mr_mahanthesh_bellad/bellad_01_cantilevered_brick_jaali_facade.png",
     title: "Mr. Mahanthesh Bellad - Cantilevered Brick Jaali Facade",

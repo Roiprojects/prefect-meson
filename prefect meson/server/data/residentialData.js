@@ -377,6 +377,8 @@ export const defaultResidentialItems = [
       '/projects/mr_shekar/shekar_03_marble_living_granite_inlay.png',
       '/projects/mr_shekar/shekar_04_grand_staircase_glass_timber_railing.png',
       '/projects/mr_shekar/shekar_05_teak_woodwork_louvered_doors.png',
+      '/projects/mr_shekar/shekar_06_staircase_etched_glass_balustrade.png',
+      '/projects/mr_shekar/shekar_07_terrace_spiral_staircase_timber_pergola.png',
     ],
     features: [
       'Pitched terracotta gabled roof villa elevation',

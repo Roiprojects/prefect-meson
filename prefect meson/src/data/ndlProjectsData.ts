@@ -449,7 +449,9 @@ export const ndlProjects: NDLProject[] = [
       '/projects/mr_shekar/shekar_02_verandah_terracotta_timber_ceiling.png',
       '/projects/mr_shekar/shekar_03_marble_living_granite_inlay.png',
       '/projects/mr_shekar/shekar_04_grand_staircase_glass_timber_railing.png',
-      '/projects/mr_shekar/shekar_05_teak_woodwork_louvered_doors.png'
+      '/projects/mr_shekar/shekar_05_teak_woodwork_louvered_doors.png',
+      '/projects/mr_shekar/shekar_06_staircase_etched_glass_balustrade.png',
+      '/projects/mr_shekar/shekar_07_terrace_spiral_staircase_timber_pergola.png'
     ],
     highlights: [
       'Prime Nisarga Layout, Jigani villa location',
