@@ -122,17 +122,17 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   },
   {
     id: 'mr-mahanthesh-bellad',
-    client: 'Mr. Mahanthesh Bellad Residence',
-    statHeadline: '7,200 SQ.FT',
+    client: 'Mr. Mahanthesh Bellad',
+    statHeadline: '5,800 SQ.FT',
     badge: 'Contemporary',
     height: 'G+2',
     timeline: '11 Mo',
-    rating: 'MJC Architects',
-    location: 'Jayanagar, Bangalore',
+    rating: 'Mr. Gaurav Roy Choudury / GRC Architects',
+    location: 'Happy Valley Layout, Uttarahalli, Bangalore',
     city: 'Bangalore',
     sector: 'Contemporary',
     timelineCategory: '< 12 Mo',
-    image: '/ndl_projects/slide_104_img_2.jpg'
+    image: '/projects/mr_mahanthesh_bellad/bellad_01_cantilevered_brick_jaali_facade.png'
   },
   {
     id: 'mr-tilak',
@@ -234,7 +234,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   }
 ];
 
-const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Bilekahalli', 'Anjanapura', 'Whitefield', 'Jigani'];
+const locations = ['All', 'Bangalore', 'Sadashivanagar', 'Indiranagar', 'HSR Layout', 'Koramangala', 'Jayanagar', 'Bilekahalli', 'Anjanapura', 'Whitefield', 'Jigani', 'Uttarahalli'];
 const sectors = ['Luxury Villa', 'Contemporary', 'Multi-Storey', 'Residential Complex'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 

@@ -49,20 +49,6 @@ const interiorShowcaseList: InteriorCardItem[] = [
     sector: 'Corporate',
     timelineCategory: '< 12 Mo',
     image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
-  },
-  {
-    id: 'mr-mahanthesh-bellad',
-    client: 'Mr. Mahanthesh Bellad Residence',
-    statHeadline: '7,200 SQ.FT',
-    badge: 'Luxury Residence',
-    height: 'G+2',
-    timeline: '11 Mo',
-    rating: 'BWP Marine Modular Kitchen',
-    location: 'Jayanagar, Bangalore',
-    city: 'Bangalore',
-    sector: 'Luxury Residential',
-    timelineCategory: '< 12 Mo',
-    image: '/ndl_projects/slide_104_img_2.jpg'
   }
 ];
 

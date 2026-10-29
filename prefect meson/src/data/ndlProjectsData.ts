@@ -474,22 +474,30 @@ export const ndlProjects: NDLProject[] = [
     city: 'Bangalore',
     architect: 'Mr. Gaurav Roy Choudury / GRC Architects',
     architectPractice: 'GRC Architects',
-    scope: 'Civil, Electric, Plumbing',
-    type: 'Bespoke Residence',
+    scope: 'Residence — Civil, Electric, Plumbing',
+    type: 'Bespoke Contemporary Residence',
     category: 'Residential',
-    description: 'Sculptural private residence in Happy Valley Layout, Uttarahalli featuring exposed brick masonry, cantilevered projection slabs, and customized interior volumetric spaces designed by Gaurav Roy Choudury.',
-    featuredImage: '/ndl_projects/slide_111_img_1.jpg',
+    description: 'Sculptural bespoke residence in Happy Valley Layout, Uttarahalli featuring iconic cantilevered exposed brick jaali masonry, an upper terrace courtyard with water features, an expansive double-height internal living atrium with open-tread staircase, and warm hardwood-floored evening lounge connecting to an outdoor timber deck, executed with complete civil, electrical, and plumbing engineering designed by Mr. Gaurav Roy Choudury (GRC Architects).',
+    featuredImage: '/projects/mr_mahanthesh_bellad/bellad_01_cantilevered_brick_jaali_facade.png',
     gallery: [
-      '/ndl_projects/slide_111_img_1.jpg',
-      '/ndl_projects/slide_111_img_2.jpg',
-      '/ndl_projects/slide_113_img_1.jpg',
-      '/ndl_projects/slide_114_img_1.jpg'
+      '/projects/mr_mahanthesh_bellad/bellad_01_cantilevered_brick_jaali_facade.png',
+      '/projects/mr_mahanthesh_bellad/bellad_02_terrace_brick_screen_courtyard.png',
+      '/projects/mr_mahanthesh_bellad/bellad_03_double_height_living_atrium.png',
+      '/projects/mr_mahanthesh_bellad/bellad_04_evening_living_lounge_timber_deck.png'
     ],
-    highlights: ['Exposed brick & concrete expression', 'Gaurav Roy Choudury architectural design', 'Happy Valley Layout location'],
+    highlights: [
+      'Prime Happy Valley Layout, Uttarahalli location',
+      'Cantilevered exposed brick jaali facade expression',
+      'Upper terrace open courtyard with water pond feature',
+      'Double-height living atrium with open-tread staircase',
+      'Hardwood evening lounge opening to outdoor timber deck',
+      'Mr. Gaurav Roy Choudury (GRC Architects) design',
+      'Civil, electrical, and plumbing infrastructure'
+    ],
     stats: [
       { label: 'Scope', value: 'Civil + Electric + Plumbing' },
-      { label: 'Architect', value: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout' },
-      { label: 'Location', value: 'Happy Valley Layout, Uttarahalli' }
+      { label: 'Architect', value: 'Mr. Gaurav Roy Choudury / GRC Architects' },
+      { label: 'Location', value: 'Happy Valley Layout, Uttarahalli, Bangalore' }
     ]
   },
   {

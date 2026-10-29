@@ -589,6 +589,42 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_mahanthesh_bellad-bellad-01-cantilevered-brick-jaali-facade-png",
+    url: "/projects/mr_mahanthesh_bellad/bellad_01_cantilevered_brick_jaali_facade.png",
+    title: "Mr. Mahanthesh Bellad - Cantilevered Brick Jaali Facade",
+    category: "Residential",
+    tags: ["mr. mahanthesh bellad","residential","happy valley layout uttarahalli","authentic","client-photo"],
+    size: "606 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_mahanthesh_bellad-bellad-02-terrace-brick-screen-courtyard-png",
+    url: "/projects/mr_mahanthesh_bellad/bellad_02_terrace_brick_screen_courtyard.png",
+    title: "Mr. Mahanthesh Bellad - Terrace Brick Screen Courtyard",
+    category: "Residential",
+    tags: ["mr. mahanthesh bellad","residential","happy valley layout uttarahalli","authentic","client-photo"],
+    size: "647 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_mahanthesh_bellad-bellad-03-double-height-living-atrium-png",
+    url: "/projects/mr_mahanthesh_bellad/bellad_03_double_height_living_atrium.png",
+    title: "Mr. Mahanthesh Bellad - Double Height Living Atrium",
+    category: "Residential",
+    tags: ["mr. mahanthesh bellad","residential","happy valley layout uttarahalli","authentic","client-photo"],
+    size: "614 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_mahanthesh_bellad-bellad-04-evening-living-lounge-timber-deck-png",
+    url: "/projects/mr_mahanthesh_bellad/bellad_04_evening_living_lounge_timber_deck.png",
+    title: "Mr. Mahanthesh Bellad - Evening Living Lounge & Timber Deck",
+    category: "Residential",
+    tags: ["mr. mahanthesh bellad","residential","happy valley layout uttarahalli","authentic","client-photo"],
+    size: "499 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_nataraj-nataraj-01-commercial-complex-street-view-png",
     url: "/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png",
     title: "Mr. Nataraj - Commercial Complex Street View",
