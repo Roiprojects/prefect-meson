@@ -743,6 +743,7 @@ export const galleryProjects: GalleryProject[] = [
     client: 'Mr. Rakesh N. Rao',
     title: 'Mr. Rakesh N. Rao Residence',
     category: 'Residential',
+    secondaryCategories: [],
     projectType: 'Luxury Villa Residence',
     status: 'Completed',
     location: '# 210, HSR Layout, Bangalore',

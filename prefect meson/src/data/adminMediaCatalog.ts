@@ -957,6 +957,15 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_rakesh_n_rao-rakesh-n-rao-01-villa-facade-gate-jpg",
+    url: "/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg",
+    title: "Mr. Rakesh N. Rao - Contemporary Villa Facade & Entrance Pergola",
+    category: "Residential",
+    tags: ["mr. rakesh n. rao", "residential", "hsr layout", "elevation", "authentic", "client-photo"],
+    size: "270 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mrs_hema_saravanan-hema-saravanan-01-contemporary-urban-elevation-jpg",
     url: "/projects/mrs_hema_saravanan/hema_saravanan_01_contemporary_urban_elevation.jpg",
     title: "Mrs. Hema Saravanan - Contemporary Urban Elevation",

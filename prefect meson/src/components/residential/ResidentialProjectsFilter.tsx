@@ -65,6 +65,20 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     image: '/projects/mr_vittal_das_shetty/vittal_das_shetty_01_stone_pylon_elevation.jpg'
   },
   {
+    id: 'mr-rakesh-n-rao',
+    client: 'Mr. Rakesh N. Rao',
+    statHeadline: '5,800 SQ.FT',
+    badge: 'Luxury Villa',
+    height: 'G+2',
+    timeline: '14 Mo',
+    rating: 'Architecture Paradigm',
+    location: '# 210, HSR Layout',
+    city: 'Bangalore',
+    sector: 'Luxury Villa',
+    timelineCategory: '12–24 Mo',
+    image: '/projects/mr_rakesh_n_rao/rakesh_n_rao_01_villa_facade_gate.jpg'
+  },
+  {
     id: 'mr-praveen-kumar',
     client: 'Mr. Praveen Kumar',
     statHeadline: '7,800 SQ.FT',
