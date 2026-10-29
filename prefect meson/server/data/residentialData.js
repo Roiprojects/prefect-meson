@@ -260,13 +260,18 @@ export const defaultResidentialItems = [
     category: 'Affordable Homes with Different Packages as per Specs',
     tagline: 'Private Luxury Residence in JP Nagar Phase 2',
     description: 'Elegant private residence adjacent to Mini Forest in JP Nagar Phase 2 featuring natural light courtyards, floating staircase elements, premium electrical conduit routing, and fine exterior finishes designed by Still Water Architects.',
-    heroImage: '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_01_double_height_living_mezzanine.png',
+    heroImage: '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_06_travertine_facade_entrance_gate.png',
     galleryImages: [
+      '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_06_travertine_facade_entrance_gate.png',
       '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_01_double_height_living_mezzanine.png',
       '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_02_living_tv_unit_wood_panelling.png',
       '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_03_terrace_pergola_roof_garden.png',
       '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_04_floating_zigzag_staircase_atrium.png',
       '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_05_bookmatched_italian_marble_wall.png',
+      '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_07_overhead_staircase_landing_atrium.png',
+      '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_08_skylight_portico_water_courtyard.png',
+      '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_09_oval_glass_water_fountain_pebble_deck.jpg',
+      '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_10_pooja_room_teak_mandir_enclosure.png'
     ],
     features: [
       'Natural light internal courtyards',

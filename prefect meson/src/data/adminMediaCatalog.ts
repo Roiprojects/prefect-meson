@@ -750,6 +750,52 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_uma_shankar_agarwal-uma-shankar-agarwal-06-travertine-facade-entrance-gate-png",
+    url: "/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_06_travertine_facade_entrance_gate.png",
+    title: "Mr. Uma Shankar Agarwal - Travertine Facade & Entrance Gate (Ram Niketan 585)",
+    category: "Residential",
+    tags: ["mr. uma shankar agarwal","residential","jp nagar","authentic","client-photo","facade"],
+    size: "936 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_uma_shankar_agarwal-uma-shankar-agarwal-07-overhead-staircase-landing-atrium-png",
+    url: "/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_07_overhead_staircase_landing_atrium.png",
+    title: "Mr. Uma Shankar Agarwal - Overhead Staircase Landing & Atrium",
+    category: "Residential",
+    tags: ["mr. uma shankar agarwal","residential","jp nagar","authentic","client-photo","staircase"],
+    size: "784 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_uma_shankar_agarwal-uma-shankar-agarwal-08-skylight-portico-water-courtyard-png",
+    url: "/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_08_skylight_portico_water_courtyard.png",
+    title: "Mr. Uma Shankar Agarwal - Skylight Portico & Water Courtyard",
+    category: "Residential",
+    tags: ["mr. uma shankar agarwal","residential","jp nagar","authentic","client-photo","courtyard"],
+    size: "576 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_uma_shankar_agarwal-uma-shankar-agarwal-09-oval-glass-water-fountain-pebble-deck-jpg",
+    url: "/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_09_oval_glass_water_fountain_pebble_deck.jpg",
+    title: "Mr. Uma Shankar Agarwal - Oval Glass Cascade Fountain & Pebble Deck",
+    category: "Residential",
+    tags: ["mr. uma shankar agarwal","residential","jp nagar","authentic","client-photo","water-feature"],
+    size: "346 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_uma_shankar_agarwal-uma-shankar-agarwal-10-pooja-room-teak-mandir-enclosure-png",
+    url: "/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_10_pooja_room_teak_mandir_enclosure.png",
+    title: "Mr. Uma Shankar Agarwal - Pooja Room Teak Mandir Enclosure",
+    category: "Residential",
+    tags: ["mr. uma shankar agarwal","residential","jp nagar","authentic","client-photo","mandir"],
+    size: "950 KB",
+    dimensions: "1920x1080"
+  },
+
+  {
     id: "proj-mr_venkatarama_raju-raju-01-commercial-facade-retail-jpg",
     url: "/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg",
     title: "Mr. Venkatarama Raju - Commercial Facade Retail",

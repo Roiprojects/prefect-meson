@@ -104,7 +104,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     city: 'Bangalore',
     sector: 'Luxury Villa',
     timelineCategory: '12–24 Mo',
-    image: '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_01_double_height_living_mezzanine.png'
+    image: '/projects/mr_uma_shankar_agarwal/uma_shankar_agarwal_06_travertine_facade_entrance_gate.png'
   },
   {
     id: 'mr-mahanthesh-bellad',
