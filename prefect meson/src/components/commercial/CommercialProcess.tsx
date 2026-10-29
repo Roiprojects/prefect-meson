@@ -25,6 +25,7 @@ interface CommercialProcessProps {
 interface ProcessStage {
   step: string;
   title: string;
+  shortLabel?: string;
   tag: string;
   desc: string;
   deliverables: string[];
@@ -80,10 +81,11 @@ const stages: ProcessStage[] = [
   },
   {
     step: '06',
-    title: 'CIVIL EXECUTION',
-    tag: 'FAST-TRACK CONSTRUCTION',
-    desc: 'Fast-track heavy civil and structural construction managed on-site by resident engineers with daily digital logs and batch testing.',
-    deliverables: ['Resident Site Supervision', 'Daily Digital Logs', 'Batch Concrete Testing'],
+    title: 'EXECUTION & CONSTRUCTION',
+    shortLabel: 'EXECUTION',
+    tag: 'FAST-TRACK EXECUTION',
+    desc: 'Fast-track heavy structural execution and construction managed on-site by resident engineers with daily digital logs and batch testing.',
+    deliverables: ['Resident Site Supervision', 'Daily Execution Logs', 'Batch Concrete Testing'],
     icon: HardHat,
     timing: 'Stage 06',
   },
@@ -271,7 +273,7 @@ export const CommercialProcess: React.FC<CommercialProcessProps> = ({ onOpenQuot
                       isActive ? 'text-slate-950' : 'text-slate-500'
                     }`}
                   >
-                    {st.title.split(' ')[0]}
+                    {st.shortLabel || st.title.split(' ')[0]}
                   </span>
                 </button>
               );
