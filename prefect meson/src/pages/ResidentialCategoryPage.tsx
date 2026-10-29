@@ -392,10 +392,10 @@ export const ResidentialCategoryPage: React.FC<ResidentialCategoryPageProps> = (
         <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-slate-950 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div>
             <h3 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-white">
-              Planning a Similar Residential Project?
+              Execute Similar Projects?
             </h3>
             <p className="text-sm text-slate-300 mt-2 max-w-xl font-sans">
-              Discuss structural feasibility, material specifications, and turnkey execution.
+              Discuss structural feasibility, material specifications, and turnkey execution with our civil engineering team.
             </p>
           </div>
 
