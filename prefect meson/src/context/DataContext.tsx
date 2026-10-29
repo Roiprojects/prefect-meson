@@ -809,7 +809,11 @@ const defaultResidentialItems: ResidentialItem[] = [
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_22_sunken_courtyard_water_trough.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_23_ground_floor_garden_window.png',
       '/projects/mr_sarabjith_ghose/sarabjith_ghose_24_foyer_kitchen_threshold.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_25_modular_oak_kitchen.png'
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_25_modular_oak_kitchen.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_26_cantilever_stair_floating_cabinets.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_27_bottle_glass_landing_study_cubes.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_28_courtyard_frosted_sliding_door.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_29_sunlit_living_hall_yellow_accent.png'
     ],
     features: [
       'Exposed Wire-Cut Brick Masonry with Weather Pointing',

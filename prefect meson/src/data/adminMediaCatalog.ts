@@ -849,6 +849,42 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-26-cantilever-stair-floating-cabinets-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_26_cantilever_stair_floating_cabinets.png",
+    title: "Mr. Sarabjith Ghose - Cantilever Wooden Open-Riser Stairs & Floating Storage",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "514 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-27-bottle-glass-landing-study-cubes-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_27_bottle_glass_landing_study_cubes.png",
+    title: "Mr. Sarabjith Ghose - Upper Landing Bottle-Glass Matrix & Blue Accent Study Cubes",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "501 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-28-courtyard-frosted-sliding-door-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_28_courtyard_frosted_sliding_door.png",
+    title: "Mr. Sarabjith Ghose - Lightwell Courtyard with Frosted Panel Sliding Door & Vanity Basin",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "504 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-29-sunlit-living-hall-yellow-accent-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_29_sunlit_living_hall_yellow_accent.png",
+    title: "Mr. Sarabjith Ghose - Sunlit Living Hall with Hardwood Floors, Yellow Feature Pillar & Brick Nook",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "466 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_sreeram-sreeram-01-exposed-brick-masonry-elevation-jpg",
     url: "/projects/mr_sreeram/sreeram_01_exposed_brick_masonry_elevation.jpg",
     title: "Mr. Sreeram - Exposed Brick Masonry Elevation",
