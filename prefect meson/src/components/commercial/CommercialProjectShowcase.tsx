@@ -27,7 +27,7 @@ export const CommercialProjectShowcase: React.FC = () => {
     } else if (activeType === 'Commercial Complexes') {
       if (!['aura-commercial-hub', 'mr-nataraj', 'mr-venkatarama-raju'].includes(p.id)) return false;
     } else if (activeType === 'Retail & Showrooms') {
-      if (!['mr-nataraj', 'aura-commercial-hub'].includes(p.id)) return false;
+      if (!['mr-nataraj', 'aura-commercial-hub', 'mr-venkatarama-raju'].includes(p.id)) return false;
     } else if (activeType === 'Hospitality & Dining') {
       if (!['take-5-bar'].includes(p.id)) return false;
     }

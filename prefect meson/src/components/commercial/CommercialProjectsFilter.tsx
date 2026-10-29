@@ -25,7 +25,7 @@ interface CommercialCardItem {
 const commercialShowcaseList: CommercialCardItem[] = [
   {
     id: 'mr-venkatarama-raju',
-    client: 'Mr. Venkatram Raju',
+    client: 'Mr. Venkatarama Raju',
     statHeadline: 'G+4 COMMERCIAL',
     badge: 'Civil & Core',
     height: 'G+4',

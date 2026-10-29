@@ -586,7 +586,7 @@ export const ndlProjects: NDLProject[] = [
   },
   {
     id: 'mr-venkatarama-raju',
-    client: 'Mr. Venkatram Raju',
+    client: 'Mr. Venkatarama Raju',
     title: 'Mr. Venkatarama Raju Commercial Building',
     location: 'JP Nagar 9th Phase, Bangalore',
     city: 'Bangalore',
