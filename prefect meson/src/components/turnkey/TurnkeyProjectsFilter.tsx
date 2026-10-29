@@ -65,20 +65,6 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
     image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
   },
   {
-    id: 'take-5-bar',
-    client: 'TAKE 5 Bar & Restaurant',
-    statHeadline: 'HOSPITALITY EPC',
-    badge: 'Fit-Out EPC',
-    height: 'G+2',
-    timeline: '8 Mo',
-    rating: 'Acoustic Spec',
-    location: 'Indiranagar, Bangalore',
-    city: 'Bangalore',
-    sector: 'Hospitality EPC',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png'
-  },
-  {
     id: 'zenith-tech-tower',
     client: 'Zenith Tech Tower',
     statHeadline: '260,000 SQ.FT',

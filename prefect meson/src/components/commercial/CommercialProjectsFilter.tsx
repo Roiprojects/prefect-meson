@@ -9,7 +9,7 @@ interface CommercialCardItem {
   id: string;
   client: string;
   statHeadline: string;
-  badge: 'Turnkey' | 'Civil & Core' | 'Interiors' | 'Commercial Fit-Out';
+  badge: 'Turnkey' | 'Civil & Core' | 'Interiors' | 'Commercial Fit-Out' | 'Commercial';
   height: string;
   timeline: string;
   rating: string;
@@ -54,8 +54,8 @@ const commercialShowcaseList: CommercialCardItem[] = [
   {
     id: 'take-5-bar',
     client: 'TAKE 5 Bar and Restaurant',
-    statHeadline: 'HOSPITALITY FIT-OUT',
-    badge: 'Interiors',
+    statHeadline: 'COMMERCIAL BAR & RESTAURANT',
+    badge: 'Commercial',
     height: 'G+2',
     timeline: '4 Mo',
     rating: 'Kiran and Associate, Bombay',

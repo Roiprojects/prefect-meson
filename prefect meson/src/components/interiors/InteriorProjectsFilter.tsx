@@ -37,20 +37,6 @@ const interiorShowcaseList: InteriorCardItem[] = [
     image: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png'
   },
   {
-    id: 'take-5-bar',
-    client: 'TAKE 5 Lounge & Restobar',
-    statHeadline: '6,200 SQ.FT',
-    badge: 'Hospitality Interiors',
-    height: 'G+2',
-    timeline: '8 Mo',
-    rating: 'Acoustic Joinery',
-    location: 'Indiranagar, Bangalore',
-    city: 'Bangalore',
-    sector: 'Hospitality',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png'
-  },
-  {
     id: '24x7-solutions',
     client: '24x7 Solutions',
     statHeadline: '140,000 SQ.FT',
