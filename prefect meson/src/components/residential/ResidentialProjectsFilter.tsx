@@ -220,7 +220,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   },
   {
     id: 'mr-sreeram',
-    client: 'Mr. Sreeram Residential Building',
+    client: 'Mr. Sreeram',
     statHeadline: '6,200 SQ.FT',
     badge: 'Multi-Storey',
     height: 'G+2',

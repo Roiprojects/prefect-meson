@@ -745,6 +745,7 @@ export const galleryProjects: GalleryProject[] = [
     client: 'Mr. Sreeram',
     title: 'Mr. Sreeram Residential Building',
     category: 'Residential',
+    secondaryCategories: [],
     projectType: 'Residential Building',
     status: 'Completed',
     location: 'Anjanapura, Bangalore',
