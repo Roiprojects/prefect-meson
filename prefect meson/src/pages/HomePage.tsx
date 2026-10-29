@@ -6,7 +6,7 @@ import { CoreServices } from '../components/services/CoreServices';
 import { HomePageResidentialHighlights } from '../components/home/HomePageResidentialHighlights';
 import { WhyChooseUs } from '../components/trust/WhyChooseUs';
 import { PavanCinematicSection } from '../components/experience/PavanCinematicSection';
-import { SelectedProjectsGrid } from '../components/portfolio/SelectedProjectsGrid';
+
 import { ConstructionProcess } from '../components/process/ConstructionProcess';
 import { InteriorsShowcase } from '../components/interiors/InteriorsShowcase';
 import { ClientReviews } from '../components/reviews/ClientReviews';
@@ -56,12 +56,6 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* 7. SECTION: PAVAN CINEMATIC FRAME SEQUENCE (100vw x 100vh Fullscreen Scroll Canvas) */}
       <PavanCinematicSection
         onExploreProjects={handleExploreProjects}
-      />
-
-      {/* 8. SECTION: SELECTED PROJECTS (2-Column Portfolio Grid) */}
-      <SelectedProjectsGrid
-        onSelectProject={(project) => onSelectProject(project)}
-        onViewAllProjects={() => navigate('/gallery')}
       />
 
       {/* 9. SECTION: 7-STAGE CONSTRUCTION PROCESS ("FROM IDEA TO BUILT FORM") */}
