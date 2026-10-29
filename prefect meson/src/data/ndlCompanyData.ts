@@ -193,6 +193,8 @@ export const ndlCompanyProfile = {
       'Establish the company as a brand known for quality, commitment, credibility, and innovative approach'
     ],
     futureCapabilities: [
+      'Affordable Homes',
+      'Architecturally Designed Exquisite Residential Projects',
       'Schools',
       'Hospitals',
       'Larger commercial projects'

@@ -1137,11 +1137,24 @@ function renderEditorialPage(page: BookPageType, onOpenQuoteModal?: () => void) 
                 FUTURE CAPABILITIES & DOMAIN EXPANSION
               </span>
               <div className="flex flex-wrap gap-2 pt-1">
-                {ndlCompanyProfile.immediateAndLongTermGoals.futureCapabilities.map((fc, i) => (
-                  <span key={i} className="px-3 py-1 rounded bg-white/10 text-white font-mono text-xs font-semibold border border-white/20">
-                    {fc}
-                  </span>
-                ))}
+                {ndlCompanyProfile.immediateAndLongTermGoals.futureCapabilities.map((fc, i) => {
+                  const isHighlighted =
+                    fc.toLowerCase().includes('affordable') ||
+                    fc.toLowerCase().includes('exquisite') ||
+                    fc.toLowerCase().includes('architecturally');
+                  return (
+                    <span
+                      key={i}
+                      className={`px-3 py-1 rounded font-mono text-xs font-semibold ${
+                        isHighlighted
+                          ? 'bg-yellow-300 text-slate-950 font-bold border-2 border-yellow-400 shadow-xs'
+                          : 'bg-white/10 text-white border border-white/20'
+                      }`}
+                    >
+                      {fc}
+                    </span>
+                  );
+                })}
               </div>
             </div>
           </div>
