@@ -6,13 +6,13 @@ import { ndlProjects, NDLProject } from '../../data/ndlProjectsData';
 
 // Filter projects suitable for Turnkey showcase
 const turnkeyProjectsList: NDLProject[] = ndlProjects.filter((p) => {
+  if (['mr-nataraj', 'take-5-bar', 'mr-venkatarama-raju', '24x7-solutions'].includes(p.id)) return false;
   return [
     'nexus-corporate-park',
     'aura-commercial-hub',
     'dr-anil-kush',
-    'mr-nataraj',
     'zenith-tech-tower',
-  ].includes(p.id) || p.scope.toLowerCase().includes('turnkey') || p.category === 'Commercial';
+  ].includes(p.id) || (p.scope.toLowerCase().includes('turnkey') && p.category === 'Turnkey');
 });
 
 const turnkeyCategories = [
@@ -30,11 +30,11 @@ export const TurnkeyProjectShowcase: React.FC = () => {
 
   const filteredProjects = turnkeyProjectsList.filter((p) => {
     if (activeType === 'Commercial Turnkey') {
-      if (p.category !== 'Commercial') return false;
+      if (p.category !== 'Commercial' && !p.type.toLowerCase().includes('commercial')) return false;
     } else if (activeType === 'Residential Turnkey') {
-      if (p.category !== 'Residential') return false;
+      if (p.category !== 'Residential' && !p.type.toLowerCase().includes('residence')) return false;
     } else if (activeType === 'EPC Contracting') {
-      if (!['nexus-corporate-park', 'aura-commercial-hub', 'zenith-tech-tower', 'mr-nataraj'].includes(p.id)) return false;
+      if (!['nexus-corporate-park', 'aura-commercial-hub', 'zenith-tech-tower'].includes(p.id)) return false;
     } else if (activeType === 'Design & Build') {
       if (!['dr-anil-kush'].includes(p.id)) return false;
     }

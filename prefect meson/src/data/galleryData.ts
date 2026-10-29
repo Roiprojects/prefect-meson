@@ -508,7 +508,7 @@ export const galleryProjects: GalleryProject[] = [
       'Prime HSR Layout 27th Main commercial frontage',
       'G+4 Commercial retail showroom + office + residential penthouse',
       'Incept Architects architectural design',
-      'Turnkey civil, electrical, and plumbing infrastructure'
+      'Comprehensive civil, electrical, and plumbing infrastructure'
     ],
     specs: [
       

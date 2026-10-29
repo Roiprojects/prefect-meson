@@ -51,20 +51,6 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
     image: '/ndl_projects/slide_097_img_1.jpg'
   },
   {
-    id: 'mr-nataraj',
-    client: 'Mr. Nataraj Commercial Complex',
-    statHeadline: 'COMMERCIAL CUM RESIDENCE',
-    badge: 'Commercial EPC',
-    height: 'G+4',
-    timeline: '18 Mo',
-    rating: 'NDL Civil + MEP',
-    location: 'HSR Layout, Bangalore',
-    city: 'Bangalore',
-    sector: 'Commercial EPC',
-    timelineCategory: '12–24 Mo',
-    image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
-  },
-  {
     id: 'zenith-tech-tower',
     client: 'Zenith Tech Tower',
     statHeadline: '260,000 SQ.FT',

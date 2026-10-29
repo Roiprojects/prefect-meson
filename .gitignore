@@ -14,3 +14,4 @@ scripts/
 .deploy-runner.cjs
 
 .deploy-check.cjs
+.vercel

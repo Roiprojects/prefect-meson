@@ -1357,40 +1357,6 @@ const defaultTurnkeyItems: TurnkeyItem[] = [
     status: 'Completed',
     featured: false,
   },
-  {
-    id: 'turnkey-5',
-    slug: 'mr-nataraj-turnkey',
-    number: '05',
-    title: 'Mr. Nataraj Commercial Cum Residential Complex',
-    category: 'Commercial Turnkey',
-    tagline: 'Turnkey Commercial Retail + Executive Residence',
-    description: 'Prominent G+4 commercial cum residential complex on 27th Main HSR Layout executed on a turnkey basis, featuring retail ground floors, corporate office spaces, and luxury residential penthouse units.',
-    heroImage: '/ndl_projects/slide_097_img_1.jpg',
-    galleryImages: [
-      '/ndl_projects/slide_097_img_1.jpg',
-      '/ndl_projects/slide_099_img_1.jpg',
-      '/ndl_projects/slide_101_img_1.jpg',
-    ],
-    stages: [
-      '01. Structural Framing & Foundation Engineering',
-      '02. G+4 Reinforced Concrete Core Superstructure',
-      '03. Retail Showroom Facade & Commercial Fitout',
-      '04. Upper Level Penthouse Residential Execution',
-      '05. Full MEP, Fire Hydrants & Statutory Handover',
-    ],
-    deliverables: [
-      'Comprehensive Turnkey Execution & Handover',
-      'Multi-Use Commercial & Residential Certifications',
-      'High-Durability Exterior Weather Envelope',
-      'As-Built Drawings & Complete Municipal Approvals',
-    ],
-    client: 'Mr. Nataraj',
-    architect: 'Incept Architects',
-    builtArea: '28,000 Sq.Ft',
-    timeline: '10 Months',
-    status: 'Completed',
-    featured: true,
-  },
 ];
 
 const defaultInteriorItems: InteriorItem[] = [
