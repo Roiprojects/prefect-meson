@@ -9,8 +9,7 @@ const coreValues = [
   'STRUCTURAL INTEGRITY',
   'MATERIAL AUTHENTICITY',
   'ARCHITECTURAL PRECISION',
-  'TRANSPARENT BOQ',
-  'PROPRIETOR SUPERVISION'
+  'TRANSPARENT BOQ'
 ];
 
 export const AboutIntro: React.FC = () => {
