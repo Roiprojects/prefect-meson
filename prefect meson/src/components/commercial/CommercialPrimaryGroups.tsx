@@ -14,7 +14,7 @@ export const CommercialPrimaryGroups: React.FC<CommercialPrimaryGroupsProps> = (
 
   const iconList = [Building2, Layers, Wrench, Factory];
 
-  const primaryModels = commercialItems.map((item, idx) => ({
+  const primaryModels = commercialItems.slice(0, 4).map((item, idx) => ({
     id: item.id || item.slug,
     number: String(idx + 1).padStart(2, '0'),
     badge: item.category.toUpperCase(),

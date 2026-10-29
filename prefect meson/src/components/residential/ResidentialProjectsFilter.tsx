@@ -221,7 +221,7 @@ export const ResidentialProjectsFilter: React.FC = () => {
   }));
 
   const galleryResidentialCards: ResidentialCardItem[] = projects
-    .filter((p) => p.category === 'Residential' || p.secondaryCategories?.includes('Residential'))
+    .filter((p) => (p.category === 'Residential' || p.secondaryCategories?.includes('Residential')) && p.category !== 'Commercial' && !['mr-nataraj', 'mr-venkatarama-raju'].includes(p.id))
     .map((p) => ({
       id: p.id || p.slug,
       client: p.client || p.title,

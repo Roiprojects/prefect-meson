@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, ChevronRight, Building2 } from 'lucide-react';
 
-// Authentic High-Resolution Commercial Construction Imagery
-import imgMainCommercial from '../../assets/comm_main_hero.jpg';
-import imgDetailCommercial from '../../assets/comm_complex_hero.jpg';
+// Authentic High-Resolution Commercial Construction Imagery (Mr. Venkatarama Raju & Mr. Nataraj)
+const imgMainCommercial = '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg';
+const imgDetailCommercial = '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png';
 
 interface CommercialIntroProps {
   onOpenQuoteModal?: () => void;
@@ -156,7 +156,7 @@ export const CommercialIntro: React.FC<CommercialIntroProps> = ({ onOpenQuoteMod
             >
               <img
                 src={imgMainCommercial}
-                alt="Commercial Construction Under Professional Execution"
+                alt="Mr. Venkatarama Raju Commercial Building, JP Nagar 9th Phase"
                 className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700 ease-out"
                 loading="eager"
               />
@@ -168,7 +168,7 @@ export const CommercialIntro: React.FC<CommercialIntroProps> = ({ onOpenQuoteMod
               <div className="absolute top-6 left-6 z-20 pointer-events-none">
                 <div className="bg-slate-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-md border border-white/15 text-white font-mono text-[11px] tracking-widest uppercase flex items-center gap-2.5 shadow-lg">
                   <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-                  <span>COMMERCIAL // PROJECT DELIVERY</span>
+                  <span>MR. VENKATARAMA RAJU // JP NAGAR 9TH PHASE</span>
                   <span className="text-white/30">•</span>
                   <span className="font-bold text-slate-200">04.1</span>
                 </div>
@@ -178,10 +178,10 @@ export const CommercialIntro: React.FC<CommercialIntroProps> = ({ onOpenQuoteMod
               <div className="absolute bottom-6 left-6 right-6 z-20 pointer-events-none flex items-end justify-between">
                 <div className="max-w-md text-white">
                   <span className="font-mono text-[10px] uppercase text-slate-300 tracking-[0.2em] font-bold block mb-1">
-                    ACTIVE STRUCTURAL SITE EXECUTION
+                    MR. VENKATARAMA RAJU COMMERCIAL BUILDING
                   </span>
                   <p className="font-sans text-xs sm:text-sm text-slate-200 font-normal">
-                    Coordinated civil engineering, structural steel framing, and fast-track commercial execution.
+                    Meenal Cavale (MJC Architects) • G+4 Flagship Retail Showroom & Column-Free Floor Plates.
                   </p>
                 </div>
               </div>
@@ -197,11 +197,11 @@ export const CommercialIntro: React.FC<CommercialIntroProps> = ({ onOpenQuoteMod
             >
               <img
                 src={imgDetailCommercial}
-                alt="Commercial Engineering Detailing"
+                alt="Mr. Nataraj Commercial Cum Residence Complex, HSR Layout"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
               />
               <div className="absolute bottom-2 left-2 right-2 bg-slate-950/90 backdrop-blur-xs px-2 py-1 rounded text-[9px] font-mono text-white tracking-wider uppercase text-center border border-white/10">
-                FACADE & COMPLEX COORD
+                MR. NATARAJ // HSR LAYOUT
               </div>
             </motion.div>
 

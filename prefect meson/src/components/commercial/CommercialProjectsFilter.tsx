@@ -23,96 +23,12 @@ interface CommercialCardItem {
 
 const commercialShowcaseList: CommercialCardItem[] = [
   {
-    id: 'nexus-corporate-park',
-    client: 'Nexus Corporate Park',
-    statHeadline: '180,000 SQ.FT',
-    badge: 'Turnkey',
-    height: 'G+8',
-    timeline: '18 Mo',
-    rating: 'LEED Gold',
-    location: 'Outer Ring Road, Bangalore',
-    city: 'Bangalore',
-    sector: 'Office',
-    timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_042_img_1.jpg'
-  },
-  {
-    id: 'aura-commercial-hub',
-    client: 'Aura Commercial Hub',
-    statHeadline: '220,000 SQ.FT',
-    badge: 'Civil & Core',
-    height: 'G+12',
-    timeline: '24 Mo',
-    rating: 'Platinum',
-    location: 'Whitefield Commercial Zone, Bangalore',
-    city: 'Bangalore',
-    sector: 'Retail',
-    timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_097_img_1.jpg'
-  },
-  {
-    id: '24x7-solutions',
-    client: '24x7 Solutions',
-    statHeadline: '140,000 SQ.FT',
-    badge: 'Turnkey',
-    height: 'G+5',
-    timeline: '10 Mo',
-    rating: 'Keystone Architects, Indiranagar',
-    location: 'Near Ulsoor Lake, Bangalore',
-    city: 'Bangalore',
-    sector: 'Office',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
-  },
-  {
-    id: 'mr-nataraj',
-    client: 'Mr. Nataraj Complex',
-    statHeadline: '₹1.80 CRORE',
-    badge: 'Civil & Core',
-    height: 'G+4',
-    timeline: '18 Mo',
-    rating: 'NDL Civil + MEP',
-    location: 'HSR Layout, 27th Main, Bangalore',
-    city: 'Bangalore',
-    sector: 'Retail',
-    timelineCategory: '12–24 Mo',
-    image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
-  },
-  {
-    id: 'take-5-bar',
-    client: 'TAKE 5 Bar & Restaurant',
-    statHeadline: 'HOSPITALITY FIT-OUT',
-    badge: 'Turnkey',
-    height: 'G+2',
-    timeline: '8 Mo',
-    rating: 'Acoustic Spec',
-    location: 'Defence Colony, Indiranagar, Bangalore',
-    city: 'Bangalore',
-    sector: 'Hospitality',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png'
-  },
-  {
-    id: 'farm-india-office',
-    client: 'Farm India Office',
-    statHeadline: '₹52 LAKHS',
-    badge: 'Interiors',
-    height: 'G+3',
-    timeline: '6 Mo',
-    rating: 'Corporate Spec',
-    location: 'Koramangala, Bangalore',
-    city: 'Bangalore',
-    sector: 'Office',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png'
-  },
-  {
     id: 'mr-venkatarama-raju',
-    client: 'Mr. Venkatarama Raju Commercial',
+    client: 'Mr. Venkatarama Raju Commercial Building',
     statHeadline: 'G+4 COMMERCIAL',
     badge: 'Civil & Core',
     height: 'G+4',
-    timeline: '14 Mo',
+    timeline: '12 Mo',
     rating: 'Meenal Cavale (MJC)',
     location: 'JP Nagar 9th Phase, Bangalore',
     city: 'Bangalore',
@@ -121,24 +37,24 @@ const commercialShowcaseList: CommercialCardItem[] = [
     image: '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg'
   },
   {
-    id: 'zenith-tech-tower',
-    client: 'Zenith Tech Tower',
-    statHeadline: '260,000 SQ.FT',
-    badge: 'Turnkey',
-    height: 'G+14',
-    timeline: '26 Mo',
-    rating: 'IGBC Platinum',
-    location: 'Electronic City Phase 1, Bangalore',
+    id: 'mr-nataraj',
+    client: 'Mr. Nataraj Commercial Cum Residence',
+    statHeadline: '₹1.80 CRORE',
+    badge: 'Civil & Core',
+    height: 'G+4',
+    timeline: '10 Mo',
+    rating: 'Incept Architects',
+    location: 'HSR Layout, 27th Main, Bangalore',
     city: 'Bangalore',
-    sector: 'Industrial',
-    timelineCategory: '24+ Mo',
-    image: '/ndl_projects/slide_046_img_1.jpg'
+    sector: 'Retail',
+    timelineCategory: '< 12 Mo',
+    image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
   }
 ];
 
-const locations = ['All', 'Bangalore', 'Indiranagar', 'Koramangala', 'HSR Layout', 'JP Nagar', 'Electronic City'];
-const sectors = ['Office', 'Retail', 'Hospitality', 'Industrial', 'Institutional'];
-const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
+const locations = ['All', 'Bangalore', 'JP Nagar', 'HSR Layout'];
+const sectors = ['Retail', 'Office'];
+const timelines = ['All', '< 12 Mo', '12–24 Mo'];
 
 export const CommercialProjectsFilter: React.FC = () => {
   const navigate = useNavigate();
@@ -148,7 +64,10 @@ export const CommercialProjectsFilter: React.FC = () => {
   const [activeTimeline, setActiveTimeline] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const dynamicCommercialCards: CommercialCardItem[] = commercialItems.map((item) => ({
+  // Restrict commercial cards strictly to authentic commercial projects (Mr. Venkatarama Raju & Mr. Nataraj)
+  const allowedCommercialIds = ['mr-venkatarama-raju', 'mr-nataraj', 'comm-manappuram'];
+
+  const dynamicCommercialCards: CommercialCardItem[] = commercialItems.filter(item => allowedCommercialIds.includes(item.id || item.slug)).map((item) => ({
     id: item.id || item.slug,
     client: item.client || item.title,
     statHeadline: item.builtArea || 'COMMERCIAL SCALE',
@@ -165,7 +84,7 @@ export const CommercialProjectsFilter: React.FC = () => {
   }));
 
   const galleryCommercialCards: CommercialCardItem[] = projects
-    .filter((p) => p.category === 'Commercial' || p.secondaryCategories?.includes('Commercial'))
+    .filter((p) => (p.category === 'Commercial' || p.secondaryCategories?.includes('Commercial')) && allowedCommercialIds.includes(p.id))
     .map((p) => ({
       id: p.id || p.slug,
       client: p.client || p.title,

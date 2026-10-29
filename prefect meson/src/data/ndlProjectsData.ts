@@ -108,7 +108,7 @@ export const ndlProjects: NDLProject[] = [
     architectPractice: 'Keystone Architects',
     scope: 'Office Interiors and Workspace Fit-Out',
     type: 'Commercial Office Space',
-    category: 'Commercial',
+    category: 'Interiors',
     description: 'Modern corporate office space fit-out near Ulsoor Lake featuring open-plan workstations, glass cabin partitions, acoustic ceilings, and integrated electrical/data routing.',
     featuredImage: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png',
     gallery: [
@@ -202,7 +202,7 @@ export const ndlProjects: NDLProject[] = [
     architectPractice: 'Kiran and Associates, Bombay',
     scope: 'Civil, Electrical, Plumbing and Interior Work',
     type: 'Restaurant & Bar Hospitality Fit-Out',
-    category: 'Commercial',
+    category: 'Interiors',
     description: 'Iconic hospitality interior and civil execution in Defence Colony, Indiranagar featuring custom wood joinery, acoustic bar counters, ambient lighting networks, and specialized commercial MEP layout.',
     featuredImage: '/projects/take_5_bar/take_5_bar_01_granite_counter_wine_rack.png',
     gallery: [
@@ -301,7 +301,7 @@ export const ndlProjects: NDLProject[] = [
     scope: 'Interiors',
     cost: '52 lacs',
     type: 'Corporate Office Interiors',
-    category: 'Commercial',
+    category: 'Interiors',
     description: 'Complete corporate office interior fit-out in Koramangala executed at a project cost of Rs 52 Lacs, featuring executive boardrooms, custom acoustic paneling, glass cubicles, and designer modular workstations.',
     featuredImage: '/projects/farm_india_office/farm_india_01_open_workspace_ducted_ac.png',
     gallery: [
@@ -599,93 +599,5 @@ export const ndlProjects: NDLProject[] = [
       { label: 'Architect', value: 'Architecture Paradigm, 6th block, Koramangala' },
       { label: 'Location', value: '# 210, HSR Layout, Bangalore' }
     ]
-  },
-  {
-    id: 'nexus-corporate-park',
-    client: 'Nexus Corporate Park',
-    title: 'Nexus Corporate Park Grade-A Campus',
-    location: 'Outer Ring Road, Bangalore',
-    city: 'Bangalore',
-    architect: 'Architecture Paradigm',
-    architectPractice: 'Architecture Paradigm',
-    scope: 'Turnkey Civil, Structural, MEP, Glazing & Landscaping',
-    type: 'Commercial Tech Park',
-    category: 'Commercial',
-    cost: '180,000 SQ.FT',
-    description: 'Landmark G+8 commercial tech park on Outer Ring Road featuring high-performance double-glazed curtain walls, LEED Gold certified MEP systems, column-free corporate floor plates, and automated building management systems executed under turnkey engineering delivery.',
-    featuredImage: '/ndl_projects/slide_042_img_1.jpg',
-    gallery: [
-      '/ndl_projects/slide_042_img_1.jpg',
-      '/ndl_projects/slide_043_img_1.jpg',
-      '/ndl_projects/slide_044_img_1.jpg',
-      '/ndl_projects/slide_045_img_1.jpg',
-      '/ndl_projects/slide_046_img_1.jpg',
-      '/ndl_projects/slide_047_img_1.jpg',
-      '/ndl_projects/slide_048_img_1.jpg'
-    ],
-    highlights: ['180,000 SQ.FT Built-Up Area', 'LEED Gold Certified', 'G+8 Reinforced Concrete Core', 'High Performance Double Glazing'],
-    stats: [
-      { label: 'Scale', value: '180,000 SQ.FT' },
-      { label: 'Timeline', value: '18 Months' },
-      { label: 'Rating', value: 'LEED Gold' },
-      { label: 'Scope', value: 'Turnkey EPC Delivery' }
-    ]
-  },
-  {
-    id: 'aura-commercial-hub',
-    client: 'Aura Commercial Hub',
-    title: 'Aura Commercial Retail & Corporate Hub',
-    location: 'Whitefield Commercial Zone, Bangalore',
-    city: 'Bangalore',
-    architect: 'Incept Architects',
-    architectPractice: 'Incept Architects',
-    scope: 'Civil & Core, Deep Basements, Post-Tensioned Slabs',
-    type: 'Mixed-Use Commercial Complex',
-    category: 'Commercial',
-    cost: '220,000 SQ.FT',
-    description: 'Premier G+12 mixed-use retail and corporate complex in Whitefield featuring post-tensioned large span slabs, multi-level retail podiums, high-speed elevator shafts, and IGBC Platinum sustainability credentials.',
-    featuredImage: '/ndl_projects/slide_097_img_1.jpg',
-    gallery: [
-      '/ndl_projects/slide_097_img_1.jpg',
-      '/ndl_projects/slide_097_img_2.jpg',
-      '/ndl_projects/slide_099_img_1.jpg',
-      '/ndl_projects/slide_100_img_1.jpg',
-      '/ndl_projects/slide_101_img_1.jpg',
-      '/ndl_projects/slide_100_img_1.jpg'
-    ],
-    highlights: ['220,000 SQ.FT Multi-Tier Hub', 'G+12 Core Engineering', 'Post-Tensioned Slabs', 'Platinum Green Building'],
-    stats: [
-      { label: 'Scale', value: '220,000 SQ.FT' },
-      { label: 'Timeline', value: '24 Months' },
-      { label: 'Rating', value: 'IGBC Platinum' },
-      { label: 'Scope', value: 'Civil & Core Execution' }
-    ]
-  },
-  {
-    id: 'zenith-tech-tower',
-    client: 'Zenith Tech Tower',
-    title: 'Zenith Tech Tower Commercial Tower',
-    location: 'Electronic City Phase 1, Bangalore',
-    city: 'Bangalore',
-    architect: 'Keystone Architects',
-    architectPractice: 'Keystone Architects',
-    scope: 'Turnkey Civil, MEP and High-Speed Vertical Transport',
-    type: 'Corporate High-Rise Tower',
-    category: 'Commercial',
-    cost: '260,000 SQ.FT',
-    description: 'Iconic G+14 IT & commercial high-rise tower in Electronic City Phase 1 designed for maximum thermal efficiency and high-density workforce operations with advanced MEP substations.',
-    featuredImage: '/ndl_projects/slide_046_img_1.jpg',
-    gallery: [
-      '/ndl_projects/slide_046_img_1.jpg',
-      '/ndl_projects/slide_047_img_1.jpg',
-      '/ndl_projects/slide_048_img_1.jpg'
-    ],
-    highlights: ['260,000 SQ.FT High-Rise', 'G+14 Steel & Concrete Composite', 'IGBC Platinum Rated'],
-    stats: [
-      { label: 'Scale', value: '260,000 SQ.FT' },
-      { label: 'Timeline', value: '26 Months' },
-      { label: 'Rating', value: 'IGBC Platinum' },
-      { label: 'Scope', value: 'Turnkey EPC Delivery' }
-    ]
-  },
+  }
 ];

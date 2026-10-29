@@ -3,10 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Assets
-import commOffice from '../../assets/comm_office_hero.jpg';
-import commComplex from '../../assets/comm_complex_hero.jpg';
-import commRetail from '../../assets/comm_retail_hero.jpg';
-import commShowroom from '../../assets/comm_showroom_hero.jpg';
 import commRestaurant from '../../assets/comm_restaurant_hero.jpg';
 import commHospitality from '../../assets/comm_hospitality_hero.jpg';
 import commInstitutional from '../../assets/comm_institutional_hero.jpg';
@@ -33,7 +29,7 @@ const commercialCategories: CommercialCategory[] = [
     shortTitle: 'OFFICE BUILDINGS',
     title: 'OFFICE BUILDINGS',
     desc: 'Commercial workplaces designed around functionality, coordination and professional execution.',
-    image: commOffice,
+    image: '/projects/mr_venkatarama_raju/raju_03_column_free_office_floor_plate.jpg',
     tag: 'WORKPLACES & TECH PARKS',
   },
   {
@@ -42,7 +38,7 @@ const commercialCategories: CommercialCategory[] = [
     shortTitle: 'COMMERCIAL COMPLEXES',
     title: 'COMMERCIAL COMPLEXES',
     desc: 'Large-scale commercial environments planned and executed around diverse business requirements.',
-    image: commComplex,
+    image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png',
     tag: 'MIXED-USE & BUSINESS HUBS',
   },
   {
@@ -51,7 +47,7 @@ const commercialCategories: CommercialCategory[] = [
     shortTitle: 'RETAIL SPACES',
     title: 'RETAIL SPACES',
     desc: 'Purpose-built commercial spaces where layout, finishing and customer experience come together.',
-    image: commRetail,
+    image: '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg',
     tag: 'FLAGSHIPS & SHOPPING ARCADES',
   },
   {
@@ -60,7 +56,7 @@ const commercialCategories: CommercialCategory[] = [
     shortTitle: 'SHOWROOMS',
     title: 'SHOWROOMS',
     desc: 'Professionally executed environments designed to present products, brands and customer experiences.',
-    image: commShowroom,
+    image: '/projects/mr_nataraj/nataraj_02_retail_showroom_elevation.png',
     tag: 'EXPERIENTIAL & AUTO GALLERIES',
   },
   {
