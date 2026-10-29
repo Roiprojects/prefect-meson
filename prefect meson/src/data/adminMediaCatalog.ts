@@ -624,17 +624,62 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-01-corner-elevation-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.png",
-    title: "Mr. Sarabjith Ghose - Modern Residence Corner Elevation & Cantilever",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-01-corner-elevation-wide-jpg",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg",
+    title: "Mr. Sarabjith Ghose - Corner Elevation & Stone Revetment",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "468 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-02-front-facade-elevation-jpg",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_02_front_facade_elevation.jpg",
+    title: "Mr. Sarabjith Ghose - Architectural Front Facade & Central Spine",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "351 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-03-cantilever-corner-pavilion-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_03_cantilever_corner_pavilion.png",
+    title: "Mr. Sarabjith Ghose - Modern Cantilevered Upper Box & Garage Gate",
     category: "Residential",
     tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
     size: "843 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-02-floating-brick-staircase-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_02_floating_brick_staircase.png",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-04-side-garden-elevation-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_04_side_garden_elevation.png",
+    title: "Mr. Sarabjith Ghose - Exposed Wire-Cut Brick Garden Elevation",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "676 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-05-entrance-compound-facade-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_05_entrance_compound_facade.png",
+    title: "Mr. Sarabjith Ghose - Compound Boundary Wall & Entrance Facade",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "593 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-06-retaining-wall-lawn-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_06_retaining_wall_lawn.png",
+    title: "Mr. Sarabjith Ghose - Sloping Lawn, Retaining Wall & Coconut Palms",
+    category: "Residential",
+    tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
+    size: "838 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-07-floating-brick-staircase-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_07_floating_brick_staircase.png",
     title: "Mr. Sarabjith Ghose - Cantilevered Stone Staircase & Exposed Brick Wall",
     category: "Residential",
     tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
@@ -642,8 +687,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-03-bottle-glass-stairwell-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_03_bottle_glass_stairwell.png",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-08-bottle-glass-stairwell-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_glass_stairwell.png",
     title: "Mr. Sarabjith Ghose - Floating Timber Staircase & Bottle-Glass Skylit Beam",
     category: "Residential",
     tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
@@ -651,8 +696,8 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-04-split-level-atrium-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_04_split_level_atrium.png",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-09-split-level-atrium-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_09_split_level_atrium.png",
     title: "Mr. Sarabjith Ghose - Split-Level Mezzanine Atrium & Library Ledge",
     category: "Residential",
     tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
@@ -660,12 +705,12 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
-    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-05-side-brick-facade-png",
-    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_05_side_brick_facade.png",
-    title: "Mr. Sarabjith Ghose - Exposed Wire-Cut Brick Garden Elevation",
+    id: "proj-mr_sarabjith_ghose-sarabjith-ghose-10-study-nook-blue-accent-png",
+    url: "/projects/mr_sarabjith_ghose/sarabjith_ghose_10_study_nook_blue_accent.png",
+    title: "Mr. Sarabjith Ghose - Mezzanine Study Nook with Cobalt Blue Feature Wall",
     category: "Residential",
     tags: ["mr. sarabjith ghose", "residential", "mantri lakeview", "authentic", "client-photo"],
-    size: "676 KB",
+    size: "557 KB",
     dimensions: "1920x1080"
   },
   {

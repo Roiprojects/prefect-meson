@@ -80,13 +80,18 @@ export const ndlProjects: NDLProject[] = [
     type: 'Contemporary Residence',
     category: 'Residential',
     description: 'Distinctive contemporary private residence at # 17, Mantri Lakeview Talagatpura, Kanakpura Main Road featuring exposed wire-cut brick masonry, geometric cantilevers, split-level layout, cantilevered stone floating staircase, and complete civil, plumbing, and electrical works designed by Gaurav Roy Chaudary, 7th Sector, HSR Layout.',
-    featuredImage: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.png',
+    featuredImage: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg',
     gallery: [
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_02_floating_brick_staircase.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_03_bottle_glass_stairwell.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_04_split_level_atrium.png',
-      '/projects/mr_sarabjith_ghose/sarabjith_ghose_05_side_brick_facade.png'
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_02_front_facade_elevation.jpg',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_03_cantilever_corner_pavilion.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_04_side_garden_elevation.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_05_entrance_compound_facade.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_06_retaining_wall_lawn.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_07_floating_brick_staircase.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_08_bottle_glass_stairwell.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_09_split_level_atrium.png',
+      '/projects/mr_sarabjith_ghose/sarabjith_ghose_10_study_nook_blue_accent.png'
     ],
     highlights: ['Wire-cut brick masonry', 'Cantilevered architectural volumes', 'Split level zoning', 'Gaurav Roy Chaudary design'],
     stats: [

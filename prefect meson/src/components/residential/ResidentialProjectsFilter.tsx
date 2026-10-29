@@ -48,7 +48,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     city: 'Bangalore',
     sector: 'Contemporary',
     timelineCategory: '12–24 Mo',
-    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation.png'
+    image: '/projects/mr_sarabjith_ghose/sarabjith_ghose_01_corner_elevation_wide.jpg'
   },
   {
     id: 'mr-vittal-das-shetty',
