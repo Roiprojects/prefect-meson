@@ -174,17 +174,7 @@ export const CommercialIntro: React.FC<CommercialIntroProps> = ({ onOpenQuoteMod
                 </div>
               </div>
 
-              {/* In-Image Status Badge (Bottom-Left) */}
-              <div className="absolute bottom-6 left-6 right-6 z-20 pointer-events-none flex items-end justify-between">
-                <div className="max-w-md text-white">
-                  <span className="font-mono text-[10px] uppercase text-slate-300 tracking-[0.2em] font-bold block mb-1">
-                    MR. VENKATARAMA RAJU COMMERCIAL BUILDING
-                  </span>
-                  <p className="font-sans text-xs sm:text-sm text-slate-200 font-normal">
-                    Meenal Cavale (MJC Architects) • G+4 Flagship Retail Showroom & Column-Free Floor Plates.
-                  </p>
-                </div>
-              </div>
+
             </motion.div>
 
             {/* Small Overlapping Secondary Detail Image (Bottom-Right) */}
@@ -193,7 +183,7 @@ export const CommercialIntro: React.FC<CommercialIntroProps> = ({ onOpenQuoteMod
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.25, ease: easeLuxury }}
-              className="absolute -bottom-6 sm:-bottom-8 -left-4 sm:-left-8 w-44 sm:w-60 h-32 sm:h-40 rounded-2xl overflow-hidden border-4 border-white shadow-2xl bg-slate-900 hidden sm:block group"
+              className="absolute -bottom-6 sm:-bottom-8 lg:-bottom-10 -left-3 sm:-left-6 lg:-left-10 w-60 sm:w-80 lg:w-[380px] h-44 sm:h-56 lg:h-64 rounded-2xl overflow-hidden border-4 border-white shadow-2xl bg-slate-900 z-30 hidden sm:block group"
             >
               <img
                 src={imgDetailCommercial}
