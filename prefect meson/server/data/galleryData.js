@@ -1,6 +1,5 @@
-export const galleryProjects = [] = [
+export const galleryProjects = [
   {
-    {
     id: 'dr-anil-kush',
     slug: 'dr-anil-kush',
     number: '.01',
