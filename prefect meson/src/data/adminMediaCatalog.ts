@@ -137,139 +137,39 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     tags: ["commercial complex","commercial","jp nagar","authentic","client-photo"],
     size: "363 KB",
     dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-01-facade-front-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg",
-    title: "Dr. Anil Kush - Facade Front",
+  },  {
+    id: "proj-dr_anil_kush-01-courtyard-louvers-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png",
+    title: "Dr. Anil Kush - Courtyard & Louvered Facade",
     category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "291 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-02-concrete-entry-steps-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_02_concrete_entry_steps.jpg",
-    title: "Dr. Anil Kush - Concrete Entry Steps",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "293 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-03-garden-landscaping-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_03_garden_landscaping.jpg",
-    title: "Dr. Anil Kush - Garden Landscaping",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "292 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-04-cantilever-portico-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_04_cantilever_portico.jpg",
-    title: "Dr. Anil Kush - Cantilever Portico",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "278 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-05-courtyard-louvers-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_05_courtyard_louvers.png",
-    title: "Dr. Anil Kush - Courtyard Louvers",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
     size: "484 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-dr-anil-kush-06-reflecting-pool-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_06_reflecting_pool.jpg",
-    title: "Dr. Anil Kush - Reflecting Pool",
+    id: "proj-dr_anil_kush-02-master-bedroom-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_02_master_bedroom.png",
+    title: "Dr. Anil Kush - Master Bedroom & Accent Wall",
     category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "222 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-07-atrium-hall-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_07_atrium_hall.jpg",
-    title: "Dr. Anil Kush - Atrium Hall",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "215 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-08-floating-staircase-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_08_floating_staircase.jpg",
-    title: "Dr. Anil Kush - Floating Staircase",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "229 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-09-staircase-detail-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_09_staircase_detail.png",
-    title: "Dr. Anil Kush - Staircase Detail",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "606 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-10-louver-veranda-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_10_louver_veranda.jpg",
-    title: "Dr. Anil Kush - Louver Veranda",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "252 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-11-mezzanine-panelling-jpg",
-    url: "/projects/dr_anil_kush/dr_anil_kush_11_mezzanine_panelling.jpg",
-    title: "Dr. Anil Kush - Mezzanine Panelling",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "189 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-12-master-bedroom-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_12_master_bedroom.png",
-    title: "Dr. Anil Kush - Master Bedroom",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
     size: "393 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-dr-anil-kush-13-modular-kitchen-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_13_modular_kitchen.png",
-    title: "Dr. Anil Kush - Modular Kitchen",
+    id: "proj-dr_anil_kush-03-modular-kitchen-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_03_modular_kitchen.png",
+    title: "Dr. Anil Kush - Modular Kitchen Joinery",
     category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
-    size: "836 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-dr_anil_kush-dr-anil-kush-14-kitchen-installation-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_14_kitchen_installation.png",
-    title: "Dr. Anil Kush - Kitchen Installation",
-    category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
     size: "356 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-dr_anil_kush-dr-anil-kush-15-bathroom-vanity-png",
-    url: "/projects/dr_anil_kush/dr_anil_kush_15_bathroom_vanity.png",
-    title: "Dr. Anil Kush - Bathroom Vanity",
+    id: "proj-dr_anil_kush-04-bathroom-vanity-png",
+    url: "/projects/dr_anil_kush/dr_anil_kush_04_bathroom_vanity.png",
+    title: "Dr. Anil Kush - Granite Counter Bathroom Vanity",
     category: "Residential",
-    tags: ["dr. anil kush","residential","estate club","authentic","client-photo"],
+    tags: ["dr. anil kush", "residential", "estate club", "authentic", "client-photo"],
     size: "362 KB",
     dimensions: "1920x1080"
   },

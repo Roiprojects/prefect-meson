@@ -65,20 +65,6 @@ const interiorShowcaseList: InteriorCardItem[] = [
     image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
   },
   {
-    id: 'dr-anil-kush',
-    client: 'Dr. Anil Kush',
-    statHeadline: '12,500 SQ.FT',
-    badge: 'Luxury Residence',
-    height: 'G+2',
-    timeline: '14 Mo',
-    rating: 'Architecture Paradigm, 6th block, Koramangala',
-    location: '# C2, Estate Club, Bangalore',
-    city: 'Bangalore',
-    sector: 'Luxury Residential',
-    timelineCategory: '12–24 Mo',
-    image: '/projects/dr_anil_kush/dr_anil_kush_12_master_bedroom.png'
-  },
-  {
     id: 'mr-sarabjith-ghose',
     client: 'Mr. Sarabjith Ghose',
     statHeadline: '5,800 SQ.FT',

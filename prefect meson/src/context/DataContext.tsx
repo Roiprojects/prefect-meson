@@ -696,29 +696,13 @@ const defaultResidentialItems: ResidentialItem[] = [
     title: 'Luxury Villas on Item Rate Basis',
     category: 'Luxury Villas on Item Rate Basis',
     tagline: 'Item-Rate Contract Agreements & Custom Estate Execution',
-    description: 'Stately luxury villa construction executed on a transparent item-rate contractual basis with itemized BOQ estimations, exposed RCC cantilevered slabs, natural stone masonry, water bodies, and bespoke estate finishes.',
-    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
+    description: 'Stately luxury villa construction executed on a transparent item-rate contractual basis for Dr. Anil Kush at # C2, Estate Club, Bangalore with exposed RCC cantilevered slabs, floating teak staircase, stepped water features, modular kitchen, and bespoke estate finishes under Architecture Paradigm, 6th block, Koramangala.',
+    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
     galleryImages: [
-      '/ndl_projects/slide_011_img_1.jpg',
-      '/ndl_projects/slide_011_img_2.jpg',
-      '/ndl_projects/slide_011_img_3.jpg',
-      '/ndl_projects/slide_011_img_4.jpg',
-      '/ndl_projects/slide_012_img_1.jpg',
-      '/ndl_projects/slide_013_img_1.jpg',
-      '/ndl_projects/slide_014_img_1.jpg',
-      '/ndl_projects/slide_015_img_1.jpg',
-      '/ndl_projects/slide_016_img_1.jpg',
-      '/ndl_projects/slide_017_img_1.jpg',
-      '/ndl_projects/slide_017_img_2.jpg',
-      '/ndl_projects/slide_018_img_1.jpg',
-      '/ndl_projects/slide_018_img_2.jpg',
-      '/ndl_projects/slide_019_img_1.jpg',
-      '/ndl_projects/slide_020_img_1.jpg',
-      '/ndl_projects/slide_020_img_2.jpg',
-      '/ndl_projects/slide_021_img_1.jpg',
-      '/ndl_projects/slide_022_img_1.jpg',
-      '/ndl_projects/slide_023_img_1.jpg',
-      '/ndl_projects/slide_024_img_1.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
+      '/projects/dr_anil_kush/dr_anil_kush_02_master_bedroom.png',
+      '/projects/dr_anil_kush/dr_anil_kush_03_modular_kitchen.png',
+      '/projects/dr_anil_kush/dr_anil_kush_04_bathroom_vanity.png',
     ],
     features: [
       '100% Itemized BOQ Contract Billing Transparency',
@@ -735,7 +719,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Dr. Anil Kush',
     architect: 'Architecture Paradigm, 6th block, Koramangala',
     builtArea: '12,500 Sq.Ft',
-    pricePerSqFt: 'Item Rate BOQ',
+    
     timeline: '14 Months',
     status: 'Active',
     featured: true,
@@ -747,7 +731,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     title: 'Affordable Homes (Packages as per Specs)',
     category: 'Affordable Homes with Different Packages as per Specs',
     tagline: 'Customized Specification Packages & Family Residences',
-    description: 'High-quality affordable family home construction with structured per-sq-ft specification packages: 1. Basic Package at ₹2,300/sft, 2. Premium Package at ₹2,800/sft, and 3. Luxury Package at ₹3,000/sft — offering robust civil foundations, spatial efficiency, and transparent itemized billing.',
+    description: 'High-quality affordable family home construction with structured per-sq-ft specification packages: offering robust civil foundations, spatial efficiency, and transparent itemized billing.',
     heroImage: '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
     galleryImages: [
       '/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg',
@@ -768,7 +752,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Amith Residence',
     architect: 'NDL In-House Engineering Coordination',
     builtArea: '4,200 Sq.Ft',
-    pricePerSqFt: '₹2,300 - ₹3,000 / Sq.Ft',
+    
     timeline: '9 Months',
     status: 'Active',
     featured: true,
@@ -813,7 +797,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Sarabjith Ghose',
     architect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
     builtArea: '5,800 Sq.Ft',
-    pricePerSqFt: '₹2,750 / Sq.Ft',
+    
     timeline: '11 Months',
     status: 'Completed',
     featured: true,
@@ -854,7 +838,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Praveen Kumar',
     architect: 'Keystone Architects, Indiranagar',
     builtArea: '8,400 Sq.Ft',
-    pricePerSqFt: '₹2,650 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: false,
@@ -900,7 +884,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Vittal Das Shetty',
     architect: 'Keystone Architects, Indiranagar',
     builtArea: '7,500 Sq.Ft',
-    pricePerSqFt: 'Item Rate BOQ',
+    
     timeline: '12 Months',
     status: 'Active',
     featured: false,
@@ -935,7 +919,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Uma Shankar Agarwal',
     architect: 'Still Water Architects',
     builtArea: '6,200 Sq.Ft',
-    pricePerSqFt: '₹2,800 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: false,
@@ -969,7 +953,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Mahanthesh Bellad',
     architect: 'Mr. Gaurav Roy Choudury / GRC Architects',
     builtArea: '5,800 Sq.Ft',
-    pricePerSqFt: '₹2,900 / Sq.Ft',
+    
     timeline: '11 Months',
     status: 'Completed',
     featured: false,
@@ -1003,7 +987,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mrs. Hema Saravanan',
     architect: 'Parallax Architects',
     builtArea: '4,900 Sq.Ft',
-    pricePerSqFt: '₹2,700 / Sq.Ft',
+    
     timeline: '9 Months',
     status: 'Completed',
     featured: false,
@@ -1038,7 +1022,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Shekar',
     architect: 'Mr. Raghu Bhat',
     builtArea: '6,500 Sq.Ft',
-    pricePerSqFt: '₹3,100 / Sq.Ft',
+    
     timeline: '12 Months',
     status: 'Completed',
     featured: false,
@@ -1069,7 +1053,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Tilak',
     architect: 'Kumar and Associates, Trivandrum',
     builtArea: '7,200 Sq.Ft',
-    pricePerSqFt: '₹2,600 / Sq.Ft',
+    
     timeline: '11 Months',
     status: 'Completed',
     featured: false,
@@ -1102,7 +1086,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Sreeram',
     architect: 'Meenal Cavale',
     builtArea: '6,200 Sq.Ft',
-    pricePerSqFt: '₹2,650 / Sq.Ft',
+    
     timeline: '12 Months',
     status: 'Completed',
     featured: true,
@@ -1138,7 +1122,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Kumar',
     architect: 'Mr. Ragavan',
     builtArea: '5,800 Sq.Ft',
-    pricePerSqFt: '₹2,850 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: true,
@@ -1171,7 +1155,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Dr. Niranjan',
     architect: 'Mr. Ragavan',
     builtArea: '4,800 Sq.Ft',
-    pricePerSqFt: '₹2,750 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: true,
@@ -1203,7 +1187,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     client: 'Mr. Kishore',
     architect: 'Meenal J. Cavale',
     builtArea: '4,500 Sq.Ft',
-    pricePerSqFt: '₹2,750 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: true,
@@ -1219,7 +1203,7 @@ const defaultTurnkeyItems: TurnkeyItem[] = [
     category: 'Turnkey EPC',
     tagline: 'Single-Window Project Delivery from Bare Land to Handover',
     description: 'Complete turnkey architectural design, statutory approval sanctions, heavy civil execution, synchronized MEP grid, interior joinery, and certified structural handover under a single accountable contract.',
-    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
+    heroImage: '/ndl_projects/slide_011_img_1.jpg',
     galleryImages: [
       '/ndl_projects/slide_011_img_1.jpg',
       '/ndl_projects/slide_012_img_1.jpg',
@@ -1256,7 +1240,7 @@ const defaultTurnkeyItems: TurnkeyItem[] = [
     category: 'Residential Turnkey',
     tagline: 'From Concept Blueprints to Finished Furnished Villa',
     description: 'Bespoke residential design-and-build turnkey solution for high-net-worth private residences. Encompassing geotechnical analysis, custom cantilever architecture, premium civil construction, imported marble flooring, custom woodwork, and landscape automation executed under Architecture Paradigm.',
-    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
+    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
     galleryImages: [
       '/ndl_projects/slide_012_img_1.jpg',
       '/ndl_projects/slide_015_img_1.jpg',

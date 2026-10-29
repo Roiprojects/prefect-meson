@@ -51,20 +51,6 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
     image: '/ndl_projects/slide_097_img_1.jpg'
   },
   {
-    id: 'dr-anil-kush',
-    client: 'Dr. Anil Kush',
-    statHeadline: '12,500 SQ.FT',
-    badge: 'Residential Turnkey',
-    height: 'G+2',
-    timeline: '14 Mo',
-    rating: 'Architecture Paradigm, 6th block, Koramangala',
-    location: '# C2, Estate Club, Bangalore',
-    city: 'Bangalore',
-    sector: 'Residential Turnkey',
-    timelineCategory: '12–24 Mo',
-    image: '/projects/dr_anil_kush/dr_anil_kush_02_concrete_entry_steps.jpg'
-  },
-  {
     id: '24x7-solutions',
     client: '24x7 Solutions',
     statHeadline: '140,000 SQ.FT',

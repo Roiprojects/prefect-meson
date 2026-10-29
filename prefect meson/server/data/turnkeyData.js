@@ -44,13 +44,12 @@ export const defaultTurnkeyItems = [
     category: 'Residential Turnkey',
     tagline: 'From Concept Blueprints to Finished Furnished Villa',
     description: 'Bespoke residential design-and-build turnkey solution for high-net-worth private residences. Encompassing geotechnical analysis, custom cantilever architecture, premium civil construction, imported marble flooring, custom woodwork, and landscape automation executed under Architecture Paradigm.',
-    heroImage: '/projects/dr_anil_kush/dr_anil_kush_02_concrete_entry_steps.jpg',
+    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
     galleryImages: [
-      '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_02_concrete_entry_steps.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_03_garden_landscaping.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_04_cantilever_portico.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_06_reflecting_pool.jpg',
+      '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
+      '/projects/dr_anil_kush/dr_anil_kush_02_master_bedroom.png',
+      '/projects/dr_anil_kush/dr_anil_kush_03_modular_kitchen.png',
+      '/projects/dr_anil_kush/dr_anil_kush_04_bathroom_vanity.png',
     ],
     stages: [
       '01. Bespoke Architectural Concept & 3D Renders',

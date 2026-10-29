@@ -7,23 +7,12 @@ export const defaultResidentialItems = [
     category: 'Luxury Villas on Item Rate Basis',
     tagline: 'Item-Rate Contract Agreements & Custom Estate Execution',
     description: 'Stately luxury villa construction executed on a transparent item-rate contractual basis for Dr. Anil Kush at # C2, Estate Club, Bangalore with exposed RCC cantilevered slabs, floating teak staircase, stepped water features, modular kitchen, and bespoke estate finishes under Architecture Paradigm, 6th block, Koramangala.',
-    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
+    heroImage: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
     galleryImages: [
-      '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_02_concrete_entry_steps.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_03_garden_landscaping.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_04_cantilever_portico.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_05_courtyard_louvers.png',
-      '/projects/dr_anil_kush/dr_anil_kush_06_reflecting_pool.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_07_atrium_hall.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_08_floating_staircase.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_09_staircase_detail.png',
-      '/projects/dr_anil_kush/dr_anil_kush_10_louver_veranda.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_11_mezzanine_panelling.jpg',
-      '/projects/dr_anil_kush/dr_anil_kush_12_master_bedroom.png',
-      '/projects/dr_anil_kush/dr_anil_kush_13_modular_kitchen.png',
-      '/projects/dr_anil_kush/dr_anil_kush_14_kitchen_installation.png',
-      '/projects/dr_anil_kush/dr_anil_kush_15_bathroom_vanity.png',
+      '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png',
+      '/projects/dr_anil_kush/dr_anil_kush_02_master_bedroom.png',
+      '/projects/dr_anil_kush/dr_anil_kush_03_modular_kitchen.png',
+      '/projects/dr_anil_kush/dr_anil_kush_04_bathroom_vanity.png',
     ],
     features: [
       '100% Itemized BOQ Contract Billing Transparency',
@@ -40,7 +29,7 @@ export const defaultResidentialItems = [
     client: 'Dr. Anil Kush',
     architect: 'Architecture Paradigm, 6th block, Koramangala',
     builtArea: '12,500 Sq.Ft',
-    pricePerSqFt: 'Item Rate BOQ',
+    
     timeline: '14 Months',
     status: 'Active',
     featured: true,
@@ -73,7 +62,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Amith Residence',
     architect: 'NDL In-House Engineering Coordination',
     builtArea: '4,200 Sq.Ft',
-    pricePerSqFt: '₹2,300 - ₹3,000 / Sq.Ft',
+    
     timeline: '9 Months',
     status: 'Active',
     featured: true,
@@ -119,7 +108,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Sarabjith Ghose',
     architect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
     builtArea: '5,800 Sq.Ft',
-    pricePerSqFt: '₹2,750 / Sq.Ft',
+    
     timeline: '11 Months',
     status: 'Completed',
     featured: true,
@@ -160,7 +149,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Praveen Kumar',
     architect: 'Keystone Architects, Indiranagar',
     builtArea: '8,400 Sq.Ft',
-    pricePerSqFt: '₹2,650 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: false,
@@ -206,7 +195,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Vittal Das Shetty',
     architect: 'Keystone Architects, Indiranagar',
     builtArea: '7,500 Sq.Ft',
-    pricePerSqFt: 'Item Rate BOQ',
+    
     timeline: '12 Months',
     status: 'Active',
     featured: false,
@@ -241,7 +230,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Uma Shankar Agarwal',
     architect: 'Still Water Architects',
     builtArea: '6,200 Sq.Ft',
-    pricePerSqFt: '₹2,800 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: false,
@@ -275,7 +264,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Mahanthesh Bellad',
     architect: 'Mr. Gaurav Roy Choudury / GRC Architects',
     builtArea: '5,800 Sq.Ft',
-    pricePerSqFt: '₹2,900 / Sq.Ft',
+    
     timeline: '11 Months',
     status: 'Completed',
     featured: false,
@@ -309,7 +298,7 @@ export const defaultResidentialItems = [
     client: 'Mrs. Hema Saravanan',
     architect: 'Parallax Architects',
     builtArea: '4,900 Sq.Ft',
-    pricePerSqFt: '₹2,700 / Sq.Ft',
+    
     timeline: '9 Months',
     status: 'Completed',
     featured: false,
@@ -344,7 +333,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Shekar',
     architect: 'Mr. Raghu Bhat',
     builtArea: '6,500 Sq.Ft',
-    pricePerSqFt: '₹3,100 / Sq.Ft',
+    
     timeline: '12 Months',
     status: 'Completed',
     featured: false,
@@ -375,7 +364,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Tilak',
     architect: 'Kumar and Associates, Trivandrum',
     builtArea: '7,200 Sq.Ft',
-    pricePerSqFt: '₹2,600 / Sq.Ft',
+    
     timeline: '11 Months',
     status: 'Completed',
     featured: false,
@@ -408,7 +397,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Sreeram',
     architect: 'Meenal Cavale',
     builtArea: '6,200 Sq.Ft',
-    pricePerSqFt: '₹2,650 / Sq.Ft',
+    
     timeline: '12 Months',
     status: 'Completed',
     featured: true,
@@ -444,7 +433,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Kumar',
     architect: 'Mr. Ragavan',
     builtArea: '5,800 Sq.Ft',
-    pricePerSqFt: '₹2,850 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: true,
@@ -477,7 +466,7 @@ export const defaultResidentialItems = [
     client: 'Dr. Niranjan',
     architect: 'Mr. Ragavan',
     builtArea: '4,800 Sq.Ft',
-    pricePerSqFt: '₹2,750 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: true,
@@ -509,7 +498,7 @@ export const defaultResidentialItems = [
     client: 'Mr. Kishore',
     architect: 'Meenal J. Cavale',
     builtArea: '4,500 Sq.Ft',
-    pricePerSqFt: '₹2,750 / Sq.Ft',
+    
     timeline: '10 Months',
     status: 'Completed',
     featured: true,

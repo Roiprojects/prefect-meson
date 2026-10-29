@@ -34,7 +34,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     city: 'Bangalore',
     sector: 'Luxury Villa',
     timelineCategory: '12–24 Mo',
-    image: '/projects/dr_anil_kush/dr_anil_kush_01_facade_front.jpg'
+    image: '/projects/dr_anil_kush/dr_anil_kush_01_courtyard_louvers.png'
   },
   {
     id: 'mr-sarabjith-ghose',
