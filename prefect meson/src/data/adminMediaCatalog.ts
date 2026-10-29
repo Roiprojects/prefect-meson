@@ -921,6 +921,33 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_vittal_das_shetty-vittal-das-shetty-16-entrance-gate-makeshwari-plaque-jpg",
+    url: "/projects/mr_vittal_das_shetty/vittal_das_shetty_16_entrance_gate_makeshwari_plaque.jpg",
+    title: "Mr. Vittal Das Shetty - Villa Makeshwari Front Gate & Stone Pylon Facade",
+    category: "Residential",
+    tags: ["mr. vittal das shetty","residential","doddagubbi","facade","gate","authentic","client-photo"],
+    size: "355 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_vittal_das_shetty-vittal-das-shetty-17-patio-sliding-glass-doors-png",
+    url: "/projects/mr_vittal_das_shetty/vittal_das_shetty_17_patio_sliding_glass_doors.png",
+    title: "Mr. Vittal Das Shetty - Sliding Patio Glass Doors & Exposed Brick Flank",
+    category: "Residential",
+    tags: ["mr. vittal das shetty","residential","doddagubbi","patio","authentic","client-photo"],
+    size: "670 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_vittal_das_shetty-vittal-das-shetty-18-modular-kitchen-granite-counters-jpg",
+    url: "/projects/mr_vittal_das_shetty/vittal_das_shetty_18_modular_kitchen_granite_counters.jpg",
+    title: "Mr. Vittal Das Shetty - Contemporary U-Shaped Modular Kitchen & Granite Counters",
+    category: "Residential",
+    tags: ["mr. vittal das shetty","residential","doddagubbi","kitchen","authentic","client-photo"],
+    size: "239 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mrs_hema_saravanan-hema-saravanan-01-contemporary-urban-elevation-jpg",
     url: "/projects/mrs_hema_saravanan/hema_saravanan_01_contemporary_urban_elevation.jpg",
     title: "Mrs. Hema Saravanan - Contemporary Urban Elevation",

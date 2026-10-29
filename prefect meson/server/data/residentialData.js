@@ -220,6 +220,9 @@ export const defaultResidentialItems = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_14_floating_steel_timber_staircase.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_15_staircase_installation_credenza.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_16_entrance_gate_makeshwari_plaque.jpg',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_17_patio_sliding_glass_doors.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_18_modular_kitchen_granite_counters.jpg',
     ],
     features: [
       'Monumental dressed grey stone-clad pylon tower',
@@ -227,6 +230,8 @@ export const defaultResidentialItems = [
       'Bamboo-soffit steel pergola walkway along garden border',
       'Granite-bordered entrance verandah & exposed brick foyer',
       'Open floating steel and timber stair system with stainless steel balustrade',
+      'Contemporary U-shaped modular kitchen with black granite counters',
+      'Aluminum sliding glass patio doors opening to garden verandah',
       'Custom sliding wardrobe with undulating panel woodwork',
       'External structural steel dog-leg terrace staircase',
       'Sunken bath with emerald mosaic tiling',

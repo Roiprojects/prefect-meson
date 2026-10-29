@@ -222,9 +222,12 @@ export const galleryProjects = [
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_12_garden_patio_pergola_paving.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_13_clerestory_patio_foliage.png',
       '/projects/mr_vittal_das_shetty/vittal_das_shetty_14_floating_steel_timber_staircase.png',
-      '/projects/mr_vittal_das_shetty/vittal_das_shetty_15_staircase_installation_credenza.png'
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_15_staircase_installation_credenza.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_16_entrance_gate_makeshwari_plaque.jpg',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_17_patio_sliding_glass_doors.png',
+      '/projects/mr_vittal_das_shetty/vittal_das_shetty_18_modular_kitchen_granite_counters.jpg'
     ],
-    highlights: ["Dressed stone tower elevation","Tiered terracotta gabled roof","Bamboo soffit steel pergola walkway","Granite verandah & exposed brick foyer","Floating steel & timber staircase atrium","Custom sliding wardrobe & steel staircase","Teakwood puja room with brass bells","Sunken bath & garden patio pergola","Keystone Architects design"],
+    highlights: ["Dressed stone tower elevation","Tiered terracotta gabled roof","Bamboo soffit steel pergola walkway","Granite verandah & exposed brick foyer","Floating steel & timber staircase atrium","Contemporary modular kitchen with granite counters","Sliding patio doors & exposed brickwork","Teakwood puja room with brass bells","Sunken bath & garden patio pergola","Keystone Architects design"],
     specs: [
       { label: 'Scope', value: 'Civil + Structural + Finishing' },
       { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
