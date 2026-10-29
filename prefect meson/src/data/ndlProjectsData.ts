@@ -122,28 +122,27 @@ export const ndlProjects: NDLProject[] = [
   {
     id: '24x7-solutions',
     client: '24x7 Solutions',
-    title: '24x7 Solutions Corporate Office Space',
+    title: '24x7 Solutions Office Space',
     location: 'Near Ulsoor Lake, Bangalore',
     city: 'Bangalore',
     architect: 'Keystone Architects, Indiranagar',
     architectPractice: 'Keystone Architects',
-    scope: 'Office Interiors and Workspace Fit-Out',
-    type: 'Commercial Office Space',
+    scope: 'Office Interiors & Workspace Fit-Out',
+    type: 'Corporate Office Interiors',
     category: 'Interiors',
-    description: 'Modern corporate office space fit-out near Ulsoor Lake featuring open-plan workstations, glass cabin partitions, acoustic ceilings, and integrated electrical/data routing.',
+    description: 'Contemporary corporate office space fit-out near Ulsoor Lake featuring curved reception desk, acoustic ceilings, modular workstation framing, glass executive cubicles, and integrated electrical routing designed by Keystone Architects, Indiranagar.',
     featuredImage: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png',
     gallery: [
       '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png',
-      '/projects/24x7_solutions/24x7_solutions_02_glass_cabin_framing.png',
-      '/projects/24x7_solutions/24x7_solutions_03_modular_workstations.png',
-      '/projects/24x7_solutions/24x7_solutions_04_executive_cabin_entrance.png',
-      '/projects/24x7_solutions/24x7_solutions_05_workstation_bays_glass_view.png',
-      '/projects/24x7_solutions/24x7_solutions_06_cabin_entrance_reception_staff.png'
+      '/projects/24x7_solutions/24x7_solutions_02_workstations_ceiling_lighting.png',
+      '/projects/24x7_solutions/24x7_solutions_03_glass_cabin_partition_framing.png',
+      '/projects/24x7_solutions/24x7_solutions_04_executive_cubicle_sliding_door.png',
+      '/projects/24x7_solutions/24x7_solutions_05_interior_finishing_electrical_testing.png'
     ],
-    highlights: ['Executive cabins & workstations', 'Glass architectural partitions', 'Acoustic ceilings', 'Keystone Architects design'],
+    highlights: ['Curved branded reception desk', 'Modular workstation framework', 'Glass executive cabins', 'Keystone Architects design'],
     stats: [
       { label: 'Scope', value: 'Office Interiors & Fit-Out' },
-      { label: 'Architect', value: 'Keystone Architects' },
+      { label: 'Architect', value: 'Keystone Architects, Indiranagar' },
       { label: 'Location', value: 'Near Ulsoor Lake, Bangalore' }
     ]
   },

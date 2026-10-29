@@ -51,20 +51,6 @@ const turnkeyShowcaseList: TurnkeyCardItem[] = [
     image: '/ndl_projects/slide_097_img_1.jpg'
   },
   {
-    id: '24x7-solutions',
-    client: '24x7 Solutions',
-    statHeadline: '140,000 SQ.FT',
-    badge: 'Fit-Out EPC',
-    height: 'G+5',
-    timeline: '10 Mo',
-    rating: 'Keystone Architects, Indiranagar',
-    location: 'Near Ulsoor Lake, Bangalore',
-    city: 'Bangalore',
-    sector: 'Corporate EPC',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
-  },
-  {
     id: 'mr-nataraj',
     client: 'Mr. Nataraj Commercial Complex',
     statHeadline: 'COMMERCIAL CUM RESIDENCE',

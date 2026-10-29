@@ -15,55 +15,46 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
   {
     id: "proj-24x7_solutions-24x7-solutions-01-reception-desk-png",
     url: "/projects/24x7_solutions/24x7_solutions_01_reception_desk.png",
-    title: "24x7 Solutions - Reception Desk",
-    category: "Commercial",
-    tags: ["24x7 solutions","commercial","ulsoor","authentic","client-photo"],
+    title: "24x7 Solutions - Curved Reception Desk & Signage",
+    category: "Interiors",
+    tags: ["24x7 solutions", "interiors", "ulsoor lake", "reception", "authentic", "client-photo"],
     size: "918 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-24x7_solutions-24x7-solutions-02-glass-cabin-framing-png",
-    url: "/projects/24x7_solutions/24x7_solutions_02_glass_cabin_framing.png",
-    title: "24x7 Solutions - Glass Cabin Framing",
-    category: "Commercial",
-    tags: ["24x7 solutions","commercial","ulsoor","authentic","client-photo"],
-    size: "542 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-24x7_solutions-24x7-solutions-03-modular-workstations-png",
-    url: "/projects/24x7_solutions/24x7_solutions_03_modular_workstations.png",
-    title: "24x7 Solutions - Modular Workstations",
-    category: "Commercial",
-    tags: ["24x7 solutions","commercial","ulsoor","authentic","client-photo"],
+    id: "proj-24x7_solutions-24x7-solutions-02-workstations-ceiling-lighting-png",
+    url: "/projects/24x7_solutions/24x7_solutions_02_workstations_ceiling_lighting.png",
+    title: "24x7 Solutions - Open Workstation Bays & Acoustic Ceilings",
+    category: "Interiors",
+    tags: ["24x7 solutions", "interiors", "ulsoor lake", "workstations", "authentic", "client-photo"],
     size: "679 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-24x7_solutions-24x7-solutions-04-executive-cabin-entrance-png",
-    url: "/projects/24x7_solutions/24x7_solutions_04_executive_cabin_entrance.png",
-    title: "24x7 Solutions - Executive Cabin Entrance",
-    category: "Commercial",
-    tags: ["24x7 solutions","commercial","ulsoor","authentic","client-photo"],
+    id: "proj-24x7_solutions-24x7-solutions-03-glass-cabin-partition-framing-png",
+    url: "/projects/24x7_solutions/24x7_solutions_03_glass_cabin_partition_framing.png",
+    title: "24x7 Solutions - Workstation Metal Partition & Meeting Room Glass",
+    category: "Interiors",
+    tags: ["24x7 solutions", "interiors", "ulsoor lake", "glass-cabin", "authentic", "client-photo"],
+    size: "542 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-24x7_solutions-24x7-solutions-04-executive-cubicle-sliding-door-png",
+    url: "/projects/24x7_solutions/24x7_solutions_04_executive_cubicle_sliding_door.png",
+    title: "24x7 Solutions - Executive Cubicle with Purple Sliding Door",
+    category: "Interiors",
+    tags: ["24x7 solutions", "interiors", "ulsoor lake", "executive-cubicle", "authentic", "client-photo"],
     size: "682 KB",
     dimensions: "1920x1080"
   },
   {
-    id: "proj-24x7_solutions-24x7-solutions-05-workstation-bays-glass-view-png",
-    url: "/projects/24x7_solutions/24x7_solutions_05_workstation_bays_glass_view.png",
-    title: "24x7 Solutions - Workstation Bays Glass View",
-    category: "Commercial",
-    tags: ["24x7 solutions","commercial","ulsoor","authentic","client-photo"],
-    size: "617 KB",
-    dimensions: "1920x1080"
-  },
-  {
-    id: "proj-24x7_solutions-24x7-solutions-06-cabin-entrance-reception-staff-png",
-    url: "/projects/24x7_solutions/24x7_solutions_06_cabin_entrance_reception_staff.png",
-    title: "24x7 Solutions - Cabin Entrance Reception Staff",
-    category: "Commercial",
-    tags: ["24x7 solutions","commercial","ulsoor","authentic","client-photo"],
-    size: "293 KB",
+    id: "proj-24x7_solutions-24x7-solutions-05-interior-finishing-electrical-testing-png",
+    url: "/projects/24x7_solutions/24x7_solutions_05_interior_finishing_electrical_testing.png",
+    title: "24x7 Solutions - Interior Finishing & Electrical Conduit Testing",
+    category: "Interiors",
+    tags: ["24x7 solutions", "interiors", "ulsoor lake", "electrical-testing", "authentic", "client-photo"],
+    size: "549 KB",
     dimensions: "1920x1080"
   },
   {

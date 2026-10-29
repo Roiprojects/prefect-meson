@@ -52,20 +52,6 @@ const commercialShowcaseList: CommercialCardItem[] = [
     image: '/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png'
   },
   {
-    id: '24x7-solutions',
-    client: '24x7 Solutions',
-    statHeadline: 'OFFICE INTERIORS',
-    badge: 'Interiors',
-    height: 'G+5',
-    timeline: '10 Mo',
-    rating: 'Keystone Architects, Indiranagar',
-    location: 'Near Ulsoor Lake, Bangalore',
-    city: 'Bangalore',
-    sector: 'Office',
-    timelineCategory: '< 12 Mo',
-    image: '/projects/24x7_solutions/24x7_solutions_01_reception_desk.png'
-  },
-  {
     id: 'take-5-bar',
     client: 'TAKE 5 Bar and Restaurant',
     statHeadline: 'HOSPITALITY FIT-OUT',

@@ -23,7 +23,7 @@ export const CommercialProjectShowcase: React.FC = () => {
 
   const filteredProjects = commercialProjectsList.filter((p) => {
     if (activeType === 'Corporate Offices') {
-      if (!['24x7-solutions', 'nexus-corporate-park', 'zenith-tech-tower', 'farm-india-office'].includes(p.id)) return false;
+      if (!['nexus-corporate-park', 'zenith-tech-tower', 'farm-india-office'].includes(p.id)) return false;
     } else if (activeType === 'Commercial Complexes') {
       if (!['aura-commercial-hub', 'mr-nataraj', 'mr-venkatarama-raju'].includes(p.id)) return false;
     } else if (activeType === 'Retail & Showrooms') {
