@@ -762,7 +762,10 @@ function renderEditorialPage(page: BookPageType, onOpenQuoteModal?: () => void) 
               <div>
                 <span className="font-mono text-[10px] text-slate-400 uppercase">ENGINEERING PRACTICE DIRECTION</span>
                 <h4 className="font-barlow text-lg font-bold uppercase text-[#071D38]">
-                  {ndlCompanyProfile.proprietor.name}
+                  ENGINEERING LEADERSHIP{' '}
+                  <mark className="bg-yellow-300 text-slate-950 px-1.5 py-0.5 rounded font-bold inline-block">
+                    WITH SOUND TECHNICAL KNOWLEDGE
+                  </mark>
                 </h4>
               </div>
               <span className="px-2.5 py-1 rounded bg-[#071D38] text-white font-mono text-xs font-bold">
