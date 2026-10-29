@@ -58,6 +58,33 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-24x7_solutions-24x7-solutions-06-interior-painting-drywall-finishing-png",
+    url: "/projects/24x7_solutions/24x7_solutions_06_interior_painting_drywall_finishing.png",
+    title: "24x7 Solutions - Office Painting & Drywall Partition Finishing",
+    category: "Interiors",
+    tags: ["24x7 solutions", "interiors", "ulsoor lake", "painting", "authentic", "client-photo"],
+    size: "745 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-24x7_solutions-24x7-solutions-07-executive-cabin-glass-inspection-png",
+    url: "/projects/24x7_solutions/24x7_solutions_07_executive_cabin_glass_inspection.png",
+    title: "24x7 Solutions - Glazed Executive Cabin Quality Inspection",
+    category: "Interiors",
+    tags: ["24x7 solutions", "interiors", "ulsoor lake", "cabin-inspection", "authentic", "client-photo"],
+    size: "626 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-24x7_solutions-24x7-solutions-08-glazed-cubicles-corridor-entrance-png",
+    url: "/projects/24x7_solutions/24x7_solutions_08_glazed_cubicles_corridor_entrance.png",
+    title: "24x7 Solutions - Glazed Workstation Cubicles & Corridor Entrance",
+    category: "Interiors",
+    tags: ["24x7 solutions", "interiors", "ulsoor lake", "corridor", "authentic", "client-photo"],
+    size: "456 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-commercial_complex-commercial-construction-scaffolding-jpg",
     url: "/projects/commercial_complex/commercial_construction_scaffolding.jpg",
     title: "Commercial Complex - Commercial Construction Scaffolding",

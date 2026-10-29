@@ -14,7 +14,10 @@ export const defaultInteriorItems = [
       '/projects/24x7_solutions/24x7_solutions_02_workstations_ceiling_lighting.png',
       '/projects/24x7_solutions/24x7_solutions_03_glass_cabin_partition_framing.png',
       '/projects/24x7_solutions/24x7_solutions_04_executive_cubicle_sliding_door.png',
-      '/projects/24x7_solutions/24x7_solutions_05_interior_finishing_electrical_testing.png'
+      '/projects/24x7_solutions/24x7_solutions_05_interior_finishing_electrical_testing.png',
+      '/projects/24x7_solutions/24x7_solutions_06_interior_painting_drywall_finishing.png',
+      '/projects/24x7_solutions/24x7_solutions_07_executive_cabin_glass_inspection.png',
+      '/projects/24x7_solutions/24x7_solutions_08_glazed_cubicles_corridor_entrance.png'
     ],
     materials: [
       'Curved Brushed Stainless Steel Reception Counter',
