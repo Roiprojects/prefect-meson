@@ -444,6 +444,16 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-farm_india_office-farm-india-09-executive-suite-teak-desk-perspective-png",
+    url: "/projects/farm_india_office/farm_india_09_executive_suite_teak_desk_perspective.png",
+    title: "Farm India Office - Executive Suite Teak Desk Doorway Perspective",
+    category: "Interiors",
+    tags: ["farm india office","interiors","koramangala","authentic","client-photo"],
+    size: "807 KB",
+    dimensions: "1920x1080"
+  },
+
+  {
     id: "proj-mr_amith-amith-01-geometric-elevation-portrait-jpg",
     url: "/projects/mr_amith/amith_01_geometric_elevation_portrait.jpg",
     title: "Mr. Amith - Geometric Elevation Portrait",
