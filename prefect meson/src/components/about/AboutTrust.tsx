@@ -21,10 +21,6 @@ const metrics: MetricItem[] = [
     value: '2016',
   },
   {
-    label: 'MAJOR CASE STUDIES',
-    value: '20+',
-  },
-  {
     label: 'STRUCTURAL QUALITY FOCUS',
     value: '100%',
   },
@@ -69,7 +65,7 @@ export const AboutTrust: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: idx * 0.1 }}
-                className="bg-[#F8F9FA] rounded-2xl p-6 border border-slate-200/90 shadow-2xs hover:border-[#071D38] transition-all flex flex-col justify-center min-h-[110px]"
+                className="bg-[#F8F9FA] rounded-2xl p-6 border border-slate-200/90 shadow-2xs hover:border-[#071D38] transition-all flex flex-col justify-center flex-1 min-h-[110px]"
               >
                 <div className="flex items-center gap-2 mb-1.5">
                   <span className="w-1 h-1 rounded-full bg-[#071D38]" />
