@@ -526,6 +526,24 @@ export const ADMIN_MEDIA_CATALOG: MediaAsset[] = [
     dimensions: "1920x1080"
   },
   {
+    id: "proj-mr_kumar-kumar-06-granite-staircase-wooden-handrail-png",
+    url: "/projects/mr_kumar/kumar_06_granite_staircase_wooden_handrail.png",
+    title: "Mr. Kumar - Granite Staircase with Wooden Handrail",
+    category: "Residential",
+    tags: ["mr. kumar","residential","jayanagar 5th block","authentic","client-photo"],
+    size: "549 KB",
+    dimensions: "1920x1080"
+  },
+  {
+    id: "proj-mr_kumar-kumar-07-private-home-theater-acoustic-suite-png",
+    url: "/projects/mr_kumar/kumar_07_private_home_theater_acoustic_suite.png",
+    title: "Mr. Kumar - Private Home Theater Acoustic Suite",
+    category: "Residential",
+    tags: ["mr. kumar","residential","jayanagar 5th block","authentic","client-photo"],
+    size: "662 KB",
+    dimensions: "1920x1080"
+  },
+  {
     id: "proj-mr_nataraj-nataraj-01-commercial-complex-street-view-png",
     url: "/projects/mr_nataraj/nataraj_01_commercial_complex_street_view.png",
     title: "Mr. Nataraj - Commercial Complex Street View",

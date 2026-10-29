@@ -411,6 +411,7 @@ export const galleryProjects = [
     client: 'Mr. Kumar',
     title: 'Mr. Kumar Residence',
     category: 'Residential',
+    secondaryCategories: [],
     projectType: 'Residential Building',
     status: 'Completed',
     location: 'Jayanagar 5th Block, Bangalore',
@@ -419,7 +420,7 @@ export const galleryProjects = [
     architect: 'Mr. Ragavan',
     architectPractice: 'Mr. Ragavan',
     scope: 'Residence - Civil, Electric, Plumbing',
-    description: 'Custom luxury private residence in Jayanagar 5th Block featuring multi-tier contemporary facade elevations, expansive Italian marble living lounge, exquisite backlit onyx puja mandir, designer modular kitchen with granite countertops, and lush balcony garden terraces, executed with complete civil, electrical, and plumbing infrastructure designed by Mr. Ragavan.',
+    description: 'Custom luxury private residence in Jayanagar 5th Block featuring multi-tier contemporary facade elevations, expansive Italian marble living lounge, exquisite backlit onyx puja mandir, designer modular kitchen with granite countertops, custom granite staircase with wooden handrail, and acoustic private home theater suite, executed with complete civil, electrical, and plumbing infrastructure designed by Mr. Ragavan.',
     featured: true,
     image: '/projects/mr_kumar/kumar_01_contemporary_residence_facade.png',
     galleryImages: [
@@ -427,7 +428,9 @@ export const galleryProjects = [
       '/projects/mr_kumar/kumar_02_italian_marble_living_lounge.png',
       '/projects/mr_kumar/kumar_03_backlit_onyx_puja_mandir.png',
       '/projects/mr_kumar/kumar_04_modular_kitchen_granite_counter.png',
-      '/projects/mr_kumar/kumar_05_living_room_balcony_garden.png'
+      '/projects/mr_kumar/kumar_05_living_room_balcony_garden.png',
+      '/projects/mr_kumar/kumar_06_granite_staircase_wooden_handrail.png',
+      '/projects/mr_kumar/kumar_07_private_home_theater_acoustic_suite.png'
     ],
     highlights: [
       'Prime Jayanagar 5th Block location',
@@ -435,6 +438,8 @@ export const galleryProjects = [
       'Italian marble living lounge & balcony garden',
       'Backlit golden onyx puja mandir',
       'Designer modular kitchen & granite finishes',
+      'Custom granite staircase with wooden handrail',
+      'Private home theater with acoustic wall panels',
       'Mr. Ragavan architectural design & civil MEP scope'
     ],
     specs: [

@@ -155,7 +155,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
     badge: 'Contemporary',
     height: 'G+3',
     timeline: '10 Mo',
-    rating: 'Civil + MEP Spec',
+    rating: 'Mr. Ragavan, Architect',
     location: 'Jayanagar 5th Block, Bangalore',
     city: 'Bangalore',
     sector: 'Contemporary',
