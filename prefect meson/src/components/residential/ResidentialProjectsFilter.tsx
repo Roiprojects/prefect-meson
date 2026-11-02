@@ -39,7 +39,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'dr-anil-kush',
     client: 'Dr. Anil Kush',
-    statHeadline: '12,500 SQ.FT',
+    statHeadline: '8,000 SQ.FT',
     badge: 'Luxury Villa',
     height: 'G+2',
     timeline: '14 Mo',
@@ -67,7 +67,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-vittal-das-shetty',
     client: 'Mr. Vittal Das Shetty',
-    statHeadline: '9,500 SQ.FT',
+    statHeadline: '60,000 SQ.FT',
     badge: 'Luxury Villa',
     height: 'G+2',
     timeline: '18 Mo',
@@ -95,7 +95,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-praveen-kumar',
     client: 'Mr. Praveen Kumar',
-    statHeadline: '7,800 SQ.FT',
+    statHeadline: '5,000 SQ.FT',
     badge: 'Luxury Villa',
     height: 'G+2',
     timeline: '12 Mo',
@@ -109,7 +109,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-uma-shankar-agarwal',
     client: 'Mr. Uma Shankar Agarwal',
-    statHeadline: '6,200 SQ.FT',
+    statHeadline: '12,200 SQ.FT',
     badge: 'Luxury Villa',
     height: 'G+2',
     timeline: '10 Mo',
@@ -123,7 +123,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-mahanthesh-bellad',
     client: 'Mr. Mahanthesh Bellad',
-    statHeadline: '5,800 SQ.FT',
+    statHeadline: '5,200 SQ.FT',
     badge: 'Contemporary',
     height: 'G+2',
     timeline: '11 Mo',
@@ -137,7 +137,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-tilak',
     client: 'Mr. Tilak',
-    statHeadline: '4,200 SQ.FT',
+    statHeadline: '7,200 SQ.FT',
     badge: 'Multi-Storey',
     height: 'G+3',
     timeline: '10 Mo',
@@ -151,7 +151,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-amith',
     client: 'Mr. Amith',
-    statHeadline: '3,800 SQ.FT',
+    statHeadline: '6,500 SQ.FT',
     badge: 'Multi-Storey',
     height: 'G+2',
     timeline: '10 Mo',
@@ -165,7 +165,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-kumar',
     client: 'Mr. Kumar',
-    statHeadline: '5,800 SQ.FT',
+    statHeadline: '10,300 SQ.FT',
     badge: 'Contemporary',
     height: 'G+3',
     timeline: '10 Mo',
@@ -193,7 +193,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'dr-niranjan',
     client: 'Dr. Niranjan',
-    statHeadline: '4,800 SQ.FT',
+    statHeadline: '4,200 SQ.FT',
     badge: 'Contemporary',
     height: 'G+2',
     timeline: '10 Mo',
@@ -221,7 +221,7 @@ const residentialShowcaseList: ResidentialCardItem[] = [
   {
     id: 'mr-sreeram',
     client: 'Mr. Sreeram',
-    statHeadline: '6,200 SQ.FT',
+    statHeadline: '5,800 SQ.FT',
     badge: 'Multi-Storey',
     height: 'G+2',
     timeline: '12 Mo',

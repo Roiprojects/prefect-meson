@@ -67,7 +67,7 @@ export const defaultTurnkeyItems = [
     ],
     client: 'Dr. Anil Kush',
     architect: 'Architecture Paradigm, 6th block, Koramangala',
-    builtArea: '12,500 Sq.Ft',
+    builtArea: '8,000 Sq.Ft',
     timeline: '13 Months',
     status: 'Active',
     featured: true,

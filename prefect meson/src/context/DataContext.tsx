@@ -695,7 +695,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Dr. Anil Kush',
     architect: 'Architecture Paradigm, 6th block, Koramangala',
-    builtArea: '12,500 Sq.Ft',
+    builtArea: '8,000 Sq.Ft',
     
     timeline: '14 Months',
     status: 'Active',
@@ -728,7 +728,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Mr. Amith Residence',
     architect: 'NDL In-House Engineering Coordination',
-    builtArea: '4,200 Sq.Ft',
+    builtArea: '6,500 Sq.Ft',
     
     timeline: '9 Months',
     status: 'Active',
@@ -839,7 +839,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Mr. Praveen Kumar',
     architect: 'Keystone Architects, Indiranagar',
-    builtArea: '8,400 Sq.Ft',
+    builtArea: '5,000 Sq.Ft',
     timeline: '10 Months',
     status: 'Completed',
     featured: false,
@@ -895,7 +895,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Mr. Vittal Das Shetty',
     architect: 'Keystone Architects, Indiranagar',
-    builtArea: '7,500 Sq.Ft',
+    builtArea: '60,000 Sq.Ft',
     
     timeline: '12 Months',
     status: 'Active',
@@ -935,7 +935,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Mr. Uma Shankar Agarwal',
     architect: 'Still Water Architects',
-    builtArea: '6,200 Sq.Ft',
+    builtArea: '12,200 Sq.Ft',
     
     timeline: '10 Months',
     status: 'Completed',
@@ -971,7 +971,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Mr. Mahanthesh Bellad',
     architect: 'Mr. Gaurav Roy Choudury / GRC Architects',
-    builtArea: '5,800 Sq.Ft',
+    builtArea: '5,200 Sq.Ft',
     
     timeline: '11 Months',
     status: 'Completed',
@@ -1108,7 +1108,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Mr. Sreeram',
     architect: 'Meenal Cavale',
-    builtArea: '6,200 Sq.Ft',
+    builtArea: '5,800 Sq.Ft',
     
     timeline: '12 Months',
     status: 'Completed',
@@ -1146,7 +1146,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Mr. Kumar',
     architect: 'Mr. Ragavan',
-    builtArea: '5,800 Sq.Ft',
+    builtArea: '10,300 Sq.Ft',
     
     timeline: '10 Months',
     status: 'Completed',
@@ -1179,7 +1179,7 @@ const defaultResidentialItems: ResidentialItem[] = [
     ],
     client: 'Dr. Niranjan',
     architect: 'Mr. Ragavan',
-    builtArea: '4,800 Sq.Ft',
+    builtArea: '4,200 Sq.Ft',
     
     timeline: '10 Months',
     status: 'Completed',
@@ -1288,7 +1288,7 @@ const defaultTurnkeyItems: TurnkeyItem[] = [
     ],
     client: 'Dr. Anil Kush',
     architect: 'Architecture Paradigm, 6th block, Koramangala',
-    builtArea: '12,500 Sq.Ft',
+    builtArea: '8,000 Sq.Ft',
     timeline: '13 Months',
     status: 'Active',
     featured: true,

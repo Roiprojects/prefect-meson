@@ -46,7 +46,7 @@ export const defaultResidentialItems = [
     ],
     client: 'Dr. Anil Kush',
     architect: 'Architecture Paradigm, 6th block, Koramangala',
-    builtArea: '12,500 Sq.Ft',
+    builtArea: '8,000 Sq.Ft',
     
     timeline: '14 Months',
     status: 'Active',
@@ -190,7 +190,7 @@ export const defaultResidentialItems = [
     ],
     client: 'Mr. Praveen Kumar',
     architect: 'Keystone Architects, Indiranagar',
-    builtArea: '8,400 Sq.Ft',
+    builtArea: '5,000 Sq.Ft',
     timeline: '10 Months',
     status: 'Completed',
     featured: false,
@@ -246,7 +246,7 @@ export const defaultResidentialItems = [
     ],
     client: 'Mr. Vittal Das Shetty',
     architect: 'Keystone Architects, Indiranagar',
-    builtArea: '7,500 Sq.Ft',
+    builtArea: '60,000 Sq.Ft',
     
     timeline: '12 Months',
     status: 'Active',
@@ -286,7 +286,7 @@ export const defaultResidentialItems = [
     ],
     client: 'Mr. Uma Shankar Agarwal',
     architect: 'Still Water Architects',
-    builtArea: '6,200 Sq.Ft',
+    builtArea: '12,200 Sq.Ft',
     
     timeline: '10 Months',
     status: 'Completed',
@@ -322,7 +322,7 @@ export const defaultResidentialItems = [
     ],
     client: 'Mr. Mahanthesh Bellad',
     architect: 'Mr. Gaurav Roy Choudury / GRC Architects',
-    builtArea: '5,800 Sq.Ft',
+    builtArea: '5,200 Sq.Ft',
     
     timeline: '11 Months',
     status: 'Completed',
@@ -459,7 +459,7 @@ export const defaultResidentialItems = [
     ],
     client: 'Mr. Sreeram',
     architect: 'Meenal Cavale',
-    builtArea: '6,200 Sq.Ft',
+    builtArea: '5,800 Sq.Ft',
     
     timeline: '12 Months',
     status: 'Completed',
@@ -497,7 +497,7 @@ export const defaultResidentialItems = [
     ],
     client: 'Mr. Kumar',
     architect: 'Mr. Ragavan',
-    builtArea: '5,800 Sq.Ft',
+    builtArea: '10,300 Sq.Ft',
     
     timeline: '10 Months',
     status: 'Completed',
@@ -530,7 +530,7 @@ export const defaultResidentialItems = [
     ],
     client: 'Dr. Niranjan',
     architect: 'Mr. Ragavan',
-    builtArea: '4,800 Sq.Ft',
+    builtArea: '4,200 Sq.Ft',
     
     timeline: '10 Months',
     status: 'Completed',
