@@ -153,7 +153,7 @@ export const defaultInteriorItems = [
     ],
     client: 'Mr. Sarabjith Ghose',
     architect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
-    builtArea: '850 Sq.Ft',
+    builtArea: '8,500 Sq.Ft',
     timeline: '35 Days',
     status: 'Completed',
     featured: true,

@@ -236,7 +236,7 @@ const STORAGE_KEYS = {
   COMMERCIAL: 'pm_commercial_data_v4',
   RESIDENTIAL: 'pm_residential_data_v4',
   TURNKEY: 'pm_turnkey_data_v4',
-  INTERIORS: 'pm_interiors_data_v4',
+  INTERIORS: 'pm_interiors_data_v5',
   BLOGS: 'pm_blogs_data_v4',
   ENQUIRIES: 'pm_enquiries_data_v4',
   SETTINGS: 'pm_site_settings_v4',
@@ -1467,7 +1467,7 @@ const defaultInteriorItems: InteriorItem[] = [
     ],
     client: 'Mr. Sarabjith Ghose',
     architect: 'Gaurav Roy Chaudary, 7th Sector, HSR Layout',
-    builtArea: '850 Sq.Ft',
+    builtArea: '8,500 Sq.Ft',
     timeline: '35 Days',
     status: 'Completed',
     featured: true,
@@ -1603,7 +1603,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Interiors state
   const [interiorItems, setInteriorItems] = useState<InteriorItem[]>(() =>
-    safeGet<InteriorItem[]>(STORAGE_KEYS.INTERIORS, defaultInteriorItems)
+    safeGet<InteriorItem[]>(STORAGE_KEYS.INTERIORS, defaultInteriorItems).map((i) => (i.id === 'int-6' || (typeof i.builtArea === 'string' && i.builtArea.includes('850')) ? { ...i, builtArea: '8,500 Sq.Ft' } : i))
   );
 
   // Helper to safely parse and normalize author objects/strings
