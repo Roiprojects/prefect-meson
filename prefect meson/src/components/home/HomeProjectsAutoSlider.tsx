@@ -98,31 +98,25 @@ export const HomeProjectsAutoSlider: React.FC<HomeProjectsAutoSliderProps> = ({
       <div className="absolute top-1/3 -left-32 w-96 h-96 bg-amber-200/20 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/3 -right-32 w-96 h-96 bg-blue-100/30 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-8 sm:mb-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-6 sm:mb-8">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-          <div className="max-w-3xl">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
             {/* Elegant Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-amber-200/90 text-[#936B2B] text-xs font-mono uppercase tracking-widest font-bold mb-3.5 shadow-2xs">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-amber-200/90 text-[#936B2B] text-[11px] font-mono uppercase tracking-widest font-bold mb-2 shadow-2xs">
               <Sparkles className="w-3.5 h-3.5 text-[#936B2B]" />
-              ARCHITECTURAL ARCHIVE • LIVE SHOWCASE
+              PROJECT ARCHIVE
             </div>
 
-            {/* Primary Section Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black font-barlow tracking-tight text-slate-900 uppercase leading-[1.1]">
-              Architectural Masterworks{' '}
-              <span className="text-[#936B2B]">In Motion</span>
+            {/* Primary Section Title - Decreased font size & new text */}
+            <h2 className="text-xl sm:text-2xl lg:text-[1.85rem] font-bold font-barlow tracking-tight text-slate-900 uppercase leading-snug">
+              Explore Our Projects -{' '}
+              <span className="text-[#936B2B]">Gallery</span>
             </h2>
-
-            {/* Section Description */}
-            <p className="mt-3.5 text-sm sm:text-base lg:text-lg text-slate-600 font-sans leading-relaxed">
-              A continuous, high-definition visual showcase of our built structures and
-              architectural executions across Karnataka.
-            </p>
           </div>
 
           {/* Action CTA Button */}
-          <div className="self-start lg:self-end">
+          <div className="self-start sm:self-center">
             <button
               onClick={() => navigate('/gallery')}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0F172A] hover:bg-[#1E293B] text-white font-bold text-xs tracking-wider uppercase transition-all duration-300 shadow-sm"
