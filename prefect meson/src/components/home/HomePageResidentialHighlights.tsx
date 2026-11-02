@@ -97,7 +97,7 @@ export const HomePageResidentialHighlights: React.FC<HomePageResidentialHighligh
               <span>3 PRIMARY RESIDENTIAL EXECUTION MODELS</span>
             </div>
             
-            <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-slate-950 leading-tight">
+            <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-slate-950 leading-snug">
               Residential Architecture <br />
               & Specification Packages.
             </h2>

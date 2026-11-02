@@ -294,7 +294,7 @@ export const defaultPageContents: Record<string, any> = {
       headline: 'Turnkey Architectural & Civil Construction Excellence',
       subheadline: 'Engineered precision, itemized BOQ billing, and flawless execution for luxury villas, commercial towers, and turnkey interiors.',
       badge: 'ISO 9001:2015 CERTIFIED • HIGH-PRECISION ENGINEERING',
-      primaryCta: 'REQUEST A QUOTE',
+      primaryCta: 'CONTACT US',
       secondaryCta: 'EXPLORE PROJECTS',
     },
     intro: {
@@ -375,7 +375,7 @@ export const defaultPageContents: Record<string, any> = {
     header: {
       brandName: 'PERFECT MASON',
       tagline: 'ARCHITECTURAL & TURNKEY CONSTRUCTION',
-      ctaText: 'REQUEST A QUOTE',
+      ctaText: 'CONTACT US',
       phone: '+91 98863 29424',
     },
     footer: {

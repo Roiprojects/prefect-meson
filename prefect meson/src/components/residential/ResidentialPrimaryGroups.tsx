@@ -25,7 +25,7 @@ export const ResidentialPrimaryGroups: React.FC<ResidentialPrimaryGroupsProps> =
             </span>
           </div>
 
-          <h2 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-slate-950 leading-[1.05]">
+          <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-slate-950 leading-snug">
             Primary Execution Models <br className="hidden sm:inline" />
             & Specification Frameworks.
           </h2>

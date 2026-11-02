@@ -9,8 +9,8 @@ export const navigationConfig: HeaderConfig = {
     address: 'AECS Layout, Hosur Main Road, Bengaluru, Karnataka 560068',
   },
   ctaButton: {
-    label: 'GET A QUOTE',
-    href: '/contact-us?type=quote',
+    label: 'CONTACT US',
+    href: '/contact-us',
     sublabel: 'Enquire Now',
   },
   navItems: [

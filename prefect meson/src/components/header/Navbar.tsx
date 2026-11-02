@@ -9,7 +9,6 @@ import { MegaMenu } from './MegaMenu';
 import { MobileMenu } from './MobileMenu';
 import { CTAButton } from './CTAButton';
 import { QuoteModal } from './QuoteModal';
-import { useData } from '../../context/DataContext';
 
 interface NavbarProps {
   config?: HeaderConfig;
@@ -22,8 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   activeRoute = '#home',
   onNavigate,
 }) => {
-  const { pageContents } = useData();
-  const headerCtaText = pageContents?.['header-footer']?.header?.ctaText || config.ctaButton.label;
+  const headerCtaText = 'CONTACT US';
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [activeMegaMenuId, setActiveMegaMenuId] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -181,7 +179,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.35, duration: 0.4 }}
-              className="hidden sm:block"
+              className="hidden lg:block"
             >
               <CTAButton
                 label={headerCtaText}
