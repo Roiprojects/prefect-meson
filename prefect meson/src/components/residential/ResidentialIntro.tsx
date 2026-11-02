@@ -4,7 +4,6 @@ import { ArrowRight, ChevronRight, Home } from 'lucide-react';
 
 // Authentic High-Resolution Residential Construction Imagery
 import imgMainResidential from '/assets/residential_hero.jpg';
-import imgDetailResidential from '/ndl_projects/slide_026_img_1.jpg';
 
 interface ResidentialIntroProps {
   onOpenQuoteModal?: () => void;
@@ -195,23 +194,6 @@ export const ResidentialIntro: React.FC<ResidentialIntroProps> = ({ onOpenQuoteM
               </div>
             </motion.div>
 
-            {/* Small Overlapping Secondary Detail Image (Bottom-Right) */}
-            <motion.div
-              initial={isReduced ? { opacity: 0 } : { opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.25, ease: easeLuxury }}
-              className="absolute -bottom-6 sm:-bottom-8 -left-4 sm:-left-8 w-44 sm:w-60 h-32 sm:h-40 rounded-2xl overflow-hidden border-4 border-white shadow-2xl bg-slate-900 hidden sm:block group"
-            >
-              <img
-                src={imgDetailResidential}
-                alt="Residential Architectural Detailing"
-                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
-              />
-              <div className="absolute bottom-2 left-2 right-2 bg-slate-950/90 backdrop-blur-xs px-2 py-1 rounded text-[9px] font-mono text-white tracking-wider uppercase text-center border border-white/10">
-                ARCHITECTURE & INTERIORS
-              </div>
-            </motion.div>
 
           </div>
 
