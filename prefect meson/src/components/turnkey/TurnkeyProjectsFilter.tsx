@@ -15,7 +15,7 @@ interface TurnkeyCardItem {
   rating: string;
   location: string;
   city: string;
-  sector: 'Commercial EPC' | 'Residential Turnkey' | 'Corporate EPC' | 'Hospitality EPC';
+  sector: 'Commercial EPC' | 'Residential Turnkey';
   timelineCategory: '< 12 Mo' | '12–24 Mo' | '24+ Mo';
   image: string;
   status?: string;
@@ -23,104 +23,66 @@ interface TurnkeyCardItem {
 
 const turnkeyShowcaseList: TurnkeyCardItem[] = [
   {
-    id: 'nexus-corporate-park',
-    client: 'Nexus Corporate Park',
-    statHeadline: '180,000 SQ.FT',
-    badge: 'EPC Turnkey',
-    height: 'G+8',
-    timeline: '18 Mo',
-    rating: 'LEED Gold',
-    location: 'Outer Ring Road, Bangalore',
+    id: 'turnkey-luxury-residential-villa',
+    client: 'Turnkey Luxury Residential Villa & Estate',
+    statHeadline: 'RESIDENTIAL TURNKEY',
+    badge: 'Residential Turnkey',
+    height: 'G+2',
+    timeline: '14 Months',
+    rating: 'Single-Source Delivery',
+    location: 'Bengaluru, India',
+    city: 'Bangalore',
+    sector: 'Residential Turnkey',
+    timelineCategory: '12–24 Mo',
+    image: '/assets/about_hero_villa.jpg',
+    status: 'Active'
+  },
+  {
+    id: 'turnkey-commercial-complex',
+    client: 'Turnkey Commercial Complex & Corporate Facility',
+    statHeadline: 'COMMERCIAL EPC',
+    badge: 'Commercial EPC',
+    height: 'G+4',
+    timeline: '16 Months',
+    rating: 'Integrated EPC Cell',
+    location: 'Bengaluru, India',
     city: 'Bangalore',
     sector: 'Commercial EPC',
     timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_042_img_1.jpg'
-  },
-  {
-    id: 'aura-commercial-hub',
-    client: 'Aura Commercial Hub',
-    statHeadline: '220,000 SQ.FT',
-    badge: 'EPC Turnkey',
-    height: 'G+12',
-    timeline: '24 Mo',
-    rating: 'Platinum',
-    location: 'Whitefield, Bangalore',
-    city: 'Bangalore',
-    sector: 'Commercial EPC',
-    timelineCategory: '12–24 Mo',
-    image: '/ndl_projects/slide_097_img_1.jpg'
-  },
-  {
-    id: 'zenith-tech-tower',
-    client: 'Zenith Tech Tower',
-    statHeadline: '260,000 SQ.FT',
-    badge: 'EPC Turnkey',
-    height: 'G+14',
-    timeline: '26 Mo',
-    rating: 'IGBC Platinum',
-    location: 'Electronic City, Bangalore',
-    city: 'Bangalore',
-    sector: 'Commercial EPC',
-    timelineCategory: '24+ Mo',
-    image: '/ndl_projects/slide_046_img_1.jpg'
+    image: '/assets/commercial_hero.jpg',
+    status: 'Active'
   }
 ];
 
 const locations = ['All', 'Bangalore', 'Whitefield', 'Indiranagar', 'Sadashivanagar', 'HSR Layout', 'Electronic City'];
-const sectors = ['Commercial EPC', 'Residential Turnkey', 'Corporate EPC', 'Hospitality EPC'];
+const sectors = ['Commercial EPC', 'Residential Turnkey'];
 const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
 export const TurnkeyProjectsFilter: React.FC = () => {
   const navigate = useNavigate();
-  const { turnkeyItems, projects } = useData();
+  const { turnkeyItems } = useData();
   const [activeLocation, setActiveLocation] = useState('All');
   const [activeSector, setActiveSector] = useState<string | null>(null);
   const [activeTimeline, setActiveTimeline] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const dynamicTurnkeyCards: TurnkeyCardItem[] = turnkeyItems.map((item) => ({
-    id: item.id || item.slug,
-    client: item.client || item.title,
-    statHeadline: item.builtArea || 'TURNKEY EPC',
-    badge: (item.category.includes('Commercial') ? 'Commercial EPC' : item.category.includes('Residential') ? 'Residential Turnkey' : 'EPC Turnkey') as any,
-    height: 'G+3',
-    timeline: item.timeline || '14 Mo',
-    rating: item.architect || 'Perfect Mason EPC Cell',
-    location: item.builtArea ? `${item.builtArea} • Bengaluru` : 'Bengaluru, India',
+  const dynamicTurnkeyCards: TurnkeyCardItem[] = turnkeyItems.slice(0, 2).map((item) => ({
+    id: item.id || item.slug || 'turnkey-project',
+    client: item.title || item.client || 'Turnkey Project',
+    statHeadline: item.category?.toUpperCase() || 'TURNKEY PROJECT',
+    badge: (item.category?.includes('Commercial') ? 'Commercial EPC' : 'Residential Turnkey') as any,
+    height: (item.category?.includes('Commercial') ? 'G+4' : 'G+2'),
+    timeline: item.timeline || (item.category?.includes('Commercial') ? '16 Months' : '14 Months'),
+    rating: item.architect || (item.category?.includes('Commercial') ? 'Integrated EPC Cell' : 'Single-Source Delivery'),
+    location: 'Bengaluru, India',
     city: 'Bangalore',
-    sector: (item.category.includes('Commercial') ? 'Commercial EPC' : item.category.includes('Residential') ? 'Residential Turnkey' : 'Corporate EPC') as any,
+    sector: (item.category?.includes('Commercial') ? 'Commercial EPC' : 'Residential Turnkey') as any,
     timelineCategory: '12–24 Mo',
-    image: item.heroImage || '/assets/turnkey_hero.jpg',
+    image: item.heroImage || (item.category?.includes('Commercial') ? '/assets/commercial_hero.jpg' : '/assets/about_hero_villa.jpg'),
     status: item.status || 'Active',
   }));
 
-  const galleryTurnkeyCards: TurnkeyCardItem[] = projects
-    .filter((p) => p.category === 'Turnkey' || p.secondaryCategories?.includes('Turnkey'))
-    .map((p) => ({
-      id: p.id || p.slug,
-      client: p.client || p.title,
-      statHeadline: p.areaSqFt || 'TURNKEY EPC',
-      badge: 'EPC Turnkey' as any,
-      height: 'G+4',
-      timeline: '12 Mo',
-      rating: p.architect || 'Perfect Mason EPC Cell',
-      location: p.location || 'Bengaluru, Karnataka',
-      city: p.city || 'Bangalore',
-      sector: 'Commercial EPC' as any,
-      timelineCategory: '12–24 Mo',
-      image: p.image || '/assets/turnkey_hero.jpg',
-      status: p.status || 'Active',
-    }));
-
-  const combinedCards = [
-    ...dynamicTurnkeyCards,
-    ...galleryTurnkeyCards.filter(g => !dynamicTurnkeyCards.some(d => d.id === g.id || d.client === g.client)),
-  ];
-
-  const allTurnkeyCards = [
-    ...combinedCards,
-    ...turnkeyShowcaseList.filter(s => !combinedCards.some(d => d.id === s.id || d.client.toLowerCase() === s.client.toLowerCase()))
-  ];
+  const allTurnkeyCards = dynamicTurnkeyCards.length === 2 ? dynamicTurnkeyCards : turnkeyShowcaseList;
 
   const clearFilters = () => {
     setActiveLocation('All');
@@ -142,10 +104,9 @@ export const TurnkeyProjectsFilter: React.FC = () => {
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
       const matchClient = item.client.toLowerCase().includes(q);
-      const matchStat = item.statHeadline.toLowerCase().includes(q);
       const matchLoc = item.location.toLowerCase().includes(q);
       const matchSec = item.sector.toLowerCase().includes(q);
-      if (!matchClient && !matchStat && !matchLoc && !matchSec) return false;
+      if (!matchClient && !matchLoc && !matchSec) return false;
     }
     return true;
   });
@@ -293,14 +254,22 @@ export const TurnkeyProjectsFilter: React.FC = () => {
                       <img
                         src={project.image}
                         alt={project.client}
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (project.badge?.includes('Commercial') || project.sector?.includes('Commercial')) {
+                            target.src = '/assets/commercial_hero.jpg';
+                          } else {
+                            target.src = '/assets/about_hero_villa.jpg';
+                          }
+                        }}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                        loading="lazy"
+                        loading="eager"
                       />
 
                       {/* Smooth Dark Bottom Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none" />
 
-                      {/* Top Left Status Badge (Active Model / Completed Handover / Upcoming Release) */}
+                      {/* Top Left Status Badge */}
                       <div className="absolute top-4 left-4 z-10">
                         <StatusBadge status={project.status || 'Active'} variant="glass" />
                       </div>
@@ -311,18 +280,18 @@ export const TurnkeyProjectsFilter: React.FC = () => {
                         <span>{project.badge}</span>
                       </div>
 
-                      {/* Bottom Content Area */}
+                      {/* Bottom Content Area - Clean Title & Metadata without SQ.FT Headline */}
                       <div className="absolute bottom-0 inset-x-0 p-5 sm:p-6 text-white z-10">
-                        <div className="text-sm font-normal text-white/90 drop-shadow-sm font-sans">
-                          {project.client}
+                        <div className="text-xs font-mono font-bold tracking-widest text-[#C8A96B] uppercase mb-1 drop-shadow-sm">
+                          {project.badge}
                         </div>
 
-                        <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-white uppercase tracking-tight leading-tight my-1.5 drop-shadow-md font-sans">
-                          {project.statHeadline}
-                        </div>
+                        <h3 className="text-xl sm:text-2xl lg:text-[1.65rem] font-bold text-white uppercase tracking-tight leading-snug my-1 drop-shadow-md font-barlow">
+                          {project.client}
+                        </h3>
 
                         {/* Metadata Strip */}
-                        <div className="flex items-center gap-4 text-xs sm:text-sm text-white/85 font-normal pt-1.5 font-sans">
+                        <div className="flex items-center gap-4 text-xs sm:text-sm text-white/85 font-normal pt-2 font-sans">
                           <div className="flex items-center gap-1.5">
                             <Building2 className="w-3.5 h-3.5 opacity-80" />
                             <span>{project.height}</span>
@@ -333,7 +302,7 @@ export const TurnkeyProjectsFilter: React.FC = () => {
                           </div>
                           <div className="flex items-center gap-1.5">
                             <ShieldCheck className="w-3.5 h-3.5 opacity-80" />
-                            <span className="truncate max-w-[140px]">{project.rating}</span>
+                            <span className="truncate max-w-[180px]">{project.rating}</span>
                           </div>
                         </div>
                       </div>
