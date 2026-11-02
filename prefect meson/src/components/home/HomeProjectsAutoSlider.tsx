@@ -2,10 +2,6 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import {
-  ChevronLeft,
-  ChevronRight,
-  Play,
-  Pause,
   Sparkles,
   Maximize2,
   X,
@@ -23,7 +19,6 @@ export const HomeProjectsAutoSlider: React.FC<HomeProjectsAutoSliderProps> = ({
   const navigate = useNavigate();
   const { homeShowcaseSlides, projects } = useData();
 
-  const [isPlaying, setIsPlaying] = useState<boolean>(true);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -71,7 +66,7 @@ export const HomeProjectsAutoSlider: React.FC<HomeProjectsAutoSliderProps> = ({
       const deltaTime = time - lastTimeRef.current;
       lastTimeRef.current = time;
 
-      if (isPlaying && !isHovered && scrollContainer) {
+      if (!isHovered && scrollContainer) {
         const factor = Math.min(deltaTime / 16.67, 2.5);
         scrollContainer.scrollLeft += speed * factor;
 
@@ -92,18 +87,7 @@ export const HomeProjectsAutoSlider: React.FC<HomeProjectsAutoSliderProps> = ({
         cancelAnimationFrame(animationFrameRef.current);
       }
     };
-  }, [isPlaying, isHovered, displayImages.length]);
-
-  const handleManualScroll = (direction: 'left' | 'right') => {
-    const scrollContainer = scrollContainerRef.current;
-    if (!scrollContainer) return;
-
-    const scrollAmount = 480;
-    scrollContainer.scrollBy({
-      left: direction === 'left' ? -scrollAmount : scrollAmount,
-      behavior: 'smooth',
-    });
-  };
+  }, [isHovered, displayImages.length]);
 
   return (
     <section className="relative w-full py-16 sm:py-22 bg-[#FAFAF9] text-slate-900 overflow-hidden border-t border-b border-slate-200/80 font-sans">
@@ -115,7 +99,7 @@ export const HomeProjectsAutoSlider: React.FC<HomeProjectsAutoSliderProps> = ({
       <div className="absolute bottom-1/3 -right-32 w-96 h-96 bg-blue-100/30 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-8 sm:mb-10">
-        {/* Section Header (No category badges, pure architectural framing) */}
+        {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
           <div className="max-w-3xl">
             {/* Elegant Eyebrow */}
@@ -137,46 +121,8 @@ export const HomeProjectsAutoSlider: React.FC<HomeProjectsAutoSliderProps> = ({
             </p>
           </div>
 
-          {/* Minimalist Controls */}
-          <div className="flex items-center gap-2.5 self-start lg:self-end">
-            {/* Play / Pause Toggle */}
-            <button
-              onClick={() => setIsPlaying((prev) => !prev)}
-              title={isPlaying ? 'Pause auto-sliding' : 'Resume auto-sliding'}
-              className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-xs font-mono tracking-wider text-slate-700 hover:text-slate-950 shadow-2xs transition-all duration-200"
-            >
-              {isPlaying ? (
-                <>
-                  <Pause className="w-3.5 h-3.5 text-[#936B2B]" />
-                  <span className="hidden sm:inline font-semibold">PAUSE</span>
-                </>
-              ) : (
-                <>
-                  <Play className="w-3.5 h-3.5 text-[#936B2B] fill-[#936B2B]" />
-                  <span className="hidden sm:inline font-semibold">PLAY</span>
-                </>
-              )}
-            </button>
-
-            {/* Scroll Left Button */}
-            <button
-              onClick={() => handleManualScroll('left')}
-              title="Previous slide"
-              className="p-2.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-slate-950 shadow-2xs transition-all duration-200"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-
-            {/* Scroll Right Button */}
-            <button
-              onClick={() => handleManualScroll('right')}
-              title="Next slide"
-              className="p-2.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-slate-950 shadow-2xs transition-all duration-200"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-
-            {/* View Full Gallery Button */}
+          {/* Action CTA Button */}
+          <div className="self-start lg:self-end">
             <button
               onClick={() => navigate('/gallery')}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0F172A] hover:bg-[#1E293B] text-white font-bold text-xs tracking-wider uppercase transition-all duration-300 shadow-sm"
@@ -223,7 +169,7 @@ export const HomeProjectsAutoSlider: React.FC<HomeProjectsAutoSliderProps> = ({
         ))}
       </div>
 
-      {/* Pure High-Definition Lightbox Modal (No forced names or badges) */}
+      {/* Pure High-Definition Lightbox Modal */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
