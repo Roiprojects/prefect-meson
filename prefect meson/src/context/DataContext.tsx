@@ -2236,7 +2236,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       active: slide.active !== undefined ? slide.active : true,
     };
     setHomeShowcaseSlides((prev) => [...prev, newSlide]);
-    addLog('showcase', newSlide.title, 'Added new project slide to Home Showcase Slider');
+    addLog('showcase', newSlide.title || 'Project Slide', 'Added new project slide to Home Showcase Slider');
   };
 
   const updateHomeShowcaseSlide = (id: string, updates: Partial<HomeShowcaseSlide>) => {

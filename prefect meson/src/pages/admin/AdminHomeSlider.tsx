@@ -83,9 +83,9 @@ export const AdminHomeSlider: React.FC = () => {
   const handleOpenEditModal = (slide: HomeShowcaseSlide) => {
     setEditingSlideId(slide.id);
     setFormData({
-      title: slide.title,
-      category: slide.category,
-      location: slide.location,
+      title: slide.title || '',
+      category: (slide.category as HomeShowcaseSlide['category']) || 'Residential',
+      location: slide.location || '',
       image: slide.image,
       architect: slide.architect || '',
       timeline: slide.timeline || '',
