@@ -23,7 +23,7 @@ export const ResidentialPage: React.FC<ResidentialPageProps> = ({ onOpenQuoteMod
       {/* 5.2 RESIDENTIAL SERVICES / 7 PROJECT TYPES EXPLORER */}
       <ResidentialServices />
 
-      {/* 5.3 WHAT WE HANDLE / 10-DISCIPLINE CONSTRUCTION ANATOMY */}
+      {/* 5.3 WHAT WE HANDLE / 11-DISCIPLINE CONSTRUCTION ANATOMY */}
       <ResidentialWhatWeHandle />
 
       {/* 5.4 9-STAGE HOME CONSTRUCTION PROCESS */}

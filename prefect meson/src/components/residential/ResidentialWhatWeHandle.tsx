@@ -15,16 +15,16 @@ interface Discipline {
 const disciplines: Discipline[] = [
   {
     step: '01',
-    name: 'Architectural Coordination',
+    name: 'Architectural Planning & Coordination',
     scope: 'Blueprint Synchronization & Sanction Filings',
     technicalDetails: 'Direct interface with architectural firms (Architecture Paradigm, Keystone, GRC, Still Water) translating 2D drawings and 3D BIM models into site execution lines without tolerance drift.',
     materials: 'Municipal Sanction Drawings • Structural Calculation Sheets • Cadastral Survey',
     image: '/projects/dr_anil_kush/dr_anil_kush_01_facade_elevation.jpg',
-    badge: 'STAGE 01 // ARCHITECTURAL DRAWINGS & SANCTIONS',
+    badge: 'STAGE 01 // ARCHITECTURAL PLANNING & SANCTIONS',
   },
   {
     step: '02',
-    name: 'Structural Construction',
+    name: 'Structural Framework',
     scope: 'Substructure & Reinforced Concrete Core',
     technicalDetails: 'Isolated footing excavation, anti-termite chemical barrier, reinforced raft slabs, column cages, cantilever beam casting, and vibrator compaction.',
     materials: 'Fe550D TMT Rebar (Tata Tiscon / JSW) • 53-Grade OPC Cement • Hard Blue Granite Aggregates',
@@ -33,7 +33,7 @@ const disciplines: Discipline[] = [
   },
   {
     step: '03',
-    name: 'Civil Works',
+    name: 'Civil Works Execution',
     scope: 'Masonry, Plastering & Parapets',
     technicalDetails: 'Precision wire-cut exposed brick masonry, stabilized mud block (SMB) bonding, 1:4 cement sand wall plastering with fiberglass mesh at joint junctions to prevent shrinkage cracks.',
     materials: 'Wire-cut Bricks • Stabilized Mud Blocks • M-Sand / River Sand Mortar',
@@ -51,7 +51,7 @@ const disciplines: Discipline[] = [
   },
   {
     step: '05',
-    name: 'Plumbing',
+    name: 'Plumbing Works',
     scope: 'Hydro-Pneumatic Supply & Sanitary Drainage',
     technicalDetails: 'Multi-layer CPVC hot/cold distribution lines, acoustic SWR drainage pipes, sump/overhead tank plumbing, rainwater harvesting filters, and 10-bar pressure leak audits.',
     materials: 'Astral / Ashirvad CPVC & SWR Pipes • Grundfos Hydro-Pneumatic Booster Pumps',
@@ -60,48 +60,57 @@ const disciplines: Discipline[] = [
   },
   {
     step: '06',
+    name: 'Fabrication Works',
+    scope: 'Structural Steel, MS Framing, Metal Gates & Canopies',
+    technicalDetails: 'Precision structural steel fabrication, MS portico & cantilever canopy framing, stainless steel / mild steel architectural railings, laser-cut CNC metal screens, anti-corrosive epoxy zinc primer application, and high-tolerance on-site welding.',
+    materials: 'Heavy Gauge IS 2062 Structural Steel • Jindal / Tata Hollow Sections • Epoxy Zinc Phosphate Primer • SS304 / SS316 Hardware',
+    image: '/projects/dr_anil_kush/dr_anil_kush_02_cantilever_portico.jpg',
+    badge: 'STAGE 06 // STRUCTURAL STEEL & METAL FABRICATION',
+  },
+  {
+    step: '07',
     name: 'Flooring',
     scope: 'Italian Marble, Natural Stone & Hardwood',
     technicalDetails: 'Sub-floor leveling screed, anti-fracture membrane, epoxy joint grouting, diamond disc mirror polishing of Italian marble slabs, and custom hardwood tongue-and-groove layout.',
     materials: 'Imported Botticino / Dyna Marble • Honed Flamed Granite • Seasoned Teak Flooring',
     image: '/ndl_projects/slide_014_img_1.jpg',
-    badge: 'STAGE 06 // ITALIAN MARBLE & GRANITE SCREEDING',
+    badge: 'STAGE 07 // ITALIAN MARBLE & GRANITE SCREEDING',
   },
   {
-    step: '07',
+    step: '08',
     name: 'Painting',
     scope: 'Weatherproof Facades & Luxury Interior Emulsions',
     technicalDetails: 'Exterior silicon elastomer waterproof primer, anti-fungal weather shield coatings, 3-coat acrylic putty leveling, and airless spray interior luxury emulsions.',
     materials: 'Asian Paints Apex Ultima Protek • Royale Aspira Emulsion • Birla White Putty',
     image: '/ndl_projects/slide_057_img_1.jpg',
-    badge: 'STAGE 07 // AIRLESS SPRAY & WEATHER COATINGS',
+    badge: 'STAGE 08 // AIRLESS SPRAY & WEATHER COATINGS',
   },
   {
-    step: '08',
+    step: '09',
     name: 'Doors & Windows',
     scope: 'Seasoned Teak Frames & Thermal Break Fenestration',
     technicalDetails: 'Kiln-dried seasoned Burma/CP teak wood door frames (5"x3" section), flush doors with veneer pressing, and heavy-gauge UPVC/Aluminum double-glazed window systems with EPDM gaskets.',
     materials: '100% Seasoned Teak Wood • Fenesta / Schüco Double-Glazed UPVC • Hafele Mortise Locks',
     image: '/ndl_projects/slide_050_img_1.jpg',
-    badge: 'STAGE 08 // SEASONED TEAK & THERMAL UPVC',
+    badge: 'STAGE 09 // SEASONED TEAK & THERMAL UPVC',
   },
   {
-    step: '09',
+    step: '10',
     name: 'Finishing',
     scope: 'Waterproofing Audits, Balustrades & Glass Glazing',
     technicalDetails: 'Multi-coat polyurethane elastomeric waterproofing on terraces, sunken toilets, and balconies with 72-hour flood ponding tests. Frameless toughened glass railings with SS316 spigots.',
     materials: 'Dr. Fixit / Fosroc PU Membrane • 12mm Toughened Glass • SS316 Marine Grade Spigots',
     image: '/ndl_projects/slide_011_img_1.jpg',
-    badge: 'STAGE 09 // 72-HR WATERPROOFING & BALUSTRADES',
+    badge: 'STAGE 10 // 72-HR WATERPROOFING & BALUSTRADES',
   },
   {
-    step: '10',
-    name: 'Interior Coordination',
+    step: '11',
+    name: 'Interior Works',
     scope: 'Custom Modular Millwork & Turnkey Handover',
     technicalDetails: 'In-house master carpentry for modular kitchens with Blum soft-close hardware, walk-in wardrobes with LED sensor profile lights, custom pooja room carving, and final snagging.',
     materials: 'BWP Marine Ply (IS 710) • Natural Wood Veneers • Blum / Hafele Hardware',
     image: '/ndl_projects/slide_106_img_1.jpg',
-    badge: 'STAGE 10 // CUSTOM MILLWORK & BLUM HARDWARE',
+    badge: 'STAGE 11 // BESPOKE INTERIOR WORKS & JOINERY',
   },
 ];
 
@@ -126,18 +135,18 @@ export const ResidentialWhatWeHandle: React.FC = () => {
               </span>
             </div>
             <h2 className="font-barlow text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-white leading-[1.05]">
-              10-Layer Construction Discipline
+              11-Layer Construction Discipline
             </h2>
           </div>
 
           <p className="max-w-md text-sm sm:text-base text-slate-300 font-sans leading-relaxed lg:text-right">
-            Every residential project is executed through unified engineering control, removing contractor fragmentation across all 10 core execution scopes.
+            Every residential project is executed through unified engineering control, removing contractor fragmentation across all 11 core execution scopes.
           </p>
         </div>
 
         {/* Layered Interactive Anatomy: Left Stack (40%) + Right Deep Spec Stage (60%) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          {/* Left Vertical 10-Layer Navigation Stack */}
+          {/* Left Vertical 11-Layer Navigation Stack */}
           <div className="lg:col-span-5 space-y-2 max-h-[640px] overflow-y-auto pr-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-white/20 [&::-webkit-scrollbar-thumb]:rounded-full">
             {disciplines.map((d, i) => {
               const isActive = i === selectedIdx;
