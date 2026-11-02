@@ -53,6 +53,7 @@ export const AdminPagesManager: React.FC = () => {
     turnkeyItems,
     interiorItems,
     reviews,
+    homeShowcaseSlides,
   } = useData();
 
   // Search and filter states
@@ -158,6 +159,19 @@ export const AdminPagesManager: React.FC = () => {
       status: (pageContents?.interiors?.status as 'Published' | 'Draft') || 'Published',
       lastUpdated: formatLastUpdated(pageContents?.interiors?.updatedAt),
       itemsBadge: `${interiorItems?.length || 4} Space Types`,
+    },
+    {
+      id: 'home-slider',
+      title: 'Home Showcase Slider',
+      category: 'Portfolio & Social',
+      route: '/',
+      editUrl: '/admin/home-slider',
+      icon: ImageIcon,
+      description: 'Auto-sliding architectural portfolio on the home page. Manage high-resolution project images, categories, titles, locations, and slide order.',
+      sections: ['Continuous Marquee', 'High-Res Photography', 'Discipline Badges', 'Slide Order', 'Modal Lightbox'],
+      status: 'Published',
+      lastUpdated: 'Live Active',
+      itemsBadge: `${homeShowcaseSlides?.length || 12} Projects`,
     },
     {
       id: 'gallery',

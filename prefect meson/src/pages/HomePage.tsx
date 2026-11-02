@@ -4,6 +4,7 @@ import { CompanyIntroduction } from '../components/introduction/CompanyIntroduct
 import { BrandManifesto } from '../components/manifesto/BrandManifesto';
 import { CoreServices } from '../components/services/CoreServices';
 import { HomePageResidentialHighlights } from '../components/home/HomePageResidentialHighlights';
+import { HomeProjectsAutoSlider } from '../components/home/HomeProjectsAutoSlider';
 import { WhyChooseUs } from '../components/trust/WhyChooseUs';
 import { PavanCinematicSection } from '../components/experience/PavanCinematicSection';
 
@@ -49,6 +50,8 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* 4.5 FEATURED RESIDENTIAL HIGHLIGHTS: AFFORDABLE HOMES PACKAGES & ECO-FRIENDLY HOMES */}
       <HomePageResidentialHighlights onOpenQuoteModal={onOpenQuoteModal} />
 
+      {/* 5. ARCHITECTURAL MASTERWORKS IN MOTION: AUTO-SLIDING PORTFOLIO SHOWCASE */}
+      <HomeProjectsAutoSlider onOpenQuoteModal={onOpenQuoteModal} />
 
       {/* 6. SECTION 2.4: WHY CHOOSE PERFECT MASON (Corporate Trust Dashboard) */}
       <WhyChooseUs />

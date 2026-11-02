@@ -3,11 +3,14 @@ import { galleryProjects as defaultGalleryProjects, GalleryProject } from '../da
 import { blogsData as defaultBlogs, BlogPost } from '../data/blogsData';
 import { EnquirySubmission } from '../data/contactData';
 import { reviewsConfig, ClientReviewItem } from '../data/reviewsData';
+import { HomeShowcaseSlide, defaultHomeShowcaseSlides } from '../data/homeShowcaseData';
 import { apiService } from '../services/api';
+
+export type { HomeShowcaseSlide };
 
 export interface AdminActivityLog {
   id: string;
-  type: 'gallery' | 'blog' | 'enquiry' | 'commercial' | 'residential' | 'turnkey' | 'interiors' | 'review' | 'page' | 'settings';
+  type: 'gallery' | 'blog' | 'enquiry' | 'commercial' | 'residential' | 'turnkey' | 'interiors' | 'review' | 'page' | 'settings' | 'showcase';
   title: string;
   action: string;
   timestamp: string;
@@ -206,6 +209,14 @@ interface DataContextType {
   settings: WebsiteSettings;
   updateSettings: (newSettings: Partial<WebsiteSettings>) => Promise<{ success: boolean; error?: string }> | void;
 
+  // Home Projects Showcase Slider
+  homeShowcaseSlides: HomeShowcaseSlide[];
+  addHomeShowcaseSlide: (slide: Omit<HomeShowcaseSlide, 'id'>) => void;
+  updateHomeShowcaseSlide: (id: string, updates: Partial<HomeShowcaseSlide>) => void;
+  deleteHomeShowcaseSlide: (id: string) => void;
+  reorderHomeShowcaseSlides: (startIndex: number, endIndex: number) => void;
+  resetHomeShowcaseSlides: () => void;
+
   // Master Data Reset
   resetMasterCatalog: () => void;
 
@@ -234,6 +245,7 @@ const STORAGE_KEYS = {
   DRAFTS: 'pm_page_drafts_v1',
   AUTH: 'pm_admin_auth_v1',
   LOGS: 'pm_activity_logs_v4',
+  HOME_SHOWCASE: 'pm_home_showcase_slides_v2',
 };
 
 const defaultWebsiteSettings: WebsiteSettings = {
@@ -1564,6 +1576,11 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  // Home Showcase Slider state
+  const [homeShowcaseSlides, setHomeShowcaseSlides] = useState<HomeShowcaseSlide[]>(() =>
+    safeGet<HomeShowcaseSlide[]>(STORAGE_KEYS.HOME_SHOWCASE, defaultHomeShowcaseSlides)
+  );
+
   // Gallery state
   const [projects, setProjects] = useState<GalleryProject[]>(() =>
     safeGet<GalleryProject[]>(STORAGE_KEYS.PROJECTS, defaultGalleryProjects)
@@ -1789,6 +1806,10 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   // Sync to local storage safely as backup
+  useEffect(() => {
+    safeSet(STORAGE_KEYS.HOME_SHOWCASE, homeShowcaseSlides);
+  }, [homeShowcaseSlides]);
+
   useEffect(() => {
     safeSet(STORAGE_KEYS.PROJECTS, projects);
   }, [projects]);
@@ -2204,6 +2225,49 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     apiService.deleteEnquiry(id).catch((err) => console.error('PostgreSQL deleteEnquiry error:', err));
   };
 
+
+  // Home Showcase Slider Handlers
+  const addHomeShowcaseSlide = (slide: Omit<HomeShowcaseSlide, 'id'>) => {
+    const newId = `slide-${Date.now()}`;
+    const newSlide: HomeShowcaseSlide = {
+      id: newId,
+      ...slide,
+      order: slide.order ?? (homeShowcaseSlides.length + 1),
+      active: slide.active !== undefined ? slide.active : true,
+    };
+    setHomeShowcaseSlides((prev) => [...prev, newSlide]);
+    addLog('showcase', newSlide.title, 'Added new project slide to Home Showcase Slider');
+  };
+
+  const updateHomeShowcaseSlide = (id: string, updates: Partial<HomeShowcaseSlide>) => {
+    setHomeShowcaseSlides((prev) =>
+      prev.map((s) => (s.id === id ? { ...s, ...updates } : s))
+    );
+    addLog('showcase', updates.title || 'Project Slide', `Updated project slide: ${id}`);
+  };
+
+  const deleteHomeShowcaseSlide = (id: string) => {
+    const target = homeShowcaseSlides.find((s) => s.id === id);
+    setHomeShowcaseSlides((prev) => prev.filter((s) => s.id !== id));
+    addLog('showcase', target?.title || id, 'Deleted slide from Home Showcase Slider');
+  };
+
+  const reorderHomeShowcaseSlides = (startIndex: number, endIndex: number) => {
+    setHomeShowcaseSlides((prev) => {
+      const result = Array.from(prev);
+      const [removed] = result.splice(startIndex, 1);
+      result.splice(endIndex, 0, removed);
+      return result.map((item, idx) => ({ ...item, order: idx + 1 }));
+    });
+    addLog('showcase', 'Home Showcase Slider', 'Reordered slides sequence');
+  };
+
+  const resetHomeShowcaseSlides = () => {
+    setHomeShowcaseSlides(defaultHomeShowcaseSlides);
+    safeSet(STORAGE_KEYS.HOME_SHOWCASE, defaultHomeShowcaseSlides);
+    addLog('showcase', 'Home Showcase Slider', 'Reset slides to default curated portfolio');
+  };
+
   // Settings handler (Direct PostgreSQL integration)
   const updateSettings = async (newSettings: Partial<WebsiteSettings>): Promise<{ success: boolean; error?: string }> => {
     try {
@@ -2446,6 +2510,12 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   return (
     <DataContext.Provider
       value={{
+        homeShowcaseSlides,
+        addHomeShowcaseSlide,
+        updateHomeShowcaseSlide,
+        deleteHomeShowcaseSlide,
+        reorderHomeShowcaseSlides,
+        resetHomeShowcaseSlides,
         projects,
         addProject,
         updateProject,

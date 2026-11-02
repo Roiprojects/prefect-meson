@@ -3,6 +3,7 @@ import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useData } from '../../context/DataContext';
 import {
   LayoutDashboard,
+  SlidersHorizontal,
   Layers,
   Home,
   Info,
@@ -185,6 +186,7 @@ export const AdminLayout: React.FC<{ children: React.ReactNode }> = ({ children 
             { label: 'Header & Footer', href: '/admin/pages/header-footer', icon: PanelTop },
           ],
         },
+        { label: 'Home Showcase Slider', href: '/admin/home-slider', icon: SlidersHorizontal, badge: 'Live' },
         { label: 'Commercial Construction', href: '/admin/commercial', icon: Building2 },
         { label: 'Residential Construction', href: '/admin/residential', icon: Home },
         { label: 'Turnkey Projects', href: '/admin/turnkey', icon: Briefcase },

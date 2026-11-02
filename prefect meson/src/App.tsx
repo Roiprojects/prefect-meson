@@ -36,6 +36,7 @@ import { AdminDashboard } from './pages/admin/AdminDashboard';
 import { AdminPagesManager } from './pages/admin/AdminPagesManager';
 import { AdminPageEditor } from './pages/admin/AdminPageEditor';
 import { AdminPagePreview } from './pages/admin/AdminPagePreview';
+import { AdminHomeSlider } from './pages/admin/AdminHomeSlider';
 import { AdminResidential } from './pages/admin/AdminResidential';
 import { AdminCommercial } from './pages/admin/AdminCommercial';
 import { AdminTurnkey } from './pages/admin/AdminTurnkey';
@@ -251,6 +252,14 @@ const AppContent: React.FC = () => {
             element={
               <ProtectedAdminRoute>
                 <AdminPagePreview />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/home-slider"
+            element={
+              <ProtectedAdminRoute>
+                <AdminHomeSlider />
               </ProtectedAdminRoute>
             }
           />
