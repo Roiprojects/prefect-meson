@@ -89,7 +89,7 @@ export const CoreServices: React.FC = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-[#C8A96B] animate-pulse" />
               2.3 Core Services
             </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-light tracking-tight text-[#0F172A] leading-tight">
+            <h2 className="text-xl sm:text-2xl lg:text-[1.85rem] font-heading font-medium tracking-tight text-[#0F172A] leading-tight">
               <span className="bg-yellow-300 text-slate-950 px-2 py-0.5 rounded border border-yellow-500 inline-block mb-1 font-normal">
                 Conceived with Vision.
               </span>{' '}

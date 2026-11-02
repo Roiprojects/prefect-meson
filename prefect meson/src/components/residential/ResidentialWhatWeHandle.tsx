@@ -134,7 +134,7 @@ export const ResidentialWhatWeHandle: React.FC = () => {
                 5.3 // WHAT WE HANDLE -- COMPLETE EXECUTION ANATOMY
               </span>
             </div>
-            <h2 className="font-barlow text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-white leading-[1.05]">
+            <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-white leading-tight">
               11-Layer Construction Discipline
             </h2>
           </div>

@@ -39,7 +39,7 @@ export const CommercialProjectTypes: React.FC = () => {
               </span>
             </div>
 
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-slate-950 leading-[1.04]">
+            <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-slate-950 leading-tight">
               Commercial Project <br className="hidden sm:inline" />
               Types & Typologies.
             </h2>

@@ -115,7 +115,7 @@ export const AboutStatement: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1, ease: easeLuxury }}
-              className="font-barlow text-4xl sm:text-6xl lg:text-[4.2rem] font-bold text-slate-950 uppercase tracking-tight leading-[0.96]"
+              className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight"
             >
               <span className="block text-slate-950">Principles That</span>
               <span className="block text-[#0F172A]">Guide Our Work.</span>

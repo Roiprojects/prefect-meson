@@ -249,7 +249,7 @@ export const PavanCinematicSection: React.FC<PavanCinematicSectionProps> = ({
           </div>
 
           {/* Headline */}
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] font-bold text-white uppercase tracking-tight leading-[1.05] drop-shadow-lg mb-5">
+          <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-white uppercase tracking-tight leading-tight drop-shadow-lg mb-4">
             <span className="block">Built from structure</span>
             <span className="block text-slate-400">to the final detail.</span>
           </h2>

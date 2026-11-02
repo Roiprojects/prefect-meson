@@ -125,7 +125,7 @@ export const InteriorHorizontalSlider: React.FC<InteriorHorizontalSliderProps> =
               </span>
             </div>
 
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-slate-950 uppercase tracking-tight leading-[1.06]">
+            <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight">
               <span className="block text-slate-950">{interiorsConfig.intro.headline.line1}</span>
               <span className="block text-slate-950">{interiorsConfig.intro.headline.line2}</span>
             </h2>

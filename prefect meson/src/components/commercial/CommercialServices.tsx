@@ -198,7 +198,7 @@ export const CommercialServices: React.FC<CommercialServicesProps> = ({ onOpenQu
             </div>
 
             {/* Main Heading */}
-            <h2 className="font-barlow text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-[#071D38] leading-[1.05]">
+            <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-[#071D38] leading-tight">
               Spaces Built <br className="hidden sm:inline" />
               for Business.
             </h2>

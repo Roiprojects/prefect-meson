@@ -22,7 +22,7 @@ export const ProjectIntro: React.FC = () => {
         {/* Two-Column Editorial Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           <div className="lg:col-span-7">
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-slate-950 uppercase tracking-tight leading-[1.06]">
+            <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight">
               <span className="block text-slate-950">{intro.headline.line1}</span>
               <span className="block text-slate-950">{intro.headline.line2}</span>
             </h2>

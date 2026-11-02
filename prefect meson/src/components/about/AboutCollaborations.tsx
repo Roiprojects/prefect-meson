@@ -19,7 +19,7 @@ export const AboutCollaborations: React.FC = () => {
                 PROFESSIONAL ASSOCIATIONS
               </span>
             </div>
-            <h2 className="font-barlow text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#071D38] leading-tight">
+            <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-[#071D38] leading-tight">
               Architects Associated With
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
@@ -70,7 +70,7 @@ export const AboutCollaborations: React.FC = () => {
                 STRUCTURAL ENGINEERING ASSOCIATIONS
               </span>
             </div>
-            <h2 className="font-barlow text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#071D38] leading-tight">
+            <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-[#071D38] leading-tight">
               Structural Consultants
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">

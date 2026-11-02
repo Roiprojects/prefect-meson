@@ -27,7 +27,7 @@ export const LatestBlogsSection: React.FC = () => {
               </span>
             </div>
 
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-slate-950 uppercase tracking-tight leading-[1.1]">
+            <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight">
               Construction Intelligence. <br />
               <span className="text-slate-950">Latest Architectural Blogs.</span>
             </h2>

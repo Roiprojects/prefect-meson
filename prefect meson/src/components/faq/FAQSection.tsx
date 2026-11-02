@@ -39,7 +39,7 @@ export const FAQSection: React.FC = () => {
             </div>
 
             {/* Main Heading */}
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-slate-950 uppercase tracking-tight leading-[1.06] mb-6">
+            <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight mb-4">
               <span className="block text-slate-950">{headline.line1}</span>
               <span className="block text-slate-950">{headline.line2}</span>
             </h2>

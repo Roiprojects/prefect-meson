@@ -32,7 +32,7 @@ export const AboutFAQ: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-                className="text-4xl md:text-[44px] lg:text-[48px] leading-[1.1] font-light tracking-[-0.03em] text-slate-900 mb-8 whitespace-pre-line"
+                className="text-xl sm:text-2xl lg:text-[1.85rem] font-medium leading-tight tracking-tight text-slate-900 mb-6 whitespace-pre-line"
               >
                 {aboutData.faq.heading}
               </motion.h2>

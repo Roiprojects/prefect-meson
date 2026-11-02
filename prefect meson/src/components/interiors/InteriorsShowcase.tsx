@@ -200,7 +200,7 @@ export const InteriorsShowcase: React.FC<InteriorsShowcaseProps> = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1, ease: easeLuxury }}
-          className="font-barlow text-3xl sm:text-5xl lg:text-[3.8rem] font-bold text-white uppercase tracking-tight leading-[0.95] drop-shadow-lg"
+          className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-white uppercase tracking-tight leading-tight drop-shadow-lg"
         >
           <span className="block text-white">Spaces Designed</span>
           <span className="block text-[#0F172A]">Around The Way You Live.</span>

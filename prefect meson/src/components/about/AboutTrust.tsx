@@ -42,7 +42,7 @@ export const AboutTrust: React.FC = () => {
             </span>
           </div>
 
-          <h2 className="font-barlow text-4xl sm:text-5xl lg:text-6xl font-bold text-[#071D38] uppercase tracking-tight leading-[1.05] mb-4">
+          <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-[#071D38] uppercase tracking-tight leading-tight mb-4">
             Confidence Built Into Every Project.
           </h2>
 

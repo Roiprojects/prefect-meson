@@ -56,7 +56,7 @@ export const AboutIntro: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.6, ease: easeCorporate }}
-            className="font-barlow text-4xl sm:text-5xl lg:text-6xl font-black uppercase text-[#071D38] tracking-tight leading-[1.02]"
+            className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase text-[#071D38] tracking-tight leading-tight"
           >
             {headingText}
           </motion.h2>

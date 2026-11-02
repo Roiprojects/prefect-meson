@@ -117,7 +117,7 @@ export const SelectedProjectsGrid: React.FC<SelectedProjectsGridProps> = ({
               </span>
             </motion.div>
 
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.6rem] font-bold text-slate-950 uppercase tracking-tight leading-[1.04]">
+            <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight">
               <div className="overflow-hidden py-0.5">
                 <motion.span
                   initial={{ y: 55, opacity: 0 }}

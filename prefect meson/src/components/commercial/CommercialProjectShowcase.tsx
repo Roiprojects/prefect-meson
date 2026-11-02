@@ -60,7 +60,7 @@ export const CommercialProjectShowcase: React.FC = () => {
                 04.4 // COMMERCIAL PROJECT PORTFOLIO
               </span>
             </div>
-            <h2 className="font-barlow text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-[#071D38] leading-[1.05]">
+            <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-[#071D38] leading-tight">
               Executed Commercial Projects
             </h2>
           </div>

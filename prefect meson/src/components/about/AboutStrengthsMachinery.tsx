@@ -22,7 +22,7 @@ export const AboutStrengthsMachinery: React.FC = () => {
                 PROVEN COMPETENCIES
               </span>
             </div>
-            <h2 className="font-barlow text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#071D38] leading-tight">
+            <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-[#071D38] leading-tight">
               Technical Strengths & Craftsmanship
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
@@ -107,7 +107,7 @@ export const AboutStrengthsMachinery: React.FC = () => {
                 EQUIPMENT & INFRASTRUCTURE
               </span>
             </div>
-            <h2 className="font-barlow text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#071D38] leading-tight">
+            <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-[#071D38] leading-tight">
               Plants & Machinery in Possession
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">

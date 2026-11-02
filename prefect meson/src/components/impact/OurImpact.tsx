@@ -51,7 +51,7 @@ export const OurImpact: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-14 sm:mb-20">
           {/* Left Large Headline */}
           <div className="lg:col-span-7">
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.65rem] font-bold text-slate-950 uppercase tracking-tight leading-[1.04]">
+            <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight">
               <span className="block text-slate-950">{impactConfig.headline.line1}</span>
               <span className="block text-slate-950">{impactConfig.headline.line2}</span>
             </h2>

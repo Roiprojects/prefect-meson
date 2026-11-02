@@ -157,7 +157,7 @@ export const TurnkeyCapability: React.FC = () => {
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-light uppercase tracking-tight text-[#0F172A] leading-[0.95]">
+            <h2 className="text-xl sm:text-2xl lg:text-[1.85rem] font-heading font-medium uppercase tracking-tight text-[#0F172A] leading-tight">
               FROM IDEA <br />
               <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#0F172A] via-[#C8A96B] to-[#9A7B38]">
                 TO BUILT FORM

@@ -159,7 +159,7 @@ export const WhyChooseUs: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.6, delay: 0.08, ease: easeCubic }}
-              className="font-display text-4xl sm:text-6xl lg:text-[4.5rem] font-black text-slate-950 uppercase tracking-tight leading-[0.98]"
+              className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight"
             >
               WHY CHOOSE <br />
               PERFECT MASON.

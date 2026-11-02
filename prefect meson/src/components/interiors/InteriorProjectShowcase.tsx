@@ -66,7 +66,7 @@ export const InteriorProjectShowcase: React.FC = () => {
                 07.5 // INTERIORS EXECUTED PORTFOLIO
               </span>
             </div>
-            <h2 className="font-barlow text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-slate-950 leading-[1.05]">
+            <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-slate-950 leading-tight">
               Executed Interior Projects
             </h2>
           </div>

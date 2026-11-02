@@ -177,7 +177,7 @@ export const ConstructionProcess: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.08, ease: easeCubic }}
-              className="font-display text-3xl sm:text-5xl lg:text-[54px] font-bold text-slate-950 uppercase tracking-tight leading-[1.02]"
+              className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight"
             >
               FROM IDEA <br />
               <span className="text-slate-950">TO BUILT FORM.</span>

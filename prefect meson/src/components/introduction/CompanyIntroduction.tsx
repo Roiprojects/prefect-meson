@@ -200,7 +200,7 @@ export const CompanyIntroduction: React.FC = () => {
               transition={{ duration: 0.5, ease: easeCubic }}
               className="space-y-2"
             >
-              <h2 className="font-barlow text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-[#0B0F19] uppercase tracking-tight leading-[0.98]">
+              <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-[#0B0F19] uppercase tracking-tight leading-tight">
                 {headingText.includes('.') ? (
                   <>
                     <span className="block text-[#0B0F19]">{headingText.split('.')[0]}.</span>

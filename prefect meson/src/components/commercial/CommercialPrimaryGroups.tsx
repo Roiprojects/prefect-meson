@@ -47,7 +47,7 @@ export const CommercialPrimaryGroups: React.FC<CommercialPrimaryGroupsProps> = (
             </span>
           </div>
 
-          <h2 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white leading-[1.05]">
+          <h2 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-white leading-tight">
             Commercial Contracting <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#C8A96B] to-[#DFCA98]">
               & Specialized Trade Models.

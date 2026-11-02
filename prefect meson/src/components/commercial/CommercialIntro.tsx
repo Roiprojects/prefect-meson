@@ -81,7 +81,7 @@ export const CommercialIntro: React.FC<CommercialIntroProps> = ({ onOpenQuoteMod
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1, ease: easeLuxury }}
-              className="font-barlow text-4xl sm:text-6xl lg:text-[4.2rem] font-bold text-slate-950 uppercase tracking-tight leading-[0.96] mb-6"
+              className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight mb-4"
             >
               <span className="block text-slate-950">Commercial Construction,</span>
               <span className="block text-slate-700">Built for Business.</span>
