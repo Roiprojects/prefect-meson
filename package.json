@@ -1,0 +1,10 @@
+{
+  "name": "perfect-mason-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm --prefix \"prefect meson\" run build",
+    "start": "npm --prefix \"prefect meson\" start",
+    "dev": "npm --prefix \"prefect meson\" run dev"
+  }
+}
