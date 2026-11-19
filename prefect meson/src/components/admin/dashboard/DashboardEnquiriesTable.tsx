@@ -45,23 +45,48 @@ export const DashboardEnquiriesTable: React.FC<DashboardEnquiriesTableProps> = (
           dot: 'bg-amber-500',
           pulse: true,
         };
-      case 'In Progress':
-        return {
-          bg: 'bg-purple-50 text-purple-800 border-purple-200',
-          dot: 'bg-purple-500',
-          pulse: false,
-        };
       case 'Contacted':
         return {
           bg: 'bg-blue-50 text-blue-800 border-blue-200',
           dot: 'bg-blue-600',
           pulse: false,
         };
-      case 'Closed':
+      case 'Follow-up Required':
+      case 'In Progress':
+        return {
+          bg: 'bg-purple-50 text-purple-800 border-purple-200',
+          dot: 'bg-purple-500',
+          pulse: false,
+        };
+      case 'Site Visit Scheduled':
+        return {
+          bg: 'bg-sky-50 text-sky-800 border-sky-200',
+          dot: 'bg-sky-600',
+          pulse: false,
+        };
+      case 'Interested':
+        return {
+          bg: 'bg-teal-50 text-teal-800 border-teal-200',
+          dot: 'bg-teal-600',
+          pulse: false,
+        };
+      case 'Converted':
       case 'Completed':
         return {
           bg: 'bg-emerald-50 text-emerald-800 border-emerald-200',
           dot: 'bg-emerald-500',
+          pulse: false,
+        };
+      case 'Not Interested':
+        return {
+          bg: 'bg-rose-50 text-rose-800 border-rose-200',
+          dot: 'bg-rose-500',
+          pulse: false,
+        };
+      case 'Closed':
+        return {
+          bg: 'bg-slate-100 text-slate-700 border-slate-300',
+          dot: 'bg-slate-400',
           pulse: false,
         };
       default:

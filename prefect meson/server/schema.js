@@ -165,9 +165,13 @@ CREATE TABLE IF NOT EXISTS blogs (
 -- 8. Customer Enquiries & Quotes Table
 CREATE TABLE IF NOT EXISTS enquiries (
   id VARCHAR(128) PRIMARY KEY,
+  customer_name VARCHAR(255),
   name VARCHAR(255) NOT NULL,
   email VARCHAR(255),
   phone VARCHAR(64) NOT NULL,
+  project_id VARCHAR(128),
+  project_name VARCHAR(255),
+  category VARCHAR(128),
   service_type VARCHAR(128),
   project_type VARCHAR(128),
   location VARCHAR(255),
@@ -175,7 +179,9 @@ CREATE TABLE IF NOT EXISTS enquiries (
   budget VARCHAR(128),
   message TEXT,
   status VARCHAR(64) DEFAULT 'New',
-  created_at TIMESTAMPTZ DEFAULT NOW()
+  admin_notes TEXT,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
 -- 9. Website Global Settings Table

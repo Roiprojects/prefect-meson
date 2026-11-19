@@ -32,15 +32,6 @@ const STATUS_CONFIGS: StatusSliceConfig[] = [
     description: 'Fresh incoming requests awaiting first contact',
   },
   {
-    status: 'In Progress',
-    label: 'In Progress',
-    color: '#8b5cf6', // Violet
-    bgLight: 'bg-purple-50',
-    textLight: 'text-purple-800',
-    ringColor: 'ring-purple-200',
-    description: 'Active design review, estimation, or site inspection',
-  },
-  {
     status: 'Contacted',
     label: 'Contacted',
     color: '#2563eb', // Royal Blue
@@ -50,13 +41,58 @@ const STATUS_CONFIGS: StatusSliceConfig[] = [
     description: 'Initial phone or WhatsApp communication established',
   },
   {
-    status: 'Closed',
-    label: 'Closed / Handover',
+    status: 'Follow-up Required',
+    label: 'Follow-up Required',
+    color: '#8b5cf6', // Violet
+    bgLight: 'bg-purple-50',
+    textLight: 'text-purple-800',
+    ringColor: 'ring-purple-200',
+    description: 'Awaiting architectural drawings or client budget clarification',
+  },
+  {
+    status: 'Site Visit Scheduled',
+    label: 'Site Visit Scheduled',
+    color: '#0284c7', // Sky
+    bgLight: 'bg-sky-50',
+    textLight: 'text-sky-800',
+    ringColor: 'ring-sky-200',
+    description: 'Civil engineer on-site inspection booked',
+  },
+  {
+    status: 'Interested',
+    label: 'Interested',
+    color: '#0d9488', // Teal
+    bgLight: 'bg-teal-50',
+    textLight: 'text-teal-800',
+    ringColor: 'ring-teal-200',
+    description: 'Active proposal evaluation and estimation stage',
+  },
+  {
+    status: 'Converted',
+    label: 'Converted',
     color: '#10b981', // Emerald Green
     bgLight: 'bg-emerald-50',
     textLight: 'text-emerald-800',
     ringColor: 'ring-emerald-200',
-    description: 'Completed contracts or finalized consultations',
+    description: 'Signed construction contracts & project kickoffs',
+  },
+  {
+    status: 'Not Interested',
+    label: 'Not Interested',
+    color: '#f43f5e', // Rose
+    bgLight: 'bg-rose-50',
+    textLight: 'text-rose-800',
+    ringColor: 'ring-rose-200',
+    description: 'Disqualified leads or location out-of-scope',
+  },
+  {
+    status: 'Closed',
+    label: 'Closed',
+    color: '#64748b', // Slate
+    bgLight: 'bg-slate-100',
+    textLight: 'text-slate-800',
+    ringColor: 'ring-slate-300',
+    description: 'Finalized consultations or legacy closures',
   },
 ];
 

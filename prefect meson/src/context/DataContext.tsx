@@ -185,8 +185,9 @@ interface DataContextType {
 
   // Enquiries
   enquiries: EnquirySubmission[];
-  addEnquiry: (enquiry: Omit<EnquirySubmission, 'id' | 'createdAt' | 'status'>) => void;
+  addEnquiry: (enquiry: Partial<EnquirySubmission>) => Promise<{ success: boolean; id: string; enquiry: EnquirySubmission }>;
   updateEnquiryStatus: (id: string, status: EnquirySubmission['status']) => void;
+  updateEnquiry: (id: string, updates: { status?: EnquirySubmission['status']; adminNotes?: string }) => Promise<{ success: boolean }>;
   deleteEnquiry: (id: string) => void;
 
   // Testimonials / Client Reviews
@@ -2222,25 +2223,57 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   // Enquiry handlers (Direct PostgreSQL integration)
-  const addEnquiry = (enquiryData: Omit<EnquirySubmission, 'id' | 'createdAt' | 'status'>) => {
+  const addEnquiry = async (enquiryData: Partial<EnquirySubmission>): Promise<{ success: boolean; id: string; enquiry: EnquirySubmission }> => {
+    const uniqueSuffix = Date.now().toString().slice(-6) + Math.random().toString(36).substring(2, 5).toUpperCase();
+    const id = enquiryData.id || `ENQ-${uniqueSuffix}`;
     const newEnquiry: EnquirySubmission = {
-      ...enquiryData,
-      id: `ENQ-${Date.now()}`,
-      status: 'New',
-      createdAt: new Date().toISOString(),
+      id,
+      fullName: (enquiryData.customerName || enquiryData.fullName || enquiryData.name || 'Valued Client').trim(),
+      customerName: (enquiryData.customerName || enquiryData.fullName || enquiryData.name || 'Valued Client').trim(),
+      phone: (enquiryData.phone || '').trim(),
+      email: (enquiryData.email || '').trim(),
+      projectId: enquiryData.projectId,
+      projectName: (enquiryData.projectName || enquiryData.propertyName || enquiryData.projectType || 'Perfect Mason Consultation').trim(),
+      propertyName: (enquiryData.propertyName || enquiryData.projectName || 'Perfect Mason Consultation').trim(),
+      category: (enquiryData.category || enquiryData.propertyCategory || enquiryData.serviceType || 'General').trim(),
+      propertyCategory: (enquiryData.propertyCategory || enquiryData.category || 'General').trim(),
+      projectType: (enquiryData.projectType || enquiryData.projectName || 'General Construction').trim(),
+      serviceType: (enquiryData.serviceType || enquiryData.category || 'Consultation').trim(),
+      location: (enquiryData.location || 'Bengaluru, Karnataka').trim(),
+      message: (enquiryData.message || 'Property Enquiry submitted from website.').trim(),
+      requirement: enquiryData.requirement || enquiryData.message || 'General Property Consultation',
+      preferredContact: enquiryData.preferredContact || 'WhatsApp',
+      status: enquiryData.status || 'New',
+      adminNotes: enquiryData.adminNotes || '',
+      createdAt: enquiryData.createdAt || new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
     };
-    setEnquiries((prev) => [newEnquiry, ...prev]);
-    addLog('enquiry', `${newEnquiry.fullName} (${newEnquiry.projectType})`, 'Submitted new enquiry');
-    apiService.createEnquiry(enquiryData).catch((err) => console.error('PostgreSQL addEnquiry error:', err));
+
+    // Save to PostgreSQL before updating local UI state
+    const result = await apiService.createEnquiry(newEnquiry);
+    const finalId = result.id || id;
+    const finalEnquiry = { ...newEnquiry, id: finalId };
+
+    setEnquiries((prev) => [finalEnquiry, ...prev.filter((e) => e.id !== finalId)]);
+    addLog('enquiry', `${finalEnquiry.fullName} (${finalEnquiry.projectName})`, `Submitted new enquiry ${finalId}`);
+
+    return { success: true, id: finalId, enquiry: finalEnquiry };
+  };
+
+  const updateEnquiry = async (id: string, updates: { status?: EnquirySubmission['status']; adminNotes?: string }): Promise<{ success: boolean }> => {
+    setEnquiries((prev) =>
+      prev.map((e) => (e.id === id ? { ...e, ...updates, updatedAt: new Date().toISOString() } : e))
+    );
+    const target = enquiries.find((e) => e.id === id);
+    if (target && updates.status) {
+      addLog('enquiry', target.fullName, `Status changed to ${updates.status}`);
+    }
+    await apiService.updateEnquiry(id, updates);
+    return { success: true };
   };
 
   const updateEnquiryStatus = (id: string, status: EnquirySubmission['status']) => {
-    setEnquiries((prev) =>
-      prev.map((e) => (e.id === id ? { ...e, status } : e))
-    );
-    const target = enquiries.find((e) => e.id === id);
-    if (target) addLog('enquiry', target.fullName, `Status changed to ${status}`);
-    apiService.updateEnquiryStatus(id, status).catch((err) => console.error('PostgreSQL updateEnquiryStatus error:', err));
+    updateEnquiry(id, { status }).catch((err) => console.error('PostgreSQL updateEnquiryStatus error:', err));
   };
 
   const deleteEnquiry = (id: string) => {
@@ -2567,6 +2600,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         enquiries,
         addEnquiry,
         updateEnquiryStatus,
+        updateEnquiry,
         deleteEnquiry,
         reviews,
         addReview,

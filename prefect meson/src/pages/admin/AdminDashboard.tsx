@@ -32,6 +32,10 @@ export const AdminDashboard: React.FC = () => {
   // Metrics from actual database and catalog records
   const totalEnquiries = enquiries.length;
   const newEnquiriesCount = enquiries.filter((e) => e.status === 'New').length;
+  const contactedEnquiriesCount = enquiries.filter((e) => e.status === 'Contacted').length;
+  const followUpRequiredCount = enquiries.filter((e) => e.status === 'Follow-up Required').length;
+  const siteVisitsScheduledCount = enquiries.filter((e) => e.status === 'Site Visit Scheduled').length;
+  const convertedEnquiriesCount = enquiries.filter((e) => e.status === 'Converted').length;
   const publishedProjectsCount = projects.length;
   const totalMediaCount = ADMIN_MEDIA_CATALOG.length;
   const publishedPagesCount = 10;
@@ -435,6 +439,114 @@ export const AdminDashboard: React.FC = () => {
                 <span>Page Editor</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* ========================================================================= */}
+        {/* 2.2 ENQUIRY PIPELINE STATUS BREAKDOWN (Direct PostgreSQL Real-Time Sync)  */}
+        {/* ========================================================================= */}
+        <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-2xs space-y-3 font-sans">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-900">
+                Live Enquiry Pipeline Breakdown (PostgreSQL Database)
+              </h3>
+            </div>
+            <Link
+              to="/admin/enquiries"
+              className="text-xs font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1"
+            >
+              <span>Manage All Enquiries</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-1">
+            {/* 1. Total Enquiries */}
+            <div
+              onClick={() => navigate('/admin/enquiries?status=All')}
+              className="p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100 hover:border-slate-300 transition-all cursor-pointer"
+            >
+              <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">
+                Total Enquiries
+              </div>
+              <div className="text-2xl font-extrabold text-slate-950 mt-1">
+                {totalEnquiries}
+              </div>
+              <div className="text-[11px] text-slate-400 mt-0.5">All customer leads</div>
+            </div>
+
+            {/* 2. New Enquiries */}
+            <div
+              onClick={() => navigate('/admin/enquiries?status=New')}
+              className="p-3.5 rounded-xl border border-amber-200 bg-amber-50/50 hover:bg-amber-100/70 hover:border-amber-300 transition-all cursor-pointer"
+            >
+              <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700 flex items-center gap-1">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+                <span>New</span>
+              </div>
+              <div className="text-2xl font-extrabold text-amber-950 mt-1">
+                {newEnquiriesCount}
+              </div>
+              <div className="text-[11px] text-amber-600 mt-0.5">Awaiting first response</div>
+            </div>
+
+            {/* 3. Contacted */}
+            <div
+              onClick={() => navigate('/admin/enquiries?status=Contacted')}
+              className="p-3.5 rounded-xl border border-blue-200 bg-blue-50/50 hover:bg-blue-100/70 hover:border-blue-300 transition-all cursor-pointer"
+            >
+              <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-700">
+                Contacted
+              </div>
+              <div className="text-2xl font-extrabold text-blue-950 mt-1">
+                {contactedEnquiriesCount}
+              </div>
+              <div className="text-[11px] text-blue-600 mt-0.5">Initial call / WhatsApp</div>
+            </div>
+
+            {/* 4. Follow-up Required */}
+            <div
+              onClick={() => navigate('/admin/enquiries?status=Follow-up+Required')}
+              className="p-3.5 rounded-xl border border-purple-200 bg-purple-50/50 hover:bg-purple-100/70 hover:border-purple-300 transition-all cursor-pointer"
+            >
+              <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-700">
+                Follow-up Req.
+              </div>
+              <div className="text-2xl font-extrabold text-purple-950 mt-1">
+                {followUpRequiredCount}
+              </div>
+              <div className="text-[11px] text-purple-600 mt-0.5">Drawings & estimate review</div>
+            </div>
+
+            {/* 5. Site Visits Scheduled */}
+            <div
+              onClick={() => navigate('/admin/enquiries?status=Site+Visit+Scheduled')}
+              className="p-3.5 rounded-xl border border-sky-200 bg-sky-50/50 hover:bg-sky-100/70 hover:border-sky-300 transition-all cursor-pointer"
+            >
+              <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">
+                Site Visits
+              </div>
+              <div className="text-2xl font-extrabold text-sky-950 mt-1">
+                {siteVisitsScheduledCount}
+              </div>
+              <div className="text-[11px] text-sky-600 mt-0.5">On-site civil inspection</div>
+            </div>
+
+            {/* 6. Converted Enquiries */}
+            <div
+              onClick={() => navigate('/admin/enquiries?status=Converted')}
+              className="p-3.5 rounded-xl border border-emerald-200 bg-emerald-50/50 hover:bg-emerald-100/70 hover:border-emerald-300 transition-all cursor-pointer"
+            >
+              <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-700">
+                Converted
+              </div>
+              <div className="text-2xl font-extrabold text-emerald-950 mt-1">
+                {convertedEnquiriesCount}
+              </div>
+              <div className="text-[11px] text-emerald-600 mt-0.5">Signed construction contract</div>
             </div>
           </div>
         </div>

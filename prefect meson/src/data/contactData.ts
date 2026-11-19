@@ -70,25 +70,45 @@ export interface ContactDataConfig {
   };
 }
 
+export type EnquiryStatus =
+  | 'New'
+  | 'Contacted'
+  | 'Follow-up Required'
+  | 'Site Visit Scheduled'
+  | 'Interested'
+  | 'Converted'
+  | 'Not Interested'
+  | 'Closed';
+
 export interface EnquirySubmission {
   id: string;
   fullName: string;
+  customerName?: string;
+  name?: string;
   phone: string;
   email: string;
+  projectId?: string;
+  projectName?: string;
+  propertyName?: string;
+  category?: string;
+  propertyCategory?: string;
   projectType: string;
+  serviceType?: string;
   projectStage?: string;
   plotSize?: string;
   plotDimensions?: string;
   timeline?: string;
   location: string;
-  requirement: string;
-  preferredContact: 'Phone' | 'WhatsApp' | 'Email';
+  requirement?: string;
+  preferredContact?: 'Phone' | 'WhatsApp' | 'Email' | string;
   message: string;
   budget?: string;
   notes?: string;
+  adminNotes?: string;
   source?: string;
-  status: 'New' | 'Contacted' | 'In Progress' | 'Closed';
+  status: EnquiryStatus | string;
   createdAt: string;
+  updatedAt?: string;
 }
 
 export const contactData: ContactDataConfig = {

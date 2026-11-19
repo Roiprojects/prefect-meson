@@ -30,9 +30,22 @@ import turnkeyHero from '../../assets/turnkey_hero.jpg';
 import interiorHero from '../../assets/interior_01_living.jpg';
 import complexHero from '../../assets/comm_complex_hero.jpg';
 
+export interface PropertyEnquiryContext {
+  id?: string;
+  projectId?: string;
+  title?: string;
+  propertyName?: string;
+  category?: string;
+  propertyCategory?: string;
+  location?: string;
+  area?: string;
+  budget?: string;
+}
+
 interface QuoteModalProps {
   isOpen: boolean;
   onClose: () => void;
+  initialProperty?: PropertyEnquiryContext | null;
 }
 
 type CategoryType = 'residential' | 'commercial' | 'turnkey' | 'interiors';
@@ -143,8 +156,8 @@ const progressSteps = [
   { id: 5, label: 'Contact Details' },
 ];
 
-export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
-  const { addEnquiry } = useData();
+export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, initialProperty }) => {
+  const { addEnquiry, settings } = useData();
 
   // Active step flow: 1 (Type & Details) -> 2 (Scope, Budget & Contact)
   const [activeStepId, setActiveStepId] = useState<number>(1);
@@ -178,10 +191,45 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
   const [preferredContact, setPreferredContact] = useState<'Phone' | 'WhatsApp' | 'Email'>('WhatsApp');
   const [clientMessage, setClientMessage] = useState<string>('');
 
-  // Status
+  // Status & Submission feedback
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [submittedEnquiryId, setSubmittedEnquiryId] = useState<string>('');
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  // Auto-fill property context when modal opens or initialProperty is provided
+  React.useEffect(() => {
+    if (isOpen && initialProperty) {
+      const propTitle = (initialProperty.propertyName || initialProperty.title || '').trim();
+      const rawCat = (initialProperty.category || initialProperty.propertyCategory || '').toLowerCase();
+
+      let targetCat: CategoryType = 'residential';
+      if (rawCat.includes('commercial')) targetCat = 'commercial';
+      else if (rawCat.includes('interior')) targetCat = 'interiors';
+      else if (rawCat.includes('turnkey')) targetCat = 'turnkey';
+      else targetCat = 'residential';
+
+      setSelectedCategory(targetCat);
+      if (propTitle) {
+        setSelectedSubtype('Other');
+        setCustomSubtype(propTitle);
+      }
+      if (initialProperty.location) {
+        setLocality(initialProperty.location);
+      }
+      if (initialProperty.area) {
+        const cleanArea = initialProperty.area.replace(/[^0-9]/g, '');
+        if (cleanArea) setExactArea(cleanArea);
+      }
+      if (initialProperty.budget) {
+        setBudget(initialProperty.budget);
+      }
+      setClientMessage(`I would like to enquire about ${propTitle || 'this project'}.`);
+    } else if (isOpen && !initialProperty) {
+      setSubmitError(null);
+    }
+  }, [isOpen, initialProperty]);
 
   const activeCategoryObj =
     categoriesData.find((c) => c.id === selectedCategory) || categoriesData[0];
@@ -239,36 +287,86 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
     }
   };
 
-  const handleFinalSubmit = () => {
+  const handleFinalSubmit = async () => {
+    if (isSubmitting) return; // Prevent double submission
     if (!validate()) return;
 
     setIsSubmitting(true);
+    setSubmitError(null);
 
     const effectiveSubtype =
       selectedSubtype === 'Other' && customSubtype.trim() ? customSubtype.trim() : selectedSubtype;
     const effectiveArea = exactArea.trim() ? `${exactArea.trim()} Sq.Ft (${builtUpArea})` : builtUpArea;
     const finalLocation = locality.trim() ? `${locality.trim()}, ${projectLocationState}` : projectLocationState;
 
+    const propertyName = initialProperty?.propertyName || initialProperty?.title || effectiveSubtype || activeCategoryObj.title;
+    const propertyCategory = initialProperty?.propertyCategory || initialProperty?.category || activeCategoryObj.title;
+
     const requirements = `Subtype: ${effectiveSubtype} | Site: ${siteStatus} | Area: ${effectiveArea} | Services: ${selectedServices.join(', ')} | Budget: ${budget}`;
 
-    try {
-      addEnquiry({
-        fullName: fullName.trim(),
-        phone: phone.trim(),
-        email: email.trim() || 'Not Provided',
-        projectType: `${activeCategoryObj.title} — ${effectiveSubtype}`,
-        projectStage: siteStatus,
-        plotSize: effectiveArea,
-        timeline: timeline,
-        location: finalLocation,
-        requirement: requirements,
-        preferredContact: preferredContact,
-        message: clientMessage.trim() || 'Project brief initiated through luxury consultation interface.',
-      });
+    const enquiryPayload = {
+      customerName: fullName.trim(),
+      fullName: fullName.trim(),
+      phone: phone.trim(),
+      email: email.trim() || undefined,
+      projectId: initialProperty?.projectId || initialProperty?.id,
+      projectName: propertyName,
+      propertyName: propertyName,
+      category: propertyCategory,
+      propertyCategory: propertyCategory,
+      projectType: `${activeCategoryObj.title} — ${effectiveSubtype}`,
+      projectStage: siteStatus,
+      plotSize: effectiveArea,
+      timeline: timeline,
+      location: finalLocation,
+      requirement: requirements,
+      preferredContact: preferredContact,
+      message: clientMessage.trim() || `Enquiry for ${propertyName} (${propertyCategory}).`,
+      budget: budget,
+    };
 
+    try {
+      // 1. Save enquiry in database BEFORE redirecting to WhatsApp
+      const result = await addEnquiry(enquiryPayload);
+      if (!result || !result.success) {
+        throw new Error('Database could not save enquiry. Submission halted.');
+      }
+
+      const uniqueEnquiryId = result.id;
+      setSubmittedEnquiryId(uniqueEnquiryId);
+
+      // 2. Prepare official WhatsApp message per Master Prompt specification
+      const waMessage = `Hello Perfect Mason Team,
+
+I would like to enquire about your property/project.
+
+Enquiry ID: ${uniqueEnquiryId}
+Customer Name: ${fullName.trim()}
+Mobile Number: ${phone.trim()}
+Email: ${email.trim() || 'Not Provided'}
+Property Name: ${propertyName}
+Property Category: ${propertyCategory}
+Property Location: ${finalLocation}
+Enquiry Message: ${clientMessage.trim() || 'Please contact me regarding this enquiry.'}
+
+Please contact me regarding this enquiry.
+
+Thank you.`;
+
+      // 3. Resolve business WhatsApp number from settings or environment
+      const configuredNumber = settings?.whatsappNumber || settings?.phone || '+919886329424';
+      const cleanBizNumber = configuredNumber.replace(/\D/g, '');
+      const validWaNumber = cleanBizNumber.startsWith('91') || cleanBizNumber.length > 10 ? cleanBizNumber : `91${cleanBizNumber}`;
+
+      // 4. Redirect to WhatsApp using official click-to-chat URL
+      const waUrl = `https://wa.me/${validWaNumber}?text=${encodeURIComponent(waMessage)}`;
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+      // 5. Present verified confirmation screen
       setSubmitted(true);
-    } catch (err) {
-      console.error('Enquiry submission error:', err);
+    } catch (err: any) {
+      console.error('Database enquiry submission error:', err);
+      setSubmitError(err.message || 'Failed to submit enquiry to database. Please check your connection and try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -922,6 +1020,28 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                         </p>
                       </div>
 
+                      {/* Auto-detected Property Context Banner */}
+                      {initialProperty && (
+                        <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/90 flex items-center justify-between text-xs">
+                          <div>
+                            <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-400 block">
+                              Enquiring About Property
+                            </span>
+                            <span className="font-bold text-slate-900 text-sm">
+                              {initialProperty.propertyName || initialProperty.title}
+                            </span>
+                            {initialProperty.location && (
+                              <span className="text-slate-500 ml-2 font-mono text-[11px]">
+                                • {initialProperty.location}
+                              </span>
+                            )}
+                          </div>
+                          <span className="px-2.5 py-1 text-[10px] font-mono font-bold uppercase rounded-md bg-blue-50 text-blue-800 border border-blue-200">
+                            {initialProperty.category || activeCategoryObj.title}
+                          </span>
+                        </div>
+                      )}
+
                       {/* Brief Selection Summary Card */}
                       <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-sans space-y-1">
                         <div className="flex items-center justify-between">
@@ -937,6 +1057,13 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                           </span>
                         </div>
                       </div>
+
+                      {submitError && (
+                        <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-semibold flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-rose-600 animate-pulse shrink-0" />
+                          <span>{submitError}</span>
+                        </div>
+                      )}
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                         {/* Full Name */}
@@ -1051,42 +1178,69 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                 </div>
 
                 <div className="space-y-2 max-w-lg mx-auto">
-                  <span className="font-mono text-xs font-bold text-[#D4AF37] uppercase tracking-wider">
-                    CONSULTATION REQUEST CONFIRMED
-                  </span>
+                  <div className="flex items-center justify-center gap-2 flex-wrap">
+                    <span className="font-mono text-xs font-bold text-[#D4AF37] uppercase tracking-wider">
+                      CONSULTATION REQUEST CONFIRMED
+                    </span>
+                    {submittedEnquiryId && (
+                      <span className="font-mono text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200">
+                        {submittedEnquiryId}
+                      </span>
+                    )}
+                  </div>
                   <h3 className="font-editorial text-3xl sm:text-4xl text-[#071D38] font-semibold mt-1">
                     Thank You, {fullName || 'Valued Client'}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
-                    Perfect Mason has received your project details for{' '}
+                    Perfect Mason has recorded your enquiry in our PostgreSQL database for{' '}
                     <span className="font-semibold text-slate-900">
-                      {activeCategoryObj.title} ({selectedSubtype})
+                      {initialProperty?.propertyName || initialProperty?.title || `${activeCategoryObj.title} (${selectedSubtype})`}
                     </span>
-                    . Our Senior Project Engineer will review your requirements and get in touch within 24 hours via{' '}
-                    <span className="font-bold text-[#071D38]">{preferredContact}</span>.
+                    . We have initiated your WhatsApp consultation. Our Senior Project Engineer will review your requirements and get in touch within 24 hours.
                   </p>
                 </div>
 
                 {/* Instant Action Channels */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto pt-2">
-                  <a
-                    href={`https://wa.me/919886329424?text=${encodeURIComponent(
-                      `Hello Perfect Mason team, I just submitted an enquiry for ${activeCategoryObj.title} (${selectedSubtype}) in ${projectLocationState}. My name is ${fullName}.`
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="h-11 rounded-lg border border-slate-300 hover:border-slate-400 bg-slate-50 text-slate-900 text-xs font-bold uppercase transition-colors flex items-center justify-center gap-2"
-                  >
-                    <MessageCircle className="w-4 h-4 text-emerald-600" />
-                    <span>Chat on WhatsApp</span>
-                  </a>
+                  {(() => {
+                    const rawBizPhone = (settings?.whatsappNumber || settings?.phone || '919886329424').replace(/\D/g, '');
+                    const validWaNumber = rawBizPhone.startsWith('91') || rawBizPhone.length > 10 ? rawBizPhone : `91${rawBizPhone}`;
+                    const propName = initialProperty?.propertyName || initialProperty?.title || `${activeCategoryObj.title} (${selectedSubtype})`;
+                    const waMessage = `Hello Perfect Mason Team,
+
+I would like to enquire about your property/project.
+
+Enquiry ID: ${submittedEnquiryId || 'NEW'}
+Customer Name: ${fullName.trim()}
+Mobile Number: ${phone.trim()}
+Email: ${email.trim() || 'Not Provided'}
+Property Name: ${propName}
+Property Category: ${initialProperty?.category || activeCategoryObj.title}
+Property Location: ${locality.trim() ? `${locality.trim()}, ${projectLocationState}` : projectLocationState}
+Enquiry Message: ${clientMessage.trim() || 'Please contact me regarding this enquiry.'}
+
+Please contact me regarding this enquiry.
+
+Thank you.`;
+                    return (
+                      <a
+                        href={`https://wa.me/${validWaNumber}?text=${encodeURIComponent(waMessage)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-11 rounded-lg border border-emerald-300 bg-emerald-50 text-emerald-900 text-xs font-bold uppercase transition-colors flex items-center justify-center gap-2 hover:bg-emerald-100"
+                      >
+                        <MessageCircle className="w-4 h-4 text-emerald-600" />
+                        <span>Open WhatsApp Chat</span>
+                      </a>
+                    );
+                  })()}
 
                   <a
-                    href="tel:+919886329424"
+                    href={`tel:${(settings?.phone || '+919886329424').replace(/\s+/g, '')}`}
                     className="h-11 rounded-lg border border-slate-300 hover:border-slate-400 bg-slate-50 text-slate-900 text-xs font-bold uppercase transition-colors flex items-center justify-center gap-2"
                   >
                     <Phone className="w-4 h-4 text-[#071D38]" />
-                    <span>Call Direct: +91 98863 29424</span>
+                    <span>Call Direct: {settings?.phone || '+91 98863 29424'}</span>
                   </a>
                 </div>
 

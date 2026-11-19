@@ -24,6 +24,17 @@ export async function runMigrations() {
     `);
     console.log(' Verified page_contents draft workflow columns in PostgreSQL.');
 
+    // 1.2 Non-destructive migration for enquiries customer, project, and status details
+    await client.query(`
+      ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS customer_name VARCHAR(255);
+      ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS project_id VARCHAR(128);
+      ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS project_name VARCHAR(255);
+      ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS category VARCHAR(128);
+      ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS admin_notes TEXT;
+      ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS updated_at TIMESTAMPTZ DEFAULT NOW();
+    `);
+    console.log(' Verified enquiries schema columns in PostgreSQL.');
+
     // 2. Initialize Storage Buckets
     const defaultBuckets = [
       { id: 'gallery', name: 'Gallery Media Bucket' },

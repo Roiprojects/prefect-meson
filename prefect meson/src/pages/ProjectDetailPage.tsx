@@ -21,7 +21,7 @@ import { GalleryProject } from '../data/galleryData';
 import { StatusBadge } from '../components/common/StatusBadge';
 
 interface ProjectDetailPageProps {
-  onOpenQuoteModal: () => void;
+  onOpenQuoteModal: (propertyContext?: any) => void;
 }
 
 export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuoteModal }) => {
@@ -563,7 +563,16 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
               {/* Action Button */}
               <button
                 type="button"
-                onClick={onOpenQuoteModal}
+                onClick={() =>
+                  onOpenQuoteModal({
+                    id: activeDynamicItem?.id || targetSlug,
+                    projectId: activeDynamicItem?.id || targetSlug,
+                    propertyName: projectTitle,
+                    category: projectCategory,
+                    location: projectLocation,
+                    area: activeDynamicItem && 'builtArea' in activeDynamicItem ? (activeDynamicItem as any).builtArea : undefined,
+                  })
+                }
                 className="w-full py-4 rounded-full bg-slate-900 hover:bg-black border border-white/20 text-white font-sans text-xs font-bold uppercase tracking-wider transition-all duration-200 shadow-lg flex items-center justify-center gap-2 cursor-pointer mt-2"
               >
                 <span>Request Consultation</span>

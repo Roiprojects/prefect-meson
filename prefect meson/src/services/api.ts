@@ -332,13 +332,26 @@ export const apiService = {
     return res.json();
   },
 
-  async createEnquiry(enquiry: Omit<EnquirySubmission, 'id' | 'createdAt' | 'status'>): Promise<{ success: boolean; id: string }> {
+  async createEnquiry(enquiry: Partial<EnquirySubmission>): Promise<{ success: boolean; id: string; enquiry?: any }> {
     const res = await fetch(`${API_BASE}/enquiries`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(enquiry),
     });
-    if (!res.ok) throw new Error('Failed to submit quote enquiry');
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.error || 'Failed to submit quote enquiry');
+    }
+    return res.json();
+  },
+
+  async updateEnquiry(id: string, updates: { status?: string; adminNotes?: string }): Promise<{ success: boolean }> {
+    const res = await fetch(`${API_BASE}/enquiries/${encodeURIComponent(id)}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(updates),
+    });
+    if (!res.ok) throw new Error('Failed to update enquiry in PostgreSQL');
     return res.json();
   },
 

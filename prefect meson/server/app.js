@@ -957,10 +957,16 @@ router.get('/enquiries', async (req, res) => {
     const result = await query(`
       SELECT 
         id,
-        name as "fullName",
-        name,
+        COALESCE(customer_name, name) as "fullName",
+        COALESCE(customer_name, name) as "customerName",
+        COALESCE(name, customer_name) as name,
         email,
         phone,
+        project_id as "projectId",
+        project_name as "projectName",
+        COALESCE(project_name, project_type, 'Perfect Mason Architecture') as "propertyName",
+        category,
+        COALESCE(category, service_type, 'General') as "propertyCategory",
         service_type as "serviceType",
         project_type as "projectType",
         location,
@@ -968,7 +974,9 @@ router.get('/enquiries', async (req, res) => {
         budget,
         message,
         status,
-        created_at as "createdAt"
+        admin_notes as "adminNotes",
+        created_at as "createdAt",
+        updated_at as "updatedAt"
       FROM enquiries
       ORDER BY created_at DESC;
     `);
@@ -981,36 +989,89 @@ router.get('/enquiries', async (req, res) => {
 router.post('/enquiries', async (req, res) => {
   try {
     const e = req.body;
-    const id = e.id || 'enq_' + Date.now();
-    const clientName = e.fullName || e.name || 'Anonymous Client';
+    const clientName = (e.customerName || e.fullName || e.name || 'Valued Client').trim();
+    const phone = (e.phone || '').trim();
+
+    if (!phone) {
+      return res.status(400).json({ error: 'Valid mobile number is required' });
+    }
+
+    const uniqueSuffix = Date.now().toString().slice(-6) + Math.random().toString(36).substring(2, 5).toUpperCase();
+    const id = e.id || `ENQ-${uniqueSuffix}`;
+
+    const projectName = (e.projectName || e.propertyName || e.projectType || 'Perfect Mason Consultation').trim();
+    const category = (e.propertyCategory || e.category || e.serviceType || 'General').trim();
+    const location = (e.location || 'Bengaluru, Karnataka').trim();
+    const message = (e.message || e.requirement || 'Enquiry submitted from website.').trim();
+    const status = e.status || 'New';
+    const email = (e.email || '').trim();
 
     await query(`
       INSERT INTO enquiries (
-        id, name, email, phone, service_type, project_type,
-        location, estimated_area, budget, message, status
-      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
+        id, customer_name, name, email, phone, project_id, project_name,
+        category, service_type, project_type, location, estimated_area, budget, message, status, admin_notes, updated_at
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, NOW())
       ON CONFLICT (id) DO UPDATE SET
+        customer_name = EXCLUDED.customer_name,
         name = EXCLUDED.name,
         email = EXCLUDED.email,
         phone = EXCLUDED.phone,
+        project_id = EXCLUDED.project_id,
+        project_name = EXCLUDED.project_name,
+        category = EXCLUDED.category,
         service_type = EXCLUDED.service_type,
         project_type = EXCLUDED.project_type,
         location = EXCLUDED.location,
         estimated_area = EXCLUDED.estimated_area,
         budget = EXCLUDED.budget,
         message = EXCLUDED.message,
-        status = EXCLUDED.status;
+        status = EXCLUDED.status,
+        admin_notes = COALESCE(EXCLUDED.admin_notes, enquiries.admin_notes),
+        updated_at = NOW();
     `, [
-      id, clientName, e.email || '', e.phone || '', e.serviceType || '', e.projectType || '',
-      e.location || '', e.estimatedArea || '', e.budget || '', e.message || '', e.status || 'New'
+      id, clientName, clientName, email, phone, e.projectId || null, projectName,
+      category, e.serviceType || category, e.projectType || projectName, location,
+      e.estimatedArea || e.plotSize || null, e.budget || null, message, status, e.adminNotes || null
     ]);
 
     await query(`
       INSERT INTO admin_activity_logs (id, type, title, action)
       VALUES ($1, 'enquiry', $2, 'Received Enquiry');
-    `, ['log_' + Date.now(), `Lead from ${clientName} (${e.phone || 'No phone'})`]);
+    `, ['log_' + Date.now(), `Lead ${id} from ${clientName} (${phone}) on ${projectName}`]);
 
-    res.status(201).json({ success: true, id });
+    res.status(201).json({
+      success: true,
+      id,
+      enquiry: {
+        id,
+        customerName: clientName,
+        phone,
+        email,
+        projectName,
+        category,
+        location,
+        message,
+        status,
+      }
+    });
+  } catch (err) {
+    console.error('Error saving enquiry:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.put('/enquiries/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status, adminNotes } = req.body;
+    await query(`
+      UPDATE enquiries SET
+        status = COALESCE($1, status),
+        admin_notes = COALESCE($2, admin_notes),
+        updated_at = NOW()
+      WHERE id = $3;
+    `, [status || null, adminNotes !== undefined ? adminNotes : null, id]);
+    res.json({ success: true });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -1020,7 +1081,7 @@ router.put('/enquiries/:id/status', async (req, res) => {
   try {
     const { id } = req.params;
     const { status } = req.body;
-    await query('UPDATE enquiries SET status = $1 WHERE id = $2;', [status, id]);
+    await query('UPDATE enquiries SET status = $1, updated_at = NOW() WHERE id = $2;', [status, id]);
     res.json({ success: true });
   } catch (err) {
     res.status(500).json({ error: err.message });

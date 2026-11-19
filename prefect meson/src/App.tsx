@@ -64,6 +64,12 @@ const AppContent: React.FC = () => {
   const location = useLocation();
 
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState<boolean>(false);
+  const [quoteModalProperty, setQuoteModalProperty] = useState<any>(null);
+
+  const handleOpenQuoteModal = (propContext?: any) => {
+    setQuoteModalProperty(propContext && typeof propContext === 'object' && ('propertyName' in propContext || 'title' in propContext || 'category' in propContext) ? propContext : null);
+    setIsQuoteModalOpen(true);
+  };
   const [isAiChatOpen, setIsAiChatOpen] = useState<boolean>(false);
   const [selectedProject, setSelectedProject] = useState<ShowcaseProject | null>(null);
 
@@ -107,7 +113,7 @@ const AppContent: React.FC = () => {
             path="/"
             element={
               <HomePage
-                onOpenQuoteModal={() => setIsQuoteModalOpen(true)}
+                onOpenQuoteModal={handleOpenQuoteModal}
                 onSelectProject={(project) => setSelectedProject(project)}
               />
             }
@@ -116,26 +122,26 @@ const AppContent: React.FC = () => {
             path="/home"
             element={
               <HomePage
-                onOpenQuoteModal={() => setIsQuoteModalOpen(true)}
+                onOpenQuoteModal={handleOpenQuoteModal}
                 onSelectProject={(project) => setSelectedProject(project)}
               />
             }
           />
           <Route
             path="/about-us"
-            element={<AboutPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<AboutPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/commercial-construction"
-            element={<CommercialPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<CommercialPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/commercial-construction/:categorySlug"
-            element={<CommercialCategoryPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<CommercialCategoryPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/commercial-construction/category/:categorySlug"
-            element={<CommercialCategoryPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<CommercialCategoryPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/item-rate-end-to-end"
@@ -155,23 +161,23 @@ const AppContent: React.FC = () => {
           />
           <Route
             path="/commercial-construction/:categorySlug/:slug"
-            element={<ProjectDetailPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<ProjectDetailPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/commercial/:serviceId"
-            element={<CommercialServicePage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<CommercialServicePage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
                     <Route
             path="/residential-construction"
-            element={<ResidentialPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<ResidentialPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/residential-construction/:categorySlug"
-            element={<ResidentialCategoryPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<ResidentialCategoryPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/residential-construction/category/:categorySlug"
-            element={<ResidentialCategoryPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<ResidentialCategoryPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/luxury-villas-item-rate"
@@ -187,36 +193,36 @@ const AppContent: React.FC = () => {
           />
           <Route
             path="/residential-construction/:categorySlug/:slug"
-            element={<ProjectDetailPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<ProjectDetailPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/turnkey-project-execution"
-            element={<TurnkeyPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<TurnkeyPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/turnkey/:serviceId"
-            element={<TurnkeyServicePage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<TurnkeyServicePage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/interiors"
-            element={<InteriorsPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<InteriorsPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/gallery"
-            element={<GalleryPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<GalleryPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/projects/:slug"
-            element={<ProjectDetailPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<ProjectDetailPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route path="/blogs" element={<BlogsPage />} />
           <Route
             path="/blogs/:slug"
-            element={<BlogDetailPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<BlogDetailPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route
             path="/testimonials"
-            element={<TestimonialsPage onOpenQuoteModal={() => setIsQuoteModalOpen(true)} />}
+            element={<TestimonialsPage onOpenQuoteModal={handleOpenQuoteModal} />}
           />
           <Route path="/contact-us" element={<ContactPage />} />
 
@@ -368,7 +374,7 @@ const AppContent: React.FC = () => {
       {/* 3. FLOATING QUICK ACTIONS (WhatsApp, Call, Quote, AI Assistant - Public only) */}
       {!isAdminRoute && (
         <FloatingActions
-          onOpenQuoteModal={() => setIsQuoteModalOpen(true)}
+          onOpenQuoteModal={handleOpenQuoteModal}
           onOpenAiChat={() => setIsAiChatOpen(true)}
         />
       )}
@@ -379,14 +385,14 @@ const AppContent: React.FC = () => {
           isOpen={isAiChatOpen}
           onToggle={() => setIsAiChatOpen(!isAiChatOpen)}
           onClose={() => setIsAiChatOpen(false)}
-          onOpenQuoteModal={() => setIsQuoteModalOpen(true)}
+          onOpenQuoteModal={handleOpenQuoteModal}
         />
       )}
 
       {/* 4. GLOBAL PRODUCTION FOOTER (Hidden on Admin routes) */}
       {!isAdminRoute && (
         <Footer
-          onOpenQuoteModal={() => setIsQuoteModalOpen(true)}
+          onOpenQuoteModal={handleOpenQuoteModal}
           onNavigate={handleNavigate}
         />
       )}
@@ -394,7 +400,11 @@ const AppContent: React.FC = () => {
       {/* 5. MODAL CONSULTATION BRIEF */}
       <QuoteModal
         isOpen={isQuoteModalOpen}
-        onClose={() => setIsQuoteModalOpen(false)}
+        onClose={() => {
+          setIsQuoteModalOpen(false);
+          setQuoteModalProperty(null);
+        }}
+        initialProperty={quoteModalProperty}
       />
 
       {/* 6. DETAILED PROJECT BRIEF MODAL */}
@@ -403,8 +413,15 @@ const AppContent: React.FC = () => {
         isOpen={!!selectedProject}
         onClose={() => setSelectedProject(null)}
         onRequestConsultation={() => {
+          const prop = selectedProject ? {
+            id: selectedProject.id,
+            projectId: selectedProject.id,
+            propertyName: selectedProject.title,
+            category: selectedProject.category,
+            location: selectedProject.location,
+          } : null;
           setSelectedProject(null);
-          setIsQuoteModalOpen(true);
+          handleOpenQuoteModal(prop);
         }}
       />
     </div>
