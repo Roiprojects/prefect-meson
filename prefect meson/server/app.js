@@ -11,6 +11,9 @@ dotenv.config();
 
 const app = express();
 
+// Enable reverse proxy support (essential for Apache/Nginx systemd deployments)
+app.set('trust proxy', true);
+
 // Enable CORS for all origins
 app.use(cors({
   origin: '*',
