@@ -89,12 +89,6 @@ export const AdminLoginPage: React.FC = () => {
     }, 350);
   };
 
-  const handleFillDemo = () => {
-    setEmail('admin@perfectmason.com');
-    setPassword('perfectmason2026');
-    setError('');
-  };
-
   const activeImage = SHOWCASE_IMAGES[activeImageIndex];
 
   return (
@@ -241,8 +235,8 @@ export const AdminLoginPage: React.FC = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="admin@perfectmason.com"
-                    autoComplete="email"
+                    placeholder="Enter admin email address..."
+                    autoComplete="off"
                     autoFocus
                     className="w-full bg-slate-50 border border-slate-300 rounded-xl py-2.5 pl-10 pr-4 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900 transition-all font-sans"
                   />
@@ -263,7 +257,7 @@ export const AdminLoginPage: React.FC = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Enter admin password..."
-                    autoComplete="current-password"
+                    autoComplete="new-password"
                     className="w-full bg-slate-50 border border-slate-300 rounded-xl py-2.5 pl-10 pr-11 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900 transition-all font-sans"
                   />
                   <button
@@ -293,23 +287,6 @@ export const AdminLoginPage: React.FC = () => {
                 )}
               </button>
             </form>
-
-            {/* Quick Autofill Helper */}
-            <div className="mt-5 p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-between gap-2">
-              <div className="text-[11px] text-slate-500 font-mono leading-tight">
-                <span>Default: </span>
-                <span className="font-semibold text-slate-800">admin@perfectmason.com</span>
-                <span className="text-slate-400"> / </span>
-                <span className="font-semibold text-slate-800">perfectmason2026</span>
-              </div>
-              <button
-                type="button"
-                onClick={handleFillDemo}
-                className="shrink-0 px-2.5 py-1 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-[11px] font-semibold text-slate-700 transition-colors shadow-sm"
-              >
-                Auto-fill
-              </button>
-            </div>
           </div>
 
           {/* Bottom Secure Badge */}
