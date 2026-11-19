@@ -232,7 +232,7 @@ export const AboutStatement: React.FC = () => {
                     </span>
                   </div>
 
-                  <h3 className="font-barlow text-4xl lg:text-5xl font-bold text-slate-950 uppercase tracking-tight leading-none mb-3">
+                  <h3 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-none mb-3">
                     {currentVal.title}
                   </h3>
 

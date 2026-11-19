@@ -380,7 +380,7 @@ export const SelectedProjectsGrid: React.FC<SelectedProjectsGridProps> = ({
             <span>FULL ARCHITECTURAL ARCHIVE</span>
           </div>
 
-          <h3 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-slate-950 tracking-tight leading-tight mb-6">
+          <h3 className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase text-slate-950 tracking-tight leading-tight mb-6">
             Looking for something specific?
           </h3>
 

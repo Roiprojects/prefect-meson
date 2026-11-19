@@ -26,7 +26,16 @@ import { GalleryProject } from '../../data/galleryData';
 import { AdminLayout } from './AdminLayout';
 import { ImageUploadPicker } from '../../components/admin/ImageUploadPicker';
 
-const GALLERY_CATEGORIES = ['All', 'Commercial', 'Residential', 'Turnkey', 'Interiors'];
+const GALLERY_CATEGORIES = [
+  'All',
+  'Commercial Projects',
+  'Residential Projects',
+  'Interior Projects',
+  'Industrial Projects',
+  'Renovation Projects',
+  'Other Projects',
+  'Turnkey Projects',
+];
 
 export const AdminGallery: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -183,7 +192,20 @@ export const AdminGallery: React.FC = () => {
   // Filtered and searched projects
   const filteredProjects = useMemo(() => {
     return projects.filter((p) => {
-      if (selectedCategory !== 'All' && p.category !== selectedCategory) return false;
+      if (selectedCategory !== 'All') {
+        const sel = selectedCategory.toLowerCase();
+        const pCat = (p.category || '').toLowerCase();
+        const isMatch =
+          pCat === sel ||
+          (sel.includes('commercial') && pCat.includes('commercial')) ||
+          (sel.includes('residential') && pCat.includes('residential')) ||
+          (sel.includes('interior') && pCat.includes('interior')) ||
+          (sel.includes('industrial') && pCat.includes('industrial')) ||
+          (sel.includes('renovation') && pCat.includes('renovation')) ||
+          (sel.includes('other') && pCat.includes('other')) ||
+          (sel.includes('turnkey') && pCat.includes('turnkey'));
+        if (!isMatch) return false;
+      }
       if (selectedStatus !== 'All' && p.status !== selectedStatus) return false;
       if (searchQuery.trim()) {
         const query = searchQuery.toLowerCase();
@@ -571,6 +593,13 @@ export const AdminGallery: React.FC = () => {
                             onChange={(e) => handleFormChange({ category: e.target.value as any })}
                             className="w-full h-11 appearance-none bg-white border border-slate-200 rounded-xl px-4 text-xs font-medium text-slate-900 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/10 outline-none cursor-pointer"
                           >
+                            <option value="Commercial Projects">Commercial Projects</option>
+                            <option value="Residential Projects">Residential Projects</option>
+                            <option value="Interior Projects">Interior Projects</option>
+                            <option value="Industrial Projects">Industrial Projects</option>
+                            <option value="Renovation Projects">Renovation Projects</option>
+                            <option value="Other Projects">Other Projects</option>
+                            <option value="Turnkey Projects">Turnkey Projects</option>
                             <option value="Commercial">Commercial</option>
                             <option value="Residential">Residential</option>
                             <option value="Turnkey">Turnkey</option>

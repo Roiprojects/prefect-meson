@@ -15,7 +15,7 @@ export const AboutVisionMission: React.FC = () => {
               FUTURE DIRECTION & ROADMAP
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#071D38] font-barlow leading-tight">
+          <h2 className="text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-[#071D38] font-barlow leading-tight">
             Immediate and Long-Term Goals
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">

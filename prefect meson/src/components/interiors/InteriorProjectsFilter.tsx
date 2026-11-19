@@ -58,16 +58,21 @@ const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
 export const InteriorProjectsFilter: React.FC = () => {
   const navigate = useNavigate();
-  const { interiorItems } = useData();
+  const { interiorItems, projects } = useData();
   const [activeLocation, setActiveLocation] = useState('All');
   const [activeSector, setActiveSector] = useState<string | null>(null);
   const [activeTimeline, setActiveTimeline] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
+  const isInteriorCat = (cat?: string) => {
+    const c = (cat || '').toLowerCase();
+    return c.includes('interior');
+  };
+
   const dynamicInteriorCards: InteriorCardItem[] = interiorItems.map((item) => ({
     id: item.id || item.slug,
     client: item.client || item.title,
-    statHeadline: item.builtArea || 'INTERIOR ARCHITECTURE',
+    statHeadline: item.builtArea ? (item.builtArea.toLowerCase().includes('sq') ? item.builtArea.toUpperCase() : `${item.builtArea} SQ.FT`) : 'INTERIOR ARCHITECTURE',
     badge: (item.spaceType === 'Commercial' ? 'Corporate Fit-Out' : 'Luxury Residence') as any,
     height: 'G+2',
     timeline: item.timeline || '6 Mo',
@@ -80,9 +85,32 @@ export const InteriorProjectsFilter: React.FC = () => {
     status: item.status || 'Active',
   }));
 
-  const allInteriorCards = [
+  const galleryInteriorCards: InteriorCardItem[] = projects
+    .filter((p) => isInteriorCat(p.category) || p.secondaryCategories?.some(isInteriorCat))
+    .map((p) => ({
+      id: p.id || p.slug,
+      client: p.client || p.title,
+      statHeadline: p.areaSqFt ? (p.areaSqFt.toLowerCase().includes('sq') ? p.areaSqFt.toUpperCase() : `${p.areaSqFt} SQ.FT`) : 'INTERIOR ARCHITECTURE',
+      badge: 'Luxury Residence' as any,
+      height: 'G+2',
+      timeline: '6 Mo',
+      rating: p.architect || 'Perfect Mason Interior Studio',
+      location: p.location || 'Bengaluru, India',
+      city: 'Bangalore',
+      sector: 'Luxury Residential' as any,
+      timelineCategory: '< 12 Mo',
+      image: p.image || '/assets/interior_hero.jpg',
+      status: p.status || 'Active',
+    }));
+
+  const combinedCards = [
     ...dynamicInteriorCards,
-    ...interiorShowcaseList.filter(s => !dynamicInteriorCards.some(d => d.id === s.id || d.client.toLowerCase() === s.client.toLowerCase())),
+    ...galleryInteriorCards.filter(g => !dynamicInteriorCards.some(d => d.id === g.id || d.client.toLowerCase() === g.client.toLowerCase())),
+  ];
+
+  const allInteriorCards = [
+    ...combinedCards,
+    ...interiorShowcaseList.filter(s => !combinedCards.some(d => d.id === s.id || d.client.toLowerCase() === s.client.toLowerCase())),
   ];
 
   const clearFilters = () => {

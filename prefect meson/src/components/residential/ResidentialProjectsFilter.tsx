@@ -262,8 +262,13 @@ export const ResidentialProjectsFilter: React.FC = () => {
     status: item.status || 'Active',
   }));
 
+  const isResidentialCat = (cat?: string) => {
+    const c = (cat || '').toLowerCase();
+    return c.includes('residential') || c.includes('villa');
+  };
+
   const galleryResidentialCards: ResidentialCardItem[] = projects
-    .filter((p) => (p.category === 'Residential' || p.secondaryCategories?.includes('Residential')) && p.category !== 'Commercial' && !['mr-nataraj', 'mr-venkatarama-raju'].includes(p.id))
+    .filter((p) => (isResidentialCat(p.category) || p.secondaryCategories?.some(isResidentialCat)) && !p.category?.toLowerCase().includes('commercial') && !['mr-nataraj', 'mr-venkatarama-raju'].includes(p.id))
     .map((p) => ({
       id: p.id || p.slug,
       client: p.client || p.title,

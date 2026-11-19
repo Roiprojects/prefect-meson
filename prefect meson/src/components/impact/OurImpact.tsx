@@ -3,8 +3,34 @@ import { motion } from 'framer-motion';
 import { impactConfig, ImpactStatistic } from '../../data/impactData';
 import { StatCounter } from './StatCounter';
 import { ArrowUpRight } from 'lucide-react';
+import { useData } from '../../context/DataContext';
 
 export const OurImpact: React.FC = () => {
+  const { settings } = useData();
+
+  const statistics: ImpactStatistic[] = [
+    {
+      id: 'experience',
+      numericValue: settings?.experienceYears ? (parseInt(settings.experienceYears, 10) || 18) : 18,
+      suffix: '+',
+      label: 'YEARS OF EXPERIENCE',
+      description: 'Decade-long legacy of engineering excellence across India',
+    },
+    {
+      id: 'projects',
+      numericValue: settings?.projectsCompleted ? (parseInt(settings.projectsCompleted, 10) || 150) : 150,
+      suffix: '+',
+      label: 'PROJECTS DELIVERED',
+      description: 'Luxury residences, corporate hubs, and turnkey spaces',
+    },
+    {
+      id: 'satisfaction',
+      numericValue: settings?.clientSatisfactionRate ? (parseInt(settings.clientSatisfactionRate, 10) || 100) : 100,
+      suffix: '%',
+      label: 'CLIENT SATISFACTION',
+      description: 'Zero-cost overrun guarantee & on-time milestone delivery',
+    },
+  ];
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -110,7 +136,7 @@ export const OurImpact: React.FC = () => {
             variants={itemVariants}
             className="lg:col-span-4 flex flex-col justify-between gap-4 sm:gap-5"
           >
-            {impactConfig.statistics.map((stat: ImpactStatistic, index: number) => (
+            {statistics.map((stat: ImpactStatistic, index: number) => (
               <motion.div
                 key={stat.id}
                 variants={itemVariants}

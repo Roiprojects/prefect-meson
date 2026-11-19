@@ -224,7 +224,7 @@ export const DigitalCompanyBook: React.FC<DigitalCompanyBookProps> = ({ onOpenQu
               MONOGRAPH & COMPANY PROFILE // PHYSICAL PUBLICATION
             </span>
           </div>
-          <h2 className="font-barlow text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-[#071D38] tracking-tight">
+          <h2 className="font-barlow text-xl sm:text-2xl lg:text-[1.85rem] font-extrabold uppercase text-[#071D38] tracking-tight">
             NDL Engineers and Contractors
           </h2>
           <p className="font-mono text-xs sm:text-sm text-[#071D38]/70 uppercase tracking-widest mt-1">

@@ -60,21 +60,26 @@ const timelines = ['All', '< 12 Mo', '12–24 Mo', '24+ Mo'];
 
 export const TurnkeyProjectsFilter: React.FC = () => {
   const navigate = useNavigate();
-  const { turnkeyItems } = useData();
+  const { turnkeyItems, projects } = useData();
   const [activeLocation, setActiveLocation] = useState('All');
   const [activeSector, setActiveSector] = useState<string | null>(null);
   const [activeTimeline, setActiveTimeline] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const dynamicTurnkeyCards: TurnkeyCardItem[] = turnkeyItems.slice(0, 2).map((item) => ({
+  const isTurnkeyCat = (cat?: string) => {
+    const c = (cat || '').toLowerCase();
+    return c.includes('turnkey');
+  };
+
+  const dynamicTurnkeyCards: TurnkeyCardItem[] = turnkeyItems.map((item) => ({
     id: item.id || item.slug || 'turnkey-project',
     client: item.title || item.client || 'Turnkey Project',
-    statHeadline: item.category?.toUpperCase() || 'TURNKEY PROJECT',
+    statHeadline: item.builtArea ? (item.builtArea.toLowerCase().includes('sq') ? item.builtArea.toUpperCase() : `${item.builtArea} SCALE`) : (item.category?.toUpperCase() || 'TURNKEY PROJECT'),
     badge: (item.category?.includes('Commercial') ? 'Commercial EPC' : 'Residential Turnkey') as any,
     height: (item.category?.includes('Commercial') ? 'G+4' : 'G+2'),
     timeline: item.timeline || (item.category?.includes('Commercial') ? '16 Months' : '14 Months'),
     rating: item.architect || (item.category?.includes('Commercial') ? 'Integrated EPC Cell' : 'Single-Source Delivery'),
-    location: 'Bengaluru, India',
+    location: item.builtArea ? `${item.builtArea} • Bengaluru` : 'Bengaluru, India',
     city: 'Bangalore',
     sector: (item.category?.includes('Commercial') ? 'Commercial EPC' : 'Residential Turnkey') as any,
     timelineCategory: '12–24 Mo',
@@ -82,7 +87,33 @@ export const TurnkeyProjectsFilter: React.FC = () => {
     status: item.status || 'Active',
   }));
 
-  const allTurnkeyCards = dynamicTurnkeyCards.length === 2 ? dynamicTurnkeyCards : turnkeyShowcaseList;
+  const galleryTurnkeyCards: TurnkeyCardItem[] = projects
+    .filter((p) => isTurnkeyCat(p.category) || p.secondaryCategories?.some(isTurnkeyCat))
+    .map((p) => ({
+      id: p.id || p.slug,
+      client: p.client || p.title,
+      statHeadline: p.areaSqFt ? (p.areaSqFt.toLowerCase().includes('sq') ? p.areaSqFt.toUpperCase() : `${p.areaSqFt} SCALE`) : 'TURNKEY EPC',
+      badge: (p.category?.toLowerCase().includes('commercial') ? 'Commercial EPC' : 'Residential Turnkey') as any,
+      height: 'G+4',
+      timeline: '14 Months',
+      rating: p.architect || 'Perfect Mason Turnkey Cell',
+      location: p.location || 'Bengaluru, India',
+      city: 'Bangalore',
+      sector: (p.category?.toLowerCase().includes('commercial') ? 'Commercial EPC' : 'Residential Turnkey') as any,
+      timelineCategory: '12–24 Mo',
+      image: p.image || '/assets/commercial_hero.jpg',
+      status: p.status || 'Active',
+    }));
+
+  const combinedCards = [
+    ...dynamicTurnkeyCards,
+    ...galleryTurnkeyCards.filter(g => !dynamicTurnkeyCards.some(d => d.id === g.id || d.client.toLowerCase() === g.client.toLowerCase())),
+  ];
+
+  const allTurnkeyCards = [
+    ...combinedCards,
+    ...turnkeyShowcaseList.filter(s => !combinedCards.some(c => c.id === s.id || c.client.toLowerCase() === s.client.toLowerCase())),
+  ];
 
   const clearFilters = () => {
     setActiveLocation('All');

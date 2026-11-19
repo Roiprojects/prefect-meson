@@ -79,39 +79,35 @@ export const CommercialProjectsFilter: React.FC = () => {
   const [activeTimeline, setActiveTimeline] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Restrict strictly to the 5 approved commercial / business projects
-  const allowedCommercialIds = [
-    'mr-venkatarama-raju',
-    'mr-nataraj',
-    '24x7-solutions',
-    'take-5-bar',
-  ];
+  const isCommercialCat = (cat?: string) => {
+    const c = (cat || '').toLowerCase();
+    return c.includes('commercial');
+  };
 
   const dynamicCommercialCards: CommercialCardItem[] = commercialItems
-    .filter(item => allowedCommercialIds.includes(item.id || item.slug))
     .map((item) => ({
       id: item.id || item.slug,
       client: item.client || item.title,
       statHeadline: item.builtArea ? `${item.builtArea} SCALE` : 'COMMERCIAL SCALE',
-      badge: (item.category.includes('Turnkey') ? 'Turnkey' : item.category.includes('Shell') ? 'Civil & Core' : 'Interiors') as any,
+      badge: (item.category?.includes('Turnkey') ? 'Turnkey' : item.category?.includes('Shell') ? 'Civil & Core' : 'Interiors') as any,
       height: 'G+4',
       timeline: item.timeline || '12 Mo',
       rating: item.architect || 'Commercial Studio',
       location: item.builtArea ? `${item.builtArea} • Bangalore` : 'Bangalore, India',
       city: 'Bangalore',
-      sector: (item.category.includes('Office') ? 'Office' : item.category.includes('Retail') ? 'Retail' : item.category.includes('Hospitality') ? 'Hospitality' : 'Office') as any,
+      sector: (item.category?.includes('Office') ? 'Office' : item.category?.includes('Retail') ? 'Retail' : item.category?.includes('Hospitality') ? 'Hospitality' : 'Office') as any,
       timelineCategory: '12–24 Mo',
       image: item.heroImage || '/projects/mr_venkatarama_raju/raju_01_commercial_facade_retail.jpg',
       status: item.status || 'Completed',
     }));
 
   const galleryCommercialCards: CommercialCardItem[] = projects
-    .filter((p) => allowedCommercialIds.includes(p.id))
+    .filter((p) => isCommercialCat(p.category) || p.secondaryCategories?.some(isCommercialCat))
     .map((p) => ({
       id: p.id || p.slug,
       client: p.client || p.title,
       statHeadline: p.areaSqFt ? `${p.areaSqFt} SCALE` : 'COMMERCIAL SCALE',
-      badge: (p.category === 'Interiors' || p.secondaryCategories?.includes('Interiors') ? 'Interiors' : 'Civil & Core') as any,
+      badge: (p.category?.toLowerCase().includes('interior') || p.secondaryCategories?.some(c => c?.toLowerCase().includes('interior')) ? 'Interiors' : 'Civil & Core') as any,
       height: 'G+4',
       timeline: '12 Mo',
       rating: p.architect || 'Perfect Mason Commercial Studio',
@@ -125,13 +121,13 @@ export const CommercialProjectsFilter: React.FC = () => {
 
   const combinedCards = [
     ...dynamicCommercialCards,
-    ...galleryCommercialCards.filter(g => !dynamicCommercialCards.some(d => d.id === g.id || d.client === g.client)),
+    ...galleryCommercialCards.filter(g => !dynamicCommercialCards.some(d => d.id === g.id || d.client.toLowerCase() === g.client.toLowerCase())),
   ];
 
-  // Prioritize commercialShowcaseList with exact approved data
+  // Prioritize live dynamic cards; preserve showcase items that haven't been customized
   const allCommercialCards = [
-    ...commercialShowcaseList,
-    ...combinedCards.filter(c => !commercialShowcaseList.some(s => s.id === c.id))
+    ...combinedCards,
+    ...commercialShowcaseList.filter(s => !combinedCards.some(c => c.id === s.id || c.client.toLowerCase() === s.client.toLowerCase()))
   ];
 
   const clearFilters = () => {

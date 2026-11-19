@@ -14,6 +14,7 @@ import {
   Zap,
   Activity,
 } from 'lucide-react';
+import { useData } from '../../context/DataContext';
 
 interface StrengthPillar {
   id: string;
@@ -109,16 +110,17 @@ const pillars: StrengthPillar[] = [
   },
 ];
 
-const trustStats = [
-  { label: 'CIVIL EXECUTION EXPERIENCE', value: '14+ Yrs', icon: Award, isNew: false },
-  { label: 'BOQ ESTIMATION ACCURACY', value: '100%', icon: CheckCircle2, isNew: false },
-  { label: 'sufficient construction equipments and tools', value: 'resources', icon: Zap, isNew: true },
-  { label: 'PROGRESS MONITORING & QUALITY INSPECTIONS', value: 'SITE QUALITY CONTROL', icon: Activity, isNew: true },
-];
-
 export const WhyChooseUs: React.FC = () => {
+  const { settings } = useData();
   const [hoveredPillar, setHoveredPillar] = useState<string | null>(null);
   const easeCubic = [0.22, 1, 0.36, 1];
+
+  const trustStats = [
+    { label: 'CIVIL EXECUTION EXPERIENCE', value: settings?.experienceYears ? `${settings.experienceYears.replace(/[^0-9+]/g, '')} Yrs` : '18+ Yrs', icon: Award, isNew: false },
+    { label: 'BOQ ESTIMATION ACCURACY', value: '100%', icon: CheckCircle2, isNew: false },
+    { label: 'sufficient construction equipments and tools', value: 'resources', icon: Zap, isNew: true },
+    { label: 'PROGRESS MONITORING & QUALITY INSPECTIONS', value: 'SITE QUALITY CONTROL', icon: Activity, isNew: true },
+  ];
 
   return (
     <section

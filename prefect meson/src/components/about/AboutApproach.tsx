@@ -18,7 +18,7 @@ export const AboutApproach: React.FC = () => {
                 FLEXIBLE AGREEMENT & DELIVERY MODELS
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#071D38] font-barlow leading-tight">
+            <h2 className="text-xl sm:text-2xl lg:text-[1.85rem] font-bold uppercase tracking-tight text-[#071D38] font-barlow leading-tight">
               Modes of Project Execution
             </h2>
           </div>

@@ -4,8 +4,8 @@ export interface GalleryProject {
   number: string;
   client?: string;
   title: string;
-  category: 'Residential' | 'Commercial' | 'Turnkey' | 'Interiors';
-  secondaryCategories?: ('Residential' | 'Commercial' | 'Turnkey' | 'Interiors')[];
+  category: 'Residential' | 'Commercial' | 'Turnkey' | 'Interiors' | 'Commercial Projects' | 'Residential Projects' | 'Interior Projects' | 'Industrial Projects' | 'Renovation Projects' | 'Other Projects' | string;
+  secondaryCategories?: ('Residential' | 'Commercial' | 'Turnkey' | 'Interiors' | 'Commercial Projects' | 'Residential Projects' | 'Interior Projects' | 'Industrial Projects' | 'Renovation Projects' | 'Other Projects' | string)[];
   projectType?: string;
   status: 'Completed' | 'Ongoing' | 'Status Not Specified';
   location: string;

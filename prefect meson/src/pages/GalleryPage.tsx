@@ -24,10 +24,13 @@ interface GalleryPageProps {
 
 const CATEGORY_MAP: Record<string, string> = {
   'ALL PROJECTS': 'ALL',
-  'COMMERCIAL CONSTRUCTION': 'Commercial',
-  'RESIDENTIAL CONSTRUCTION': 'Residential',
-  'TURNKEY PROJECTS': 'Turnkey',
-  'INTERIORS': 'Interiors',
+  'COMMERCIAL PROJECTS': 'Commercial Projects',
+  'RESIDENTIAL PROJECTS': 'Residential Projects',
+  'INTERIOR PROJECTS': 'Interior Projects',
+  'INDUSTRIAL PROJECTS': 'Industrial Projects',
+  'RENOVATION PROJECTS': 'Renovation Projects',
+  'OTHER PROJECTS': 'Other Projects',
+  'TURNKEY PROJECTS': 'Turnkey Projects',
 };
 
 export const GalleryPage: React.FC<GalleryPageProps> = () => {
@@ -85,10 +88,31 @@ export const GalleryPage: React.FC<GalleryPageProps> = () => {
       // 1. Primary Category Filter
       const mappedCat = CATEGORY_MAP[selectedCategory];
       if (mappedCat && mappedCat !== 'ALL') {
-        const matchesPrimary = project.category === mappedCat;
-        const matchesSecondary = project.secondaryCategories?.includes(
-          mappedCat as 'Residential' | 'Commercial' | 'Turnkey' | 'Interiors'
-        );
+        const target = mappedCat.toLowerCase();
+        const pCat = (project.category || '').toLowerCase();
+        const matchesPrimary =
+          pCat === target ||
+          (target.includes('commercial') && pCat.includes('commercial')) ||
+          (target.includes('residential') && pCat.includes('residential')) ||
+          (target.includes('interior') && pCat.includes('interior')) ||
+          (target.includes('industrial') && pCat.includes('industrial')) ||
+          (target.includes('renovation') && pCat.includes('renovation')) ||
+          (target.includes('other') && pCat.includes('other')) ||
+          (target.includes('turnkey') && pCat.includes('turnkey'));
+
+        const matchesSecondary = project.secondaryCategories?.some((sec) => {
+          const s = (sec || '').toLowerCase();
+          return (
+            s === target ||
+            (target.includes('commercial') && s.includes('commercial')) ||
+            (target.includes('residential') && s.includes('residential')) ||
+            (target.includes('interior') && s.includes('interior')) ||
+            (target.includes('industrial') && s.includes('industrial')) ||
+            (target.includes('renovation') && s.includes('renovation')) ||
+            (target.includes('other') && s.includes('other')) ||
+            (target.includes('turnkey') && s.includes('turnkey'))
+          );
+        });
         if (!matchesPrimary && !matchesSecondary) return false;
       }
 

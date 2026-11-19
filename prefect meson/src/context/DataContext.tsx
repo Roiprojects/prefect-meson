@@ -438,7 +438,7 @@ const defaultCommercialItems: CommercialItem[] = [
     galleryImages: [
       '/assets/comm_complex_hero.jpg',
       '/ndl_projects/slide_086_img_1.png',
-      '/ndl_projects/slide_097_img_1.jpg',
+      '/ndl_projects/slide_097_img_1.jpg',
     ],
     capabilities: [
       '100% Itemized BOQ Billing Transparency',
@@ -1803,6 +1803,29 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
     fetchPostgresData();
     return () => { isMounted = false; };
+  }, []);
+
+  // Real-Time Cross-Tab Synchronization (Admin -> Database -> Frontend)
+  useEffect(() => {
+    const handleStorageChange = (e: StorageEvent) => {
+      if (!e.key || !e.newValue) return;
+      try {
+        const parsed = JSON.parse(e.newValue);
+        if (e.key === STORAGE_KEYS.PROJECTS && Array.isArray(parsed)) setProjects(parsed);
+        if (e.key === STORAGE_KEYS.COMMERCIAL && Array.isArray(parsed)) setCommercialItems(parsed);
+        if (e.key === STORAGE_KEYS.RESIDENTIAL && Array.isArray(parsed)) setResidentialItems(parsed);
+        if (e.key === STORAGE_KEYS.TURNKEY && Array.isArray(parsed)) setTurnkeyItems(parsed);
+        if (e.key === STORAGE_KEYS.INTERIORS && Array.isArray(parsed)) setInteriorItems(parsed);
+        if (e.key === STORAGE_KEYS.SETTINGS && typeof parsed === 'object') setSettings(parsed);
+        if (e.key === STORAGE_KEYS.PAGES && typeof parsed === 'object') setPageContents(parsed);
+        if (e.key === STORAGE_KEYS.REVIEWS && Array.isArray(parsed)) setReviews(parsed);
+        if (e.key === STORAGE_KEYS.BLOGS && Array.isArray(parsed)) setBlogs(parsed);
+        if (e.key === STORAGE_KEYS.HOME_SHOWCASE && Array.isArray(parsed)) setHomeShowcaseSlides(parsed);
+      } catch (_) {}
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
 
   // Sync to local storage safely as backup

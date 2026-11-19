@@ -298,7 +298,7 @@ export const OurServices: React.FC<OurServicesProps> = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.06, ease: easeCubic }}
-              className="font-display text-3xl sm:text-5xl lg:text-[52px] font-bold text-slate-950 uppercase tracking-tight leading-[1.02]"
+              className="font-display text-xl sm:text-2xl lg:text-[1.85rem] font-bold text-slate-950 uppercase tracking-tight leading-tight"
             >
               EVERY LAYER. <br />
               <span className="text-slate-950">ONE EXECUTION SYSTEM.</span>

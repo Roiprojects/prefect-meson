@@ -207,7 +207,7 @@ export const TurnkeyCapability: React.FC = () => {
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 className="space-y-4"
               >
-                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-medium uppercase tracking-tight text-[#0F172A] leading-tight">
+                <h3 className="text-xl sm:text-2xl lg:text-[1.85rem] font-heading font-medium uppercase tracking-tight text-[#0F172A] leading-tight">
                   {currentStage.title}
                 </h3>
                 
