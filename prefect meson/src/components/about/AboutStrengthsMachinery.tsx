@@ -118,50 +118,26 @@ export const AboutStrengthsMachinery: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {ndlCompanyProfile.plantsAndMachinery.map((mach, idx) => {
               const Icon = machineryIcons[idx % machineryIcons.length];
-              const isUpdatedToday = idx === 2 || idx === 4 || idx === 5;
               return (
                 <div
                   key={mach.name}
-                  className={`p-5 rounded-xl transition-all flex flex-col justify-between ${
-                    isUpdatedToday
-                      ? 'bg-yellow-50/90 border-2 border-yellow-400 shadow-md ring-2 ring-yellow-300/40'
-                      : 'bg-white border border-slate-200 shadow-2xs hover:border-[#071D38]'
-                  }`}
+                  className="p-5 rounded-xl transition-all flex flex-col justify-between bg-white border border-slate-200 shadow-2xs hover:border-[#071D38]"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center border ${
-                        isUpdatedToday
-                          ? 'bg-yellow-300 text-yellow-950 border-yellow-400'
-                          : 'bg-slate-50 border-slate-200 text-[#071D38]'
-                      }`}>
+                      <div className="w-8 h-8 rounded-lg flex items-center justify-center border bg-slate-50 border-slate-200 text-[#071D38]">
                         <Icon className="w-4 h-4" />
                       </div>
                       <div className="flex items-center gap-1.5">
-                        {isUpdatedToday && (
-                          <span className="font-mono text-[9px] font-bold bg-yellow-300 text-yellow-950 px-1.5 py-0.5 rounded uppercase tracking-wider border border-yellow-400">
-                            Updated
-                          </span>
-                        )}
-                        <span className={`font-mono text-xs font-bold ${
-                          isUpdatedToday ? 'text-yellow-900' : 'text-slate-400'
-                        }`}>
+                        <span className="font-mono text-xs font-bold text-slate-400">
                           0{idx + 1}
                         </span>
                       </div>
                     </div>
-                    <h4 className={`font-barlow text-base font-bold uppercase mb-1 leading-snug ${
-                      isUpdatedToday
-                        ? 'text-yellow-950 bg-yellow-300 px-1.5 py-0.5 rounded border border-yellow-400 inline-block'
-                        : 'text-slate-950'
-                    }`}>
+                    <h4 className="font-barlow text-base font-bold uppercase mb-1 leading-snug text-slate-950">
                       {mach.name}
                     </h4>
-                    <span className={`font-mono text-[10px] uppercase tracking-wider block mt-1 ${
-                      isUpdatedToday
-                        ? 'text-yellow-900 bg-yellow-200/80 px-1.5 py-0.5 rounded border border-yellow-300 inline-block font-semibold'
-                        : 'text-slate-500'
-                    }`}>
+                    <span className="font-mono text-[10px] uppercase tracking-wider block mt-1 text-slate-500">
                       {mach.category}
                     </span>
                   </div>

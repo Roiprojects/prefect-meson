@@ -90,20 +90,14 @@ export const CoreServices: React.FC = () => {
               2.3 Core Services
             </div>
             <h2 className="text-xl sm:text-2xl lg:text-[1.85rem] font-heading font-medium tracking-tight text-[#0F172A] leading-tight">
-              <span className="bg-yellow-300 text-slate-950 px-2 py-0.5 rounded border border-yellow-500 inline-block mb-1 font-normal">
-                Conceived with Vision.
-              </span>{' '}
-              <br />
-              <span className="font-serif italic bg-yellow-200 text-yellow-950 px-2 py-0.5 rounded border border-yellow-400 inline-block mt-1">
+              Conceived with Vision. <br />
+              <span className="font-serif italic text-[#C8A96B]">
                 Realised with Passion.
               </span>
             </h2>
           </div>
-          <div className="max-w-lg bg-yellow-50/90 border-2 border-yellow-400 p-4 rounded-2xl shadow-sm">
-            <span className="inline-block px-2 py-0.5 mb-2 text-[9px] font-mono font-bold bg-yellow-400 text-yellow-950 rounded uppercase tracking-wider">
-              Updated Text
-            </span>
-            <p className="text-yellow-950 text-sm md:text-base font-medium leading-relaxed">
+          <div className="max-w-lg">
+            <p className="text-slate-600 text-sm md:text-base font-normal leading-relaxed">
               From commercial developments and residential architecture to turnkey project execution and bespoke interiors, Perfect Mason brings diverse construction disciplines together through one integrated approach — delivering spaces built around quality, precision and lasting value.
             </p>
           </div>

@@ -49,9 +49,7 @@ export const AboutCTA: React.FC = () => {
 
             {/* Main Heading */}
             <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-[38px] leading-[1.25] font-bold tracking-tight text-slate-950 mb-5 uppercase font-display max-w-xl text-center">
-              <span className="bg-yellow-300 text-slate-950 px-3 py-1 rounded-2xl border border-yellow-500 shadow-sm inline-block">
-                {cta.heading || aboutData.cta.heading}
-              </span>
+              {cta.heading || aboutData.cta.heading}
             </h2>
             
             {/* Supporting Text */}

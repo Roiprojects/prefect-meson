@@ -78,44 +78,19 @@ export const AboutVisionMission: React.FC = () => {
               </p>
 
               <div className="space-y-2.5">
-                {ndlCompanyProfile.immediateAndLongTermGoals.futureCapabilities.map((fc, idx) => {
-                  const isHighlighted =
-                    fc.toLowerCase().includes('affordable') ||
-                    fc.toLowerCase().includes('exquisite') ||
-                    fc.toLowerCase().includes('architecturally');
-                  return (
-                    <div
-                      key={idx}
-                      className={`p-3 rounded-xl flex items-center justify-between gap-2.5 transition-all ${
-                        isHighlighted
-                          ? 'bg-yellow-400/20 border-2 border-yellow-400 shadow-[0_0_15px_rgba(250,204,21,0.25)]'
-                          : 'bg-white/10 border border-white/15'
-                      }`}
-                    >
-                      <div className="flex items-center gap-2.5 min-w-0">
-                        <span
-                          className={`w-2.5 h-2.5 rounded-full shrink-0 ${
-                            isHighlighted ? 'bg-yellow-400 shadow-[0_0_8px_#facc15]' : 'bg-[#C8A96B]'
-                          }`}
-                        />
-                        <span className="font-barlow text-sm font-bold uppercase tracking-wide">
-                          {isHighlighted ? (
-                            <mark className="bg-yellow-300 text-slate-950 font-black px-2 py-0.5 rounded shadow-xs inline-block">
-                              {fc}
-                            </mark>
-                          ) : (
-                            <span className="text-white">{fc}</span>
-                          )}
-                        </span>
-                      </div>
-                      {isHighlighted && (
-                        <span className="shrink-0 font-mono text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-yellow-400 text-slate-950 shadow-xs">
-                          NEW DOMAIN
-                        </span>
-                      )}
+                {ndlCompanyProfile.immediateAndLongTermGoals.futureCapabilities.map((fc, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3 rounded-xl flex items-center justify-between gap-2.5 transition-all bg-white/10 border border-white/15"
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <span className="w-2.5 h-2.5 rounded-full shrink-0 bg-[#C8A96B]" />
+                      <span className="font-barlow text-sm font-bold uppercase tracking-wide text-white">
+                        {fc}
+                      </span>
                     </div>
-                  );
-                })}
+                  </div>
+                ))}
               </div>
             </div>
 

@@ -763,9 +763,9 @@ function renderEditorialPage(page: BookPageType, onOpenQuoteModal?: () => void) 
                 <span className="font-mono text-[10px] text-slate-400 uppercase">ENGINEERING PRACTICE DIRECTION</span>
                 <h4 className="font-barlow text-base sm:text-lg font-bold uppercase text-[#071D38] leading-tight">
                   <span className="block">BUILT ON ENGINEERING EXCELLENCE</span>
-                  <mark className="bg-yellow-300 text-slate-950 px-1.5 py-0.5 rounded font-bold inline-block my-0.5">
+                  <span className="text-[#071D38] inline-block my-0.5">
                     WITH PRECISION, QUALITY & TRUST
-                  </mark>
+                  </span>
                 </h4>
               </div>
               <span className="px-2.5 py-1 rounded bg-[#071D38] text-white font-mono text-xs font-bold">
@@ -946,37 +946,21 @@ function renderEditorialPage(page: BookPageType, onOpenQuoteModal?: () => void) 
           </p>
 
           <div className="grid grid-cols-2 gap-2.5">
-            {ndlCompanyProfile.plantsAndMachinery.map((item, idx) => {
-              const isUpdated = idx === 2 || idx === 4 || idx === 5;
-              return (
-                <div
-                  key={idx}
-                  className={`p-3 rounded-lg space-y-1 transition-all ${
-                    isUpdated
-                      ? 'bg-yellow-100/90 border-2 border-yellow-400 shadow-xs'
-                      : 'bg-white border border-[#E0D8C8]'
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <span className={`font-barlow text-xs font-bold uppercase block leading-tight ${
-                      isUpdated ? 'text-yellow-950 bg-yellow-300 px-1 py-0.5 rounded border border-yellow-400' : 'text-[#071D38]'
-                    }`}>
-                      {item.name}
-                    </span>
-                    {isUpdated && (
-                      <span className="text-[8px] font-mono font-bold bg-yellow-400 text-yellow-950 px-1 py-0.2 rounded uppercase">
-                        New
-                      </span>
-                    )}
-                  </div>
-                  <span className={`font-mono text-[10px] block ${
-                    isUpdated ? 'text-yellow-900 font-semibold' : 'text-slate-500'
-                  }`}>
-                    {item.category}
+            {ndlCompanyProfile.plantsAndMachinery.map((item, idx) => (
+              <div
+                key={idx}
+                className="p-3 rounded-lg space-y-1 transition-all bg-white border border-[#E0D8C8]"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-barlow text-xs font-bold uppercase block leading-tight text-[#071D38]">
+                    {item.name}
                   </span>
                 </div>
-              );
-            })}
+                <span className="font-mono text-[10px] block text-slate-500">
+                  {item.category}
+                </span>
+              </div>
+            ))}
           </div>
 
           <div className="rounded-lg overflow-hidden border border-[#D5CDC0] shadow-sm">
@@ -1137,24 +1121,14 @@ function renderEditorialPage(page: BookPageType, onOpenQuoteModal?: () => void) 
                 FUTURE CAPABILITIES & DOMAIN EXPANSION
               </span>
               <div className="flex flex-wrap gap-2 pt-1">
-                {ndlCompanyProfile.immediateAndLongTermGoals.futureCapabilities.map((fc, i) => {
-                  const isHighlighted =
-                    fc.toLowerCase().includes('affordable') ||
-                    fc.toLowerCase().includes('exquisite') ||
-                    fc.toLowerCase().includes('architecturally');
-                  return (
-                    <span
-                      key={i}
-                      className={`px-3 py-1 rounded font-mono text-xs font-semibold ${
-                        isHighlighted
-                          ? 'bg-yellow-300 text-slate-950 font-bold border-2 border-yellow-400 shadow-xs'
-                          : 'bg-white/10 text-white border border-white/20'
-                      }`}
-                    >
-                      {fc}
-                    </span>
-                  );
-                })}
+                {ndlCompanyProfile.immediateAndLongTermGoals.futureCapabilities.map((fc, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1 rounded font-mono text-xs font-semibold bg-white/10 text-white border border-white/20"
+                  >
+                    {fc}
+                  </span>
+                ))}
               </div>
             </div>
           </div>

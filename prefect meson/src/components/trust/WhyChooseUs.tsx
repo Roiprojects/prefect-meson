@@ -116,10 +116,10 @@ export const WhyChooseUs: React.FC = () => {
   const easeCubic = [0.22, 1, 0.36, 1];
 
   const trustStats = [
-    { label: 'CIVIL EXECUTION EXPERIENCE', value: settings?.experienceYears ? `${settings.experienceYears.replace(/[^0-9+]/g, '')} Yrs` : '18+ Yrs', icon: Award, isNew: false },
-    { label: 'BOQ ESTIMATION ACCURACY', value: '100%', icon: CheckCircle2, isNew: false },
-    { label: 'sufficient construction equipments and tools', value: 'resources', icon: Zap, isNew: true },
-    { label: 'PROGRESS MONITORING & QUALITY INSPECTIONS', value: 'SITE QUALITY CONTROL', icon: Activity, isNew: true },
+    { label: 'CIVIL EXECUTION EXPERIENCE', value: settings?.experienceYears ? `${settings.experienceYears.replace(/[^0-9+]/g, '')} Yrs` : '18+ Yrs', icon: Award },
+    { label: 'BOQ ESTIMATION ACCURACY', value: '100%', icon: CheckCircle2 },
+    { label: 'SUFFICIENT CONSTRUCTION EQUIPMENTS AND TOOLS', value: 'RESOURCES', icon: Zap },
+    { label: 'PROGRESS MONITORING & QUALITY INSPECTIONS', value: 'SITE QUALITY CONTROL', icon: Activity },
   ];
 
   return (
@@ -246,11 +246,7 @@ export const WhyChooseUs: React.FC = () => {
                   <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider shrink-0">
                     SPEC GUARANTEE
                   </span>
-                  <span className={`text-[11px] font-mono font-bold px-2.5 py-1 rounded-full border shadow-2xs text-right transition-all ${
-                    pillar.id === 'premium-materials'
-                      ? 'text-yellow-950 bg-yellow-300 border-yellow-500 ring-2 ring-yellow-400 font-extrabold shadow-sm'
-                      : 'text-slate-950 bg-white border-slate-200/90'
-                  }`}>
+                  <span className="text-[11px] font-mono font-bold px-2.5 py-1 rounded-full border shadow-2xs text-right transition-all text-slate-950 bg-white border-slate-200/90">
                     {pillar.keyMetric}
                   </span>
                 </div>
@@ -277,28 +273,15 @@ export const WhyChooseUs: React.FC = () => {
                   key={i}
                   className={`flex flex-col items-center sm:items-start text-center sm:text-left transition-all ${
                     i !== 0 ? 'sm:pl-8 pt-4 sm:pt-0' : ''
-                  } ${stat.isNew ? 'bg-yellow-50/80 p-3 sm:-m-2 rounded-2xl border-2 border-yellow-400 shadow-sm' : ''}`}
+                  }`}
                 >
                   <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-                    <Icon className={`w-4 h-4 shrink-0 ${stat.isNew ? 'text-yellow-700' : 'text-[#071D38]'}`} />
-                    <span className={`text-xl sm:text-2xl lg:text-[26px] xl:text-3xl font-black font-barlow uppercase tracking-tight leading-none ${
-                      stat.isNew
-                        ? 'text-yellow-950 bg-yellow-300 px-2 py-0.5 rounded border border-yellow-500'
-                        : 'text-slate-950'
-                    }`}>
+                    <Icon className="w-4 h-4 shrink-0 text-[#071D38]" />
+                    <span className="text-xl sm:text-2xl lg:text-[26px] xl:text-3xl font-black font-barlow uppercase tracking-tight leading-none text-slate-950">
                       {stat.value}
                     </span>
-                    {stat.isNew && (
-                      <span className="text-[9px] font-mono font-bold bg-yellow-400 text-yellow-950 px-1.5 py-0.5 rounded-full uppercase tracking-wider shadow-2xs">
-                        Updated
-                      </span>
-                    )}
                   </div>
-                  <span className={`font-mono text-[11px] font-bold uppercase tracking-wider leading-snug ${
-                    stat.isNew
-                      ? 'text-yellow-950 bg-yellow-200/90 px-1.5 py-0.5 rounded border border-yellow-300 mt-1 block'
-                      : 'text-slate-500'
-                  }`}>
+                  <span className="font-mono text-[11px] font-bold uppercase tracking-wider leading-snug text-slate-500">
                     {stat.label}
                   </span>
                 </div>
