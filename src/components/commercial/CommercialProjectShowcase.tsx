@@ -156,7 +156,7 @@ export const CommercialProjectShowcase: React.FC = () => {
                   </p>
 
                   {/* Metadata Row */}
-                  <div className="flex items-center justify-between text-xs text-white/85 font-mono pt-3 border-t border-white/15">
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-white/85 font-mono pt-3 border-t border-white/15">
                     <span className="text-[#C8A96B] truncate max-w-[180px]">
                       {project.architectPractice}
                     </span>

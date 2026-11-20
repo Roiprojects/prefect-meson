@@ -270,13 +270,13 @@ export const CommercialCategoryPage: React.FC<CommercialCategoryPageProps> = ({ 
                     </p>
                   </div>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-slate-100 text-xs font-mono">
-                    <div>
+                  <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-slate-100 text-xs font-mono">
+                    <div className="min-w-0 pr-2">
                       <span className="text-slate-400 block text-[10px]">ARCHITECT</span>
-                      <span className="text-slate-900 font-bold">{project.architect}</span>
+                      <span className="text-slate-900 font-bold break-words">{project.architect}</span>
                     </div>
 
-                    <span className="px-4 py-2 rounded-full bg-slate-950 text-white font-mono text-xs font-bold uppercase tracking-wider group-hover:bg-black transition-colors flex items-center gap-1.5 shadow-sm">
+                    <span className="px-4 py-2 rounded-full bg-slate-950 text-white font-mono text-xs font-bold uppercase tracking-wider group-hover:bg-black transition-colors flex items-center gap-1.5 shadow-sm shrink-0">
                       <span>View Gallery</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </span>

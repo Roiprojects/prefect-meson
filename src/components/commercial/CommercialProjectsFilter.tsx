@@ -353,7 +353,7 @@ export const CommercialProjectsFilter: React.FC = () => {
                         </div>
 
                         {/* TIMELINE & COMPLETION BADGE */}
-                        <div className="flex items-center justify-between pt-3 border-t border-white/15 text-[11px] font-mono text-slate-300">
+                        <div className="flex flex-wrap items-center justify-between gap-2 pt-3 border-t border-white/15 text-[11px] font-mono text-slate-300">
                           <span className="flex items-center gap-1.5">
                             <Clock className="w-3.5 h-3.5 text-slate-400" />
                             {project.timeline} Duration

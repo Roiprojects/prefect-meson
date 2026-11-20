@@ -80,15 +80,27 @@ export const HeroCanvas: React.FC<HeroCanvasProps> = ({
       ctx.fillStyle = '#6DA5DD';
       ctx.fillRect(0, 0, viewportWidth, viewportHeight);
 
-      // Exact 100% COVER calculation
+      // Exact 100% COVER calculation with mobile architectural focal framing
       const imageWidth = img.naturalWidth;
       const imageHeight = img.naturalHeight;
-      const scale = Math.max(viewportWidth / imageWidth, viewportHeight / imageHeight);
+      const isMobilePortrait = viewportWidth < 768 && viewportHeight > viewportWidth;
+
+      // On mobile portrait, upscale slightly and shift focal point to the right-center (x ~ 64%)
+      // where the architectural luxury villa is positioned, so the villa is prominent and centered on mobile.
+      const mobileScaleMultiplier = isMobilePortrait ? 1.14 : 1.0;
+      const scale = Math.max(viewportWidth / imageWidth, viewportHeight / imageHeight) * mobileScaleMultiplier;
       const renderWidth = imageWidth * scale;
       const renderHeight = imageHeight * scale;
 
-      const offsetX = (viewportWidth - renderWidth) / 2;
-      const offsetY = (viewportHeight - renderHeight) / 2;
+      const focalXRatio = isMobilePortrait ? 0.64 : 0.50;
+      const targetOffsetX = (viewportWidth / 2) - (renderWidth * focalXRatio);
+      const offsetX = isMobilePortrait
+        ? Math.min(0, Math.max(viewportWidth - renderWidth, targetOffsetX))
+        : (viewportWidth - renderWidth) / 2;
+
+      const offsetY = isMobilePortrait
+        ? (viewportHeight - renderHeight)
+        : (viewportHeight - renderHeight) / 2;
 
       ctx.imageSmoothingEnabled = true;
       ctx.imageSmoothingQuality = 'high';

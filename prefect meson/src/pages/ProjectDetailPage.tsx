@@ -249,7 +249,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
   };
 
   return (
-    <div className="w-full bg-white text-slate-900 pt-28 sm:pt-32 pb-24 font-sans select-none min-h-screen">
+    <div className="w-full bg-white text-slate-900 pt-28 sm:pt-32 pb-36 sm:pb-32 font-sans select-none min-h-screen">
       <div className="max-w-[1240px] mx-auto px-6 sm:px-8 lg:px-10">
         
         {/* ============================================================ */}
@@ -292,13 +292,13 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
             </div>
 
             {/* Main Display Title */}
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-[52px] font-black uppercase text-slate-950 tracking-tight leading-[1.04]">
+            <h1 className="font-serif text-3xl sm:text-5xl lg:text-[52px] font-black uppercase text-slate-950 tracking-tight leading-[1.08] sm:leading-[1.04] break-words">
               {projectTitle}
             </h1>
 
             {/* Location with Pin */}
-            <div className="flex items-center gap-1.5 text-slate-600 text-xs sm:text-sm font-sans mt-2.5 font-medium">
-              <MapPin className="w-4 h-4 text-slate-900 shrink-0" />
+            <div className="flex flex-wrap items-center gap-1.5 text-slate-600 text-xs sm:text-sm font-sans mt-2.5 font-medium">
+              <MapPin className="w-4 h-4 text-slate-950 shrink-0" />
               <span>{projectLocation}</span>
               {projectArchitect && (
                 <>
@@ -310,7 +310,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
           </div>
 
           {/* Large Area / Cost Metric (Top Right) */}
-          <div className="text-right shrink-0">
+          <div className="text-left md:text-right shrink-0 pt-2 md:pt-0">
             <span className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight block">
               {projectScale}
             </span>
@@ -418,7 +418,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
             </div>
 
             {/* Section 2: ENGINEERING & EXECUTION SPECIFICATIONS */}
-            <div className="p-6 sm:p-8 rounded-[24px] bg-[#F9FAFB] border border-slate-200/90 space-y-5">
+            <div className="p-4 sm:p-8 rounded-[24px] bg-[#F9FAFB] border border-slate-200/90 space-y-5">
               <span className="font-mono text-[11px] font-bold text-slate-500 uppercase tracking-[0.2em] block pb-2 border-b border-slate-200/70">
                 ENGINEERING & EXECUTION SPECIFICATIONS
               </span>
@@ -427,12 +427,15 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ onOpenQuot
                 {specs.map((item, i) => {
                   const Icon = item.icon;
                   return (
-                    <div key={i} className="flex items-start justify-between gap-4 text-xs font-sans pb-3 border-b border-slate-200/50 last:border-0 last:pb-0">
-                      <div className="flex items-center gap-2.5 text-slate-500 shrink-0">
-                        <Icon className="w-4 h-4 text-slate-400" />
+                    <div
+                      key={i}
+                      className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1.5 sm:gap-4 text-xs font-sans pb-3.5 border-b border-slate-200/60 last:border-0 last:pb-0"
+                    >
+                      <div className="flex items-center gap-2 text-slate-500 shrink-0">
+                        <Icon className="w-4 h-4 text-slate-400 shrink-0" />
                         <span className="font-medium">{item.label}</span>
                       </div>
-                      <div className="font-bold text-slate-900 text-right">
+                      <div className="font-bold text-slate-900 sm:text-right pl-6 sm:pl-0 break-words max-w-full">
                         {item.value}
                       </div>
                     </div>

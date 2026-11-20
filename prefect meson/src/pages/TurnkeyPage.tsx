@@ -419,7 +419,7 @@ export const TurnkeyPage: React.FC<TurnkeyPageProps> = ({ onOpenQuoteModal }) =>
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-white/15 mt-8 font-mono text-xs font-bold text-[#C8A96B] uppercase tracking-wider flex items-center justify-between relative z-10">
+              <div className="pt-6 border-t border-white/15 mt-8 font-mono text-xs font-bold text-[#C8A96B] uppercase tracking-wider flex flex-wrap items-center justify-between gap-2 relative z-10">
                 <span>SINGLE-SOURCE RESPONSIBILITY</span>
                 <span>B.E. CIVIL SUPERVISION</span>
               </div>
@@ -497,22 +497,22 @@ export const TurnkeyPage: React.FC<TurnkeyPageProps> = ({ onOpenQuoteModal }) =>
                   <div
                     key={service.num}
                     onClick={() => setActiveServiceIdx(idx)}
-                    className={`group relative p-4 rounded-2xl transition-all duration-200 cursor-pointer border flex items-center justify-between ${
+                    className={`group relative p-3.5 sm:p-4 rounded-2xl transition-all duration-200 cursor-pointer border flex items-center justify-between gap-3 ${
                       isActive
                         ? 'bg-white text-slate-950 border-white shadow-xl scale-[1.01]'
                         : 'bg-white/5 border-white/10 text-white/80 hover:bg-white/10 hover:border-white/20'
                     }`}
                   >
-                    <div className="flex items-center gap-4">
-                      <span className={`font-mono text-xs font-bold ${isActive ? 'text-[#071D38]' : 'text-[#C8A96B]'}`}>
+                    <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                      <span className={`font-mono text-xs font-bold shrink-0 ${isActive ? 'text-[#071D38]' : 'text-[#C8A96B]'}`}>
                         {service.num}
                       </span>
-                      <span className="text-xs opacity-30">—</span>
-                      <div>
-                        <h4 className={`font-sans text-sm sm:text-base font-bold uppercase tracking-tight ${isActive ? 'text-slate-950' : 'text-white'}`}>
+                      <span className="text-xs opacity-30 shrink-0">—</span>
+                      <div className="min-w-0">
+                        <h4 className={`font-sans text-xs sm:text-base font-bold uppercase tracking-tight truncate ${isActive ? 'text-slate-950' : 'text-white'}`}>
                           {service.name}
                         </h4>
-                        <p className={`text-xs font-sans ${isActive ? 'text-slate-600' : 'text-slate-400'}`}>
+                        <p className={`text-xs font-sans line-clamp-1 ${isActive ? 'text-slate-600' : 'text-slate-400'}`}>
                           {service.desc}
                         </p>
                       </div>

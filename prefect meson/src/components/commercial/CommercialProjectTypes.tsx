@@ -123,7 +123,7 @@ export const CommercialProjectTypes: React.FC = () => {
                   </div>
 
                   {/* Bottom Action Strip */}
-                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2">
                     <span className="font-mono text-xs font-bold uppercase text-slate-900 group-hover:text-black transition-colors flex items-center gap-1.5">
                       <span>Explore Projects</span>
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

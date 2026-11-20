@@ -56,11 +56,6 @@ export const Hero: React.FC<HeroProps> = ({
 
   const contentTranslateY = scrollProgress * -45;
 
-  const currentFrameNumber = Math.min(
-    240,
-    Math.max(1, Math.round(scrollProgress * 239) + 1)
-  );
-
   return (
     <section
       ref={containerRef}
@@ -81,20 +76,20 @@ export const Hero: React.FC<HeroProps> = ({
             transform: `translateY(${contentTranslateY}px)`,
             opacity: contentOpacity,
           }}
-          className="relative z-20 max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 pt-28 sm:pt-32 lg:pt-36 text-center flex flex-col items-center space-y-4 sm:space-y-5 select-none pointer-events-auto transition-opacity duration-150"
+          className="relative z-20 w-full max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 pt-24 min-[390px]:pt-28 sm:pt-32 lg:pt-36 text-center flex flex-col items-center space-y-2.5 sm:space-y-4 select-none pointer-events-auto transition-opacity duration-150"
         >
           {/* Credibility Badge */}
           <CredibilityBadge />
 
           {/* Oversized Editorial Headline */}
-          <div className="space-y-0.5 sm:space-y-1">
-            <h1 className="font-display text-[2.75rem] xs:text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] font-extrabold tracking-tight uppercase text-slate-950 leading-[1.02] drop-shadow-xs max-w-4xl mx-auto">
+          <div className="w-full space-y-0.5 sm:space-y-1">
+            <h1 className="font-display text-[1.35rem] min-[360px]:text-[1.5rem] min-[400px]:text-[1.75rem] sm:text-5xl md:text-6xl lg:text-[4.25rem] font-extrabold tracking-tight uppercase text-slate-950 leading-[1.12] sm:leading-[1.02] drop-shadow-xs max-w-4xl mx-auto break-words px-1 sm:px-0">
               {settings?.heroHeadline || 'BUILDING SPACES. CREATING LEGACIES.'}
             </h1>
           </div>
 
           {/* Professional Supporting Copy */}
-          <p className="max-w-2xl mx-auto text-sm sm:text-base md:text-[16.5px] text-slate-700 font-sans leading-relaxed tracking-normal font-medium drop-shadow-xs">
+          <p className="max-w-xl sm:max-w-2xl mx-auto text-[11.5px] min-[380px]:text-xs sm:text-base md:text-[16.5px] text-slate-700 font-sans leading-relaxed tracking-normal font-medium drop-shadow-xs px-2 sm:px-0 line-clamp-3 sm:line-clamp-none">
             {settings?.heroSubheadline || 'From residential homes to commercial spaces and turnkey projects, Perfect Mason brings together planning, construction, interiors and quality execution under one trusted team.'}
           </p>
 
@@ -103,26 +98,6 @@ export const Hero: React.FC<HeroProps> = ({
             onQuoteClick={onOpenQuoteModal}
             onExploreClick={onExploreProjects}
           />
-        </div>
-
-        {/* 3. BOTTOM CINEMATIC STATUS & TIMELINE INDICATOR */}
-        <div className="relative z-20 px-6 py-4 flex items-center justify-between pointer-events-none text-[11px] font-mono text-slate-600">
-          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-slate-950 animate-pulse" />
-            <span className="font-bold text-slate-900 uppercase">CINEMATIC TIMELINE:</span>
-            <span className="text-slate-800 font-bold">
-              FRAME {currentFrameNumber} / 240
-            </span>
-            <span className="text-slate-400">|</span>
-            <span className="text-slate-600 font-medium">
-              SCROLL {Math.round(scrollProgress * 100)}%
-            </span>
-          </div>
-
-          <div className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xs">
-            <span className="text-slate-700 font-medium">Scroll down to reveal architecture</span>
-            <span className="text-slate-950 font-bold">↓</span>
-          </div>
         </div>
       </div>
     </section>

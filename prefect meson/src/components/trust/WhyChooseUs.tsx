@@ -242,7 +242,7 @@ export const WhyChooseUs: React.FC = () => {
                 </div>
 
                 {/* Bottom Metric Pill */}
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+                <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2">
                   <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider shrink-0">
                     SPEC GUARANTEE
                   </span>

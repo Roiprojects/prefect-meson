@@ -73,7 +73,7 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
   return (
     <div
       ref={containerRef}
-      className="fixed bottom-6 right-6 z-40 flex items-center gap-3 select-none pointer-events-auto"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex items-center gap-3 select-none pointer-events-auto"
     >
       {/* 1. EXPANDED CONCIERGE CARD (Floats above the button, cleanly aligned, zero overlapping) */}
       <AnimatePresence>
@@ -242,38 +242,13 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
         )}
       </AnimatePresence>
 
-      {/* 2. PERSISTENT HIGH-VISIBILITY PILL CALLOUT (Beside the trigger button) */}
-      {!isExpanded && (
-        <motion.button
-          type="button"
-          onClick={() => setIsExpanded(true)}
-          initial={{ opacity: 0, x: 10 }}
-          animate={{ opacity: 1, x: 0 }}
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-          className="flex items-center gap-2.5 px-4 py-3 rounded-full bg-slate-950 text-white border-2 border-white shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur-md hover:bg-slate-900 transition-all cursor-pointer select-none ring-2 ring-blue-600/30"
-          aria-label="Open Quick Connect"
-        >
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
-          </span>
-          <span className="font-sans text-xs font-bold tracking-wide text-white whitespace-nowrap">
-            Quick Connect & AI
-          </span>
-          <span className="text-[9.5px] font-mono text-amber-300 font-bold bg-white/10 px-2 py-0.5 rounded-full border border-white/10">
-            ONLINE
-          </span>
-        </motion.button>
-      )}
-
-      {/* 3. SOLID, HIGH-CONTRAST TRIGGER BUTTON (100% VISIBLE) */}
+      {/* SOLID, HIGH-CONTRAST TRIGGER BUTTON (100% VISIBLE) */}
       <motion.button
         type="button"
         onClick={() => setIsExpanded((prev) => !prev)}
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.92 }}
-        className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-slate-950 text-white flex items-center justify-center shadow-[0_12px_36px_rgba(0,0,0,0.45)] border-2 border-white ring-4 ring-blue-600/30 hover:ring-blue-500/60 transition-all duration-200 focus:outline-none overflow-hidden group cursor-pointer shrink-0"
+        className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate-950 text-white flex items-center justify-center shadow-[0_12px_36px_rgba(0,0,0,0.45)] border-2 border-white ring-4 ring-blue-600/30 hover:ring-blue-500/60 transition-all duration-200 focus:outline-none overflow-hidden group cursor-pointer shrink-0"
         aria-label={isExpanded ? 'Close Concierge' : 'Open Concierge'}
       >
         {/* Subtle glass reflection highlight */}
@@ -288,7 +263,7 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
             <X className="w-6 h-6 text-white group-hover:text-orange-400 transition-colors" />
           ) : (
             <div className="relative flex items-center justify-center">
-              <Headphones className="w-6 h-6 sm:w-7 sm:h-7 text-white group-hover:text-orange-400 transition-colors" />
+              <Headphones className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:text-orange-400 transition-colors" />
               {/* Online green indicator badge */}
               <span className="absolute -top-1 -right-1 flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />

@@ -1326,24 +1326,24 @@ _Looking forward to meeting your senior architectural & engineering team._`;
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 text-left text-xs space-y-1.5 font-sans">
-                    <div className="flex justify-between text-slate-500">
-                      <span>Name:</span>
-                      <span className="font-semibold text-slate-900">{studioBookingData.name}</span>
+                  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 text-left text-xs space-y-2 font-sans">
+                    <div className="flex justify-between gap-2 text-slate-500">
+                      <span className="shrink-0">Name:</span>
+                      <span className="font-semibold text-slate-900 text-right break-words">{studioBookingData.name}</span>
                     </div>
-                    <div className="flex justify-between text-slate-500">
-                      <span>Phone:</span>
-                      <span className="font-semibold text-slate-900">{studioBookingData.phone}</span>
+                    <div className="flex justify-between gap-2 text-slate-500">
+                      <span className="shrink-0">Phone:</span>
+                      <span className="font-semibold text-slate-900 text-right break-words">{studioBookingData.phone}</span>
                     </div>
-                    <div className="flex justify-between text-slate-500">
-                      <span>Date & Time:</span>
-                      <span className="font-semibold text-slate-900">
+                    <div className="flex justify-between gap-2 text-slate-500">
+                      <span className="shrink-0">Date & Time:</span>
+                      <span className="font-semibold text-slate-900 text-right break-words">
                         {studioBookingData.date || 'Earliest available'} • {studioBookingData.timeSlot}
                       </span>
                     </div>
-                    <div className="flex justify-between text-slate-500">
-                      <span>Project Interest:</span>
-                      <span className="font-semibold text-slate-900">{studioBookingData.projectType}</span>
+                    <div className="flex justify-between gap-2 text-slate-500">
+                      <span className="shrink-0">Project Interest:</span>
+                      <span className="font-semibold text-slate-900 text-right break-words">{studioBookingData.projectType}</span>
                     </div>
                   </div>
 
