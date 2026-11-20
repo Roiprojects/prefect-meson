@@ -21,6 +21,16 @@ export const Navbar: React.FC<NavbarProps> = ({
   activeRoute = '#home',
   onNavigate,
 }) => {
+  // Defensive guard: never render Navbar on any admin or login view
+  const currentPath = (typeof window !== 'undefined' ? window.location.pathname : '').toLowerCase();
+  if (
+    currentPath.includes('/admin') ||
+    currentPath.includes('/login') ||
+    currentPath.includes('/signin')
+  ) {
+    return null;
+  }
+
   const headerCtaText = 'CONTACT US';
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [activeMegaMenuId, setActiveMegaMenuId] = useState<string | null>(null);

@@ -57,10 +57,15 @@ export const AdminLoginPage: React.FC = () => {
 
   // Rotate images every 6 seconds
   React.useEffect(() => {
+    // Strictly isolate admin login view from public headers, footers & floating widgets
+    document.body.classList.add('admin-login-active');
     const timer = setInterval(() => {
       setActiveImageIndex((prev) => (prev + 1) % SHOWCASE_IMAGES.length);
     }, 6000);
-    return () => clearInterval(timer);
+    return () => {
+      document.body.classList.remove('admin-login-active');
+      clearInterval(timer);
+    };
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -92,7 +97,11 @@ export const AdminLoginPage: React.FC = () => {
   const activeImage = SHOWCASE_IMAGES[activeImageIndex];
 
   return (
-    <div className="min-h-screen w-full bg-slate-50 text-slate-900 flex items-center justify-center p-4 sm:p-6 lg:p-10 selection:bg-slate-900 selection:text-white">
+    <div
+      data-admin-login-page="true"
+      id="admin-login-container"
+      className="min-h-screen w-full bg-slate-50 text-slate-900 flex items-center justify-center p-4 sm:p-6 lg:p-10 selection:bg-slate-900 selection:text-white"
+    >
       {/* Background Decorative Patterns */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-60">
         <div className="absolute -top-32 -left-32 w-96 h-96 bg-blue-100/60 rounded-full blur-3xl" />

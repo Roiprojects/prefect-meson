@@ -21,6 +21,16 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+  // Defensive guard: never render Footer on any admin or login view
+  const currentPath = (typeof window !== 'undefined' ? window.location.pathname : '').toLowerCase();
+  if (
+    currentPath.includes('/admin') ||
+    currentPath.includes('/login') ||
+    currentPath.includes('/signin')
+  ) {
+    return null;
+  }
+
   const navigate = useNavigate();
   const { settings } = useData();
   const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });

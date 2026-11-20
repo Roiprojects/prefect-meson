@@ -73,7 +73,14 @@ const AppContent: React.FC = () => {
   const [isAiChatOpen, setIsAiChatOpen] = useState<boolean>(false);
   const [selectedProject, setSelectedProject] = useState<ShowcaseProject | null>(null);
 
-  const isAdminRoute = location.pathname.startsWith('/admin');
+  const normalizedPath = (location.pathname || '').toLowerCase();
+  const isAdminRoute =
+    normalizedPath.startsWith('/admin') ||
+    normalizedPath.includes('/admin') ||
+    normalizedPath.startsWith('/login') ||
+    normalizedPath === '/login' ||
+    normalizedPath === '/signin' ||
+    normalizedPath === '/admin-login';
 
   const handleNavigate = (href: string) => {
     if (href.startsWith('/')) {
@@ -365,6 +372,11 @@ const AppContent: React.FC = () => {
               </ProtectedAdminRoute>
             }
           />
+
+          {/* Direct Login aliases */}
+          <Route path="/login" element={<Navigate to="/admin/login" replace />} />
+          <Route path="/signin" element={<Navigate to="/admin/login" replace />} />
+          <Route path="/admin-login" element={<Navigate to="/admin/login" replace />} />
 
           {/* Fallback */}
           <Route path="*" element={<NotFoundPage />} />

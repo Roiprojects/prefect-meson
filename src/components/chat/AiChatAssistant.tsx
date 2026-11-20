@@ -47,6 +47,16 @@ export const AiChatAssistant: React.FC<AiChatAssistantProps> = ({
   onClose,
   onOpenQuoteModal,
 }) => {
+  // Defensive guard: never render AI assistant on any admin or login view
+  const currentPath = (typeof window !== 'undefined' ? window.location.pathname : '').toLowerCase();
+  if (
+    currentPath.includes('/admin') ||
+    currentPath.includes('/login') ||
+    currentPath.includes('/signin')
+  ) {
+    return null;
+  }
+
   const navigate = useNavigate();
   const { addEnquiry } = useData();
 

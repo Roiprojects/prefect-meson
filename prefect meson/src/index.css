@@ -110,3 +110,18 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Complete visual isolation for Admin Login Page: permanently hide public navbar, footer & floating buttons */
+body:has([data-admin-login-page]) header,
+body:has([data-admin-login-page]) footer,
+body:has([data-admin-login-page]) nav,
+body:has([data-admin-login-page]) [data-floating-actions],
+body.admin-login-active header,
+body.admin-login-active footer,
+body.admin-login-active nav,
+body.admin-login-active [data-floating-actions] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

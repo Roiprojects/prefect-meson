@@ -22,6 +22,16 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
   onOpenQuoteModal,
   onOpenAiChat,
 }) => {
+  // Defensive guard: never render FloatingActions on any admin or login view
+  const currentPath = (typeof window !== 'undefined' ? window.location.pathname : '').toLowerCase();
+  if (
+    currentPath.includes('/admin') ||
+    currentPath.includes('/login') ||
+    currentPath.includes('/signin')
+  ) {
+    return null;
+  }
+
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { settings } = useData();
