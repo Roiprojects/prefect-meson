@@ -12,7 +12,13 @@ const PORT = process.env.PORT || process.env.APP_PORT || 5000;
 const HOST = process.env.HOST || '0.0.0.0';
 
 // Serve static frontend from 'dist' in production / standalone server
-const distPath = path.join(__dirname, '../dist');
+let distPath = path.join(__dirname, '../dist');
+if (!fs.existsSync(distPath)) {
+  const altDist = path.join(__dirname, '../prefect meson/dist');
+  if (fs.existsSync(altDist)) {
+    distPath = altDist;
+  }
+}
 if (fs.existsSync(distPath)) {
   console.log(`📦 Serving static frontend from: ${distPath}`);
   app.use(express.static(distPath));
